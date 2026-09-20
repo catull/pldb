@@ -1,0 +1,17 @@
+../code/conceptPage.scroll
+
+id typst
+name Typst
+appeared 2022
+creators Laurenz Mädje
+tags textMarkup
+website https://typst.app/
+lab Technical University of Berlin
+
+influencedBy markdown tex latex
+clocExtensions typ
+docs https://typst.app/docs/
+country Germany
+reference https://www.user.tu-berlin.de/laurmaedje/programmable-markup-language-for-typesetting.pdf
+
+twitter https://twitter.com/typstapp/

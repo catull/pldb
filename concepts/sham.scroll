@@ -1,0 +1,29 @@
+../code/conceptPage.scroll
+
+id sham
+name sham
+appeared 2016
+tags grammarLanguage
+lab Indiana University
+writtenIn racket cpp yaml
+
+repoStats
+ firstCommit 2016
+ commits 462
+ committers 7
+ files 209
+ newestCommit 2022
+ mb 2
+ linesOfCode 16531
+country United States
+reference https://arxiv.org/abs/2005.09028
+
+githubRepo https://github.com/rjnw/sham
+ firstCommit 2016
+ stars 66
+ forks 6
+ subscribers 10
+ created 2016
+ updated 2023
+ description A DSL for runtime code generation in racket
+ issues 2

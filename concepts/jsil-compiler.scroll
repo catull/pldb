@@ -1,0 +1,37 @@
+../code/conceptPage.scroll
+
+id jsil-compiler
+name jsil-compiler
+appeared 2010
+creators Kevin Gadd
+tags compiler
+website http://jsil.org/
+latestVersion 0.7.6
+description JSIL is a compiler that transforms .NET applications and libraries from their native executable format - CIL bytecode - into standards-compliant, cross-browser JavaScript.
+lab https://github.com/sq
+writtenIn csharp javascript html xml css f-sharp cadence-skill asp.net bourne-shell typescript cpp yaml json visual-basic.net markdown
+
+isOpenSource true
+fileType na
+repoStats
+ firstCommit 2011
+ commits 3931
+ committers 36
+ files 1759
+ newestCommit 2017
+ mb 117
+ linesOfCode 342572
+country United States
+
+githubRepo https://github.com/sq/JSIL
+ firstCommit 2011
+ stars 1728
+ forks 242
+ subscribers 104
+ created 2011
+ updated 2024
+ description CIL to Javascript Compiler
+ issues 381
+
+domainName jsil.org
+ registered 2011

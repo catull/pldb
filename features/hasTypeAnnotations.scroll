@@ -1,0 +1,43 @@
+header.scroll
+
+title Type Annotations - language feature
+tags Feature
+printTitle Type Annotations
+
+<a class="trueBaseThemePreviousItem" href="hasTypeAliases.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasTypeClasses.html">&gt;</a>
+
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
+
+container 600px
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/python.html">Python</a>
+ name: str
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/jule.html">Jule</a>
+ let x: f64 = 89
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/ion.html">Ion</a>
+ int32::12                                // Suggests 32 bits as end-user type
+ &#39;my.custom.type&#39; :: { x : 12 , y : -1 }  // Gives a struct a user-defined type
+ 
+ { field: something::&#39;another thing&#39;::value }  // Field&#39;s name must precede annotations of its value
+ 
+ jpeg :: {{ ... }}                        // Indicates the blob contains jpeg data
+ bool :: null.int                         // A very misleading annotation on the integer null
+ &#39;&#39; :: 1                                  // An empty annotation
+ null.symbol :: 1                         // ERROR: type annotation cannot be null
+
+***
+
+* Languages *with* Type Annotations include <a href="../concepts/python.html">Python</a>, <a href="../concepts/jule.html">Jule</a>, <a href="../concepts/ion.html">Ion</a>
+
+***
+
+View all concepts with or missing a *hasTypeAnnotations* measurement
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasTypeAnnotations&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasTypeAnnotations%22%2C%22origData%22%3A%22hasTypeAnnotations%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasTypeAnnotations&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasTypeAnnotations%22%2C%22origData%22%3A%22hasTypeAnnotations%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D with
+
+keyboardNav hasTypeAliases.html hasTypeClasses.html
+
+../footer.scroll

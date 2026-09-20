@@ -1,0 +1,34 @@
+../code/conceptPage.scroll
+
+id ramen
+name ramen
+appeared 2017
+creators Cedric Cellier
+tags pl
+latestVersion v9.1.0
+lab https://github.com/rixed/ramen/issues
+writtenIn ocaml php gherkin bourne-shell csv c m4 svg ruby asciidoc make css bash cpp yaml nix html
+
+repoStats
+ firstCommit 2017
+ commits 6253
+ committers 7
+ files 617
+ newestCommit 2025
+ mb 24
+ linesOfCode 97317
+country Germany
+
+githubRepo https://github.com/rixed/ramen
+ firstCommit 2017
+ stars 14
+ forks 4
+ subscribers 3
+ created 2017
+ updated 2024
+ description A stream processing language and compiler for small-scale monitoring
+ issues 216
+
+hackerNewsDiscussions
+ id|title|time|timestamp|by|comments|score
+ 16771435|Show HN: A stream processing language and compiler for small-scale monitoring|2018-04-06 06:55:57 UTC|1522997757|rixed|0|4

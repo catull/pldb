@@ -1,0 +1,30 @@
+../code/conceptPage.scroll
+
+id huwcode
+name HuwCode
+appeared 2018
+creators Huw Pritchard
+tags pl
+website https://huwdp.github.io/huwcode-documentation
+lab https://github.com/huwdp/huwinterpreter/issues
+writtenIn cpp cmake bourne-shell javascript make html csv xml markdown typescript
+
+repoStats
+ firstCommit 2022
+ commits 875
+ committers 2
+ files 745
+ newestCommit 2023
+ mb 58
+ linesOfCode 51235
+country United Kingdom
+
+githubRepo https://github.com/huwdp/huwinterpreter
+ firstCommit 2022
+ stars 11
+ forks 0
+ subscribers 2
+ created 2018
+ updated 2023
+ description Huwinterpreter
+ issues 0

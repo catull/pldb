@@ -1,0 +1,39 @@
+header.scroll
+
+title Type Parameters - language feature
+tags Feature
+printTitle Type Parameters
+
+<a class="trueBaseThemePreviousItem" href="hasTypeInference.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasTypedHoles.html">&gt;</a>
+
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
+
+container 600px
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/typescript.html">TypeScript</a>
+ function identity&lt;T&gt;(arg: T): T {
+    return arg;
+ }
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/speedie.html">Speedie</a>
+ function ABC (|string| name)
+
+***
+
+* Languages *with* Type Parameters include <a href="../concepts/typescript.html">TypeScript</a>, <a href="../concepts/chapel.html">Chapel</a>, <a href="../concepts/speedie.html">Speedie</a>
+
+***
+
+View all concepts with or missing a *hasTypeParameters* measurement
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasTypeParameters&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasTypeParameters%22%2C%22origData%22%3A%22hasTypeParameters%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasTypeParameters&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasTypeParameters%22%2C%22origData%22%3A%22hasTypeParameters%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D with
+
+***
+
+* Read more about Type Parameters on the web: 1.
+ https://en.wikipedia.org/wiki/TypeParameter 1.
+
+keyboardNav hasTypeInference.html hasTypedHoles.html
+
+../footer.scroll

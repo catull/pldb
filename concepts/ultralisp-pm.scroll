@@ -1,0 +1,33 @@
+../code/conceptPage.scroll
+
+id ultralisp-pm
+name ultralisp-pm
+appeared 2018
+tags packageManager
+website https://ultralisp.org/
+latestVersion v1.24.8
+packageCount 1197
+forLanguages common-lisp
+writtenIn lisp sql bourne-shell yaml bash restructuredtext svg markdown json dockerfile html make
+
+repoStats
+ firstCommit 2018
+ commits 989
+ committers 9
+ files 228
+ newestCommit 2025
+ mb 3
+ linesOfCode 21763
+
+githubRepo https://github.com/ultralisp/ultralisp
+ firstCommit 2018
+ stars 225
+ forks 16
+ subscribers 9
+ created 2018
+ updated 2024
+ description The software behind a Ultralisp.org Common Lisp repository
+ issues 67
+
+domainName ultralisp.org
+ registered 2018

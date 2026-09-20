@@ -1,0 +1,14 @@
+../code/conceptPage.scroll
+
+id fran
+name FRAN
+appeared 1997
+tags pl
+description Dialect of Haskell for interactive programming of animation.
+lab Microsoft && Yale University
+
+country United States
+
+hopl https://hopl.info/showlanguage.prx?exp=3754
+
+semanticScholar https://www.semanticscholar.org/paper/Functional-reactive-animation-Elliott-Hudak/37410b4f1753caa70769645a34a7fc3e3af32b7d

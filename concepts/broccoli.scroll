@@ -1,0 +1,28 @@
+../code/conceptPage.scroll
+
+id broccoli
+name Broccoli
+appeared 2008
+creators Fogus
+tags pl
+website https://blog.fogus.me/2008/03/26/broccoli-abominable/
+lab https://github.com/broccoli-lang/
+
+repoStats
+ firstCommit 2018
+ commits 163
+ committers 8
+ files 31
+ newestCommit 2018
+ mb 1
+ linesOfCode 4416
+country United States
+
+githubRepo https://github.com/broccoli-lang/broccoli/
+ stars 6
+ forks 0
+ subscribers 6
+ created 2018
+ updated 2024
+ description An interpreter for the broccoli 0.0.x language: http://blog.fogus.me/?s=broccoli
+ issues 0

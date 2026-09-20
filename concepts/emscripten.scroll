@@ -1,0 +1,32 @@
+../code/conceptPage.scroll
+
+id emscripten
+name Emscripten
+appeared 2010
+creators Alon Zakai
+tags compiler
+website https://emscripten.org/
+latestVersion 3.1.60
+writtenIn c cpp javascript python cmake make restructuredtext html bourne-shell m4 opencl markdown json pascal xml hlsl visual-basic assembly-language yaml typescript css svg nix lua idl powershell tex qt dtd ini llvmir bash
+compilesTo wasm
+
+inputLanguages c cpp
+repoStats
+ firstCommit 2010
+ newestCommit 2025
+ commits 28565
+ committers 1018
+ files 9515
+ mb 252
+ linesOfCode 2919951
+
+githubRepo https://github.com/emscripten-core/emscripten
+ stars 25442
+ forks 3254
+ subscribers 589
+ created 2011
+ updated 2024
+ description Emscripten: An LLVM-to-WebAssembly Compiler
+ issues 2072
+
+wikipedia https://en.wikipedia.org/wiki/Emscripten

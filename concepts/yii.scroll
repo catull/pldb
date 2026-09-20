@@ -1,0 +1,49 @@
+../code/conceptPage.scroll
+
+id yii
+name Yes It Is
+appeared 2006
+creators Qiang Xue
+tags framework
+website http://www.yiiframework.com/
+latestVersion 2.0.49
+standsFor Yes It Is
+writtenIn php markdown xml sql json yaml javascript html dockerfile bourne-shell svg css
+
+isOpenSource true
+fileType text
+repoStats
+ firstCommit 2011
+ newestCommit 2025
+ commits 20676
+ committers 1632
+ files 2397
+ mb 84
+ linesOfCode 468616
+
+twitter https://twitter.com/yiiframework
+
+githubRepo https://github.com/yiisoft/yii2
+ stars 14225
+ forks 6923
+ subscribers 1071
+ created 2012
+ updated 2024
+ firstCommit 2011
+ description Yii 2: The Fast, Secure and Professional PHP Framework
+ issues 519
+
+wikipedia https://en.wikipedia.org/wiki/Yii
+ related php wsdl isbn
+ summary Yii is an open source, object-oriented, component-based MVC PHP web application framework. Yii is pronounced as "Yee" or [ji:] and in Chinese it means "simple and evolutionary" and it can be an acronym for "Yes It Is!".
+ pageId 28540539
+ dailyPageViews 107
+ created 2010
+ backlinksCount 299
+ revisionCount 313
+ appeared 2006
+
+domainName yiiframework.com
+ registered 2008
+ awisRank
+  2022 22664

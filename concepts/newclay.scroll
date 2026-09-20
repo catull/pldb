@@ -1,0 +1,30 @@
+../code/conceptPage.scroll
+
+id newclay
+name newclay
+appeared 2011
+creators Joe Groff
+tags pl
+description Newclay is an experimental offshoot of the Clay programming language. The Newclay compiler requires Clay to compile.
+lab https://github.com/jckarter/newclay/issues
+writtenIn python vim-script bourne-shell make perl
+
+repoStats
+ firstCommit 2011
+ commits 1
+ committers 1
+ files 1424
+ newestCommit 2011
+ mb 1
+ linesOfCode 41135
+country United States
+
+githubRepo https://github.com/jckarter/newclay
+ firstCommit 2011
+ stars 4
+ forks 1
+ subscribers 3
+ created 2011
+ updated 2016
+ description Newclay programming language
+ issues 0

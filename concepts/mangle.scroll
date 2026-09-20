@@ -1,0 +1,28 @@
+../code/conceptPage.scroll
+
+id mangle
+name Mangle
+appeared 2022
+creators Mangle Team
+tags pl
+latestVersion v0.1.0
+lab Google
+writtenIn go markdown svg bourne-shell
+
+repoStats
+ firstCommit 2022
+ commits 171
+ committers 10
+ files 161
+ newestCommit 2025
+ mb 1
+ linesOfCode 7991
+
+githubRepo https://github.com/google/mangle
+ firstCommit 2022
+ stars 1052
+ forks 38
+ subscribers 24
+ created 2022
+ updated 2024
+ issues 8

@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <title>print() debugging in over 300 languages</title>
+ <script>/* This HTML was generated from print-debugging-in-over-300-languages.scroll by 📜 Scroll v180.0.1. https://scroll.surf */</script>
+ <style>@media print {.doNotPrint {display: none !important;}}</style>
+ <link rel="canonical" href="https://pldb.io/print-debugging-in-over-300-languages.html">
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+ <meta name="description" content="PLDB: a Programming Language Database. Build the next great programming language.">
+ <meta name="keywords" content="All">
+ <meta name="generator" content="Scroll v180.0.1">
+ <meta property="og:title" content="print() debugging in over 300 languages">
+ <meta property="og:description" content="PLDB: a Programming Language Database. Build the next great programming language.">
+ <meta property="og:image" content="https://pldb.io/images/printDebugging.png">
+ 
+ <link rel="source" type="application/git" title="Source Code Repository" href="https://github.com/breck7/pldb">
+ <link rel="alternate" type="application/rss+xml" title="print() debugging in over 300 languages" href="../blog/feed.xml">
+ <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="../allStyles.css">
+<div id="particle29" noSnippet="undefined" class="trueBaseThemeHeader" class="trueBaseThemeHeader"><a id="particle2" href="../index.html" class="trueBaseThemeLogo" class="trueBaseThemeLogo">PLDB</a>
+<form id="particle3"  method="get" action="../search.html"  style="display:inline-block;;undefined;undefined;undefined"><input type="search" id="trueBaseThemeHeaderSearch" name="q" placeholder="Search" autocomplete="off"  /></form>
+<a id="particle4" href="../lists/top1000.html" >Top 1K</a>
+<a id="particle5" href="../lists/features.html" >Features</a>
+<a id="particle6" href="../lists/creators.html" >Creators</a>
+<a id="particle7" href="../lists/events.html" >Events</a>
+<a id="particle8" href="../lists/podcasts.html" >Podcasts</a>
+<a id="particle9" href="../books/index.html" >Books</a>
+<a id="particle10" href="../lists/extensions.html" >Extensions</a>
+<a id="particle11" href="../blog/interviews.html" >Interviews</a>
+<a id="particle12" href="../blog/index.html" >Blog</a>
+<a id="particle13" href="../lists/explorer.html" >Explorer</a>
+<a id="particle14" href="../csv.html" >CSV</a></div>
+<style>.abstractIconButtonParser {position:absolute;top:0.25rem; }.abstractIconButtonParser svg {fill: rgba(204,204,204,.8);width:1.875rem;height:1.875rem; padding: 0 7px;} .abstractIconButtonParser:hover svg{fill: #333;}</style><a href="https://github.com/breck7/pldb/blob/main/blog/print-debugging-in-over-300-languages.scroll" class="doNotPrint abstractIconButtonParser" style="right:2rem;"><svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M21.1213 2.70705C19.9497 1.53548 18.0503 1.53547 16.8787 2.70705L15.1989 4.38685L7.29289 12.2928C7.16473 12.421 7.07382 12.5816 7.02986 12.7574L6.02986 16.7574C5.94466 17.0982 6.04451 17.4587 6.29289 17.707C6.54127 17.9554 6.90176 18.0553 7.24254 17.9701L11.2425 16.9701C11.4184 16.9261 11.5789 16.8352 11.7071 16.707L19.5556 8.85857L21.2929 7.12126C22.4645 5.94969 22.4645 4.05019 21.2929 2.87862L21.1213 2.70705ZM18.2929 4.12126C18.6834 3.73074 19.3166 3.73074 19.7071 4.12126L19.8787 4.29283C20.2692 4.68336 20.2692 5.31653 19.8787 5.70705L18.8622 6.72357L17.3068 5.10738L18.2929 4.12126ZM15.8923 6.52185L17.4477 8.13804L10.4888 15.097L8.37437 15.6256L8.90296 13.5112L15.8923 6.52185ZM4 7.99994C4 7.44766 4.44772 6.99994 5 6.99994H10C10.5523 6.99994 11 6.55223 11 5.99994C11 5.44766 10.5523 4.99994 10 4.99994H5C3.34315 4.99994 2 6.34309 2 7.99994V18.9999C2 20.6568 3.34315 21.9999 5 21.9999H16C17.6569 21.9999 19 20.6568 19 18.9999V13.9999C19 13.4477 18.5523 12.9999 18 12.9999C17.4477 12.9999 17 13.4477 17 13.9999V18.9999C17 19.5522 16.5523 19.9999 16 19.9999H5C4.44772 19.9999 4 19.5522 4 18.9999V7.99994Z"/></svg></a>
+<div class="scrollKeyboardNav" style="display:none;"><a href="when-did-github-become-the-place-to-create-new-programming-languages.html">when-did-github-become-the-place-to-create-new-programming-languages.html</a> · print-debugging-in-over-300-languages.html · <a href="foundationScore.html">foundationScore.html</a><script>document.addEventListener('keydown', function(event) {
+  if (document.activeElement !== document.body) return
+  if (event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return // dont interfere with keyboard back button shortcut
+  const getLinks = () => document.getElementsByClassName("scrollKeyboardNav")[0].getElementsByTagName("a")
+  if (event.key === "ArrowLeft")
+    getLinks()[0].click()
+  else if (event.key === "ArrowRight")
+    getLinks()[1].click()
+ });</script></div>
+<div class="scrollSection"><h1 id="particle37" class="printTitleParser"><a href="print-debugging-in-over-300-languages.html">print() debugging in over 300 languages</a></h1>
+</div><div class="scrollColumns" style="column-width:65ch;column-count:1;max-width:65ch;">
+<p id="particle0" class="printAuthorsParser">by <a href="https://github.com/breck7">Breck Yunits</a></p>
+<figure class="scrollCaptionedFigure" style="width:591px; margin: auto;"><a href="print-debugging.png" target="_blank"  ><img src="print-debugging.png" width="591" height="236" loading="lazy"></a></figure>
+<p id="particle43" class="scrollParagraph"><span class="scrollDateline">July 15, 2022 — </span>Paul Graham—creator of <a href="../concepts/arc.html">Arc</a> and <a href="../concepts/bel.html">Bel</a>—started an <a href="https://twitter.com/paulg/status/1532448988766650385">interesting thread</a> last month about <b>print("debugging")</b>.</p>
+<div class="abstractDinkusParser"><span>*</span></div>
+<p id="particle47" class="scrollParagraph">Both experts and beginners frequently use <b>print("debugging")</b>.</p>
+<p id="particle49" class="scrollParagraph">Support for <b>print("debugging")</b> is near-universal in high level programming languages.</p>
+<p id="particle51" class="scrollParagraph">But implementations vary. Different languages use different function names.</p>
+<div class="abstractDinkusParser"><span>*</span></div>
+<div class="scrollSection"><h4 id="particle55" class="scrollQuestion">What are the common names?</h4>
+</div>
+<ul ><li id="particle57" >Many languages have a simple global keyword like <code class="scrollInlineCode">print</code> or <code class="scrollInlineCode">echo</code> or <code class="scrollInlineCode">puts</code>.</li>
+<li id="particle58" >Many don't use the global namespace and you <b>print("debugging")</b> via a call like <code class="scrollInlineCode">console.log</code>.</li>
+<li id="particle59" >Many provide multiple keywords, such as <code class="scrollInlineCode">print</code> and <code class="scrollInlineCode">println</code>—the latter a shortcut for printing a string followed by a <code class="scrollInlineCode">\n</code>.</li>
+<li id="particle60" >Then there's the long tail. Some have special syntactic sugar, such as the code golf esolang <a href="../concepts/05AB1E.html">05AB1E</a> which does <code class="scrollInlineCode">"debugging</code>.</li></ul>
+<div class="abstractDinkusParser"><span>*</span></div>
+<div class="scrollSection"><h1 id="particle64" class="scrollParagraph">The Data</h1>
+</div>
+<p id="particle66" class="scrollParagraph">Below is a table of over 100 token(s) used for <b>print("debugging")</b> in over 300 languages. You can see the <a href="../lists/explorer.html#columns=rank~name~id~appeared~tags~printToken&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22printToken%22%2C%22origData%22%3A%22printToken%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">latest data in the PLDB Explorer</a>.</p>
+<p id="particle68" class="scrollParagraph">You may notice there is a lack of representation of assembly languages in this list. It is often <em>much</em> harder for <b>print("debugging")</b> in low level languages than simply writing <code class="scrollInlineCode">print</code>.</p>
+<figure class="scrollCaptionedFigure" style="width:1240px; margin: auto;"><a href="images/printDebugging.png" target="_blank"  ><img src="images/printDebugging.png" width="1240" height="1504" loading="lazy"></a></figure>
+<table id="table6" class="scrollTable">
+ <thead><tr><th>Keyword</th>
+
+<th>Languages</th>
+
+<th>Count</th>
+</tr></thead>
+ <tbody><tr><td>print</td>
+<td><a href='../concepts/python.html'>Python</a> <a href='../concepts/r.html'>R</a> <a href='../concepts/perl.html'>Perl</a> <a href='../concepts/swift.html'>Swift</a> <a href='../concepts/fortran.html'>Fortran</a> <a href='../concepts/lua.html'>Lua</a> <a href='../concepts/dart.html'>Dart</a> <a href='../concepts/awk.html'>awk</a> <a href='../concepts/postscript.html'>PostScript</a> <a href='../concepts/spss.html'>SPSS</a> <a href='../concepts/emacs-lisp.html'>Emacs Lisp</a> <a href='../concepts/standard-ml.html'>Standard ML</a> <a href='../concepts/rebol.html'>REBOL</a> <a href='../concepts/logo.html'>Logo</a> <a href='../concepts/boo.html'>Boo</a> <a href='../concepts/io.html'>Io</a> <a href='../concepts/idl.html'>IDL</a> <a href='../concepts/hy.html'>Hy</a> <a href='../concepts/newlisp.html'>NewLisp</a> <a href='../concepts/squirrel.html'>Squirrel</a> <a href='../concepts/ceylon.html'>Ceylon</a> <a href='../concepts/factor.html'>Factor</a> <a href='../concepts/moonscript.html'>MoonScript</a> <a href='../concepts/maxima.html'>Maxima</a> <a href='../concepts/setl.html'>SETL</a> <a href='../concepts/dafny.html'>Dafny</a> <a href='../concepts/coconut.html'>Coconut</a> <a href='../concepts/terra.html'>Terra</a> <a href='../concepts/genie.html'>Genie</a> <a href='../concepts/algol-68.html'>ALGOL 68</a> <a href='../concepts/ratfor.html'>RATFOR</a> <a href='../concepts/gosu.html'>Gosu</a> <a href='../concepts/ante.html'>Ante</a> <a href='../concepts/jython.html'>Jython</a> <a href='../concepts/swift-il.html'>SIL</a> <a href='../concepts/cobra.html'>Cobra</a> <a href='../concepts/yorick.html'>Yorick</a> <a href='../concepts/beanshell.html'>BeanShell</a> <a href='../concepts/nit.html'>Nit</a> <a href='../concepts/starlark.html'>starlark</a> <a href='../concepts/fennel.html'>Fennel</a> <a href='../concepts/angelscript.html'>Angelscript</a> <a href='../concepts/f.html'>F</a> <a href='../concepts/maxscript.html'>MAXScript</a> <a href='../concepts/pyret.html'>pyret</a> <a href='../concepts/gdscript.html'>GDScript</a> <a href='../concepts/arkscript.html'>ArkScript</a> <a href='../concepts/dyvil.html'>dyvil</a> <a href='../concepts/providex.html'>ProvideX</a> <a href='../concepts/macsyma.html'>Project MAC’s SYmbolic MAnipulator</a> <a href='../concepts/locomotive-basic.html'>Locomotive BASIC</a> <a href='../concepts/bython.html'>Bython</a> <a href='../concepts/zenscript.html'>zenscript</a> <a href='../concepts/owen-lang.html'>owen-lang</a> <a href='../concepts/aplusplus.html'>A++</a> <a href='../concepts/toy-lang.html'>toy-lang</a> <a href='../concepts/pawn-scripting-language.html'>Pawn</a> <a href='../concepts/sdlbasic.html'>SdlBasic</a> <a href='../concepts/action-code-script.html'>Action Code Script</a> <a href='../concepts/qcl.html'>QCL</a> <a href='../concepts/battlestar.html'>Battlestar</a> <a href='../concepts/claro.html'>Claro</a> <a href='../concepts/verve.html'>verve</a></td>
+<td>63</td>
+</tr>
+<tr><td>println</td>
+<td><a href='../concepts/scala.html'>Scala</a> <a href='../concepts/clojure.html'>Clojure</a> <a href='../concepts/julia.html'>Julia</a> <a href='../concepts/kotlin.html'>Kotlin</a> <a href='../concepts/groovy.html'>Groovy</a> <a href='../concepts/v.html'>V</a> <a href='../concepts/clojurescript.html'>ClojureScript</a> <a href='../concepts/ioke.html'>Ioke</a> <a href='../concepts/e.html'>E</a> <a href='../concepts/koka.html'>Koka</a> <a href='../concepts/scala-js.html'>Scala.js</a> <a href='../concepts/carp.html'>carp</a> <a href='../concepts/ooc.html'>ooc</a> <a href='../concepts/fancy.html'>Fancy</a> <a href='../concepts/felix.html'>Felix</a> <a href='../concepts/golo.html'>Golo</a> <a href='../concepts/frink.html'>Frink</a> <a href='../concepts/clay.html'>clay</a> <a href='../concepts/jakt.html'>Jakt</a> <a href='../concepts/nice.html'>Nice</a> <a href='../concepts/vale.html'>Vale</a> <a href='../concepts/picat.html'>Picat</a> <a href='../concepts/cache-basic.html'>Caché Basic</a> <a href='../concepts/afnix.html'>Afnix</a></td>
+<td>24</td>
+</tr>
+<tr><td>printf</td>
+<td><a href='../concepts/c.html'>C</a> <a href='../concepts/objective-c.html'>Objective-C</a> <a href='../concepts/d.html'>D</a> <a href='../concepts/maple.html'>Maple</a> <a href='../concepts/octave.html'>GNU Octave</a> <a href='../concepts/cuda.html'>CUDA</a> <a href='../concepts/cyclone.html'>Cyclone</a> <a href='../concepts/dtrace.html'>DTrace</a> <a href='../concepts/volt.html'>Volt</a> <a href='../concepts/zz.html'>zz</a> <a href='../concepts/ici.html'>Interactive C Interpreter</a> <a href='../concepts/muon.html'>muon</a> <a href='../concepts/qore.html'>Qore</a> <a href='../concepts/yoix.html'>Yoix</a> <a href='../concepts/algae.html'>Algae</a> <a href='../concepts/y.html'>Y</a> <a href='../concepts/nymph.html'>Nymph</a> <a href='../concepts/silk.html'>silk</a> <a href='../concepts/promela.html'>Promela</a></td>
+<td>19</td>
+</tr>
+<tr><td>echo</td>
+<td><a href='../concepts/php.html'>PHP</a> <a href='../concepts/powershell.html'>PowerShell</a> <a href='../concepts/bash.html'>Bash</a> <a href='../concepts/nim.html'>Nim</a> <a href='../concepts/fish.html'>fish</a> <a href='../concepts/j.html'>J</a> <a href='../concepts/hack.html'>Hack</a> <a href='../concepts/fantom.html'>Fantom</a> <a href='../concepts/batch.html'>Batchfile</a> <a href='../concepts/korn-shell.html'>Korn shell</a> <a href='../concepts/z-shell.html'>Z shell</a> <a href='../concepts/tea.html'>Tea</a> <a href='../concepts/tcsh.html'>tcsh</a> <a href='../concepts/vim-script.html'>Vim script</a> <a href='../concepts/c-shell.html'>C shell</a> <a href='../concepts/mirc.html'>MIRC scripting language</a></td>
+<td>16</td>
+</tr>
+<tr><td>PRINT</td>
+<td><a href='../concepts/lisp.html'>Lisp</a> <a href='../concepts/basic.html'>BASIC</a> <a href='../concepts/common-lisp.html'>Common Lisp</a> <a href='../concepts/qbasic.html'>QBasic</a> <a href='../concepts/gfa-basic.html'>GFA BASIC</a> <a href='../concepts/bbc-basic.html'>BBC BASIC</a> <a href='../concepts/applesoft-basic.html'>Applesoft BASIC</a> <a href='../concepts/bloop.html'>BlooP</a> <a href='../concepts/xbasic.html'>Xbasic</a> <a href='../concepts/baysick.html'>baysick</a> <a href='../concepts/algo.html'>ALGO</a> <a href='../concepts/cesil.html'>Cesil</a></td>
+<td>12</td>
+</tr>
+<tr><td>write</td>
+<td><a href='../concepts/prolog.html'>Prolog</a> <a href='../concepts/vhdl.html'>VHDL</a> <a href='../concepts/icon.html'>Icon</a> <a href='../concepts/pike.html'>Pike</a> <a href='../concepts/unicon.html'>Unicon</a> <a href='../concepts/jade.html'>JADE</a> <a href='../concepts/nial.html'>Nial</a> <a href='../concepts/algol-w.html'>ALGOL W</a> <a href='../concepts/s-algol.html'>S-algol</a> <a href='../concepts/logtalk.html'>Logtalk</a> <a href='../concepts/gaml.html'>GAML</a></td>
+<td>11</td>
+</tr>
+<tr><td>Print</td>
+<td><a href='../concepts/mathematica.html'>Mathematica</a> <a href='../concepts/xojo.html'>Xojo</a> <a href='../concepts/wolfram.html'>Wolfram Language</a> <a href='../concepts/iswim.html'>ISWIM</a> <a href='../concepts/lotusscript.html'>LotusScript</a> <a href='../concepts/jai.html'>JAI</a> <a href='../concepts/amos.html'>AMOS</a> <a href='../concepts/basic-256.html'>Basic-256</a> <a href='../concepts/blitz3d.html'>Blitz3D</a> <a href='../concepts/holyc.html'>holyc</a></td>
+<td>10</td>
+</tr>
+<tr><td>console.log</td>
+<td><a href='../concepts/javascript.html'>JavaScript</a> <a href='../concepts/typescript.html'>TypeScript</a> <a href='../concepts/coffeescript.html'>CoffeeScript</a> <a href='../concepts/nodejs.html'>Node.js</a> <a href='../concepts/deno.html'>Deno</a> <a href='../concepts/livescript.html'>LiveScript</a> <a href='../concepts/roy.html'>roy</a> <a href='../concepts/cor.html'>cor</a></td>
+<td>8</td>
+</tr>
+<tr><td>puts</td>
+<td><a href='../concepts/ruby.html'>Ruby</a> <a href='../concepts/tcl.html'>Tcl</a> <a href='../concepts/crystal.html'>Crystal</a> <a href='../concepts/monkey.html'>Monkey</a> <a href='../concepts/euphoria.html'>Euphoria</a> <a href='../concepts/nu.html'>Nu</a> <a href='../concepts/xotcl.html'>XOTcl</a></td>
+<td>7</td>
+</tr>
+<tr><td>writeln</td>
+<td><a href='../concepts/pascal.html'>Pascal</a> <a href='../concepts/chapel.html'>Chapel</a> <a href='../concepts/seed7.html'>Seed7</a> <a href='../concepts/xl-lang.html'>XL</a> <a href='../concepts/zonnon.html'>Zonnon</a> <a href='../concepts/draco-programming-language.html'>Draco</a></td>
+<td>6</td>
+</tr>
+<tr><td>System.out.println</td>
+<td><a href='../concepts/java.html'>Java</a> <a href='../concepts/aspectj.html'>AspectJ</a> <a href='../concepts/pizza.html'>Pizza</a> <a href='../concepts/concurnas.html'>concurnas</a></td>
+<td>4</td>
+</tr>
+<tr><td>Console.WriteLine</td>
+<td><a href='../concepts/csharp.html'>C#</a> <a href='../concepts/visual-basic.html'>Visual Basic</a> <a href='../concepts/oxygene.html'>Oxygene</a> <a href='../concepts/beef.html'>BEEF</a></td>
+<td>4</td>
+</tr>
+<tr><td>say</td>
+<td><a href='../concepts/rexx.html'>Rexx</a> <a href='../concepts/netrexx.html'>NetRexx</a> <a href='../concepts/kitten.html'>kitten</a> <a href='../concepts/raku.html'>Raku</a></td>
+<td>4</td>
+</tr>
+<tr><td>putStrLn</td>
+<td><a href='../concepts/haskell.html'>Haskell</a> <a href='../concepts/idris.html'>Idris</a> <a href='../concepts/agda.html'>Agda</a></td>
+<td>3</td>
+</tr>
+<tr><td>print_string</td>
+<td><a href='../concepts/ocaml.html'>OCaml</a> <a href='../concepts/reason.html'>Reason</a> <a href='../concepts/skip.html'>skip</a></td>
+<td>3</td>
+</tr>
+<tr><td>WRITE</td>
+<td><a href='../concepts/algol-60.html'>ALGOL 60</a> <a href='../concepts/abc.html'>ABC</a> <a href='../concepts/karel.html'>Karel</a></td>
+<td>3</td>
+</tr>
+<tr><td>disp</td>
+<td><a href='../concepts/matlab.html'>MATLAB</a> <a href='../concepts/scilab.html'>Scilab</a></td>
+<td>2</td>
+</tr>
+<tr><td>DISPLAY</td>
+<td><a href='../concepts/cobol.html'>COBOL</a> <a href='../concepts/cobolscript.html'>CobolScript</a></td>
+<td>2</td>
+</tr>
+<tr><td>display</td>
+<td><a href='../concepts/scheme.html'>Scheme</a> <a href='../concepts/racket.html'>Racket</a></td>
+<td>2</td>
+</tr>
+<tr><td>printfn</td>
+<td><a href='../concepts/f-sharp.html'>F#</a> <a href='../concepts/fable.html'>Fable</a></td>
+<td>2</td>
+</tr>
+<tr><td>stdout.print</td>
+<td><a href='../concepts/zig.html'>Zig</a> <a href='../concepts/wyvern.html'>Wyvern</a></td>
+<td>2</td>
+</tr>
+<tr><td>Out.String</td>
+<td><a href='../concepts/oberon.html'>Oberon</a> <a href='../concepts/oberon-2.html'>Oberon-2</a></td>
+<td>2</td>
+</tr>
+<tr><td>put</td>
+<td><a href='../concepts/hypertalk.html'>HyperTalk</a> <a href='../concepts/turing.html'>Turing</a></td>
+<td>2</td>
+</tr>
+<tr><td>std::cout</td>
+<td><a href='../concepts/cpp.html'>C++</a></td>
+<td>1</td>
+</tr>
+<tr><td>fmt.Println</td>
+<td><a href='../concepts/go.html'>Go</a></td>
+<td>1</td>
+</tr>
+<tr><td>println!</td>
+<td><a href='../concepts/rust.html'>Rust</a></td>
+<td>1</td>
+</tr>
+<tr><td>io:format</td>
+<td><a href='../concepts/erlang.html'>Erlang</a></td>
+<td>1</td>
+</tr>
+<tr><td>Text_IO.Put_Line</td>
+<td><a href='../concepts/ada.html'>Ada</a></td>
+<td>1</td>
+</tr>
+<tr><td>displayNl</td>
+<td><a href='../concepts/smalltalk.html'>Smalltalk</a></td>
+<td>1</td>
+</tr>
+<tr><td>IO.puts</td>
+<td><a href='../concepts/elixir.html'>Elixir</a></td>
+<td>1</td>
+</tr>
+<tr><td>WriteLn</td>
+<td><a href='../concepts/delphi.html'>Delphi</a></td>
+<td>1</td>
+</tr>
+<tr><td>$display</td>
+<td><a href='../concepts/verilog.html'>Verilog</a></td>
+<td>1</td>
+</tr>
+<tr><td>WriteString</td>
+<td><a href='../concepts/modula-2.html'>Modula-2</a></td>
+<td>1</td>
+</tr>
+<tr><td>w</td>
+<td><a href='../concepts/mumps.html'>MUMPS</a></td>
+<td>1</td>
+</tr>
+<tr><td>WRITES</td>
+<td><a href='../concepts/bcpl.html'>BCPL</a></td>
+<td>1</td>
+</tr>
+<tr><td>OutText</td>
+<td><a href='../concepts/simula.html'>Simula</a></td>
+<td>1</td>
+</tr>
+<tr><td>dbms_output.put_line</td>
+<td><a href='../concepts/pl-sql.html'>PL/SQL</a></td>
+<td>1</td>
+</tr>
+<tr><td>printLine</td>
+<td><a href='../concepts/self.html'>Self</a></td>
+<td>1</td>
+</tr>
+<tr><td>display dialog</td>
+<td><a href='../concepts/applescript.html'>Applescript</a></td>
+<td>1</td>
+</tr>
+<tr><td>Serial.println</td>
+<td><a href='../concepts/arduino.html'>Arduino</a></td>
+<td>1</td>
+</tr>
+<tr><td>stdout.printf</td>
+<td><a href='../concepts/vala.html'>Vala</a></td>
+<td>1</td>
+</tr>
+<tr><td>trace</td>
+<td><a href='../concepts/actionscript.html'>ActionScript</a></td>
+<td>1</td>
+</tr>
+<tr><td>Response.Write</td>
+<td><a href='../concepts/asp.html'>ASP</a></td>
+<td>1</td>
+</tr>
+<tr><td>IO.print</td>
+<td><a href='../concepts/wren.html'>Wren</a></td>
+<td>1</td>
+</tr>
+<tr><td>OUTPUT</td>
+<td><a href='../concepts/snobol.html'>SNOBOL</a></td>
+<td>1</td>
+</tr>
+<tr><td>MsgBox</td>
+<td><a href='../concepts/autoit.html'>AutoIt</a></td>
+<td>1</td>
+</tr>
+<tr><td>call void [mscorlib]System.Console::WriteLine</td>
+<td><a href='../concepts/cilk.html'>CIL</a></td>
+<td>1</td>
+</tr>
+<tr><td>sys->print</td>
+<td><a href='../concepts/limbo.html'>Limbo</a></td>
+<td>1</td>
+</tr>
+<tr><td>write.full.string</td>
+<td><a href='../concepts/occam.html'>Occam</a></td>
+<td>1</td>
+</tr>
+<tr><td>io:println</td>
+<td><a href='../concepts/ballerina.html'>Ballerina</a></td>
+<td>1</td>
+</tr>
+<tr><td>prn</td>
+<td><a href='../concepts/arc.html'>Arc</a></td>
+<td>1</td>
+</tr>
+<tr><td>System.Console.WriteLine</td>
+<td><a href='../concepts/nemerle.html'>Nemerle</a></td>
+<td>1</td>
+</tr>
+<tr><td>postln</td>
+<td><a href='../concepts/supercollider.html'>SuperCollider</a></td>
+<td>1</td>
+</tr>
+<tr><td>jlog</td>
+<td><a href='../concepts/opa.html'>Opa</a></td>
+<td>1</td>
+</tr>
+<tr><td>io.write_string</td>
+<td><a href='../concepts/mercury.html'>Mercury</a></td>
+<td>1</td>
+</tr>
+<tr><td>PrintN</td>
+<td><a href='../concepts/purebasic.html'>PureBasic</a></td>
+<td>1</td>
+</tr>
+<tr><td>cfoutput</td>
+<td><a href='../concepts/coldfusion.html'>ColdFusion</a></td>
+<td>1</td>
+</tr>
+<tr><td>Console.OUT.println</td>
+<td><a href='../concepts/x10.html'>X10</a></td>
+<td>1</td>
+</tr>
+<tr><td>FStar.IO.print_string</td>
+<td><a href='../concepts/fstar.html'>F*</a></td>
+<td>1</td>
+</tr>
+<tr><td>print_endline</td>
+<td><a href='../concepts/caml.html'>Caml</a></td>
+<td>1</td>
+</tr>
+<tr><td>putchar</td>
+<td><a href='../concepts/b.html'>B</a></td>
+<td>1</td>
+</tr>
+<tr><td>WScript.Echo</td>
+<td><a href='../concepts/jscript.html'>JScript</a></td>
+<td>1</td>
+</tr>
+<tr><td>stream$putl</td>
+<td><a href='../concepts/clu.html'>CLU</a></td>
+<td>1</td>
+</tr>
+<tr><td>answer</td>
+<td><a href='../concepts/livecode.html'>LiveCode</a></td>
+<td>1</td>
+</tr>
+<tr><td>#OUT</td>
+<td><a href='../concepts/sather.html'>Sather</a></td>
+<td>1</td>
+</tr>
+<tr><td>#print</td>
+<td><a href='../concepts/lean.html'>Lean</a></td>
+<td>1</td>
+</tr>
+<tr><td>draw_text</td>
+<td><a href='../concepts/ibm-gml.html'>GML</a></td>
+<td>1</td>
+</tr>
+<tr><td>Stdout</td>
+<td><a href='../concepts/miranda.html'>Miranda</a></td>
+<td>1</td>
+</tr>
+<tr><td>crLog</td>
+<td><a href='../concepts/pharo.html'>Pharo</a></td>
+<td>1</td>
+</tr>
+<tr><td>console.loge</td>
+<td><a href='../concepts/dogescript.html'>Dogescript</a></td>
+<td>1</td>
+</tr>
+<tr><td>System.Console.Write</td>
+<td><a href='../concepts/jsharp.html'>J#</a></td>
+<td>1</td>
+</tr>
+<tr><td>env.out.print</td>
+<td><a href='../concepts/pony.html'>Pony</a></td>
+<td>1</td>
+</tr>
+<tr><td>MessageBox</td>
+<td><a href='../concepts/powerbuilder.html'>PowerBuilder</a></td>
+<td>1</td>
+</tr>
+<tr><td>standard-output</td>
+<td><a href='../concepts/islisp.html'>ISLISP</a></td>
+<td>1</td>
+</tr>
+<tr><td>document.write</td>
+<td><a href='../concepts/objective-j.html'>Objective-J</a></td>
+<td>1</td>
+</tr>
+<tr><td>out_string</td>
+<td><a href='../concepts/cool.html'>Classroom Object Oriented Language</a></td>
+<td>1</td>
+</tr>
+<tr><td>Scream</td>
+<td><a href='../concepts/rockstar.html'>Rockstar</a></td>
+<td>1</td>
+</tr>
+<tr><td>System.print</td>
+<td><a href='../concepts/gravity.html'>gravity</a></td>
+<td>1</td>
+</tr>
+<tr><td>write-line</td>
+<td><a href='../concepts/clisp.html'>CLISP</a></td>
+<td>1</td>
+</tr>
+<tr><td><Prout</td>
+<td><a href='../concepts/refal.html'>Refal</a></td>
+<td>1</td>
+</tr>
+<tr><td>fmt.println</td>
+<td><a href='../concepts/odin.html'>odin</a></td>
+<td>1</td>
+</tr>
+<tr><td>.print</td>
+<td><a href='../concepts/lisaac.html'>Lisaac</a></td>
+<td>1</td>
+</tr>
+<tr><td>$print</td>
+<td><a href='../concepts/neko.html'>Neko</a></td>
+<td>1</td>
+</tr>
+<tr><td>WriteF</td>
+<td><a href='../concepts/amiga-e.html'>Amiga E</a></td>
+<td>1</td>
+</tr>
+<tr><td>PrintLn</td>
+<td><a href='../concepts/ec.html'>eC</a></td>
+<td>1</td>
+</tr>
+<tr><td>output:</td>
+<td><a href='../concepts/rapira.html'>Rapira</a></td>
+<td>1</td>
+</tr>
+<tr><td>$console:line</td>
+<td><a href='../concepts/parser.html'>Parser 3</a></td>
+<td>1</td>
+</tr>
+<tr><td>PRINTF</td>
+<td><a href='../concepts/action.html'>Action!</a></td>
+<td>1</td>
+</tr>
+<tr><td>hodor.hod</td>
+<td><a href='../concepts/hodor.html'>Hodor</a></td>
+<td>1</td>
+</tr>
+<tr><td>player:tell</td>
+<td><a href='../concepts/moo.html'>MOO</a></td>
+<td>1</td>
+</tr>
+<tr><td>bprint</td>
+<td><a href='../concepts/quakec.html'>QuakeC</a></td>
+<td>1</td>
+</tr>
+<tr><td>Show</td>
+<td><a href='../concepts/ox.html'>OX</a></td>
+<td>1</td>
+</tr>
+<tr><td>io::println</td>
+<td><a href='../concepts/whiley.html'>Whiley</a></td>
+<td>1</td>
+</tr>
+<tr><td>pr</td>
+<td><a href='../concepts/shen.html'>Shen</a></td>
+<td>1</td>
+</tr>
+<tr><td>SysLib.writeStdout</td>
+<td><a href='../concepts/egl.html'>EGL</a></td>
+<td>1</td>
+</tr>
+<tr><td>traceln</td>
+<td><a href='../concepts/monte.html'>monte</a></td>
+<td>1</td>
+</tr>
+<tr><td>message</td>
+<td><a href='../concepts/uniface.html'>Uniface</a></td>
+<td>1</td>
+</tr>
+<tr><td>Logger.log</td>
+<td><a href='../concepts/google-apps-script.html'>Google Apps Script</a></td>
+<td>1</td>
+</tr>
+<tr><td>ксива.малява</td>
+<td><a href='../concepts/yoptascript.html'>YoptaScript</a></td>
+<td>1</td>
+</tr>
+<tr><td>Message</td>
+<td><a href='../concepts/1c-enterprise.html'>1C Enterprise Script</a></td>
+<td>1</td>
+</tr>
+<tr><td>Write</td>
+<td><a href='../concepts/cache-objectscript.html'>Caché ObjectScript</a></td>
+<td>1</td>
+</tr>
+<tr><td>escribir</td>
+<td><a href='../concepts/latino.html'>latino</a></td>
+<td>1</td>
+</tr>
+<tr><td>Qout</td>
+<td><a href='../concepts/xbasepp.html'>XBase++</a></td>
+<td>1</td>
+</tr>
+<tr><td>TextOut</td>
+<td><a href='../concepts/nxc.html'>Not eXactly C</a></td>
+<td>1</td>
+</tr>
+<tr><td>writeLine</td>
+<td><a href='../concepts/elena.html'>elena</a></td>
+<td>1</td>
+</tr>
+<tr><td>Println</td>
+<td><a href='../concepts/orc-lang.html'>Orc</a></td>
+<td>1</td>
+</tr>
+<tr><td>Text</td>
+<td><a href='../concepts/xpl0.html'>XPL0</a></td>
+<td>1</td>
+</tr>
+<tr><td>IO.write</td>
+<td><a href='../concepts/zimbu.html'>Zimbu</a></td>
+<td>1</td>
+</tr>
+<tr><td>Console.println</td>
+<td><a href='../concepts/ferite.html'>Ferite</a></td>
+<td>1</td>
+</tr>
+<tr><td>stdout.putString</td>
+<td><a href='../concepts/emerald.html'>Emerald</a></td>
+<td>1</td>
+</tr>
+<tr><td>System.puts</td>
+<td><a href='../concepts/virgil.html'>Virgil</a></td>
+<td>1</td>
+</tr>
+<tr><td>Console.printLine</td>
+<td><a href='../concepts/frost.html'>Frost</a></td>
+<td>1</td>
+</tr>
+<tr><td>_printf</td>
+<td><a href='../concepts/ceu.html'>ceu</a></td>
+<td>1</td>
+</tr>
+<tr><td>IO.Println</td>
+<td><a href='../concepts/parasail.html'>parasail</a></td>
+<td>1</td>
+</tr>
+<tr><td>Js.log</td>
+<td><a href='../concepts/rescript.html'>Rescript</a></td>
+<td>1</td>
+</tr>
+<tr><td>fmt::println</td>
+<td><a href='../concepts/hare.html'>Hare</a></td>
+<td>1</td>
+</tr>
+<tr><td>output</td>
+<td><a href='../concepts/quorum.html'>quorum</a></td>
+<td>1</td>
+</tr></tbody>
+ </table>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".scrollCodeBlock").forEach(block =>
+ {
+  if (!navigator.clipboard) return
+  const button = document.createElement("span")
+  button.classList.add("scrollCopyButton")
+  block.appendChild(button)
+  button.addEventListener("click", async () => {
+    await navigator.clipboard.writeText(block.innerText)
+    button.classList.add("scrollCopiedButton")
+  })
+ }
+))
+</script>
+
+
+<center><p id="particle87" class="scrollParagraph"></p>
+<div id="particle88" noSnippet="undefined" class="trueBaseThemeFooter" class="trueBaseThemeFooter"><a id="particle2" href="../index.html" class="trueBaseThemeLogo" class="trueBaseThemeLogo">PLDB</a>
+<span id="particle3" >- Build the next great programming language</span>
+<span id="particle4" >·</span>
+<a id="particle5" href="../edit.html?folderName=pldb.io&buffer=..%2Fcode%2FconceptPage.scroll%0A%0Aid%20%0Aname%20%0Aappeared%20%0Acreators%20%0Atags%20pl%0Awebsite%20%0Adescription%20%0A%0AgitRepo%20%0A%0Aexample%0A%20&bufferName=concepts/untitled.scroll" >Add</a>
+<span id="particle6" >·</span>
+<a id="particle7" href="addPrompt.txt" >Add Prompt</a>
+<span id="particle8" >·</span>
+<a id="particle9" href="https://issues.pldb.io/" >Issues</a>
+<span id="particle10" >·</span>
+<a id="particle11" href="../pages/about.html" >About</a>
+<span id="particle12" >·</span>
+<a id="particle13" href="../search.html" >Search</a>
+<span id="particle14" >·</span>
+<a id="particle15" href="../lists/keywords.html" >Keywords</a>
+<span id="particle16" >·</span>
+<a id="particle17" href="../lists/live.html" >Livestreams</a>
+<span id="particle18" >·</span>
+<a id="particle19" href="../lists/labs.html" >Labs</a>
+<span id="particle20" >·</span>
+<a id="particle21" href="../lists/resources.html" >Resources</a>
+<span id="particle22" >·</span>
+<a id="particle23" href="../pages/acknowledgements.html" >Acknowledgements</a></div>
+</center>
+<script  src="../lists/autocompleteCombined.js"></script>
+<script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script>
+<center><p id="particle93" class="scrollParagraph"></p>
+<div class="abstractTextLinkParser"><a href="https://scroll.surf">Built with Scroll v180.0.1</a></div>
+</center>
+</body>
+</html>

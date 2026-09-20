@@ -1,0 +1,34 @@
+header.scroll
+
+title hasDynamicSizedArrays - language feature
+tags Feature
+printTitle hasDynamicSizedArrays
+
+<a class="trueBaseThemePreviousItem" href="hasDynamicProperties.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasDynamicTyping.html">&gt;</a>
+
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
+
+container 600px
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/jule.html">Jule</a>
+ let mut a_slice = [1, 2, 3, 4, 5, 6]
+ a_slice = append(a_slice, 7, 8, 9, 10)
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/speedie.html">Speedie</a>
+ || arr = []
+ arr &lt;~ &quot;abc&quot;
+
+***
+
+* Languages *with* hasDynamicSizedArrays include <a href="../concepts/chapel.html">Chapel</a>, <a href="../concepts/jule.html">Jule</a>, <a href="../concepts/speedie.html">Speedie</a>
+
+***
+
+View all concepts with or missing a *hasDynamicSizedArrays* measurement
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasDynamicSizedArrays&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasDynamicSizedArrays%22%2C%22origData%22%3A%22hasDynamicSizedArrays%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasDynamicSizedArrays&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasDynamicSizedArrays%22%2C%22origData%22%3A%22hasDynamicSizedArrays%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D with
+
+keyboardNav hasDynamicProperties.html hasDynamicTyping.html
+
+../footer.scroll

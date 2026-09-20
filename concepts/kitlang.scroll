@@ -1,0 +1,36 @@
+../code/conceptPage.scroll
+
+id kitlang
+name kitlang
+appeared 2018
+creators Ben Morris
+tags pl
+website https://www.kitlang.org/
+description A magical, high performance programming language for game development.
+lab https://github.com/kitlang
+writtenIn haskell markdown json bourne-shell yaml svg yacc xml logos vim-script
+
+tryItOnline https://tio.run/#https://www.kitlang.org/playground.html
+repoStats
+ firstCommit 2018
+ commits 488
+ committers 13
+ files 382
+ newestCommit 2019
+ mb 2
+ linesOfCode 26048
+country United States
+
+twitter https://twitter.com/kitlanguage
+
+githubRepo https://github.com/kitlang/kit
+ firstCommit 2018
+ stars 1016
+ forks 29
+ subscribers 43
+ created 2018
+ updated 2024
+ description Kit: a magical, high performance programming language, designed for game development.
+ issues 19
+
+domainName kitlang.org

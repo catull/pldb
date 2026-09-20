@@ -1,0 +1,41 @@
+header.scroll
+
+title Symbol Tables - language feature
+tags Feature
+printTitle Symbol Tables
+
+<a class="trueBaseThemePreviousItem" href="hasSwitch.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasSymbols.html">&gt;</a>
+
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
+
+container 600px
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/c.html">C</a>
+ // Declare an external function
+ extern double bar(double x);
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/python.html">Python</a>
+ # https://eli.thegreenplace.net/2010/09/18/python-internals-symbol-tables-part-1
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/racket.html">Racket</a>
+ ;; Some programming languages allow the symbol table to be manipulated at run-time, so that symbols can be added at any time.
+
+***
+
+* Languages *with* Symbol Tables include <a href="../concepts/c.html">C</a>, <a href="../concepts/python.html">Python</a>, <a href="../concepts/racket.html">Racket</a>, <a href="../concepts/speedie.html">Speedie</a>
+
+***
+
+View all concepts with or missing a *hasSymbolTables* measurement
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasSymbolTables&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasSymbolTables%22%2C%22origData%22%3A%22hasSymbolTables%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasSymbolTables&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasSymbolTables%22%2C%22origData%22%3A%22hasSymbolTables%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D with
+
+***
+
+* Read more about Symbol Tables on the web: 1.
+ https://en.wikipedia.org/wiki/Symbol_table 1.
+
+keyboardNav hasSwitch.html hasSymbols.html
+
+../footer.scroll

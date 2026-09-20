@@ -1,0 +1,35 @@
+header.scroll
+
+title Fixed Point Numbers - language feature
+tags Feature
+printTitle Fixed Point Numbers
+
+<a class="trueBaseThemePreviousItem" href="hasFirstClassFunctions.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasFloats.html">&gt;</a>
+
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
+
+container 600px
+
+***
+
+* Languages *with* Fixed Point Numbers include <a href="../concepts/sql.html">SQL</a>, <a href="../concepts/cobol.html">COBOL</a>, <a href="../concepts/ada.html">Ada</a>, <a href="../concepts/tex.html">Tex</a>, <a href="../concepts/labview.html">LabVIEW G</a>, <a href="../concepts/pl-i.html">PL/I</a>, <a href="../concepts/jovial.html">JOVIAL</a>
+
+***
+
+* Languages *without* Fixed Point Numbers include <a href="../concepts/c.html">C</a>, <a href="../concepts/fortran.html">Fortran</a>
+
+***
+
+View all concepts with or missing a *hasFixedPoint* measurement
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasFixedPoint&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasFixedPoint%22%2C%22origData%22%3A%22hasFixedPoint%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasFixedPoint&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasFixedPoint%22%2C%22origData%22%3A%22hasFixedPoint%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D with
+
+***
+
+* Read more about Fixed Point Numbers on the web: 1.
+ https://en.wikipedia.org/wiki/Fixed-point_arithmetic 1.
+
+keyboardNav hasFirstClassFunctions.html hasFloats.html
+
+../footer.scroll

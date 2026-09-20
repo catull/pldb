@@ -1,0 +1,13 @@
+../code/conceptPage.scroll
+
+id roscoe
+name ROSCOE
+appeared 1979
+tags pl
+standsFor Remote OS Conversational Operating Environment
+lab Applied Data Research, Inc
+
+country United States
+reference https://openlibrary.org/books/OL14165919M/ROSCOE_programming_language_(RPF)_handbook.
+
+hopl https://hopl.info/showlanguage.prx?exp=2378

@@ -1,0 +1,50 @@
+../code/conceptPage.scroll
+
+id manim
+name Manim
+appeared 2015
+creators Grant Sanderson
+tags framework
+website https://www.manim.community
+latestVersion v0.17.2
+forLanguages python
+description A community-maintained Python framework for creating mathematical animations
+lab https://github.com/ManimCommunity
+fileExtensions .py
+writtenIn python restructuredtext svg glsl markdown yaml json javascript ini toml awk css dockerfile make jupyter-notebook bourne-shell tex html
+leetSheets https://docs.manim.community/en/stable/tutorials/quickstart.html
+
+isOpenSource true
+demoVideo https://www.youtube.com/3blue1brown
+docs https://docs.manim.community/en/stable
+packageRepository https://pypi.org/project/manim
+repoStats
+ firstCommit 2015
+ commits 6234
+ committers 499
+ files 1350
+ newestCommit 2025
+ mb 45
+ linesOfCode 164371
+country United States
+
+subreddit https://www.reddit.com/r/manim
+ memberCount
+  2022 7009
+twitter https://twitter.com/manim_community
+gource https://www.youtube.com/watch?v=hy-6D650Apo
+
+githubRepo https://github.com/manimCommunity/manim
+ firstCommit 2015
+ stars 20183
+ forks 1489
+ subscribers 133
+ created 2020
+ updated 2024
+ description A community-maintained Python framework for creating mathematical animations.
+ issues 421
+
+wikipedia https://en.wikipedia.org/wiki/3Blue1Brown
+ summary 3Blue1Brown is a math YouTube channel created and run by Grant Sanderson. The channel focuses on teaching higher mathematics from a visual perspective, and on the process of discovery and inquiry-based learning in mathematics, which Sanderson calls "inventing math". As of November 2022, the channel has 4.85 million subscribers.
+
+domainName manim.community

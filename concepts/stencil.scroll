@@ -1,0 +1,44 @@
+../code/conceptPage.scroll
+
+id stencil
+name Stencil
+appeared 2018
+creators Kyle Fuller
+tags template
+website https://stencil.fuller.li/en/latest/
+latestVersion 0.15.1
+description Stencil is a simple and powerful template language for Swift. It provides a syntax similar to Django and Mustache.
+lab https://github.com/stencilproject
+writtenIn swift html ruby yaml restructuredtext markdown make python json bourne-shell
+
+isOpenSource true
+tryItOnline https://tio.run/#stencil
+fileType text
+repoStats
+ firstCommit 2014
+ commits 559
+ committers 56
+ files 98
+ newestCommit 2024
+ mb 1
+ linesOfCode 12172
+country United Kingdom
+
+example
+ There are {{ articles.count }} articles.
+ 
+ <ul>
+   {% for article in articles %}
+     <li>{{ article.title }} by {{ article.author }}</li>
+   {% endfor %}
+ </ul>
+
+githubRepo https://github.com/stencilproject/Stencil
+ firstCommit 2014
+ stars 2336
+ forks 223
+ subscribers 34
+ created 2014
+ updated 2024
+ description Stencil is a simple and powerful template language for Swift.
+ issues 33

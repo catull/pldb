@@ -1,0 +1,36 @@
+../code/conceptPage.scroll
+
+id xodio
+name xodio
+appeared 2015
+creators Victor Nakoryakov
+tags visual
+website https://xod.io/
+latestVersion v0.38.0
+screenshot xodio.png
+writtenIn javascript cpp jsx reason scss markdown json svg bourne-shell yaml asciidoc dockerfile html c make
+
+visualParadigm true
+repoStats
+ firstCommit 2016
+ commits 5359
+ committers 22
+ files 2501
+ newestCommit 2021
+ mb 53
+ linesOfCode 334098
+
+githubRepo https://github.com/xodio/xod
+ firstCommit 2016
+ stars 884
+ forks 119
+ subscribers 45
+ created 2015
+ updated 2024
+ description XOD IDE
+ issues 101
+
+domainName xod.io
+ registered 2015
+ awisRank
+  2022 1314085

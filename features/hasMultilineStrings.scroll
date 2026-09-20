@@ -1,0 +1,95 @@
+header.scroll
+
+title Multiline Strings - language feature
+tags Feature
+printTitle Multiline Strings
+
+<a class="trueBaseThemePreviousItem" href="hasMultiLineComments.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasMultipleDispatch.html">&gt;</a>
+
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
+
+container 600px
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/javascript.html">JavaScript</a>
+ const lines = `one
+ two`
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/python.html">Python</a>
+ template = &quot;&quot;&quot;This is the first line.
+ This is the second line.
+ This is the third line.&quot;&quot;&quot;
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/php.html">PHP</a>
+ $xml = &lt;&lt;&lt;XML
+ l
+ vv
+ XML;
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/elixir.html">Elixir</a>
+ template = &quot;&quot;&quot;
+ This is the first line.
+ This is the second line.
+ This is the third line.
+ &quot;&quot;&quot;
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/c3.html">C3</a>
+ String s = `this
+  string is multiline`;
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/lil.html">Lil</a>
+ lines:&quot;one
+ two&quot;
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/scroll.html">Scroll</a>
+ plainText
+  This is a
+  multiline string
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/jule.html">Jule</a>
+ `Multiline strings
+ is available in Jule
+ with raw strings`
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/speedie.html">Speedie</a>
+ &quot;hello
+ you
+ beauty&quot;
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/boron.html">Boron</a>
+ {{
+   Line 1
+   Line 2
+ }}
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/ion.html">Ion</a>
+ ( &#39;&#39;&#39;hello &#39;&#39;&#39;     // Sexp with one element
+   &#39;&#39;&#39;world!&#39;&#39;&#39;  )
+ 
+ (&quot;hello world!&quot;)   // The exact same sexp value
+ 
+ // This Ion value is a string containing three newlines. The serialized
+ // form&#39;s first newline is escaped into nothingness.
+ &#39;&#39;&#39;\
+ The first line of the string.
+ This is the second line of the string,
+ and this is the third line.
+ &#39;&#39;&#39;
+
+***
+
+* Languages *with* Multiline Strings include <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/python.html">Python</a>, <a href="../concepts/ruby.html">Ruby</a>, <a href="../concepts/php.html">PHP</a>, <a href="../concepts/elixir.html">Elixir</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/lil.html">Lil</a>, <a href="../concepts/progsbase.html">progsbase</a>, <a href="../concepts/scroll.html">Scroll</a>, <a href="../concepts/jule.html">Jule</a>, <a href="../concepts/aardvark.html">Aardvark</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/morloc.html">Morloc</a>, <a href="../concepts/boron.html">Boron</a>, <a href="../concepts/ion.html">Ion</a>
+
+***
+
+* Languages *without* Multiline Strings include <a href="../concepts/json.html">JSON</a>
+
+***
+
+View all concepts with or missing a *hasMultilineStrings* measurement
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasMultilineStrings&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasMultilineStrings%22%2C%22origData%22%3A%22hasMultilineStrings%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasMultilineStrings&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasMultilineStrings%22%2C%22origData%22%3A%22hasMultilineStrings%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D with
+
+keyboardNav hasMultiLineComments.html hasMultipleDispatch.html
+
+../footer.scroll

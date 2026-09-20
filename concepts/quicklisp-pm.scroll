@@ -1,0 +1,34 @@
+../code/conceptPage.scroll
+
+id quicklisp-pm
+name quicklisp-pm
+appeared 2010
+creators Zach Beane
+tags packageManager
+website https://www.quicklisp.org/beta/
+packageCount 1500
+forLanguages common-lisp
+lab https://github.com/quicklisp/quicklisp-client/issues
+writtenIn lisp make
+
+repoStats
+ firstCommit 2010
+ commits 341
+ committers 25
+ files 31
+ newestCommit 2024
+ mb 2
+ linesOfCode 19651
+country United States
+
+twitter https://twitter.com/quicklisp
+
+githubRepo https://github.com/quicklisp/quicklisp-client
+ firstCommit 2010
+ stars 291
+ forks 73
+ subscribers 27
+ created 2010
+ updated 2024
+ description Quicklisp client.
+ issues 76

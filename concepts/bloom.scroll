@@ -1,0 +1,34 @@
+../code/conceptPage.scroll
+
+id bloom
+name Bloom
+appeared 2010
+creators Neil Conway
+tags pl
+website http://bloom-lang.net/
+latestVersion v0.9.8
+lab University of California Berkeley
+writtenIn ruby markdown yaml
+
+repoStats
+ firstCommit 2010
+ commits 3176
+ committers 28
+ files 99
+ newestCommit 2020
+ mb 8
+ linesOfCode 22622
+country United States
+
+githubRepo https://github.com/bloom-lang/bud
+ firstCommit 2010
+ stars 854
+ forks 60
+ subscribers 56
+ created 2011
+ updated 2024
+ description Prototype Bud runtime (Bloom Under Development)
+ issues 100
+
+domainName bloom-lang.net
+ registered 2010

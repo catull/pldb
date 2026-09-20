@@ -1,0 +1,30 @@
+../code/conceptPage.scroll
+
+id mlatu
+name mlatu
+appeared 2021
+creators Caden Haustein
+tags pl
+website https://mlatu-lang.github.io/mlatu
+lab https://github.com/mlatu-lang
+writtenIn markdown rust toml yaml
+
+repoStats
+ firstCommit 2021
+ commits 194
+ committers 6
+ files 27
+ newestCommit 2024
+ mb 3
+ linesOfCode 2434
+country United States
+
+githubRepo https://github.com/mlatu-lang/mlatu
+ firstCommit 2021
+ stars 159
+ forks 10
+ subscribers 7
+ created 2021
+ updated 2024
+ description A declarative concatenative programming language
+ issues 3

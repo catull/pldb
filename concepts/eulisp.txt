@@ -1,0 +1,132 @@
+EuLisp
+======
+
+EuLisp is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1985.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221985%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1985
+
+#1437 on PLDB
+41 Years Old
+
+EuLisp is a statically and dynamically scoped Lisp dialect developed by a loose formation of industrial and academic Lisp users and developers from around Europe. The standardizers intended to create a new Lisp "less encumbered by the past" (compared to Common Lisp), and not so minimalist as Scheme. Another objective was to integrate the object-oriented programming paradigm well. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/EuLisp Read more on Wikipedia...
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of EuLisp happened in <a href="../lists/labs.html#q=https://henry.github.io">https://henry.github.io</a>
+- EuLisp on HOPL
+ https://hopl.info/showlanguage.prx?exp=1139 EuLisp on HOPL
+- See also: (22 related languages) <a href="lisp.html">Lisp</a>, <a href="linux.html">Linux</a>, <a href="common-lisp.html">Common Lisp</a>, <a href="scheme.html">Scheme</a>, <a href="t.html">T</a>, <a href="standard-ml.html">Standard ML</a>, <a href="haskell.html">Haskell</a>, <a href="dylan.html">Dylan</a>, <a href="islisp.html">ISLISP</a>, <a href="interlisp.html">Interlisp</a>, <a href="lisp-machine-lisp.html">Lisp Machine Lisp</a>, <a href="le-lisp.html">Le-Lisp</a>, <a href="emacs-lisp.html">Emacs Lisp</a>, <a href="autolisp.html">AutoLISP</a>, <a href="openlisp.html">OpenLisp</a>, <a href="picolisp.html">PicoLisp</a>, <a href="newlisp.html">NewLisp</a>, <a href="racket.html">Racket</a>, <a href="guile.html">Guile</a>, <a href="clojure.html">Clojure</a>, <a href="arc.html">Arc</a>, <a href="lfe.html">LFE</a>
+
+```Example from <a href='https://en.wikipedia.org/wiki/EuLisp'>Wikipedia</a>:
+(defmodule hanoi
+  (syntax (syntax-0)
+   import (level-0)
+   export (hanoi))
+
+;;;-------------------------------------------------
+;;; Tower definition
+;;;-------------------------------------------------
+(defconstant *max-tower-height* 10)
+
+(defclass &lt;tower&gt; ()
+  ((id reader: tower-id keyword: id:)
+   (blocks accessor: tower-blocks)))
+
+(defun build-tower (x n)
+  (labels ((loop (i res)
+                 (if (= i 0) res
+                   (loop (- i 1) (cons i res)))))
+          ((setter tower-blocks) x (loop n ()))
+          x))
+
+(defmethod generic-print ((x &lt;tower&gt;) (s &lt;stream&gt;))
+  (sformat s &quot;#&lt;tower ~a: ~a&gt;&quot; (tower-id x) (tower-blocks x)))
+
+;;;-------------------------------------------------
+;;; Access to tower blocks
+;;;-------------------------------------------------
+(defgeneric push (x y))
+
+(defmethod push ((x &lt;tower&gt;) (y &lt;fpi&gt;))
+  (let ((blocks (tower-blocks x)))
+    (if (or (null? blocks) (&lt; y (car blocks)))
+        ((setter tower-blocks) x (cons y blocks))
+      (error &lt;condition&gt;
+             (fmt &quot;cannot push block of size ~a on tower ~a&quot; y x)))))
+
+(defgeneric pop (x))
+
+(defmethod pop ((x &lt;tower&gt;))
+  (let ((blocks (tower-blocks x)))
+    (if blocks
+        (progn
+          ((setter tower-blocks) x (cdr blocks))
+          (car blocks))
+      (error &lt;condition&gt;
+             (fmt &quot;cannot pop block from empty tower ~a&quot; x)))))
+
+;;;-------------------------------------------------
+;;; Move n blocks from tower x1 to tower x2 using x3 as buffer
+;;;-------------------------------------------------
+(defgeneric move (n x1 x2 x3))
+
+(defmethod move ((n &lt;fpi&gt;) (x1 &lt;tower&gt;) (x2 &lt;tower&gt;) (x3 &lt;tower&gt;))
+  (if (= n 1)
+      (progn
+        (push x2 (pop x1))
+        (print x1 nl x2 nl x3 nl nl))
+    (progn
+      (move (- n 1) x1 x3 x2)
+      (move 1 x1 x2 x3)
+      (move (- n 1) x3 x2 x1))))
+
+;;;-------------------------------------------------
+;;; Initialize and run the &#39;Towers of Hanoi&#39;
+;;;-------------------------------------------------
+(defun hanoi ()
+  (let ((x1 (make &lt;tower&gt; id: 0))
+        (x2 (make &lt;tower&gt; id: 1))
+        (x3 (make &lt;tower&gt; id: 2)))
+    (build-tower x1 *max-tower-height*)
+    (build-tower x2 0)
+    (build-tower x3 0)
+    (print x1 nl x2 nl x3 nl nl)
+    (move *max-tower-height* x1 x2 x3)))
+
+(hanoi)
+
+;;;-------------------------------------------------
+)  ;; End of module hanoi
+;;;-------------------------------------------------
+```
+
+Language <a href="../lists/features.html">features</a>
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  ; A comment
+ Token 
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  ; A comment
+ Token ;
+row
+ Feature Multiple Inheritance
+ FeatureLink ../features/hasMultipleInheritance.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token
+
+Built with Scroll v180.0.1

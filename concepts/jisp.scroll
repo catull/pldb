@@ -1,0 +1,32 @@
+../code/conceptPage.scroll
+
+id jisp
+name Jisp
+appeared 2014
+creators Nelo Mitranim
+tags pl
+website https://mitranim.com/jisp/
+latestVersion 0.3.3
+lab https://github.com/mitranim/jisp/issues
+fileExtensions jisp
+writtenIn javascript json markdown
+
+repoStats
+ firstCommit 2014
+ commits 338
+ committers 1
+ files 58
+ newestCommit 2015
+ mb 3
+ linesOfCode 13957
+country Unknown
+
+keywords car head cdr tail init last let isa insta any prn
+githubRepo https://github.com/mitranim/jisp
+ stars 126
+ forks 9
+ subscribers 7
+ created 2014
+ updated 2024
+ description Lisp-style language that compiles to JavaScript
+ issues 30

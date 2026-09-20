@@ -1,0 +1,51 @@
+../code/conceptPage.scroll
+
+id muon
+name muon
+appeared 2019
+tags pl
+latestVersion v0.3.8
+lab https://github.com/nickmqb/muon/issues
+writtenIn csharp markdown c xml
+
+repoStats
+ firstCommit 2019
+ commits 127
+ committers 3
+ files 113
+ newestCommit 2024
+ mb 1
+ linesOfCode 47873
+country Unknown
+
+leachim6 Muon
+ filepath m/Muon.mu
+ fileExtensions mu
+ example
+  printf(fmt cstring) int #Foreign("printf") #VarArgs
+  
+  main() {
+  	printf("Hello World")
+  }
+  
+
+githubRepo https://github.com/nickmqb/muon
+ firstCommit 2019
+ stars 772
+ forks 26
+ subscribers 28
+ created 2019
+ updated 2024
+ description Modern low-level programming language
+ issues 9
+
+printToken printf
+stringToken "
+
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+
+hackerNewsDiscussions
+ id|title|time|timestamp|by|comments|score
+ 19598592|Show HN: Muon, a low-level programming language inspired by C, C# and Go|2019-04-07 18:00:10 UTC|1554660010|nickmqb|114|175

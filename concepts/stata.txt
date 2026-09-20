@@ -1,0 +1,98 @@
+Stata
+=====
+
+Stata is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1985 by William Gould.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221985%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1985
+ https://pldb.io/concepts/../lists/creators.html#q=William%20Gould William Gould
+
+#137 on PLDB
+41 Years Old
+8k <span title="Stata repos on GitHub.">Repos</span>
+
+Stata is a general-purpose statistical software package created in 1985 by StataCorp. Most of its users work in research, especially in the fields of economics, sociology, political science, biomedicine and epidemiology. Stata's capabilities include data management, statistical analysis, graphics, simulations, regression, and custom programming. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Stata Read more on Wikipedia...
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 8,344 Stata repos on <a href="https://github.com/search?q=language:Stata">GitHub</a>
+- Early development of Stata happened in <a href="../lists/labs.html#q=StataCorp">StataCorp</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 867 users using Stata in 1k repos on <a href="https://api.github.com/search/repositories?q=language:Stata">GitHub</a>
+- There are 16 <a href="https://projecteuler.net/language=Stata">Project Euler</a> users using Stata
+- Explore Stata snippets on <a href="http://www.rosettacode.org/wiki/Category:Stata">Rosetta Code</a>
+- Stata appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/stata.py">syntax highlighting</a> for Stata
+- GitHub supports <a href="https://github.com/pschumm/Stata.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Stata
+- PLDB has 2 <a href="jupyter-notebook.html">Jupyter</a> Kernels for Stata: <a href="https://github.com/TiesdeKok/ipystata">github.com</a>, <a href="https://github.com/kylebarron/stata_kernel">github.com</a>
+- There is a <a href="https://www.stata.com/manuals/rssc.pdf">central package repository</a> for Stata
+- <a href="https://www.stata.com/">stata.com</a> was registered in 1994
+- See also: (4 related languages) <a href="c.html">C</a>, <a href="linux.html">Linux</a>, <a href="ascii.html">ASCII</a>, <a href="excel-app.html">Microsoft Excel</a>
+- Read more about Stata on the web: 1.
+ http://www.haghish.com/statistics/stata-blog/stata-programming/ssc_stata_package_list.php 1.
+- 3 PLDB concepts link to Stata: <a href="cloc.html">cloc</a>, <a href="jal-compiler.html">JAL compiler</a>, <a href="jsl.html">JSL</a>
+
+```Example from <a href='http://helloworldcollection.de/#Stata'>the Hello World Collection</a>:
+/* Hello world in Stata */
+
+ .program hello
+  1. display &quot;Hello, World!&quot;
+  2. end
+.hello
+
+```
+
+```Example from <a href='https://github.com/pschumm/Stata.tmbundle'>Linguist</a>:
+local MAXDIM   800
+
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Stata'>Wikipedia</a>:
+program define fizzbuzz
+	args x
+	forvalues i = 1(1)`x&#39; {
+		if mod(`i&#39;,15) == 0 {
+			display &quot;fizzbuzz&quot;
+		}
+		else if mod(`i&#39;,5) == 0 {
+			display &quot;buzz&quot;
+		}
+		else if mod(`i&#39;,3) == 0 {
+			display &quot;fizz&quot;
+		}
+		else {
+		display `i&#39;
+		}
+	}
+end
+```
+
+Language <a href="../lists/features.html">features</a>
+======================================================
+
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  /* A comment
+  */
+ Token /* */
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  // A comment
+ Token //
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token
+
+Built with Scroll v180.0.1

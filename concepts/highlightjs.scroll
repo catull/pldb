@@ -1,0 +1,40 @@
+../code/conceptPage.scroll
+
+id highlightjs
+name highlight.js
+appeared 2006
+creators Alexandre Go
+tags library
+website https://highlightjs.org/
+latestVersion 11.9.0
+description Syntax highlighting for the Web
+lab https://github.com/highlightjs/
+writtenIn javascript css markdown restructuredtext yaml json html typescript r make python dockerfile bash
+
+related pygments codemirror monaco
+repoStats
+ firstCommit 2006
+ newestCommit 2025
+ commits 7094
+ committers 842
+ files 1881
+ mb 17
+ linesOfCode 151410
+country Various
+
+twitter https://twitter.com/highlightjs
+
+githubRepo https://github.com/highlightjs/highlight.js
+ firstCommit 2006
+ stars 23376
+ forks 3560
+ subscribers 306
+ created 2011
+ updated 2024
+ description JavaScript syntax highlighter with language auto-detection and zero dependencies.
+ issues 109
+
+domainName highlightjs.org
+ registered 2012
+ awisRank
+  2022 164225

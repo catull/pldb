@@ -1,0 +1,32 @@
+../code/conceptPage.scroll
+
+id hop
+name Hop
+appeared 2006
+creators Manuel Serrano and Erick Gallesio and Florian Loitsch
+tags pl
+website http://hop.inria.fr
+lab Inria && Universit ́e de Nice
+description Hop is a new higher-order language designed for programming interactive web applications such as web agendas, web galleries, music players, etc.
+
+wordRank 3322
+country France
+reference https://www.lri.fr/~conchon/TER/2012/3/dls06.pdf
+
+leachim6 HOP
+ filepath h/HOP
+ example
+  (define-service (hello-world)
+    (<HTML>
+       (<HEAD>
+          (<TITLE> "Hello World"))
+       (<BODY>
+          "Hello World")))
+  
+
+stringToken "
+
+hasStrings true
+ "Hello world"
+
+hopl https://hopl.info/showlanguage.prx?exp=8576

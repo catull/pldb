@@ -1,0 +1,13 @@
+../code/conceptPage.scroll
+
+id cobol-net
+name Cobol.NET
+appeared 2002
+tags pl
+website https://www.fujitsu.com/global/products/software/developer-tool/netcobol/
+lab Fujitsu
+
+country United States
+reference https://nl.wikipedia.org/wiki/COBOL.NET
+
+hopl https://hopl.info/showlanguage.prx?exp=3730

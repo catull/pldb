@@ -1,0 +1,51 @@
+../code/conceptPage.scroll
+
+id css-doodle
+name CSS Doodle
+appeared 2017
+creators Yuan Chuan
+tags pl
+website https://css-doodle.com/
+latestVersion 0.39.1
+lab https://github.com/css-doodle
+writtenIn javascript markdown yaml json make
+
+repoStats
+ firstCommit 2017
+ commits 1159
+ committers 9
+ files 75
+ newestCommit 2025
+ mb 4
+ linesOfCode 12492
+country Various
+
+example
+ @grid: 14 / 80%;
+ 
+ @random {
+   border-left: 1px solid #5d81bc;
+ }
+ @random {
+   border-top: 1px solid #5d81bc;
+ }
+ @random(.25) {
+   background: linear-gradient(
+     @p(#fff, tan, #5d81bc), @lp
+   )
+   50% / @r(60%) @lr
+   no-repeat;
+ }
+ @random {
+   filter: drop-shadow(0 0 10px #fff);
+ }
+
+githubRepo https://github.com/css-doodle/css-doodle
+ firstCommit 2017
+ stars 5568
+ forks 209
+ subscribers 51
+ created 2017
+ updated 2024
+ description 🎨  A web component for drawing patterns with CSS.
+ issues 8

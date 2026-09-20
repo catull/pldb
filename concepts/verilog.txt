@@ -1,0 +1,240 @@
+Verilog
+=======
+
+Verilog is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22hardwareDescriptionLanguage%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">hardware description language</a> created in 1984 by Phil Moorby and Prabhu Goel.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221984%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1984
+ https://pldb.io/concepts/../lists/creators.html#q=Phil%20Moorby Phil Moorby
+ https://pldb.io/concepts/../lists/creators.html#q=Prabhu%20Goel Prabhu Goel
+
+#147 on PLDB
+42 Years Old
+48k <span title="Verilog repos on GitHub.">Repos</span>
+
+Verilog, standardized as IEEE 1364, is a hardware description language (HDL) used to model electronic systems. It is most commonly used in the design and verification of digital circuits at the register-transfer level of abstraction. It is also used in the verification of analog circuits and mixed-signal circuits, as well as in the design of genetic circuits.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Verilog Read more on Wikipedia...
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"hardwareDescriptionLanguage"%5D%7D%5D%2C"logic"%3A"AND"%7D'>hardwareDescriptionLanguage</a>
+- There are at least 48,035 Verilog repos on <a href="https://github.com/search?q=language:Verilog">GitHub</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 2k users using Verilog in 3k repos on <a href="https://api.github.com/search/repositories?q=language:Verilog">GitHub</a>
+- There are 2,421 members in the <a href="https://reddit.com/r/Verilog">Verilog subreddit</a>
+- Explore Verilog snippets on <a href="http://www.rosettacode.org/wiki/Category:Verilog">Rosetta Code</a>
+- Verilog on HOPL
+ https://hopl.info/showlanguage.prx?exp=1062 Verilog on HOPL
+- Verilog ranks #50 in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- Verilog Ubuntu package
+ https://packages.ubuntu.com/jammy/iverilog Verilog Ubuntu package
+- <a href="antlr.html">ANTLR</a> <a href="https://github.com/antlr/grammars-v4/tree/master/verilog">grammar</a> for Verilog
+- <a href="codemirror.html">CodeMirror</a> <a href="https://github.com/codemirror/codemirror5/tree/master/mode/verilog">package</a> for syntax highlighting Verilog
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/hdl.py">syntax highlighting</a> for Verilog
+- GitHub supports <a href="https://github.com/textmate/verilog.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Verilog
+- Verilog appears in the <a href="https://github.com/mame/quine-relay">Quine Relay</a> project
+- Indeed.com has 246 matches for <a href="https://www.indeed.com/jobs?q=verilog developer">"verilog developer"</a>.
+- See also: (5 related languages) <a href="systemverilog.html">SystemVerilog</a>, <a href="c.html">C</a>, <a href="vhdl.html">VHDL</a>, <a href="openvera.html">OpenVera</a>, <a href="property-specification-language.html">Property Specification Language</a>
+
+```Example from <a href='https://riju.codes/verilog'>Riju</a>:
+module main;
+
+initial begin
+  $display(&quot;Hello, world!&quot;);
+end
+
+endmodule
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/v/Verilog.v'>hello-world</a>:
+module main;
+  initial
+    begin
+      $display(&quot;Hello World&quot;);
+      $finish;
+    end
+endmodule
+
+```
+
+```Example from <a href='http://helloworldcollection.de/#Verilog'>the Hello World Collection</a>:
+/* Hello World in Verilog. */
+
+module main;
+
+ initial
+   begin
+     $display(&quot;Hello, World&quot;);
+     $finish ;
+   end
+
+ endmodule
+
+```
+
+```Example from <a href='https://github.com/textmate/verilog.tmbundle'>Linguist</a>:
+`timescale 1ns / 1ps
+// Copyright (C) 2008 Schuyler Eldridge, Boston University
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
+module mux(opA,opB,sum,dsp_sel,out);
+	input [3:0] opA,opB;
+	input [4:0] sum;
+	input [1:0] dsp_sel;
+	output [3:0] out;
+	
+	reg cout;
+	
+	always @ (sum)
+		begin
+			if (sum[4] == 1)
+				cout &lt;= 4&#39;b0001;
+			else
+				cout &lt;= 4&#39;b0000;
+		end
+	
+	reg out;
+	
+	always @(dsp_sel,sum,cout,opB,opA)
+		begin
+			if (dsp_sel == 2&#39;b00)
+				out &lt;= sum[3:0];
+			else if (dsp_sel == 2&#39;b01)
+				out &lt;= cout;
+			else if (dsp_sel == 2&#39;b10)
+				out &lt;= opB;
+			else if (dsp_sel == 2&#39;b11)
+				out &lt;= opA;
+		end
+
+endmodule
+
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Verilog'>Wikipedia</a>:
+initial
+  a = 0;
+
+initial
+  b = a;
+
+initial
+  begin
+    #1;
+    $display(&quot;Value a=%d Value of b=%d&quot;,a,b);
+  end
+```
+
+```Verilog <a href="../lists/keywords.html#q=verilog">Keywords</a>
+always assign automatic begin case casex casez cell config deassign default defparam design disable edge else end endcase endconfig endfunction endgenerate endmodule endprimitive endspecify endtable endtask event for force forever fork function generate genvar if ifnone incdir include initial inout input instance join liblist library localparam macromodule module negedge noshowcancelled output parameter posedge primitive pulsestyle_ondetect pulsestyle_onevent reg release repeat scalared showcancelled signed specify specparam strength table task tri tri0 tri1 triand wand trior wor trireg unsigned use vectored wait while wire
+```
+
+Language <a href="../lists/features.html">features</a>
+======================================================
+
+row
+ Feature Binary Literals
+ FeatureLink ../features/hasBinaryNumbers.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  // ([0-9]+)|(\'b)[01]+
+ Token 
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  // ([0-9]+)|(\'d)[0-9]+
+ Token 
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  // (\d+\.\d*|\.\d+|\d+)[eE][+-]?\d+[lL]?
+ Token 
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  // ([0-9]+)|(\'h)[0-9a-fA-F]+
+ Token 
+row
+ Feature Octals
+ FeatureLink ../features/hasOctals.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  // ([0-9]+)|(\'o)[0-7]+
+ Token 
+row
+ Feature Conditionals
+ FeatureLink ../features/hasConditionals.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Functions
+ FeatureLink ../features/hasFunctions.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature While Loops
+ FeatureLink ../features/hasWhileLoops.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Case Sensitivity
+ FeatureLink ../features/isCaseSensitive.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  "Hello world"
+ Token "
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  /* A comment
+  */
+ Token /* */
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token $display
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  // A comment
+ Token //
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token
+
+Built with Scroll v180.0.1

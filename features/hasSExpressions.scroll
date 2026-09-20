@@ -1,0 +1,44 @@
+header.scroll
+
+title S-Expressions - language feature
+tags Feature
+printTitle S-Expressions
+
+<a class="trueBaseThemePreviousItem" href="hasRunTimeGuards.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasScientificNotation.html">&gt;</a>
+
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
+
+container 600px
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/ion.html">Ion</a>
+ null.sexp         // A null S-expression value
+ ()                // An empty expression value
+ (cons 1 2)        // S-expression of three values
+ ([hello][there])  // S-expression containing two lists
+ 
+ (a+-b)  ( &#39;a&#39; &#39;+-&#39; &#39;b&#39; )    // Equivalent; three symbols
+ (a.b;)  ( &#39;a&#39; &#39;.&#39; &#39;b&#39; &#39;;&#39;)  // Equivalent; four symbols
+
+***
+
+* Languages *with* S-Expressions include <a href="../concepts/ion.html">Ion</a>
+
+***
+
+* Languages *without* S-Expressions include <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/java.html">Java</a>, <a href="../concepts/c3.html">C3</a>
+
+***
+
+View all concepts with or missing a *hasSExpressions* measurement
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasSExpressions&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasSExpressions%22%2C%22origData%22%3A%22hasSExpressions%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasSExpressions&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasSExpressions%22%2C%22origData%22%3A%22hasSExpressions%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D with
+
+***
+
+* Read more about S-Expressions on the web: 1.
+ https://en.wikipedia.org/wiki/S-expression 1.
+
+keyboardNav hasRunTimeGuards.html hasScientificNotation.html
+
+../footer.scroll

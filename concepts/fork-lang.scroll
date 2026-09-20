@@ -1,0 +1,33 @@
+../code/conceptPage.scroll
+
+id fork-lang
+name fork-lang
+appeared 2014
+tags pl
+latestVersion v0.7.2
+lab https://github.com/mcilloni
+writtenIn bourne-shell markdown make c json cson xml
+
+repoStats
+ firstCommit 2014
+ commits 515
+ committers 8
+ files 131
+ newestCommit 2024
+ mb 2
+ linesOfCode 20968
+country Italy
+
+githubRepo https://github.com/mcilloni/fork
+ firstCommit 2014
+ stars 75
+ forks 3
+ subscribers 6
+ created 2017
+ updated 2024
+ description A simple, self hosted, low level programming language.
+ issues 0
+
+hackerNewsDiscussions
+ id|title|time|timestamp|by|comments|score
+ 18155262|Show HN: Fork, a toy self-hosting language and compiler that compiles to C|2018-10-06 14:23:58 UTC|1538835838|mcilloni|3|58

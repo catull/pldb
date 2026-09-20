@@ -1,0 +1,29 @@
+../code/conceptPage.scroll
+
+id jeeves
+name Jeeves
+appeared 2013
+creators Jean Yang
+tags pl
+website http://projects.csail.mit.edu/jeeves/
+lab MIT
+writtenIn python html css javascript markdown restructuredtext csv svg make
+
+repoStats
+ firstCommit 2013
+ commits 638
+ committers 15
+ files 642
+ newestCommit 2018
+ mb 7
+ linesOfCode 104028
+country United States
+
+githubRepo https://github.com/jeanqasaur/jeeves
+ stars 339
+ forks 33
+ subscribers 35
+ created 2014
+ updated 2024
+ description Python implementation of the Jeeves programming language.
+ issues 8

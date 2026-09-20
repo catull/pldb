@@ -1,0 +1,29 @@
+../code/conceptPage.scroll
+
+id swym
+name Swym
+appeared 2012
+creators Laurie Cheers
+tags pl
+website https://web.archive.org/web/20201126155554/http://cheersgames.com/swym/wiki/index.php?title=Main_Page
+lab Cheers Games
+writtenIn javascript html php css
+
+repoStats
+ firstCommit 2012
+ commits 95
+ committers 3
+ files 369
+ newestCommit 2017
+ mb 2
+ linesOfCode 220734
+country Unknown
+
+githubRepo https://github.com/LaurieCheers/Swym
+ stars 15
+ forks 1
+ subscribers 6
+ created 2012
+ updated 2017
+ description The Swym programming language
+ issues 0

@@ -1,0 +1,40 @@
+../code/conceptPage.scroll
+
+id manhood
+name manhood
+appeared 2014
+tags pl
+website http://berkin.me/rant
+latestVersion v3.0.0
+lab https://github.com/TheBerkin/rant3/issues
+writtenIn csharp markdown html javascript xml yaml css svg json
+
+repoStats
+ firstCommit 2014
+ commits 991
+ committers 15
+ files 363
+ newestCommit 2020
+ mb 5
+ linesOfCode 154221
+country United States
+
+githubRepo https://github.com/TheBerkin/Manhood
+ firstCommit 2014
+ stars 2964
+ forks 106
+ subscribers 81
+ created 2014
+ updated 2024
+ description (Obsolete) Archive of Rant 3.x.
+ issues 9
+
+hackerNewsDiscussions
+ id|title|time|timestamp|by|comments|score
+ 8311269|Show HN: Manhood – a powerful templating language for random text generation|2014-09-13 01:07:46 UTC|1410570466|TheBerkin|5|22
+
+isbndb 1
+ year|publisher|title|authors|isbn13
+ 2006|Wingspan Press|Manhood In Black Americans|Joseph A. Bailey|9781595940643
+
+semanticScholar 0

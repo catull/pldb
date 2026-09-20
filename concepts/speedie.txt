@@ -1,0 +1,851 @@
+Speedie
+=======
+
+Speedie is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2022 by Theodore H Smith.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222022%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2022
+ https://pldb.io/concepts/../lists/creators.html#q=Theodore%20H%20Smith Theodore H Smith
+
+#1342 on PLDB
+4 Years Old
+
+"General-purpose modern and clean object-oriented programming language."
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Speedie is a <a href="../lists/explorer.html#columns=rank~id~appeared~tags~creators~supersetOf&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22supersetOf%22%2C%22origData%22%3A%22supersetOf%22%2C%22tags%22%3A%22html%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">superset</a> of <a href="jeebox.html">jeebox</a>
+- Early development of Speedie happened in <a href="../lists/labs.html#q=https://github.com/gamblevore/speedie/issues">https://github.com/gamblevore/speedie/issues</a>
+- <a href="javascript.html">JavaScript</a> and <a href="python.html">Python</a> and <a href="c.html">C</a> and <a href="lua.html">Lua</a> and <a href="cpp.html">C++</a> and <a href="visual-basic.html">Visual Basic</a> and <a href="hypercard.html">HyperCard</a> and <a href="html.html">HTML</a> and <a href="css.html">CSS</a> and <a href="xml.html">XML</a> and <a href="json.html">JSON</a> influenced the design of Speedie
+- Speedie is written in <a href="speedie.html">Speedie</a>, <a href="cpp.html">C++</a>
+- Speedie is supported by the <a href="https://www.sourceware.org/gdb/">GDB</a>
+- <a href="http://github.com/gamblevore/speedie">speedie.dev</a> was registered in 2023
+- See also: (9 related languages) <a href="i-expressions.html">I-expressions</a>, <a href="json.html">JSON</a>, <a href="yaml.html">YAML</a>, <a href="toml.html">TOML</a>, <a href="xml.html">XML</a>, <a href="haml.html">HAML</a>, <a href="ini.html">Ini</a>, <a href="parsers.html">Parsers</a>, <a href="particles.html">Particles</a>
+- 1 PLDB concepts link to Speedie: <a href="speedie.html">Speedie</a>
+
+```Example from <a href='http://helloworldcollection.de/#spd'>the Hello World Collection</a>:
+main
+    &quot;Hello World!&quot;
+```
+
+```Speedie <a href="../lists/keywords.html#q=speedie">Keywords</a>
+#require #expect #error and asm break class continue else elseif false for if is in import module or return require expect error virtual behaviour function syntax syx self true with yield while xor
+```
+
+Language <a href="../lists/features.html">features</a>
+======================================================
+
+row
+ Feature hasSelfOrThisWord
+ FeatureLink ../features/hasSelfOrThisWord.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  self.Remove
+  .remove
+ Token 
+row
+ Feature Classes
+ FeatureLink ../features/hasClasses.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Zero-based numbering
+ FeatureLink ../features/hasZeroBasedNumbering.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  printline ["a", "b", "c"][0] // prints "a"
+ Token 
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  "error 1 here"
+ Token print
+row
+ Feature Dispose Blocks Pattern
+ FeatureLink ../features/hasDisposeBlocks.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  using SomeObject
+   for 10
+    Someobject.dosomework
+    if (random[]>0.5)
+     return // someobject.SyntaxUsingComplete called here
+  // someobject.SyntaxUsingComplete called here too
+ Token 
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  "hello world"
+ Token 
+row
+ Feature Access Modifiers
+ FeatureLink ../features/hasAccessModifiers.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  class Person
+   |int| age
+   setter age
+    expect (value >= 0) ("bad age $value set!")
+    .age = value
+  main
+   || p = person()
+   p.age = -1     // calls a function rather than the property
+   || n = p.age   // reads the property directly!
+ Token 
+row
+ Feature Inheritance
+ FeatureLink ../features/hasInheritance.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  class Person (Animal)
+ Token 
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  class Person
+   |string| name
+ Token 
+row
+ Feature Null
+ FeatureLink ../features/hasNull.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  || msg = message()
+  while
+   if msg != nil
+    "msg exists"
+     else
+    "empty"
+    return
+   msg = nil
+ Token 
+row
+ Feature Unary Operators
+ FeatureLink ../features/hasUnaryOperators.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  || x = !0
+ Token 
+row
+ Feature hasUserDefinedOperators
+ FeatureLink ../features/hasUserDefinedOperators.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  class myclass
+   |int| Num
+   operator add (|int| x, |myclass|)
+    return myclass(.num + x)
+   render
+    fs <~ .num
+  
+  main
+   || x = myclass(1)
+   || y = myclass(2)
+   || z = y + x
+   printline z
+ Token 
+row
+ Feature Operator Overloading
+ FeatureLink ../features/hasOperatorOverloading.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  str = "a" + "b"
+  array <~ str
+ Token 
+row
+ Feature Function Overloading
+ FeatureLink ../features/hasFunctionOverloading.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  function volume (|float| a, |float|)
+   return a*a*a
+  function volume (|float| r, |float| h, |float|)
+   // volume of a cylinder
+   return math.pi*r*r*h
+ Token 
+row
+ Feature Single-Type Arrays
+ FeatureLink ../features/hasSingleTypeArrays.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  |array of string| s
+  s <~ "abc" // ok
+  s <~ 1 // fail
+ Token 
+row
+ Feature hasForEachLoops
+ FeatureLink ../features/hasForEachLoops.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  || items = [5,6,7,8]
+  for i in items
+   printline i
+ Token 
+row
+ Feature Iterators
+ FeatureLink ../features/hasIterators.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  || items = [5,6,7,8]
+  for i in items
+   printline i
+ Token 
+row
+ Feature Constructors
+ FeatureLink ../features/hasConstructors.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  class Foobar
+   |float| x
+   |float| y
+   constructor (|float| r=1, |float| alpha=0)
+   .x = r * alpha.cos
+   .y = r * alpha.sin
+  
+  || a = foobar()
+  || b = foobar(3)
+  || c = foobar(5, M_PI/4)
+ Token 
+row
+ Feature Binary Literals
+ FeatureLink ../features/hasBinaryNumbers.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  || num = 0b010101
+ Token 
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  || num = 0.0
+ Token 
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  || num = 0xBEEF
+ Token 
+row
+ Feature Functions
+ FeatureLink ../features/hasFunctions.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  function Example (|string| data)
+   file <~ data
+ Token 
+row
+ Feature Lists
+ FeatureLink ../features/hasLists.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  myList = [1, 2, 3, 4, 5]
+ Token 
+row
+ Feature Units of Measure
+ FeatureLink ../features/hasUnitsOfMeasure.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  || time = 1day - 10s
+  || size = 10.2MB
+ Token 
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  pldb = 80766866
+ Token 
+row
+ Feature Pointers
+ FeatureLink ../features/hasPointers.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  || i = 0
+  || p = &i
+  *p = 1
+  if (i == 1)
+   "success"
+ Token 
+row
+ Feature Homoiconicity
+ FeatureLink ../features/hasHomoiconicity.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  The~entire~Language is (%written in:@Jeebox)
+ Token 
+row
+ Feature Multiline Strings
+ FeatureLink ../features/hasMultilineStrings.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  "hello
+  you
+  beauty"
+ Token 
+row
+ Feature Infix Notation
+ FeatureLink ../features/hasInfixNotation.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  seven = 3 + 4
+ Token 
+row
+ Feature Breakpoints
+ FeatureLink ../features/supportsBreakpoints.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  debugger
+ Token 
+row
+ Feature Source Maps
+ FeatureLink ../features/hasSourceMaps.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  linkage
+   bannedclasses (file, process, shellstream, archive)
+   // using these classes... even indirectly, will create an error
+   // the error message will show the entire call-chain that reached these classes
+ Token 
+row
+ Feature Virtual function
+ FeatureLink ../features/hasVirtualFunctions.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  class abc
+   virtual DoSomething (|string| name)
+   behaviour DoSomething
+    printline "hello: $name"
+ Token 
+row
+ Feature Static Methods
+ FeatureLink ../features/hasStaticMethods.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  class abc
+   module
+    function Print
+     "abc"
+  main
+   abc.print
+ Token 
+row
+ Feature Type Parameters
+ FeatureLink ../features/hasTypeParameters.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  function ABC (|string| name)
+ Token 
+row
+ Feature hasTimestamps
+ FeatureLink ../features/hasTimestamps.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  printline __time_id__
+ Token 
+row
+ Feature hasMethodOverloading
+ FeatureLink ../features/hasMethodOverloading.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature hasVoidFunctions
+ FeatureLink ../features/hasVoidFunctions.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  || x = 123
+  function abc
+   x = 10
+ Token 
+row
+ Feature hasGlobalScope
+ FeatureLink ../features/hasGlobalScope.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  || x = 123
+  function abc
+   x = 10
+ Token 
+row
+ Feature hasFnArguments
+ FeatureLink ../features/hasFnArguments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  function ABC (|string| name)
+ Token 
+row
+ Feature canReadCommandLineArgs
+ FeatureLink ../features/canReadCommandLineArgs.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  printline app[0]
+ Token 
+row
+ Feature hasDynamicSizedArrays
+ FeatureLink ../features/hasDynamicSizedArrays.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  || arr = []
+  arr <~ "abc"
+ Token 
+row
+ Feature hasRequiredMainFunction
+ FeatureLink ../features/hasRequiredMainFunction.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  main
+   "hello world"
+ Token 
+row
+ Feature hasStatementTerminatorCharacter
+ FeatureLink ../features/hasStatementTerminatorCharacter.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  if x: x++, x*=2, return
+  
+ Token 
+row
+ Feature hasMemberVariables
+ FeatureLink ../features/hasMemberVariables.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  class abc
+   |int| def
+ Token 
+row
+ Feature hasStringConcatOperator
+ FeatureLink ../features/hasStringConcatOperator.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  || ab = "a" + "b"
+ Token 
+row
+ Feature Characters
+ FeatureLink ../features/hasCharacters.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  || char = 'b'
+  if b > 32
+   "good"
+ Token 
+row
+ Feature hasEscapeCharacters
+ FeatureLink ../features/hasEscapeCharacters.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  || str = "\01\02\03"
+ Token 
+row
+ Feature hasForLoops
+ FeatureLink ../features/hasForLoops.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  while i in 10
+    "hello: $i"
+ Token 
+row
+ Feature While Loops
+ FeatureLink ../features/hasWhileLoops.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  while true
+    "hello"
+ Token 
+row
+ Feature Assignment
+ FeatureLink ../features/hasAssignment.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  name = "John"
+ Token =
+row
+ Feature File Imports
+ FeatureLink ../features/hasImports.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  import Proj
+ Token 
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  /*
+  multiline
+  comments
+  */
+ Token /* */
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  // comment
+ Token 
+row
+ Feature Garbage Collection
+ FeatureLink ../features/hasGarbageCollection.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  || msg = message()
+  DoSomethingWith(msg)
+  // msg now gets disposed
+  
+ Token 
+row
+ Feature Constants
+ FeatureLink ../features/hasConstants.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  constants
+   Opened = 1
+   Closed = 2
+ Token 
+row
+ Feature hasBreak
+ FeatureLink ../features/hasBreak.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  for i in 10
+   if i > 3: exit
+   printline i // 1,2,3
+ Token 
+row
+ Feature hasContinue
+ FeatureLink ../features/hasContinue.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  for i in 10
+   if i < 5: continue
+   printline i // 6,7,8,9
+ Token 
+row
+ Feature Conditionals
+ FeatureLink ../features/hasConditionals.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token true false
+row
+ Feature Symbol Tables
+ FeatureLink ../features/hasSymbolTables.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Shebang
+ FeatureLink ../features/canDoShebang.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  #!/usr/local/bin/spd
+ Token 
+row
+ Feature Bitwise Operators
+ FeatureLink ../features/hasBitWiseOperators.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  x << y
+ Token 
+row
+ Feature Message Passing
+ FeatureLink ../features/hasMessagePassing.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  || chld = app.fork("ipc_identifier_123", app.rawargs)
+  chld <~ "send message"
+  printline chld.get // receive message
+ Token 
+row
+ Feature Ternary operators
+ FeatureLink ../features/hasTernaryOperators.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  while
+   printline (1,0)(random[]>0.5)
+ Token 
+row
+ Feature Case Insensitive Identifiers
+ FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  if "abc".LeNgTh == 3
+    "cool length"
+ Token 
+row
+ Feature Case Sensitivity
+ FeatureLink ../features/isCaseSensitive.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  || Same = "x" == "X" // same = false
+ Token 
+row
+ Feature Disk Output
+ FeatureLink ../features/canWriteToDisk.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  "helloworld.txt" <~ "Hello, world!\n"
+ Token 
+row
+ Feature Enums
+ FeatureLink ../features/hasEnums.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  flags
+   A
+   B
+   C
+   D
+  // A=1, B=2, C=4, D=8
+  constants
+   X
+   Y
+   Z
+   W
+  // X=0, Y=1, Z=3, W=4
+ Token 
+row
+ Feature Structs
+ FeatureLink ../features/hasStructs.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  struct Fuel
+   |int| A
+   |byte| B
+ Token 
+row
+ Feature Type Casting
+ FeatureLink ../features/hasExplicitTypeCasting.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  || x = message()
+  || y = x|object| // lose type info
+  || z = y|message| // regain it
+ Token 
+row
+ Feature Module Pattern
+ FeatureLink ../features/hasModules.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  module App
+   function Path (|string|)
+    // return the app's path here
+ Token 
+row
+ Feature Single Dispatch
+ FeatureLink ../features/hasSingleDispatch.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  || x = "str"
+  || i = x.find("t")
+ Token 
+row
+ Feature Increment and decrement operators
+ FeatureLink ../features/hasIncrementAndDecrementOperators.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  || x = 1
+  x++
+  x--
+ Token 
+row
+ Feature Static Typing
+ FeatureLink ../features/hasStaticTyping.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  || x = "Hello"
+  x = 1 // fails to compile... because x is a string
+ Token 
+row
+ Feature Type Inference
+ FeatureLink ../features/hasTypeInference.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  || x = "Hello"
+  || y = FunctionThatReturnsAString() // is now a string
+  x = 1 // fails to compile
+  y = 2 // fails to compile
+ Token 
+row
+ Feature Macros
+ FeatureLink ../features/hasMacros.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Magic Getters and Setters
+ FeatureLink ../features/hasMagicGettersAndSetters.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Default Parameters Pattern
+ FeatureLink ../features/hasDefaultParameters.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  function Find (|string| pattern, |int| pos=0, |int|)
+ Token 
+row
+ Feature Unicode Identifers
+ FeatureLink ../features/hasUnicodeIdentifiers.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  class é©©
+   constructor
+    printline .class.name // "é©©"
+ Token 
+row
+ Feature Doc comments
+ FeatureLink ../features/hasDocComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  function Find (|string| pattern, |int| pos=0, |int|)
+   description "Returns the position of pattern in self, starting from 'pos'. If not found, we return -1."
+ Token 
+row
+ Feature Assert Statements
+ FeatureLink ../features/hasAssertStatements.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  class Person
+   |int| age
+   setter age
+    // "expect" will actually add an Error to a list of errors
+    expect (value >= 0) ("bad age $value set!")
+    .age = value
+  
+  main
+   || p = person()
+   p.age = -10
+   if !stderr.ok
+    "Oof we got some errors"
+ Token 
+row
+ Feature Polymorphism
+ FeatureLink ../features/hasPolymorphism.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  |object| x = somefunction()
+  || y = x.render // returns a string by calling the virtual func "render"
+ Token 
+row
+ Feature Pipes
+ FeatureLink ../features/hasPipes.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Maps
+ FeatureLink ../features/hasMaps.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  || x = ["a":"Apple", "b":"Bird", "c":"Cat"]
+  printline x["b"] // Bird
+ Token 
+row
+ Feature Partial Application
+ FeatureLink ../features/hasPartialApplication.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  
+  main
+  "hello world ${app.args[0]}"
+  
+ Token 
+row
+ Feature hasReservedWords
+ FeatureLink ../features/hasReservedWords.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+  || return = 123
+  || if = 456
+  if if == 456
+   return return
+ Token 
+row
+ Feature Exceptions
+ FeatureLink ../features/hasExceptions.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token 
+row
+ Feature Threads
+ FeatureLink ../features/hasThreads.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token 
+row
+ Feature Templates
+ FeatureLink ../features/hasTemplates.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token 
+row
+ Feature Multiple Inheritance
+ FeatureLink ../features/hasMultipleInheritance.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token 
+row
+ Feature Namespaces
+ FeatureLink ../features/hasNamespaces.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token 
+row
+ Feature Octals
+ FeatureLink ../features/hasOctals.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token 
+row
+ Feature hasTryCatch
+ FeatureLink ../features/hasTryCatch.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+  || data = "somefile".file.readall
+  if !data
+   stderr.printerrors // prints any file-system error that occurred during .readall
+ Token 
+row
+ Feature Dynamic Properties
+ FeatureLink ../features/hasDynamicProperties.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token 
+row
+ Feature Regular Expression Syntax Sugar
+ FeatureLink ../features/hasRegularExpressionsSyntaxSugar.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token 
+row
+ Feature Duck Typing
+ FeatureLink ../features/hasDuckTyping.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token 
+row
+ Feature Manual Memory Management
+ FeatureLink ../features/hasManualMemoryManagement.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token 
+row
+ Feature Multiple Dispatch
+ FeatureLink ../features/hasMultipleDispatch.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token
+
+Built with Scroll v180.0.1

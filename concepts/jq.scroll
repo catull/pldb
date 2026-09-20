@@ -1,0 +1,56 @@
+../code/conceptPage.scroll
+
+id jq
+name jq
+appeared 2012
+creators Stephen Dolan
+tags queryLanguage
+website https://stedolan.github.io/jq/
+lab https://github.com/stedolan/jq/issues
+writtenIn c yaml bourne-shell m4 markdown python cpp json svg yacc make lex css html javascript dockerfile bash
+
+isOpenSource true
+exercism https://exercism.org/tracks/jq
+tryItOnline https://tio.run/#jq
+rosettaCode http://www.rosettacode.org/wiki/Category:Jq
+repoStats
+ firstCommit 2012
+ commits 1821
+ committers 228
+ files 338
+ newestCommit 2025
+ mb 8
+ linesOfCode 86912
+country Unknown
+projectEuler jq
+ memberCount
+  2022 5
+reference https://jqplay.org/
+
+rijuRepl https://riju.codes/jq
+ example
+  "Hello, world!"
+  
+
+githubRepo https://github.com/stedolan/jq
+ firstCommit 2012
+ stars 29719
+ forks 1541
+ subscribers 327
+ created 2012
+ updated 2024
+ description Command-line JSON processor
+ issues 455
+
+githubBigQuery jq
+ repos 39
+ users 36
+
+githubLanguage jq
+ type programming
+ fileExtensions jq
+ aceMode text
+ tmScope source.jq
+ repos 60
+
+semanticScholar 0

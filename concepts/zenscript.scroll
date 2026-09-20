@@ -1,0 +1,54 @@
+../code/conceptPage.scroll
+
+id zenscript
+name zenscript
+appeared 2014
+creators Stan Hebben
+tags pl
+fileExtensions zs
+writtenIn java gradle markdown
+
+repoStats
+ firstCommit 2014
+ commits 277
+ committers 17
+ files 327
+ newestCommit 2025
+ mb 1
+ linesOfCode 227
+
+example
+ var x = 5;
+ print(x+5);
+ for i in 0 to 10 {
+     print(10 - i);
+ }
+ for i in 10 .. 20 {
+     if i %2 == 0{
+     print(i);
+     }
+ }
+
+githubRepo https://github.com/CraftTweaker/ZenScript
+ firstCommit 2014
+ stars 76
+ forks 21
+ subscribers 9
+ created 2018
+ updated 2024
+ issues 8
+
+printToken print
+
+hasPrintDebugging true
+
+githubBigQuery ZenScript
+ repos 8
+ users 8
+
+githubLanguage ZenScript
+ type programming
+ fileExtensions zs
+ aceMode text
+ tmScope source.zenscript
+ repos 1390

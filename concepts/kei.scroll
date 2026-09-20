@@ -1,0 +1,29 @@
+../code/conceptPage.scroll
+
+id kei
+name kei
+appeared 2019
+creators Tiago Campos
+tags pl
+lab https://github.com/caotic123/Kei/issues
+writtenIn haskell markdown
+
+repoStats
+ firstCommit 2019
+ commits 71
+ committers 4
+ files 14
+ newestCommit 2020
+ mb 4
+ linesOfCode 2178
+country Brazil and Belgium
+
+githubRepo https://github.com/caotic123/Kei
+ firstCommit 2019
+ stars 128
+ forks 3
+ subscribers 6
+ created 2019
+ updated 2024
+ description A small and expressive dependently typed language
+ issues 1

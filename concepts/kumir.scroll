@@ -1,0 +1,45 @@
+../code/conceptPage.scroll
+
+id kumir
+name kumir
+appeared 2011
+tags pl
+website https://www.niisi.ru/kumir/
+latestVersion 2.1.0
+description KuMir, which is used in some Russian schools for education. KuMir" is a game of words, literally “Kumir" means “Idol", but developers of this language say that this is abbreviature: “K" - Set, “u" - of Educational, “Mir" - WORLDs (КуМир - Комплект Учебных МИРов).
+lab https://github.com/a-a-maly/kumir2/issues
+writtenIn cpp svg xml cmake qt python json c css markdown javascript html qml yaml bourne-shell objective-cpp csv make typescript ini
+
+repoStats
+ firstCommit 2011
+ commits 3798
+ committers 23
+ files 9027
+ newestCommit 2024
+ mb 167
+ linesOfCode 1108730
+country Russia
+
+leachim6 Kumir
+ filepath k/Kumir.kum
+ fileExtensions kum
+ example
+  алг
+  нач
+      вывод "Hello World"
+  кон
+
+githubRepo https://github.com/a-a-maly/kumir2
+ firstCommit 2011
+ stars 21
+ forks 14
+ subscribers 3
+ created 2018
+ updated 2024
+ description New home for Kumir2.
+ issues 30
+
+stringToken "
+
+hasStrings true
+ "Hello world"

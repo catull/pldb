@@ -1,0 +1,24 @@
+authors Breck Yunits
+ https://github.com/breck7 Breck Yunits
+date 9/3/2022
+openGraphImage https://pldb.io/blog/images/originCountries.png
+tags archive
+title Where are the most programming languages created?
+
+postHeader.scroll
+printTitle
+wideColumns 1
+printAuthors
+printDate
+
+image images/originCountries.svg
+ caption The above SVG is also available as a png.
+  link images/originCountries.png png
+
+The code for the visualization above was written in the Explorer language.
+ link explorers/originCountries.explorer code
+ BASE_URL/concepts/explorer.html Explorer language
+
+endSnippet
+
+footer.scroll

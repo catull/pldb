@@ -1,0 +1,39 @@
+../code/conceptPage.scroll
+
+id jeebox
+name jeebox
+appeared 2012
+creators Theodore H. Smith
+tags pl
+website http://jeebox.org/
+latestVersion 1.2.3
+aka Speedie
+lab https://www.reddit.com/r/jeebox/
+writtenIn cpp cmake markdown yaml
+
+demoVideo https://www.youtube.com/watch?v=5gcKSCUKCRE
+repoStats
+ firstCommit 2019
+ commits 187
+ committers 4
+ files 88
+ newestCommit 2023
+ mb 1
+ linesOfCode 22089
+country Unknown
+
+example
+ You can %describe (anything, in: Jeebox)
+
+githubRepo https://github.com/gamblevore/jeebox
+ firstCommit 2019
+ stars 9
+ forks 2
+ subscribers 3
+ created 2019
+ updated 2024
+ description Clean extensible language for describing code, and human-language.
+ issues 0
+
+domainName jeebox.org
+ registered 2012

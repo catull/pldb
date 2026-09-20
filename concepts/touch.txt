@@ -1,0 +1,77 @@
+Touch
+=====
+
+Touch is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22textMarkup%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">text markup language</a> created in 2020.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222020%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2020
+
+#2038 on PLDB
+6 Years Old
+
+```Download source code:
+git clone https://github.com/touchmarine/to
+```
+
+📜 Touch Lightweight Markup Language; Familiar, Extendable, Auto-Formattable
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"textMarkup"%5D%7D%5D%2C"logic"%3A"AND"%7D'>text markup language</a>
+- Touch is developed on <a href="https://github.com/touchmarine/to">GitHub</a> and has 18 stars
+- Touch is written in <a href="go.html">Go</a>, <a href="json.html">JSON</a>, <a href="markdown.html">Markdown</a>
+- See also: (1 related languages) <a href="markdown.html">Markdown</a>
+
+```Example from the web:
+/ this is a block comment
+
+= Title
+_ Subtitle
+
+== h2
+=== h3
+
+/ numbered headings (prefixed with 1 and 1.1)
+## h2
+### h3
+
+&gt; blockquote
+* note
+- list
+1. numbered list
+
+/ code block
+`js
+function num() {
+    return 1
+}
+`
+
+/ preformatted block
+&#39;
+      ___________________________
+    &lt; I&#39;m an expert in my field. &gt;
+      ---------------------------
+          \   ^__^
+           \  (oo)\_______
+              (__)\       )\/\
+                  ||----w |
+                  ||     ||
+&#39;
+/ art from https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre#example
+```
+
+```Example from the web:
+// an inline comment //
+__emphasis__ // italics //
+**strong**   // bold //
+``code``
+((link))
+[[link text]]((link URL))
+
+a \ // line break //
+b
+
+/ autolinks
+www.example.test
+http://example.test
+https://example.test
+```
+
+Built with Scroll v180.0.1

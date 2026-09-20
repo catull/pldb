@@ -1,0 +1,119 @@
+M4
+==
+
+M4 is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1977 by Brian Kernighan and Dennis Ritchie.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221977%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1977
+ https://pldb.io/concepts/../lists/creators.html#q=Brian%20Kernighan Brian Kernighan
+ https://pldb.io/concepts/../lists/creators.html#q=Dennis%20Ritchie Dennis Ritchie
+
+#206 on PLDB
+49 Years Old
+2k <span title="M4 repos on GitHub.">Repos</span>
+
+m4 is a general-purpose macro processor included in all UNIX-like operating systems, and is a component of the POSIX standard. The language was designed by Brian Kernighan and Dennis Ritchie for the original versions of UNIX. It is an extension of an earlier macro processor m3, written by Ritchie for the AP-3 minicomputer. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/M4_(computer_language) Read more on Wikipedia...
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 2,405 M4 repos on <a href="https://github.com/search?q=language:M4">GitHub</a>
+- Early development of M4 happened in <a href="../lists/labs.html#q=Bell Labs">Bell Labs</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 12k users using M4 in 16k repos on <a href="https://api.github.com/search/repositories?q=language:M4">GitHub</a>
+- Explore M4 snippets on <a href="http://www.rosettacode.org/wiki/Category:M4">Rosetta Code</a>
+- M4 on HOPL
+ https://hopl.info/showlanguage.prx?exp=766 M4 on HOPL
+- M4 appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- M4 Ubuntu package
+ https://packages.ubuntu.com/jammy/m4 M4 Ubuntu package
+- GitHub supports <a href="https://github.com/Alhadis/language-etc" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for M4
+- M4 appears in the <a href="https://github.com/mame/quine-relay">Quine Relay</a> project
+- See also: (6 related languages) <a href="assembly-language.html">Assembly language</a>, <a href="ratfor.html">RATFOR</a>, <a href="unix.html">Unix</a>, <a href="fortran.html">Fortran</a>, <a href="html.html">HTML</a>, <a href="freebsd.html">FreeBSD</a>
+- 76 PLDB concepts link to M4: <a href="ad-hoc.html">Ad-hoc</a>, <a href="bash.html">Bash</a>, <a href="bazel.html">Bazel</a>, <a href="beef.html">beef-lang</a>, <a href="berkeleydb.html">Berkeley DB</a>, <a href="bio.html">Bio</a>, <a href="capn-proto.html">Cap'n Proto</a>, <a href="cir.html">CIR</a>, <a href="cityhash-hash-function.html">cityhash-hash-function</a>, <a href="click.html">Click</a>, <a href="cmake.html">CMake</a>, <a href="crmsh.html">crmsh</a>, <a href="curv.html">curv</a>, <a href="ec.html">eC</a>, <a href="eiffel.html">Eiffel</a>, <a href="emscripten.html">Emscripten</a>, <a href="erlang.html">Erlang</a>, <a href="felix.html">Felix</a>, <a href="filebench-wml.html">Filebench WML</a>, <a href="flex.html">FLEX</a>, <a href="flow9.html">Flow9</a>, <a href="g-portugol.html">G-Portugol</a>, <a href="gap.html">GAP</a>, <a href="gforth.html">Gforth</a>, <a href="ghc.html">GHC</a>, <a href="git.html">Git</a>, <a href="groff.html">groff</a>, <a href="hhvm.html">HHVM</a>, <a href="huginn.html">huginn</a>, <a href="java.html">Java</a>, <a href="jq.html">jq</a>, <a href="kefir.html">Kefir</a>, <a href="latino.html">latino</a>, <a href="linux.html">Linux</a>, <a href="lobster.html">lobster</a>, <a href="mongodb.html">MongoDB</a>, <a href="nesc.html">nesC</a>, <a href="nodejs.html">Node.js</a>, <a href="oil.html">oil</a>, <a href="ooc.html">ooc</a>, <a href="opam-pm.html">opam-pm</a>, <a href="orca.html">orca</a>, <a href="p-star.html">P*</a>, <a href="pcre.html">PCRE</a>, <a href="pgbouncer.html">PgBouncer</a>, <a href="php.html">PHP</a>, <a href="poke.html">GNU Poke</a>, <a href="postgresql.html">PostgreSQL</a>, <a href="pov-ray-sdl.html">POV-Ray SDL</a>, <a href="python.html">Python</a>, <a href="qore.html">Qore</a>, <a href="racket.html">Racket</a>, <a href="ragel.html">Ragel</a>, <a href="ramen.html">ramen</a>, <a href="recfiles.html">Recfiles</a>, <a href="redis.html">Redis</a>, <a href="ricscript.html">RicScript</a>, <a href="ruby.html">Ruby</a>, <a href="sile.html">sile</a>, <a href="skip.html">skip</a>, <a href="slony.html">Slony</a>, <a href="smallbasic.html">SmallBASIC</a>, <a href="smpl.html">Semantic Patch Language</a>, <a href="sqlite.html">SQLite</a>, <a href="swi-prolog.html">SWI Prolog</a>, <a href="tridash.html">tridash</a>, <a href="ucl.html">UCL</a>, <a href="urweb.html">UrWeb</a>, <a href="vlc.html">VLC</a>, <a href="vsxu.html">VSXu</a>, <a href="wonkey.html">Wonkey</a>, <a href="xgboost-model.html">Xgboost</a>, <a href="xgboost.html">XGBoost</a>, <a href="yara.html">YARA</a>, <a href="zephir.html">Zephir</a>, <a href="zl.html">zl</a>
+
+```Example from <a href='https://riju.codes/m4'>Riju</a>:
+errprint(`Hello, world!&#39;)
+
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/m/M4.m4'>hello-world</a>:
+Hello
+```
+
+```Example from <a href='http://helloworldcollection.de/#M4'>the Hello World Collection</a>:
+# Hello World for the m4 macro processor
+Hello
+
+```
+
+```Example from <a href='https://github.com/Alhadis/language-etc'>Linguist</a>:
+dnl Took from https://en.wikipedia.org/wiki/M4_(computer_language)
+divert(-1)
+
+M4 has multiple output queues that can be manipulated with the
+`divert&#39; macro. Valid queues range from 0 to 10, inclusive, with
+the default queue being 0.
+
+Calling the `divert&#39; macro with an invalid queue causes text to be
+discarded until another call.  Note that even while output is being
+discarded, quotes around `divert&#39; and other macros are needed to
+prevent expansion.
+
+# Macros aren&#39;t expanded within comments, meaning that keywords such
+# as divert and other built-ins may be used without consequence.
+
+# HTML utility macro:
+
+define(`H2_COUNT&#39;, 0)
+
+# The H2_COUNT macro is redefined every time the H2 macro is used:
+
+define(`H2&#39;,
+	`define(`H2_COUNT&#39;, incr(H2_COUNT))&lt;h2&gt;H2_COUNT. $1&lt;/h2&gt;&#39;)
+
+divert(1)dnl
+dnl
+dnl The dnl macro causes m4 to discard the rest of the line, thus
+dnl preventing unwanted blank lines from appearing in the output.
+dnl
+H2(First Section)
+H2(Second Section)
+H2(Conclusion)
+dnl
+divert(0)dnl
+dnl
+&lt;HTML&gt;
+undivert(1)dnl One of the queues is being pushed to output.
+&lt;/HTML&gt;
+
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/M4_(computer_language)'>Wikipedia</a>:
+&lt;HTML&gt;
+&lt;h2&gt;1. First Section&lt;/h2&gt;
+&lt;h2&gt;2. Second Section&lt;/h2&gt;
+&lt;h2&gt;3. Conclusion&lt;/h2&gt;
+&lt;/HTML&gt;
+```
+
+Language <a href="../lists/features.html">features</a>
+======================================================
+
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  # A comment
+ Token #
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token
+
+Built with Scroll v180.0.1

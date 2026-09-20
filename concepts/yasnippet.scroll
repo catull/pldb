@@ -1,0 +1,84 @@
+../code/conceptPage.scroll
+
+id yasnippet
+name YASnippet
+appeared 2008
+creators Zhang Chiyuan
+tags textMarkup
+website http://joaotavora.github.com/yasnippet/
+latestVersion 0.14.0
+writtenIn lisp markdown css yaml make
+
+isOpenSource true
+fileType text
+repoStats
+ firstCommit 2008
+ commits 1443
+ committers 76
+ files 39
+ newestCommit 2025
+ mb 6
+ linesOfCode 9739
+
+example
+ # -*- mode: snippet -*-
+ # name: fun
+ # key: fun
+ # expand-env: ((yas-indent-line 'fixed))
+ # --
+ ${1:function-name} :: ${2:type}
+ $1 ${3:arguments} $0
+
+githubRepo https://github.com/joaotavora/yasnippet
+ firstCommit 2008
+ stars 2767
+ forks 313
+ subscribers 75
+ created 2011
+ updated 2024
+ description A template system for Emacs
+ issues 145
+
+lineCommentToken #
+
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
+
+githubBigQuery YASnippet
+ repos 264
+ users 261
+
+linguistGrammarRepo https://github.com/Alhadis/language-emacs-lisp
+ firstCommit 2016
+ lastCommit 2018
+ committerCount 1
+ commitCount 101
+ sampleCount 2
+ example
+  # name: Read stdin
+  # key: stdin
+  # group: es6
+  # --
+  new Promise(resolve => {
+  	let input = "";
+  	process.stdin.setEncoding("UTF8");
+  	process.stdin.on("readable", () => {
+  		const chunk = process.stdin.read();
+  		null !== chunk ? input += chunk : resolve(input);
+  	})
+  }).then(data => {
+  	$1
+  });
+
+githubLanguage YASnippet
+ fileExtensions yasnippet
+ type markup
+ aceMode text
+ tmScope source.yasnippet
+ aliases snippet or yas
+ repos 403
+
+semanticScholar 0

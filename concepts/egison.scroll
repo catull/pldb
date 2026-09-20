@@ -1,0 +1,42 @@
+../code/conceptPage.scroll
+
+id egison
+name Egison
+appeared 2013
+creators Satoshi Egi
+tags pl
+website https://www.egison.org/
+latestVersion 4.1.3
+lab University of Tokyo
+fileExtensions egi
+writtenIn haskell restructuredtext markdown yaml lisp python make
+
+repoStats
+ firstCommit 2013
+ commits 3810
+ committers 33
+ files 348
+ newestCommit 2022
+ mb 10
+ linesOfCode 29271
+country Japan
+
+example
+ -- Extract all twin primes from the infinite list of prime numbers with pattern matching!
+ def twinPrimes :=
+   matchAll primes as list integer with
+     | _ ++ $p :: #(p + 2) :: _ -> (p, p + 2)
+
+keywords as integer list matchAll multiset set with
+githubRepo https://github.com/egison/egison/
+ stars 905
+ forks 32
+ subscribers 45
+ description The Egison Programming Language
+ created 2013
+ updated 2024
+ issues 21
+
+lineCommentToken --
+
+hasPatternMatching true

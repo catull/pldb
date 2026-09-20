@@ -1,0 +1,66 @@
+../code/conceptPage.scroll
+
+id bqn
+name BQN
+appeared 2020
+creators Marshall Lochbaum
+tags pl arrayLang
+website https://mlochbaum.github.io/BQN/
+standsFor Big Questions Notation
+webRepl https://mlochbaum.github.io/BQN/
+description An APL-like programming language. Self-hosted!
+lab https://github.com/mlochbaum/BQN/issues
+writtenIn bqn html markdown vim-script javascript xml autohotkey css svg
+
+influencedBy apl
+docs https://mlochbaum.github.io/BQN/doc/index.html
+rosettaCode http://www.rosettacode.org/wiki/Category:BQN
+repoStats
+ firstCommit 2020
+ commits 2930
+ committers 41
+ files 549
+ newestCommit 2025
+ mb 12
+ linesOfCode 172379
+country United States
+
+discord https://discord.gg/SDTW36EhWF
+example
+ #! /usr/bin/env bqn
+ 
+ # Case conversion utilities
+ case ← {
+   diff ← -´ "Aa"
+   Lower ⇐ -⟜diff
+   Upper ⇐ Lower⁼
+ }
+ 
+ hw ← <˘ 2‿∘ ⥊ "helloworld"
+ hw case.Upper⌾(⊑¨)↩
+ •Out hw ↩ ∾ ⥊⍉ [hw, ", "‿"!"]  # Hello, World!
+ 
+ # Split at spaces and repeated characters
+ Split ← {
+   !1==𝕩 ⋄ (!2=•Type)¨𝕩
+   Proc ← {
+     · 𝕊 ' ': spl⇐1 ;             # Space: break and delete it
+     prev Fn cur: ⟨spl,str⟩⇐
+       spl←0 ⋄ str←⟨cur⟩          # Include and don't break...
+       { prev=cur ? spl+↩1 ; @ }  # except at equal characters
+   }
+   GV‿GS ← {𝕏¨}¨ ⟨ {⟨s⇐str⟩:s;""}
+                   {𝕩.spl} ⟩
+   r ← Proc{»𝔽¨⊢} 𝕩
+   (∾¨ GV ⊔˜ ·+`GS) r
+ }
+ •Show Split hw  # ⟨ "Hel" "lo," "World!" ⟩
+
+githubRepo https://github.com/mlochbaum/BQN
+ stars 867
+ forks 57
+ subscribers 32
+ created 2020
+ updated 2024
+ description An APL-like programming language
+ issues 3

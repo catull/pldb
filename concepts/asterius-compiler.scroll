@@ -1,0 +1,29 @@
+../code/conceptPage.scroll
+
+id asterius-compiler
+name asterius-compiler
+appeared 2017
+creators Shao Cheng
+tags compiler
+lab Tweag I/O
+writtenIn haskell javascript markdown c nix json yaml starlark svg html python xml toml bazel bourne-shell diff
+
+repoStats
+ firstCommit 2017
+ commits 1520
+ committers 23
+ files 1747
+ newestCommit 2022
+ mb 92
+ linesOfCode 131231
+country France and United Kingdom and Cyprus
+
+githubRepo https://github.com/tweag/asterius
+ firstCommit 2017
+ stars 1978
+ forks 55
+ subscribers 72
+ created 2017
+ updated 2024
+ description DEPRECATED in favor of ghc wasm backend, see https://www.tweag.io/blog/2022-11-22-wasm-backend-merged-in-ghc
+ issues 137

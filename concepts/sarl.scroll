@@ -1,0 +1,23 @@
+../code/conceptPage.scroll
+
+id sarl
+name SARL
+appeared 2013
+tags pl
+website http://www.sarl.io
+lab https://github.com/sarl
+
+country Australia and France
+
+pygmentsHighlighter SARL
+ filename jvm.py
+ fileExtensions sarl
+
+hasHexadecimals true
+hasFloats true
+hasIntegers true
+hasMultiLineComments true
+hasComments true
+
+domainName sarl.io
+ registered 2013

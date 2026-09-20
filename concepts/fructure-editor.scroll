@@ -1,0 +1,29 @@
+../code/conceptPage.scroll
+
+id fructure-editor
+name fructure-editor
+appeared 2017
+tags pl
+website https://fructure-editor.tumblr.com/
+lab https://github.com/disconcision/fructure/graphs/contributors
+writtenIn racket css javascript markdown html
+
+repoStats
+ firstCommit 2017
+ commits 313
+ committers 7
+ files 107
+ newestCommit 2024
+ mb 10
+ linesOfCode 68234
+country United States and United Kingdom
+
+githubRepo https://github.com/disconcision/fructure
+ firstCommit 2017
+ stars 448
+ forks 12
+ subscribers 14
+ created 2017
+ updated 2024
+ description a structured interaction engine 🗜️ ⚗️
+ issues 16

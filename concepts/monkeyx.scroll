@@ -1,0 +1,28 @@
+../code/conceptPage.scroll
+
+id monkeyx
+name MonkeyX
+appeared 2013
+creators Mark Sibly
+tags pl
+website https://blitzresearch.itch.io/monkeyx
+isFinished true
+writtenIn xml c cpp java csharp javascript objective-c actionscript html make glsl xaml qt hlsl d objective-cpp css cmake bash php bourne-shell
+
+repoStats
+ firstCommit 2013
+ newestCommit 2023
+ commits 724
+ committers 18
+ files 1671
+ mb 25
+ linesOfCode 336554
+
+githubRepo https://github.com/blitz-research/monkey
+ stars 224
+ forks 59
+ subscribers 50
+ created 2013
+ updated 2024
+ description Blitz Research Monkey Source
+ issues 30

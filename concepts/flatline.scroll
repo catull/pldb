@@ -1,0 +1,39 @@
+../code/conceptPage.scroll
+
+id flatline
+name Flatline
+appeared 2013
+tags pl
+website http://bigmlcom.github.io/flatline
+description Flatline is a lispy language for the specification of values to be extracted or generated from an input dataset, using a finite sliding window of input rows.
+lab BigML Inc
+writtenIn python restructuredtext javascript markdown html make jupyter-notebook css
+
+repoStats
+ firstCommit 2013
+ commits 84
+ committers 5
+ files 22
+ newestCommit 2021
+ mb 2
+ linesOfCode 15699
+country United States
+
+pygmentsHighlighter Flatline
+ filename dsls.py
+example
+ (if (missing? "00000") (random-value "000000") (f "000000"))
+
+githubRepo https://github.com/bigmlcom/flatline
+ firstCommit 2013
+ stars 26
+ forks 13
+ subscribers 14
+ created 2013
+ updated 2022
+ description Documentation, examples and utilities for Flatlline, BigML's dataset transformation and generation language
+ issues 0
+
+hasHexadecimals true
+hasFloats true
+hasIntegers true

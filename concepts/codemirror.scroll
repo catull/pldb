@@ -1,0 +1,50 @@
+../code/conceptPage.scroll
+
+id codemirror
+name CodeMirror
+appeared 2007
+creators Marijn Haverbeke
+tags editor
+website https://codemirror.net/
+latestVersion 0.16.0
+webRepl https://codemirror.net/try/
+lab https://github.com/codemirror
+writtenIn javascript yaml json markdown typescript html
+
+isOpenSource true
+related monaco
+fileType na
+repoStats
+ firstCommit 2018
+ commits 1937
+ committers 25
+ files 17
+ newestCommit 2024
+ mb 5
+ linesOfCode 736
+country Germany
+
+githubRepo https://github.com/codemirror/dev
+ firstCommit 2018
+ stars 5557
+ forks 353
+ subscribers 73
+ created 2018
+ updated 2024
+ description Development repository for the CodeMirror editor project
+ issues 23
+
+wikipedia https://en.wikipedia.org/wiki/CodeMirror
+ related javascript vi emacs-editor
+ summary CodeMirror is a JavaScript component that provides a code editor in the browser. It has a rich programming API and a focus on extensibility.
+ pageId 38914715
+ created 2013
+ backlinksCount 171
+ revisionCount 74
+ dailyPageViews 37
+ appeared 2007
+
+domainName codemirror.net
+ registered 2010
+ awisRank
+  2022 102621

@@ -1,0 +1,43 @@
+../code/conceptPage.scroll
+
+id spiral
+name spiral
+appeared 2017
+creators Marko Grdinić
+tags pl
+lab https://github.com/mrakgr/The-Spiral-Language/issues
+writtenIn python c f-sharp json cpp typescript html cuda markdown xml powershell toml
+
+repoStats
+ firstCommit 2017
+ commits 8072
+ committers 11
+ files 3038
+ newestCommit 2024
+ mb 56
+ linesOfCode 4330
+country Croatia
+
+example
+ inl x = 2 // Define a 64-bit integer in Spiral.
+ inl mult a b = a * b
+ inl f g = g 1 2, g 3.0 4.0 // Would give a type error in F#.
+ f mult
+
+githubRepo https://github.com/mrakgr/The-Spiral-Language
+ firstCommit 2017
+ stars 916
+ forks 27
+ subscribers 36
+ created 2017
+ updated 2024
+ description Functional language with intensional polymorphism and first-class staging.
+ issues 1
+
+lineCommentToken //
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false

@@ -1,0 +1,13 @@
+../code/conceptPage.scroll
+
+id s-snobol
+name S-Snobol
+appeared 1978
+tags pl
+lab Heriot-Watt University
+
+supersetOf snobol4
+country Scotland
+reference https://semanticscholar.org/paper/1ce78a711bc09611ce51b9dbcbc586a018115f09
+
+hopl https://hopl.info/showlanguage.prx?exp=4041

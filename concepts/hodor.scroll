@@ -1,0 +1,53 @@
+../code/conceptPage.scroll
+
+id hodor
+name Hodor
+appeared 2015
+creators Drew Morris
+tags esolang
+website http://www.hodor-lang.org/
+latestVersion 1.0.2
+description Using jumbled permutations of the word "hodor" over and over again we have simplified programming syntax to make it easier than ever before.
+lab https://github.com/hummingbirdtech
+writtenIn javascript markdown json
+
+isOpenSource true
+tryItOnline https://tio.run/#hodor
+repoStats
+ firstCommit 2015
+ commits 25
+ committers 4
+ files 10
+ newestCommit 2017
+ mb 1
+ linesOfCode 335
+country United States
+
+example
+ $HODOR: hhodor? Hodor!? Hodor!? oHooodorrhodor orHodor!? d = HoDoRHoDoR () {
+  hodor.hod('Hhodor? Hodor!? Hodor!? o HODOR!? orHodor!? d!');
+ };
+ 
+ hhodor? Hodor!? Hodor!? oHooodorrhodor orHodor!? d();
+leachim6 Hodor
+ filepath h/Hodor.hd
+ fileExtensions hd
+ example
+  hodor.hod('Hhodor? Hodor!? Hodor!? o, Hooodorrhodor orHodor!? d!');
+
+githubRepo https://github.com/hummingbirdtech/hodor
+ firstCommit 2015
+ stars 327
+ forks 31
+ subscribers 14
+ created 2015
+ updated 2024
+ description Official repo for the hodor-lang.org programming language
+ issues 3
+
+printToken hodor.hod
+
+hasPrintDebugging true
+
+domainName hodor-lang.org
+ registered 2021

@@ -1,0 +1,33 @@
+../code/conceptPage.scroll
+
+id gluon
+name gluon
+appeared 2014
+tags pl
+website https://gluon-lang.org
+latestVersion 1.0.37
+lab https://github.com/gluon-lang/
+writtenIn rust markdown toml bourne-shell yaml html css
+
+repoStats
+ firstCommit 2014
+ commits 3973
+ committers 65
+ files 365
+ newestCommit 2024
+ mb 14
+ linesOfCode 106384
+country Australia and Sweden
+
+githubRepo https://github.com/gluon-lang/gluon
+ firstCommit 2014
+ stars 3168
+ forks 145
+ subscribers 60
+ created 2015
+ updated 2024
+ description A static, type inferred and embeddable language written in Rust.
+ issues 163
+
+domainName gluon-lang.org
+ registered 2018

@@ -1,0 +1,63 @@
+header.scroll
+
+title Increment and decrement operators - language feature
+tags Feature
+printTitle Increment and decrement operators
+
+<a class="trueBaseThemePreviousItem" href="hasImports.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasInfixNotation.html">&gt;</a>
+
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
+
+container 600px
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/javascript.html">JavaScript</a>
+ let i = 0
+ i++
+ i--
+
+codeWithHeader Example from <b>2 languages</b>: <a href="../concepts/go.html">Go</a>, <a href="../concepts/wa.html">Wa-lang</a>
+ i := 0
+ i++
+ i--
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/c3.html">C3</a>
+ i++; --j;
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/toit.html">Toit</a>
+ i++
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/jule.html">Jule</a>
+ ++
+ --
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/aardvark.html">Aardvark</a>
+ ++ and --
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/speedie.html">Speedie</a>
+ || x = 1
+ x++
+ x--
+
+***
+
+* Languages *with* Increment and decrement operators include <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/c.html">C</a>, <a href="../concepts/java.html">Java</a>, <a href="../concepts/php.html">PHP</a>, <a href="../concepts/go.html">Go</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/wa.html">Wa-lang</a>, <a href="../concepts/toit.html">Toit</a>, <a href="../concepts/jule.html">Jule</a>, <a href="../concepts/aardvark.html">Aardvark</a>, <a href="../concepts/speedie.html">Speedie</a>
+
+***
+
+* Languages *without* Increment and decrement operators include <a href="../concepts/chapel.html">Chapel</a>, <a href="../concepts/lil.html">Lil</a>, <a href="../concepts/progsbase.html">progsbase</a>, <a href="../concepts/slope.html">Slope</a>, <a href="../concepts/sako.html">SAKO</a>
+
+***
+
+View all concepts with or missing a *hasIncrementAndDecrementOperators* measurement
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasIncrementAndDecrementOperators&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasIncrementAndDecrementOperators%22%2C%22origData%22%3A%22hasIncrementAndDecrementOperators%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasIncrementAndDecrementOperators&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasIncrementAndDecrementOperators%22%2C%22origData%22%3A%22hasIncrementAndDecrementOperators%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D with
+
+***
+
+* Read more about Increment and decrement operators on the web: 1.
+ https://en.wikipedia.org/wiki/Increment_and_decrement_operators 1.
+
+keyboardNav hasImports.html hasInfixNotation.html
+
+../footer.scroll

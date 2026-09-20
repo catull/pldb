@@ -1,0 +1,10 @@
+../code/conceptPage.scroll
+
+id soql-lang
+name Socrata Query Language
+appeared 2012
+tags queryLanguage
+lab Socrata, Inc
+
+country United States
+reference https://dev.socrata.com/docs/queries/

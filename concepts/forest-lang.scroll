@@ -1,0 +1,28 @@
+../code/conceptPage.scroll
+
+id forest-lang
+name forest-lang
+appeared 2017
+tags pl
+lab https://github.com/forest-lang
+writtenIn haskell nix yaml ruby markdown html svg javascript make
+
+repoStats
+ firstCommit 2017
+ commits 306
+ committers 3
+ files 62
+ newestCommit 2020
+ mb 1
+ linesOfCode 4790
+country New Zealand
+
+githubRepo https://github.com/forest-lang/forest-compiler
+ firstCommit 2017
+ stars 620
+ forks 13
+ subscribers 45
+ created 2017
+ updated 2024
+ description A multi-syntax functional programming language that compiles to WebAssembly.
+ issues 8

@@ -1,0 +1,23 @@
+../code/conceptPage.scroll
+
+id mlite
+name mLite
+appeared 2014
+creators Nils M Holm
+tags pl
+website https://www.t3x.org/mlite/index.html
+redditDiscussion https://www.reddit.com/r/programming/comments/2ouscr/the_mlite_language_t3xorg/
+description a lightweight (and slightly odd) inhabitant of the ML universe.
+lab https://www.t3x.org
+
+influencedBy ml
+docs https://www.t3x.org/mlite/mll.pdf
+country Germany
+reference https://lobste.rs/s/ukhvbs/mlite_language
+
+example
+ ;; create lists of numbers
+ fun iota (a, b) where (a = b)
+                 = [a]
+        | (a, b) = a :: iota (a + 1, b)
+        | a      = iota (1, a)

@@ -1,0 +1,45 @@
+../code/conceptPage.scroll
+
+id vyxal
+name Vyxal
+appeared 2020
+creators lyxal
+tags esolang
+website http://vyxal.pythonanywhere.com
+latestVersion v4.2.0
+lab Code Golf
+fileExtensions vy vyxal
+writtenIn scala markdown yaml python javascript scheme css html bourne-shell json
+
+isOpenSource true
+visualParadigm false
+docs https://github.com/Vyxal/Vyxal/tree/main/documents
+repoStats
+ firstCommit 2020
+ commits 10125
+ committers 76
+ files 132
+ newestCommit 2025
+ mb 69
+ linesOfCode 2975536
+country Australia
+
+subreddit https://www.reddit.com/r/vyxal
+ memberCount
+  2022 3
+example
+ ₁ƛ₍₃₅kF½*∑∴,
+
+githubRepo https://github.com/Vyxal/Vyxal
+ firstCommit 2020
+ stars 265
+ forks 31
+ subscribers 6
+ created 2020
+ updated 2024
+ description A code-golfing language experience that has aspects of traditional programming languages - terse, elegant, readable.
+ issues 4
+
+domainName vyxal.pythonanywhere.com
+ awisRank
+  2022 11346853

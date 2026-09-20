@@ -1,0 +1,32 @@
+../code/conceptPage.scroll
+
+id icedcoffeescript
+name IcedCoffeeScript
+appeared 2009
+creators Max Krohn
+tags pl
+website https://maxtaco.github.io/coffee-script/
+latestVersion 108.0.14
+lab https://github.com/maxtaco/coffee-script/issues
+fileExtensions coffee
+writtenIn coffeescript javascript html markdown css json xml
+compilesTo javascript
+
+repoStats
+ firstCommit 2009
+ commits 8264
+ committers 201
+ files 279
+ newestCommit 2019
+ mb 28
+ linesOfCode 152734
+country United States
+
+githubRepo https://github.com/maxtaco/coffee-script/
+ description IcedCoffeeScript
+ stars 728
+ forks 58
+ subscribers 21
+ created 2011
+ updated 2024
+ issues 84

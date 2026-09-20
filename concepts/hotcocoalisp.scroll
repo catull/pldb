@@ -1,0 +1,31 @@
+../code/conceptPage.scroll
+
+id hotcocoalisp
+name Hot Cocoa Lisp
+appeared 2013
+creators Sam Auciello
+tags pl
+website https://github.com/olleicua/hcl
+latestVersion 0.1.11
+lab https://github.com/olleicua/hcl/issues
+fileExtensions hcl
+writtenIn javascript hcl markdown json html yaml
+
+repoStats
+ firstCommit 2013
+ commits 142
+ committers 4
+ files 199
+ newestCommit 2023
+ mb 1
+ linesOfCode 27679
+country United States
+
+githubRepo https://github.com/olleicua/hcl
+ stars 34
+ forks 4
+ subscribers 6
+ created 2013
+ updated 2023
+ description Hot Cocoa Lisp
+ issues 20

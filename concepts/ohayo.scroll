@@ -1,0 +1,46 @@
+../code/conceptPage.scroll
+
+id ohayo
+name Ohayo
+appeared 2017
+creators Breck Yunits
+tags pl dataFlow dataVis
+website https://ohayo.breckyunits.com/
+latestVersion 20.1.0
+webRepl https://ohayo.breckyunits.com/
+description Ohayo is a fast and free tool for data science. Ohayo consists of a very high level programming language and a visual web studio for that language. The goal of Ohayo is to enable people to do data science at the speed of voice.
+lab Breck's Lab
+writtenIn javascript json csv svg markdown css typescript html
+
+isPublicDomain true
+isOpenSource true
+related r
+repoStats
+ firstCommit 2017
+ commits 202
+ committers 4
+ files 384
+ newestCommit 2024
+ mb 14
+ linesOfCode 635677
+country United States
+
+example
+ web.get ohayo/packages/samples/welcome.md
+  parser text
+  hidden
+  markdown.toHtml
+ templates.list
+ challenge.list
+
+githubRepo https://github.com/breck7/ohayo
+ firstCommit 2017
+ stars 132
+ forks 5
+ subscribers 9
+ created 2017
+ updated 2024
+ description A free, fast, public domain data science studio
+ issues 56
+
+hasSemanticIndentation true

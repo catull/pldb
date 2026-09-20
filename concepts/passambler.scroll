@@ -1,0 +1,31 @@
+../code/conceptPage.scroll
+
+id passambler
+name passambler
+appeared 2015
+tags pl
+lab https://github.com/gitter-badger/Passambler/pulls
+writtenIn java markdown
+
+repoStats
+ firstCommit 2015
+ commits 749
+ committers 3
+ files 193
+ newestCommit 2015
+ mb 2
+ linesOfCode 979
+country Belgium
+
+githubRepo https://github.com/gitter-badger/Passambler
+ stars 0
+ forks 1
+ subscribers 1
+ created 2015
+ updated 2015
+ description The Passambler programming language
+ issues 0
+
+hackerNewsDiscussions
+ id|title|time|timestamp|by|comments|score
+ 9676182|Show HN: Passambler: A toy language I made in Java over the course of 4 months|2015-06-07 20:03:25 UTC|1433707405|raoulvdberge|0|5

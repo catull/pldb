@@ -1,0 +1,68 @@
+../code/conceptPage.scroll
+
+id pyret
+name pyret
+appeared 2011
+creators Joe Gibbs Politz
+tags pl
+website https://www.pyret.org/
+description Pyret is a programming language designed to serve as an outstanding choice for programming education while exploring the confluence of scripting and functional programming. It's under active design and development, and free to use or modify.
+lab Brown University
+writtenIn javascript json markdown svg make lisp vim-script asp.net html bourne-shell csv xml yaml
+
+exercism https://exercism.org/tracks/pyret
+repoStats
+ firstCommit 2012
+ commits 11152
+ committers 92
+ files 654
+ newestCommit 2025
+ mb 481
+ linesOfCode 1095548
+country United States
+
+example
+ data BinTree:
+  | leaf
+  | node(value, left, right)
+ end
+ fun tree-sum(t):
+   doc: "Calculate the sum of node values"
+   cases (BinTree) t:
+     | leaf => 0
+     | node(v, l, r) =>
+       v + tree-sum(l) + tree-sum(r)
+   end
+ where:
+   tree-sum(leaf) is 0
+   node4 = node(4, leaf, leaf)
+   tree-sum(node(5, node4, leaf)) is 9
+ end
+leachim6 Pyret
+ filepath p/Pyret.arr
+ fileExtensions arr
+ example
+  print('Hello World')
+  
+
+githubRepo https://github.com/brownplt/pyret-lang
+ firstCommit 2012
+ stars 1061
+ forks 106
+ subscribers 42
+ created 2012
+ updated 2024
+ description The Pyret language.
+ issues 437
+
+printToken print
+stringToken '
+
+hasPrintDebugging true
+hasStrings true
+ 'Hello world'
+
+domainName pyret.org
+ registered 2011
+ awisRank
+  2022 1111494

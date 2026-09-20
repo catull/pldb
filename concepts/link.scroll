@@ -1,0 +1,37 @@
+../code/conceptPage.scroll
+
+id link
+name Link
+appeared 2021
+creators Lance Pollard
+tags pl
+latestVersion 0.3.0
+lab https://github.com/teamtreesurf
+fileExtensions link
+writtenIn markdown json svg yaml typescript
+
+repoStats
+ firstCommit 2021
+ commits 383
+ committers 1
+ files 208
+ newestCommit 2024
+ mb 175
+ linesOfCode 13068
+country United States
+
+example
+ save x, text 10 # create
+ save y, move x # move
+ save z, loan y # borrow
+ save w, read z # copy
+
+githubRepo https://github.com/teamdrumwork/base
+ firstCommit 2021
+ stars 6
+ forks 0
+ subscribers 1
+ created 2021
+ updated 2024
+ description A TreeCode Programming Framework
+ issues 3

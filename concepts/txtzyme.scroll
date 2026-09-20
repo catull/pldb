@@ -1,0 +1,31 @@
+../code/conceptPage.scroll
+
+id txtzyme
+name txtzyme
+appeared 2010
+creators Ward Cunningham
+tags pl
+website http://txtzyme.com/welcome-visitors.html
+description Txtzyme was created around 2010-2012 by Ward Cunningham.  Txtzyme has the advantage that it is specifically oriented to I/O control and interaction - yet surprisingly simple.
+writtenIn perl javascript html bourne-shell css json markdown c haml make cpp ruby java sass
+
+isOpenSource true
+repoStats
+ firstCommit 2010
+ commits 272
+ committers 7
+ files 287
+ newestCommit 2023
+ mb 5
+ linesOfCode 39270
+reference http://sustburbia.blogspot.com/2016/01/a-review-of-tiny-languages-part-1.html
+
+githubRepo https://github.com/WardCunningham/Txtzyme
+ firstCommit 2010
+ stars 72
+ forks 22
+ subscribers 11
+ created 2010
+ updated 2024
+ description DIY DSL Interpreter for Teensy (Arduino-like) Controllers
+ issues 4

@@ -1,0 +1,29 @@
+../code/conceptPage.scroll
+
+id charcoal
+name Charcoal
+appeared 2016
+creators somebody1234
+tags esolang
+website https://github.com/somebody1234/Charcoal/
+lab https://github.com/somebody1234
+writtenIn python opencl yaml markdown ini
+
+repoStats
+ firstCommit 2016
+ commits 269
+ committers 10
+ files 46
+ newestCommit 2024
+ mb 1
+ linesOfCode 22738
+country Unknown
+
+githubRepo https://github.com/somebody1234/Charcoal/
+ stars 209
+ forks 9
+ subscribers 6
+ created 2016
+ updated 2024
+ description A concise language for sketching ASCII art.
+ issues 1

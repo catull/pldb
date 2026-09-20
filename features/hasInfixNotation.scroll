@@ -1,0 +1,49 @@
+header.scroll
+
+title Infix Notation - language feature
+tags Feature
+printTitle Infix Notation
+
+<a class="trueBaseThemePreviousItem" href="hasIncrementAndDecrementOperators.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasInheritance.html">&gt;</a>
+
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
+
+container 600px
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/javascript.html">JavaScript</a>
+ const six = 2 + 2 + 2
+
+codeWithHeader Example from <b>3 languages</b>: <a href="../concepts/python.html">Python</a>, <a href="../concepts/elixir.html">Elixir</a>, <a href="../concepts/speedie.html">Speedie</a>
+ seven = 3 + 4
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/coconut.html">Coconut</a>
+ 5 `mod` 3 == 2
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/lil.html">Lil</a>
+ six: 2 + 2 + 2
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/hope.html">HOPE</a>
+ max(10,20) + max(1,max(2,3));
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/sako.html">SAKO</a>
+ I = 3 + 4
+
+***
+
+* Languages *with* Infix Notation include <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/python.html">Python</a>, <a href="../concepts/elixir.html">Elixir</a>, <a href="../concepts/coconut.html">Coconut</a>, <a href="../concepts/lil.html">Lil</a>, <a href="../concepts/hope.html">HOPE</a>, <a href="../concepts/sako.html">SAKO</a>, <a href="../concepts/aardvark.html">Aardvark</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/morloc.html">Morloc</a>, <a href="../concepts/funcsug.html">FuncSug</a>
+
+***
+
+View all concepts with or missing a *hasInfixNotation* measurement
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasInfixNotation&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasInfixNotation%22%2C%22origData%22%3A%22hasInfixNotation%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasInfixNotation&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasInfixNotation%22%2C%22origData%22%3A%22hasInfixNotation%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D with
+
+***
+
+* Read more about Infix Notation on the web: 1.
+ https://en.wikipedia.org/wiki/Infix_notation 1.
+
+keyboardNav hasIncrementAndDecrementOperators.html hasInheritance.html
+
+../footer.scroll

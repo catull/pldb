@@ -1,0 +1,67 @@
+../code/conceptPage.scroll
+
+id capn-proto
+name Cap'n Proto
+appeared 2013
+creators Kenton Varda
+tags idl
+website https://capnproto.org/
+latestVersion v1.0.2
+lab Cap'n Proto
+writtenIn cpp markdown bourne-shell cmake html starlark yaml m4 json protobuf css python xml make javascript svg bazel lisp
+
+isOpenSource true
+related protobuf
+fileType text
+repoStats
+ firstCommit 2013
+ commits 5699
+ committers 262
+ files 490
+ newestCommit 2025
+ mb 25
+ linesOfCode 234755
+country United States and Portugal
+
+pygmentsHighlighter Cap'n Proto
+ filename capnproto.py
+ fileExtensions capnp
+twitter https://twitter.com/capnproto
+
+githubRepo https://github.com/capnproto/capnproto
+ firstCommit 2013
+ stars 11435
+ forks 909
+ subscribers 315
+ created 2013
+ updated 2024
+ description Cap'n Proto serialization/RPC system - core tools and C++ library
+ issues 240
+
+hasLineComments true
+hasComments true
+
+domainName capnproto.org
+ registered 2013
+ awisRank
+  2022 1586908
+
+githubBigQuery Cap'n Proto
+ repos 690
+ users 557
+
+linguistGrammarRepo https://github.com/textmate/capnproto.tmbundle
+ firstCommit 2013
+ lastCommit 2017
+ committerCount 2
+ commitCount 2
+
+githubLanguage Cap'n Proto
+ fileExtensions capnp
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.capnp
+ repos 134567
+
+semanticScholar 0

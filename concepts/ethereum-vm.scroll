@@ -1,0 +1,12 @@
+../code/conceptPage.scroll
+
+id ethereum-vm
+name Ethereum Virtual Machine
+appeared 2015
+creators Vitalik Buterin
+tags vm
+lab Ethereum Foundation
+
+fileType text
+country Canada
+reference https://github.com/ethereum/wiki/wiki/Ethereum-Virtual-Machine-(EVM)-Awesome-List

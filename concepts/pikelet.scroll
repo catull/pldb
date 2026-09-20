@@ -1,0 +1,31 @@
+../code/conceptPage.scroll
+
+id pikelet
+name pikelet
+appeared 2017
+creators Brendan Zabarauskas
+tags pl
+website https://pikelet-lang.github.io/pikelet/
+description Pikelet is a small, functional, dependently typed programming language.
+lab https://github.com/pikelet-lang
+writtenIn markdown rust toml json yaml javascript
+
+repoStats
+ firstCommit 2017
+ commits 1190
+ committers 12
+ files 90
+ newestCommit 2021
+ mb 6
+ linesOfCode 13733
+country Australia
+
+githubRepo https://github.com/pikelet-lang/pikelet
+ firstCommit 2017
+ stars 610
+ forks 26
+ subscribers 30
+ created 2017
+ updated 2024
+ description A friendly little systems language with first-class types. Very WIP! 🚧 🚧 🚧
+ issues 31

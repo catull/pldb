@@ -1,0 +1,30 @@
+../code/conceptPage.scroll
+
+id humanhash-hash-function
+name humanhash-hash-function
+appeared 2011
+creators Zachary Voase
+tags hashFunction
+latestVersion v0.0.1
+lab https://github.com/zacharyvoase/humanhash/issues
+writtenIn python markdown
+
+repoStats
+ firstCommit 2011
+ commits 5
+ committers 1
+ files 5
+ newestCommit 2011
+ mb 1
+ linesOfCode 261
+country United States
+
+githubRepo https://github.com/zacharyvoase/humanhash
+ firstCommit 2011
+ stars 852
+ forks 39
+ subscribers 18
+ created 2011
+ updated 2024
+ description Human-readable digests.
+ issues 11

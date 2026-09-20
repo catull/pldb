@@ -1,0 +1,18 @@
+../code/conceptPage.scroll
+
+id wikitax
+name Wikitax
+appeared 2002
+tags wikiMarkup
+description Wikitax: a plaintext markup syntax to indicate semantical, display, and formatting information for text in CMSes, wikies, and blogs.
+
+related mediawiki
+reference https://meta.wikimedia.org/wiki/Wikitax
+
+example
+ [*
+ This paragraph.
+ 
+ And this paragraph, too.
+ Are bold.
+ *]

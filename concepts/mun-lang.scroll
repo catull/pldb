@@ -1,0 +1,56 @@
+../code/conceptPage.scroll
+
+id mun-lang
+name mun-lang
+appeared 2019
+tags pl
+website https://mun-lang.org/
+latestVersion v0.5.0
+lab https://github.com/mun-lang
+writtenIn rust toml markdown yaml svg cpp javascript cmake bourne-shell json bash lua css
+
+repoStats
+ firstCommit 2019
+ commits 943
+ committers 32
+ files 795
+ newestCommit 2025
+ mb 6
+ linesOfCode 105203
+country Various
+reference https://news.ycombinator.com/item?id=21172980
+
+example
+ fn main() {
+     let sum = add(a, b);
+     // Comments: Mun natively supports bool, float, and int
+     let is_true = true;
+     let var: float = 0.5;
+ }
+ // The order of function definitions doesn't matter
+ fn add(a: int, b: int): int {
+     a + b
+ }
+
+githubRepo https://github.com/mun-lang/mun
+ firstCommit 2019
+ stars 1813
+ forks 72
+ subscribers 27
+ created 2019
+ updated 2024
+ description Source code for the Mun language and runtime.
+ issues 44
+
+lineCommentToken //
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
+
+domainName mun-lang.org
+ registered 2019
+ awisRank
+  2022 8850967

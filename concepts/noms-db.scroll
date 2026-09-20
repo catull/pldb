@@ -1,0 +1,31 @@
+../code/conceptPage.scroll
+
+id noms-db
+name noms-db
+appeared 2015
+creators Aaron Boodman and Erik Arvidsson
+tags database
+description Noms is a decentralized database philosophically descendant from the Git version control system.
+lab https://github.com/attic-labs
+writtenIn go markdown python javascript html yaml bourne-shell json dockerfile
+
+faq https://github.com/attic-labs/noms/blob/master/doc/faq.md
+repoStats
+ firstCommit 2015
+ commits 4016
+ committers 56
+ files 451
+ newestCommit 2021
+ mb 72
+ linesOfCode 33650
+country United States
+
+githubRepo https://github.com/attic-labs/noms
+ firstCommit 2015
+ stars 7444
+ forks 267
+ subscribers 198
+ created 2015
+ updated 2024
+ description The versioned, forkable, syncable database
+ issues 293

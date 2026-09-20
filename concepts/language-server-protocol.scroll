@@ -1,0 +1,12 @@
+../code/conceptPage.scroll
+
+id language-server-protocol
+name LSP
+appeared 2016
+tags protocol
+website https://microsoft.github.io/language-server-protocol/
+lab Microsoft
+
+reference https://langserver.org/
+
+wikipedia https://en.wikipedia.org/wiki/Language_Server_Protocol

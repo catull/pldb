@@ -1,0 +1,71 @@
+../code/conceptPage.scroll
+
+id carbon
+name Carbon
+appeared 2020
+creators Chandler Carruth and Jon Ross-Perkins
+tags pl
+website https://docs.carbon-lang.dev
+lab Google
+fileExtensions carbon
+writtenIn markdown cpp bazel python yaml starlark bourne-shell json svg diff javascript vim-script dockerfile xml protobuf c scheme html yacc lua lex make toml
+
+clocExtensions carbon
+repoStats
+ firstCommit 2020
+ commits 3573
+ committers 175
+ files 5415
+ newestCommit 2025
+ mb 50
+ linesOfCode 479615
+country United States
+reference https://news.ycombinator.com/item?id=32151609
+
+example
+ package Sorting api;
+ 
+ fn Partition[T:! Comparable & Movable](s: Slice(T))
+      -> i64 {
+   var i: i64 = -1;
+ 
+   for (e: T in s) {
+     if (e <= s.Last()) {
+       ++i;
+       Swap(&s[i], &e);
+     }
+   }
+   return i;
+ }
+ 
+ fn QuickSort[T:! Comparable & Movable](s: Slice(T)) {
+   if (s.Size() <= 1) {
+     return;
+   }
+   let p: i64 = Partition(s);
+   QuickSort(s[:p - 1]));
+   QuickSort(s[p + 1:]));
+ }
+compilerExplorer Carbon
+ example
+  package sample api;
+  
+  fn Square(x: i32) -> i32 {
+    return x * x;
+  }
+  
+  fn Main() -> i32 {
+    return Square(12);
+  }
+
+githubRepo https://github.com/carbon-language/carbon-lang
+ firstCommit 2020
+ stars 32258
+ forks 1464
+ subscribers 391
+ created 2020
+ updated 2024
+ description Carbon Language's main repository: documents, design, implementation, and related tools. (NOTE: Carbon Language is experimental; see README)
+ issues 112
+
+wikipedia https://en.wikipedia.org/wiki/Carbon_(programming_language)

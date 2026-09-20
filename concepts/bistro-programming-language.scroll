@@ -1,0 +1,18 @@
+../code/conceptPage.scroll
+
+id bistro-programming-language
+name Bistro
+appeared 1999
+creators Nikolas S. Boyd
+tags pl
+website https://bitbucket.org/nik_boyd/bistro-smalltalk
+description Bistro is a variation of Smalltalk that integrates the best features of Smalltalk and Java. Bistro Smalltalk is an experimental programming language that runs on the Java Virtual Machine, or JVM.
+lab University of California Berkeley
+
+country United States
+reference http://bistro.sourceforge.net/
+
+wikipedia https://en.wikipedia.org/wiki/Bistro_%28programming_language%29
+ dailyPageViews -1
+
+hopl https://hopl.info/showlanguage.prx?exp=1861

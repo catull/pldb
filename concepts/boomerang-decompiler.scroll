@@ -1,0 +1,29 @@
+../code/conceptPage.scroll
+
+id boomerang-decompiler
+name Boomerang Decompiler
+appeared 2002
+tags decompiler
+latestVersion v0.5.2
+lab Queensland University of Technology
+writtenIn cpp c cmake assembly-language markdown haskell qt yaml bourne-shell sed yacc python lex fortran-77 powershell
+
+repoStats
+ firstCommit 2002
+ commits 5921
+ committers 26
+ files 1304
+ newestCommit 2020
+ mb 42
+ linesOfCode 133963
+country Australia
+
+githubRepo https://github.com/BoomerangDecompiler/boomerang
+ firstCommit 2002
+ stars 369
+ forks 59
+ subscribers 29
+ created 2013
+ updated 2024
+ description Boomerang Decompiler - Fighting the code-rot :)
+ issues 38

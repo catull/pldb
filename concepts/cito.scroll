@@ -1,0 +1,40 @@
+../code/conceptPage.scroll
+
+id cito
+name Ć
+appeared 2011
+creators Piotr Fusik
+tags pl
+website https://github.com/pfusik/cito
+latestVersion 3.1.0-development
+description Ć programming language. Translated automatically to C, C++, C#, Java, JavaScript, Python, Swift, TypeScript and OpenCL C.
+lab http://fusik.info/piotr/
+writtenIn json markdown make csharp cpp javascript yaml xml vim-script java typescript perl svg
+
+repoStats
+ firstCommit 2011
+ commits 2666
+ committers 13
+ files 708
+ newestCommit 2025
+ mb 6
+ linesOfCode 126075
+country Unknown
+
+example
+ public class HelloCi
+ {
+     public static string GetMessage()
+     {
+         return "Hello, world!";
+     }
+ }
+
+githubRepo https://github.com/pfusik/cito
+ stars 1727
+ forks 55
+ subscribers 32
+ created 2019
+ updated 2024
+ description Fusion programming language. Transpiling to C, C++, C#, D, Java, JavaScript, Python, Swift, TypeScript and OpenCL C.
+ issues 34

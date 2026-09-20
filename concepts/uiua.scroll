@@ -1,0 +1,34 @@
+../code/conceptPage.scroll
+
+id uiua
+name Uiua
+appeared 2023
+creators Kai Schmidt
+tags pl
+website https://www.uiua.org/
+latestVersion 0.11.1
+webRepl https://www.uiua.org/pad
+description A stack-based array programming language
+fileExtensions ua
+writtenIn rust svg markdown toml yaml json html css nix javascript
+
+related j
+docs https://www.uiua.org/docs/
+repoStats
+ firstCommit 2023
+ commits 7244
+ committers 112
+ files 205
+ newestCommit 2025
+ mb 22
+ linesOfCode 93431
+reference https://news.ycombinator.com/item?id=37673127
+
+githubRepo https://github.com/uiua-lang/uiua
+ stars 1485
+ forks 105
+ subscribers 25
+ created 2023
+ updated 2024
+ description A stack-based array programming language
+ issues 10

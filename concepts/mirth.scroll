@@ -1,0 +1,28 @@
+../code/conceptPage.scroll
+
+id mirth
+name mirth
+appeared 2019
+tags pl
+lab https://github.com/mirth-lang
+writtenIn bourne-shell markdown json vim-script c svg make yaml cson
+
+repoStats
+ firstCommit 2019
+ commits 663
+ committers 20
+ files 206
+ newestCommit 2025
+ mb 17
+ linesOfCode 113745
+country Switzerland and United States
+
+githubRepo https://github.com/mirth-lang/mirth
+ firstCommit 2019
+ stars 444
+ forks 14
+ subscribers 28
+ created 2019
+ updated 2024
+ description Compiler for the Mirth programming language.
+ issues 15

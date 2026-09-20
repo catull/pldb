@@ -1,0 +1,5 @@
+buildRss feed.xml
+replace BASE_URL ..
+
+../settings.scroll
+printFeed All

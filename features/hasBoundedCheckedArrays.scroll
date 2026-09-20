@@ -1,0 +1,29 @@
+header.scroll
+
+title hasBoundedCheckedArrays - language feature
+tags Feature
+printTitle hasBoundedCheckedArrays
+
+<a class="trueBaseThemePreviousItem" href="hasBooleans.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasBreak.html">&gt;</a>
+
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
+
+container 600px
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/jule.html">Jule</a>
+ let arr: [5]byte = [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;]
+
+***
+
+* Languages *with* hasBoundedCheckedArrays include <a href="../concepts/chapel.html">Chapel</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/jule.html">Jule</a>, <a href="../concepts/morloc.html">Morloc</a>
+
+***
+
+View all concepts with or missing a *hasBoundedCheckedArrays* measurement
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasBoundedCheckedArrays&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasBoundedCheckedArrays%22%2C%22origData%22%3A%22hasBoundedCheckedArrays%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasBoundedCheckedArrays&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasBoundedCheckedArrays%22%2C%22origData%22%3A%22hasBoundedCheckedArrays%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D with
+
+keyboardNav hasBooleans.html hasBreak.html
+
+../footer.scroll

@@ -1,0 +1,37 @@
+../code/conceptPage.scroll
+
+id tea-pm
+name tea
+appeared 2021
+creators Max Howell
+tags packageManager
+website https://tea.xyz/
+latestVersion v1.1.6
+description From the creator of brew, tea is a standalone, binary download for all platforms that puts the entire open source ecosystem at your fingertips. Casually and effortlessly use the latest and greatest or the oldest and most mature from any layer of any stack. Break down the silos between programming communities, throw together scripts that use entirely separate tools and languages and share them with the world with a simple one-liner.All you need is tea.
+lab tea inc
+writtenIn typescript yaml markdown json toml bourne-shell dockerfile
+
+isOpenSource true
+influencedBy homebrew-pm
+repoStats
+ firstCommit 2021
+ commits 1129
+ committers 64
+ files 59
+ newestCommit 2025
+ mb 2
+ linesOfCode 7485
+country United States
+reference https://tea.xyz/white-paper/
+
+twitter https://twitter.com/teaxyz_
+
+githubRepo https://github.com/teaxyz/cli
+ firstCommit 2021
+ stars 8817
+ forks 1359
+ subscribers 80
+ created 2021
+ updated 2024
+ description the last thing you’ll install
+ issues 63

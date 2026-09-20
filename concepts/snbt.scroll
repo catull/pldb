@@ -1,0 +1,14 @@
+../code/conceptPage.scroll
+
+id snbt
+name SNBT
+appeared 2011
+tags pl
+website https://minecraft.fandom.com/wiki/NBT_format
+lab Mojang AB
+
+country Sweden
+
+pygmentsHighlighter SNBT
+ filename mcfunction.py
+ fileExtensions snbt

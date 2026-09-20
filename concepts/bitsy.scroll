@@ -1,0 +1,30 @@
+../code/conceptPage.scroll
+
+id bitsy
+name Bitsy
+appeared 2016
+creators Adam Le Doux
+tags application
+website https://bitsy.org/
+webRepl https://make.bitsy.org/
+description A little engine for little games, worlds, and stories.
+writtenIn svg javascript markdown css json xml html yaml typescript
+
+related twine
+repoStats
+ firstCommit 2016
+ newestCommit 2025
+ commits 1658
+ committers 18
+ files 609
+ mb 174
+ linesOfCode 4594591
+
+githubRepo https://github.com/le-doux/bitsy
+ stars 822
+ forks 141
+ subscribers 23
+ created 2016
+ updated 2024
+ description a little engine for little games, worlds, and stories
+ issues 4

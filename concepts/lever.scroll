@@ -1,0 +1,38 @@
+../code/conceptPage.scroll
+
+id lever
+name lever
+appeared 2015
+tags pl
+website http://leverlanguage.com/
+latestVersion 0.8.0
+description A dynamically typed language built to absorb features from other languages.
+lab https://github.com/cheery/lever/issues
+writtenIn python html glsl json javascript css markdown c make tex svg
+
+isOpenSource true
+fileType text
+repoStats
+ firstCommit 2014
+ commits 694
+ committers 6
+ files 669
+ newestCommit 2018
+ mb 15
+ linesOfCode 598459
+country Finland
+
+githubRepo https://github.com/cheery/lever
+ stars 132
+ forks 11
+ subscribers 12
+ created 2015
+ updated 2024
+ firstCommit 2014
+ description A programming language in the Perl/Python/Ruby group
+ issues 1
+
+domainName leverlanguage.com
+ registered 2015
+ awisRank
+  2022 9766630

@@ -1,0 +1,87 @@
+Jinja
+=====
+
+Jinja is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22template%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">template language</a> created in 2006 by Armin Ronacher.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222006%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2006
+ https://pldb.io/concepts/../lists/creators.html#q=Armin%20Ronacher Armin Ronacher
+
+#209 on PLDB
+20 Years Old
+37k <span title="Jinja repos on GitHub.">Repos</span>
+
+```Download source code:
+git clone https://github.com/pallets/jinja
+```
+
+Jinja is a template engine for the Python programming language and is licensed under a BSD License created by Armin Ronacher. It is similar to the Django template engine but provides Python-like expressions while ensuring that the templates are evaluated in a sandbox. It is a text-based template language and thus can be used to generate any markup as well as sourcecode. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Jinja_(template_engine) Read more on Wikipedia...
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"template"%5D%7D%5D%2C"logic"%3A"AND"%7D'>template language</a>
+- Jinja is developed on <a href="https://github.com/pallets/jinja">GitHub</a> and has 10,136 stars
+- There are at least 37,267 Jinja repos on <a href="https://github.com/search?q=language:HTML+Django">GitHub</a>
+- Early development of Jinja happened in <a href="../lists/labs.html#q=https://github.com/pallets/jinja/issues/">https://github.com/pallets/jinja/issues/</a>
+- Jinja is written in <a href="python.html">Python</a>, <a href="restructuredtext.html">reStructuredText</a>, <a href="yaml.html">YAML</a>, <a href="html.html">HTML</a>, <a href="markdown.html">Markdown</a>, <a href="svg.html">SVG</a>, <a href="toml.html">TOML</a>, <a href="ini.html">Ini</a>, <a href="json.html">JSON</a>, <a href="make.html">Make</a>, <a href="bourne-shell.html">Bourne shell</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 701 users using Jinja in 981 repos on <a href="https://api.github.com/search/repositories?q=language:Jinja">GitHub</a>
+- GitHub supports <a href="https://github.com/textmate/python-django.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Jinja
+- See also: (5 related languages) <a href="python.html">Python</a>, <a href="django.html">Django</a>, <a href="smarty.html">Smarty</a>, <a href="unix.html">Unix</a>, <a href="isbn.html">ISBN</a>
+
+```Example from <a href='https://github.com/textmate/python-django.tmbundle'>Linguist</a>:
+&lt;h1&gt;Workers&lt;/h1&gt;
+
+&lt;table class=&quot;workers&quot;&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Job server&lt;/th&gt;
+    &lt;th&gt;IP&lt;/th&gt;
+    &lt;th&gt;File descriptor&lt;/th&gt;
+    &lt;th&gt;Client ID&lt;/th&gt;
+    &lt;th&gt;Functions&lt;/th&gt;
+  &lt;/tr&gt;
+
+{% for server_info in server_infos %}
+  &lt;tr {% if server_info[&#39;failed&#39;] %} class=&quot;failure&quot; {% endif %} &gt;
+    
+    &lt;th&gt;{{ server_info[&#39;hostport&#39;][0] }}:{{ server_info[&#39;hostport&#39;][1] }}&lt;/th&gt;
+    &lt;th&gt;
+      {%- if server_info[&#39;failed&#39;] -%} Not responding! {%- endif -%}
+    &lt;/th&gt;
+    &lt;th&gt;&lt;/th&gt;
+    &lt;th&gt;&lt;/th&gt;
+    &lt;th&gt;&lt;/th&gt;
+  &lt;/tr&gt;
+  
+  {% if not server_info[&#39;failed&#39;] %}
+    {% for worker in server_info[&#39;workers&#39;] %}
+    &lt;tr&gt;
+      &lt;td class=&quot;server&quot;&gt;&lt;/td&gt;
+      &lt;td class=&quot;ip&quot;&gt;{{ worker[&#39;ip&#39;] }}&lt;/td&gt;
+      &lt;td class=&quot;file_descriptor&quot;&gt;{{ worker[&#39;file_descriptor&#39;] }}&lt;/td&gt;
+      &lt;td class=&quot;client_id&quot;&gt;{{ worker[&#39;client_id&#39;] }}&lt;/td&gt;
+      &lt;td class=&quot;functions&quot;&gt;
+        {{ worker[&#39;tasks&#39;]|join(&#39;, &#39;) }}
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+&lt;/table&gt;
+
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Jinja_(template_engine)'>Wikipedia</a>:
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Value with &amp;lt;unsafe&amp;gt; data&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  &lt;/body&gt;
+&lt;/html&gt;
+```
+
+Built with Scroll v180.0.1

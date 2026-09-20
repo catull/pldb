@@ -1,0 +1,17 @@
+../code/conceptPage.scroll
+
+id order
+name order
+appeared 2003
+creators Vesa Karvonen
+tags pl
+description Metalanguage for C Preprocessor Metaprogramming
+lab https://www.devever.net/~hl
+
+country United Kingdom
+reference https://github.com/polytypic/order-pp
+
+example
+ #define ORDER_PP_DEF_8fib                       \
+ ORDER_PP_FN(8fn(8N,                             \
+                 8fib_iter(8N, 0, 1)))

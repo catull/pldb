@@ -1,0 +1,71 @@
+../code/conceptPage.scroll
+
+id unison
+name unison
+appeared 2015
+tags pl
+website http://unisonweb.org/
+writtenIn haskell markdown yaml racket sql bourne-shell scheme nix vim-script bash cson json html xml dockerfile dhall
+
+isOpenSource true
+exercism https://exercism.org/tracks/unison
+repoStats
+ firstCommit 2013
+ commits 18590
+ committers 151
+ files 1620
+ newestCommit 2025
+ mb 141
+ linesOfCode 239631
+reference https://www.youtube.com/watch?v=rp_Eild1aq8
+
+rijuRepl https://riju.codes/unison
+ example
+  use io
+  
+  runProg: '{IO, Exception} a -> '{IO} ()
+  runProg f = 'let
+    printErr err = match err with
+      Failure _ errMsg _ -> handle putBytes (stdHandle StdErr) (toUtf8 errMsg) with cases
+        {raise _ -> _} -> ()
+        {_} -> ()
+    match catch f with
+      Left err -> printErr err
+      Right _ -> ()
+  
+  main: '{IO} ()
+  main = runProg 'let
+    printLine "Hello, world!"
+  
+example
+ -- comments start with `--`
+ -- alice : Node, bob : Node
+ x = factorial 6
+ Remote.transfer alice
+ y = foo x -- happens on `alice` node
+ Remote.transfer bob
+ bar x y -- happens on `bob` node
+twitter https://twitter.com/unisonweb
+
+githubRepo https://github.com/unisonweb/unison
+ firstCommit 2013
+ stars 5688
+ forks 265
+ subscribers 110
+ created 2015
+ updated 2024
+ description A friendly programming language from the future
+ issues 1077
+
+lineCommentToken --
+
+hasLineComments true
+ -- A comment
+hasComments true
+ -- A comment
+hasSemanticIndentation false
+
+domainName unisonweb.org
+ registered 2014
+
+semanticScholar 0

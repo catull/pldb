@@ -1,0 +1,31 @@
+../code/conceptPage.scroll
+
+id plam
+name plam
+appeared 2017
+creators Sandro Lovnički
+tags pl
+latestVersion v2.2.0
+lab https://github.com/slovnicki/pLam/issues
+fileExtensions plam
+writtenIn haskell yaml markdown bourne-shell
+
+repoStats
+ firstCommit 2017
+ commits 269
+ committers 6
+ files 44
+ newestCommit 2021
+ mb 2
+ linesOfCode 3167
+country Croatia
+
+githubRepo https://github.com/sandrolovnicki/pLam
+ firstCommit 2017
+ stars 446
+ forks 17
+ subscribers 9
+ created 2017
+ updated 2024
+ description An interpreter for learning and exploring pure λ-calculus
+ issues 4

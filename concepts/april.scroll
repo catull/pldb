@@ -1,0 +1,27 @@
+../code/conceptPage.scroll
+
+id april
+name april
+appeared 2017
+tags pl
+latestVersion v0.9.55
+writtenIn lisp markdown apl
+
+repoStats
+ firstCommit 2017
+ commits 1871
+ committers 13
+ files 120
+ newestCommit 2024
+ mb 5
+ linesOfCode 31568
+
+githubRepo https://github.com/phantomics/april
+ firstCommit 2017
+ stars 593
+ forks 31
+ subscribers 21
+ created 2017
+ updated 2024
+ description The APL programming language (a subset thereof) compiling to Common Lisp.
+ issues 6

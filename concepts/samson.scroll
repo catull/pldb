@@ -1,0 +1,14 @@
+../code/conceptPage.scroll
+
+id samson
+name SAMSON
+appeared 2018
+creators Stephane Redon
+tags visual application
+website https://www.samson-connect.net
+standsFor Software for Adaptive Modeling and Simulation of Nanosystems
+screenshot samson.jpg
+lab Inria
+
+isOpenSource false
+country France

@@ -1,0 +1,37 @@
+../code/conceptPage.scroll
+
+id asciimath
+name AsciiMath
+appeared 2014
+creators Peter Krautzberger
+tags textMarkup
+website http://asciimath.org/
+description AsciiMath is an easy-to-write markup language for mathematics.
+writtenIn html javascript markdown php
+
+related latex
+repoStats
+ firstCommit 2014
+ commits 166
+ committers 16
+ files 29
+ newestCommit 2021
+ mb 1
+ linesOfCode 9665
+
+example
+ sum_(i=1)^n i^3=((n(n+1))/2)^2
+
+githubRepo https://github.com/mathjax/asciimathml
+ firstCommit 2014
+ stars 956
+ forks 183
+ subscribers 39
+ created 2014
+ updated 2024
+ description A new home for asciimathml
+ issues 54
+
+domainName asciimath.org
+ awisRank
+  2022 1444282

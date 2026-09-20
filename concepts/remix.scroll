@@ -1,0 +1,31 @@
+../code/conceptPage.scroll
+
+id remix
+name remix
+appeared 2016
+creators Jay McCarthy
+tags pl
+website https://docs.racket-lang.org/remix/index.html
+lab https://github.com/jeapostrophe/remix/issues
+writtenIn racket make
+
+repoStats
+ firstCommit 2013
+ commits 127
+ committers 5
+ files 39
+ newestCommit 2022
+ mb 1
+ linesOfCode 3340
+country United States
+reference https://pkgs.racket-lang.org/package/remix
+
+githubRepo https://github.com/jeapostrophe/remix
+ firstCommit 2013
+ stars 33
+ forks 3
+ subscribers 7
+ created 2013
+ updated 2023
+ description remix - a revised version of Racket
+ issues 16

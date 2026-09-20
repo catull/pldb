@@ -1,0 +1,49 @@
+../code/conceptPage.scroll
+
+id visdown
+name visdown
+appeared 2016
+creators Amit Kapoor
+tags textMarkup
+website https://visdown.com/
+latestVersion 0.1.0
+description Write visualisation using a simple declarative markup like you would write code. Just wrap it in fenced block (three backticks) and mark the language as `vis`.
+writtenIn javascript markdown svg csv json css html
+
+isOpenSource true
+fileType text
+repoStats
+ firstCommit 2016
+ commits 74
+ committers 2
+ files 65
+ newestCommit 2021
+ mb 5
+ linesOfCode 38545
+
+example
+ ```vis
+ data:
+   url: data/cars.csv
+ mark: point
+ encoding:
+   x:
+     field: kmpl
+     type: quantitative
+   y:
+     field: price
+     type: quantitative
+  ```
+
+githubRepo https://github.com/amitkaps/visdown
+ firstCommit 2016
+ stars 663
+ forks 38
+ subscribers 20
+ created 2016
+ updated 2024
+ description Visualisation Markdown
+ issues 12
+
+domainName visdown.com
+ registered 2017

@@ -1,0 +1,54 @@
+../code/conceptPage.scroll
+
+id katex
+name KaTeX
+appeared 2013
+creators Emily Eisenberg
+tags textMarkup
+website https://katex.org
+latestVersion 0.16.10
+description The fastest math typesetting library for the web.
+lab https://github.com/KaTeX
+writtenIn javascript markdown yaml json svg html python css bourne-shell perl less dockerfile xml make tex
+
+isOpenSource true
+fileType text
+repoStats
+ firstCommit 2013
+ commits 2383
+ committers 190
+ files 702
+ newestCommit 2025
+ mb 86
+ linesOfCode 364234
+country United States
+
+example
+ % \f is defined as #1f(#2) using the macro
+ \f\relax{x} = \int_{-\infty}^\infty
+     \f\hat\xi\,e^{2 \pi i \xi x}
+     \,d\xi
+
+githubRepo https://github.com/Khan/KaTeX
+ firstCommit 2013
+ stars 18057
+ forks 1159
+ subscribers 284
+ created 2013
+ updated 2024
+ description Fast math typesetting for the web.
+ issues 418
+
+lineCommentToken %
+
+hasLineComments true
+ % A comment
+hasComments true
+ % A comment
+hasSemanticIndentation false
+
+domainName katex.org
+ awisRank
+  2022 186120
+
+semanticScholar 0

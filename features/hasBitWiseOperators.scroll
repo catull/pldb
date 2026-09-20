@@ -1,0 +1,69 @@
+header.scroll
+
+title Bitwise Operators - language feature
+tags Feature
+printTitle Bitwise Operators
+
+<a class="trueBaseThemePreviousItem" href="hasBinaryOperators.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasBlobs.html">&gt;</a>
+
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
+
+container 600px
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/javascript.html">JavaScript</a>
+ var x = 5 &amp; 1;
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/c.html">C</a>
+ int i = 4; /* bit pattern equivalent is binary 100 */
+ int j = i &lt;&lt; 2; /* makes it binary 10000, which multiplies the original number by 4 i.e. 16 */
+
+codeWithHeader Example from <b>2 languages</b>: <a href="../concepts/python.html">Python</a>, <a href="../concepts/speedie.html">Speedie</a>
+ x &lt;&lt; y
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/r.html">R</a>
+ ! x
+ x &amp; y
+ x &amp;&amp; y
+ x | y
+ x || y
+ xor(x, y)
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/lua.html">Lua</a>
+ &amp; | ~ &lt;&lt; &gt;&gt; ~
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/c3.html">C3</a>
+ int i = b &lt;&lt; 4 + x; // Same as (b &lt;&lt; 4) + x
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/moonbit.html">MoonBit</a>
+ 1 &amp; 0
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/slope.html">Slope</a>
+ (&amp; 0xFF 0x1B)
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/jule.html">Jule</a>
+ &amp; | ^ &lt;&lt; &gt;&gt;
+
+***
+
+* Languages *with* Bitwise Operators include <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/c.html">C</a>, <a href="../concepts/python.html">Python</a>, <a href="../concepts/r.html">R</a>, <a href="../concepts/lua.html">Lua</a>, <a href="../concepts/chapel.html">Chapel</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/moonbit.html">MoonBit</a>, <a href="../concepts/c2.html">C2</a>, <a href="../concepts/slope.html">Slope</a>, <a href="../concepts/dale.html">Dale</a>, <a href="../concepts/jule.html">Jule</a>, <a href="../concepts/sako.html">SAKO</a>, <a href="../concepts/speedie.html">Speedie</a>
+
+***
+
+* Languages *without* Bitwise Operators include <a href="../concepts/progsbase.html">progsbase</a>
+
+***
+
+View all concepts with or missing a *hasBitWiseOperators* measurement
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasBitWiseOperators&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasBitWiseOperators%22%2C%22origData%22%3A%22hasBitWiseOperators%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasBitWiseOperators&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasBitWiseOperators%22%2C%22origData%22%3A%22hasBitWiseOperators%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D with
+
+***
+
+* Read more about Bitwise Operators on the web: 1. 2.
+ https://en.wikipedia.org/wiki/Bitwise_operations_in_C 1.
+ https://en.wikipedia.org/wiki/Bitwise_operation 2.
+
+keyboardNav hasBinaryOperators.html hasBlobs.html
+
+../footer.scroll

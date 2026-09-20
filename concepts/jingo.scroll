@@ -1,0 +1,29 @@
+../code/conceptPage.scroll
+
+id jingo
+name Jingo
+appeared 2020
+creators Owez
+tags pl
+lab https://github.com/Owez/jingo/issues
+writtenIn rust toml markdown yaml
+
+repoStats
+ firstCommit 2021
+ commits 116
+ committers 1
+ files 21
+ newestCommit 2021
+ mb 1
+ linesOfCode 2048
+country United Kingdom
+
+githubRepo https://github.com/Owez/jingo
+ firstCommit 2021
+ stars 9
+ forks 0
+ subscribers 2
+ created 2020
+ updated 2023
+ description A lightweight, high-level language designed for rapid prototyping
+ issues 2

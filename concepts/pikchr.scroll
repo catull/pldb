@@ -1,0 +1,34 @@
+../code/conceptPage.scroll
+
+id pikchr
+name Pikchr
+appeared 2020
+creators Dwayne Richard Hipp
+tags diagramLang textMarkup
+website https://pikchr.org
+webRepl https://pikchr.org/home/pikchrshow
+description Pikchr (pronounced "picture") is a PIC-like markup language for diagrams in technical documentation. Pikchr is designed to be embedded in fenced code blocks of Markdown or similar mechanisms of other documentation markup languages.
+lab http://www.hwaci.com
+writtenIn c
+
+isOpenSource true
+related pic
+country United States
+
+example
+ ``` pikchr
+ arrow right 200% "Markdown" "Source"
+ box rad 10px "Markdown" "Formatter" "(markdown.c)" fit
+ arrow right 200% "HTML+SVG" "Output"
+ arrow <-> down 70% from last box.s
+ box same "Pikchr" "Formatter" "(pikchr.c)" fit
+ ```
+
+keywords ; : [ ] \ above aligned arc arrow below big bold box center circle color cylinder diameter diamond dot down ellipse file fill fit from height ht invisible italic left line ljust mono monospace move oval rad radius right rjust small spline text then thick thickness thin to up wid width
+
+lineCommentToken // #
+multiLineCommentTokens /* */
+stringToken "
+
+hasComments true
+hasMultiLineComments true

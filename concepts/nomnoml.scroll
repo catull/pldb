@@ -1,0 +1,53 @@
+../code/conceptPage.scroll
+
+id nomnoml
+name nomnoml
+appeared 2014
+creators Daniel Kallin
+tags diagramLang
+website https://www.nomnoml.com/
+webRepl https://www.nomnoml.com/
+description The sassy UML diagram renderer.
+fileExtensions nomnoml
+writtenIn typescript javascript json css html markdown svg
+
+repoStats
+ firstCommit 2014
+ newestCommit 2024
+ commits 401
+ committers 20
+ files 79
+ mb 2
+ linesOfCode 10556
+country Sweden
+
+example
+ [<frame>Decorator pattern|
+   [<abstract>Component||+ operation()]
+   [Client] depends --> [Component]
+   [Decorator|- next: Component]
+   [Decorator] decorates -- [ConcreteComponent]
+   [Component] <:- [Decorator]
+   [Component] <:- [ConcreteComponent]
+ ]
+
+githubRepo https://github.com/skanaar/nomnoml
+ firstCommit 2014
+ stars 2676
+ forks 209
+ subscribers 41
+ created 2014
+ updated 2024
+ description The sassy UML diagram renderer
+ issues 30
+
+lineCommentToken //
+
+hasDirectives true
+ #title: filename
+ #zoom: 1
+ #acyclicer: greedy
+hasImports true
+ #import: filename
+hasLineComments true
+ // A comment

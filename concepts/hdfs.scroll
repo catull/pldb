@@ -1,0 +1,13 @@
+../code/conceptPage.scroll
+
+id hdfs
+name Hadoop Distributed File System
+appeared 2011
+tags filesystem
+standsFor Hadoop Distributed File System
+lab Apache Software Foundation
+writtenIn java
+
+fileType na
+country United States
+reference https://en.wikipedia.org/wiki/Apache_Hadoop#Hadoop_distributed_file_system

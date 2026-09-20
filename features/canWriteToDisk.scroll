@@ -1,0 +1,59 @@
+header.scroll
+
+title Disk Output - language feature
+tags Feature
+printTitle Disk Output
+
+<a class="trueBaseThemePreviousItem" href="canUseQuestionMarksAsPartOfIdentifier.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasSinglePassParser.html">&gt;</a>
+
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
+
+container 600px
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/python.html">Python</a>
+ with open(&#39;helloworld.txt&#39;, &#39;w&#39;) as filehandle:
+  filehandle.write(&#39;Hello, world!\n&#39;)
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/elixir.html">Elixir</a>
+ File.write!(&quot;helloworld.txt&quot;, &quot;Hello, world!\n&quot;)
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/nodejs.html">Node.js</a>
+ require(&quot;fs&quot;).writeFileSync(&quot;foo.txt&quot;, &quot;foo&quot;, &quot;utf8&quot;)
+
+codeWithHeader Example from <b>2 languages</b>: <a href="../concepts/rebol.html">REBOL</a>, <a href="../concepts/boron.html">Boron</a>
+ write %helloworld.txt &quot;Hello, world!^/&quot;
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/jule.html">Jule</a>
+ use std::fs::{open, O_WRONLY}
+ 
+ fn main() {
+     let (mut f, _) = open(&quot;myfile.txt&quot;, O_WRONLY, 0)
+     let bytes = ([]byte)(&quot;Text to write&quot;)
+     f.write(bytes)
+     f.close()
+ }
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/sako.html">SAKO</a>
+ PISZ NA BEBEN OD 10: A
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/speedie.html">Speedie</a>
+ &quot;helloworld.txt&quot; &lt;~ &quot;Hello, world!\n&quot;
+
+***
+
+* Languages *with* Disk Output include <a href="../concepts/python.html">Python</a>, <a href="../concepts/elixir.html">Elixir</a>, <a href="../concepts/chapel.html">Chapel</a>, <a href="../concepts/nodejs.html">Node.js</a>, <a href="../concepts/rebol.html">REBOL</a>, <a href="../concepts/jule.html">Jule</a>, <a href="../concepts/sako.html">SAKO</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/lone.html">Lone</a>, <a href="../concepts/boron.html">Boron</a>
+
+***
+
+* Languages *without* Disk Output include <a href="../concepts/css.html">CSS</a>, <a href="../concepts/xml.html">XML</a>, <a href="../concepts/json.html">JSON</a>, <a href="../concepts/haml.html">HAML</a>
+
+***
+
+View all concepts with or missing a *canWriteToDisk* measurement
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~canWriteToDisk&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22canWriteToDisk%22%2C%22origData%22%3A%22canWriteToDisk%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~canWriteToDisk&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22canWriteToDisk%22%2C%22origData%22%3A%22canWriteToDisk%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D with
+
+keyboardNav canUseQuestionMarksAsPartOfIdentifier.html hasSinglePassParser.html
+
+../footer.scroll

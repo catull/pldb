@@ -1,0 +1,33 @@
+../code/conceptPage.scroll
+
+id dojo
+name Dojo
+appeared 2005
+creators Alex Russal
+tags pl
+website https://dojotoolkit.org/
+lab https://dojotoolkit.org/community/
+writtenIn javascript
+compilesTo javascript
+
+isOpenSource true
+docs https://dojotoolkit.org/documentation/
+repoStats
+ firstCommit 2007
+ commits 5365
+ committers 157
+ files 1338
+ newestCommit 2023
+ mb 13
+ linesOfCode 230157
+
+githubRepo https://github.com/dojo/dojo
+ stars 1549
+ forks 540
+ subscribers 158
+ created 2013
+ updated 2024
+ description Dojo 1 - the Dojo 1 toolkit core library.
+ issues 42
+
+wikipedia https://en.wikipedia.org/wiki/Dojo_Toolkit

@@ -1,0 +1,12 @@
+../code/conceptPage.scroll
+
+id mike
+name MiKe
+appeared 2022
+tags pl
+description Introducing MiKe: Constant-time control flow, automatic serialization, and more!
+lab https://github.com/TheUnlocked/mike-language/issues
+
+country United States
+reference https://reddit.com/r/ProgrammingLanguages/comments/wrqs5w/introducing_mike_constanttime_control_flow/
+reference https://blog.necode.org/posts/introducing-mike

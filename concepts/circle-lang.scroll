@@ -1,0 +1,35 @@
+../code/conceptPage.scroll
+
+id circle-lang
+name circle-lang
+appeared 2019
+creators Sean Baxter
+tags pl
+website http://www.circle-lang.org/
+description The C++ Automation Language
+lab https://github.com/seanbaxter
+writtenIn cpp markdown bourne-shell json cuda csv lua
+
+repoStats
+ firstCommit 2019
+ commits 376
+ committers 4
+ files 510
+ newestCommit 2023
+ mb 4
+ linesOfCode 214782
+country United States
+reference https://news.ycombinator.com/item?id=23086227
+
+githubRepo https://github.com/seanbaxter/circle
+ firstCommit 2019
+ stars 2292
+ forks 70
+ subscribers 72
+ created 2019
+ updated 2024
+ description The compiler is available for download. Get it!
+ issues 99
+
+domainName circle-lang.org
+ registered 2019

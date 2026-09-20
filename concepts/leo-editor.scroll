@@ -1,0 +1,36 @@
+../code/conceptPage.scroll
+
+id leo-editor
+name leo-editor
+appeared 2013
+creators vivainio2
+tags editor
+website https://leoeditor.com
+latestVersion v6.7.8
+lab https://github.com/leo-editor
+writtenIn python html javascript svg xml css markdown restructuredtext qt ini bourne-shell php typescript toml xslt make yaml json qml rust
+
+repoStats
+ firstCommit 2008
+ newestCommit 2025
+ commits 35910
+ committers 110
+ files 5340
+ mb 252
+ linesOfCode 627909
+country United States and Canada
+
+githubRepo https://github.com/leo-editor/leo-editor
+ firstCommit 2008
+ stars 1469
+ forks 156
+ subscribers 50
+ created 2014
+ updated 2024
+ description Leo is an Outliner, Editor, IDE and PIM written in 100% Python.
+ issues 31
+
+domainName leoeditor.com
+ registered 2013
+ awisRank
+  2022 2845365

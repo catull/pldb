@@ -1,0 +1,14 @@
+../code/conceptPage.scroll
+
+id smartgameformat
+name SmartGameFormat
+appeared 1987
+tags pl
+website https://www.red-bean.com/sgf/
+lab https://www.red-bean.com/sgf/discussion/
+
+country Switzerland
+
+pygmentsHighlighter SmartGameFormat
+ filename sgf.py
+ fileExtensions sgf

@@ -1,0 +1,28 @@
+../code/conceptPage.scroll
+
+id git-config
+name git-config
+appeared 2005
+tags application
+website https://git-scm.com/docs/git-config#_syntax
+lab Software Freedom Conservancy
+
+fileType text
+country United States
+
+example
+ # Core variables
+ [core]
+   ; Don't trust file modes
+   filemode = false
+
+githubLanguage Git Config
+ type data
+ fileExtensions gitconfig
+ group INI
+ filenames .gitconfig .gitmodules
+ aceMode ini
+ codemirrorMode properties
+ codemirrorMimeType text/x-properties
+ tmScope source.gitconfig
+ aliases gitconfig or gitmodules

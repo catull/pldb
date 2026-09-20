@@ -1,0 +1,86 @@
+../code/conceptPage.scroll
+
+id prql
+name PRQL
+appeared 2022
+creators Maximilian Roos
+tags queryLanguage
+website https://prql-lang.org/
+blog https://prql-lang.org/posts/
+latestVersion 0.11.4
+webRepl https://prql-lang.org/playground/
+roadmap https://prql-lang.org/roadmap/
+standsFor Pipelined Relational Query Language
+description PRQL is a modern language for transforming data — a simple, powerful, pipelined SQL replacement
+lab https://github.com/PRQL
+writtenIn rust markdown yaml toml html javascript json css csv csharp php elixir typescript jsx bourne-shell python java zig make dockerfile xml sql nix c cpp handlebars svg
+compilesTo sql
+
+clocExtensions prql
+faq https://prql-lang.org/faq/
+docs https://prql-lang.org/book/
+repoStats
+ firstCommit 2022
+ commits 3692
+ committers 88
+ files 829
+ newestCommit 2025
+ mb 24
+ linesOfCode 117286
+country United States
+reference https://news.ycombinator.com/item?id=31897430
+reference https://news.ycombinator.com/item?id=30060784
+
+discord https://discord.com/invite/eQcfaCmsNc
+twitter https://twitter.com/prql_lang
+example
+ from employees
+ filter country == "USA"                       # Each line transforms the previous result.
+ aggregate [                                   # `aggregate` reduces column to a value.
+   max salary,
+   min salary,
+   count,                                      # Closing commas are allowed :)
+ ]
+example
+ from employees
+ filter start_date > @2021-01-01               # Clear date syntax.
+ derive [                                      # `derive` adds columns / variables.
+   gross_salary = salary + (tax ?? 0),         # Terse coalesce
+   gross_cost = gross_salary + benefits_cost,  # Variables can use other variables.
+ ]
+ filter gross_cost > 0
+ group [title, country] (                      # `group` runs a pipeline over each group.
+   aggregate [                                 # `aggregate` reduces each group to a row.
+     average gross_salary,
+     sum_gross_cost = sum gross_cost,          # `=` sets a column name.
+   ]
+ )
+ filter sum_gross_cost > 100000                # Identical syntax for SQL's `WHERE` & `HAVING`.
+ derive id = f"{title}_{country}"              # F-strings like python.
+ sort [sum_gross_cost, -country]               # `-country` means descending order.
+ take 1..20                                    # Range expressions (also valid here as `take 20`).
+
+githubRepo https://github.com/prql/prql
+ firstCommit 2022
+ stars 9667
+ forks 208
+ subscribers 45
+ created 2022
+ updated 2024
+ description PRQL is a modern language for transforming data — a simple, powerful, pipelined SQL replacement
+ issues 238
+
+lineCommentToken #
+
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
+
+domainName prql-lang.org
+ registered 2022
+ awisRank
+  2022 7177742
+
+semanticScholar 0

@@ -1,0 +1,16 @@
+../code/conceptPage.scroll
+
+id nntp
+name NNTP
+appeared 1984
+creators Brian Kantor and Phil Lapsley
+tags protocol
+standsFor Network News Transfer Protocol
+paper https://datatracker.ietf.org/doc/html/rfc977
+interviews https://giganews.com/usenet-history/kantor/
+
+related usenet
+influencedBy smtp
+country United States
+
+wikipedia https://en.wikipedia.org/wiki/Network_News_Transfer_Protocol

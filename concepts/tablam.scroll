@@ -1,0 +1,38 @@
+../code/conceptPage.scroll
+
+id tablam
+name tablam
+appeared 2020
+creators Mario Montoya
+tags queryLanguage
+website http://www.tablam.org/
+latestVersion v0.3.1-alpha
+writtenIn rust markdown toml bourne-shell json yaml html svg css javascript xml
+
+repoStats
+ firstCommit 2020
+ commits 230
+ committers 5
+ files 82
+ newestCommit 2022
+ mb 1
+ linesOfCode 11019
+
+example
+ city ?where .population > 100_000 ?select .name, .country
+ points ?sort .x
+
+githubRepo https://github.com/Tablam/TablaM
+ firstCommit 2020
+ stars 185
+ forks 4
+ subscribers 8
+ created 2020
+ updated 2024
+ description The practical relational programing language for data-oriented applications
+ issues 0
+
+domainName tablam.org
+ registered 2014
+ awisRank
+  2022 9825009

@@ -1,0 +1,37 @@
+../code/conceptPage.scroll
+
+id conan-pm
+name Conan
+appeared 2015
+tags packageManager
+website https://conan.io/
+latestVersion 2.3.1
+forLanguages c cpp
+description Conan, the C / C++ Package Manager for Developers
+lab https://github.com/conan-io
+writtenIn python markdown yaml svg xml dockerfile toml ini
+
+repoStats
+ firstCommit 2015
+ commits 9049
+ committers 480
+ files 1085
+ newestCommit 2025
+ mb 35
+ linesOfCode 160294
+country Spain
+
+githubRepo https://github.com/conan-io/conan
+ firstCommit 2015
+ stars 8031
+ forks 957
+ subscribers 136
+ created 2015
+ updated 2024
+ description Conan - The open-source C and C++ package manager
+ issues 1368
+
+domainName conan.io
+ registered 2015
+ awisRank
+  2022 135345

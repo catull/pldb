@@ -1,0 +1,67 @@
+header.scroll
+
+title Type Casting - language feature
+tags Feature
+printTitle Type Casting
+
+<a class="trueBaseThemePreviousItem" href="hasExceptions.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasExports.html">&gt;</a>
+
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
+
+container 600px
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/c.html">C</a>
+ double da = 3.3;
+ double db = 3.3;
+ double dc = 3.4;
+ int result = (int)da + (int)db + (int)dc; //result == 9
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/typescript.html">TypeScript</a>
+ &lt;number&gt;something;
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/csharp.html">C#</a>
+ Animal animal = new Cat();
+ 
+ Bulldog b = (Bulldog) animal;   // if (animal is Bulldog), stat.type(animal) is Bulldog, else an exception
+ b = animal as Bulldog;          // if (animal is Bulldog), b = (Bulldog) animal, else b = null
+ 
+ animal = null;
+ b = animal as Bulldog;          // b == null
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/matlab.html">MATLAB</a>
+ b = cast(a, &#39;like&#39;, p)
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/chapel.html">Chapel</a>
+ :
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/c3.html">C3</a>
+ double d = 3.3;
+ int x = (int)d;
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/jule.html">Jule</a>
+ let x = (int)(3.14)
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/speedie.html">Speedie</a>
+ || x = message()
+ || y = x|object| // lose type info
+ || z = y|message| // regain it
+
+***
+
+* Languages *with* Type Casting include <a href="../concepts/c.html">C</a>, <a href="../concepts/typescript.html">TypeScript</a>, <a href="../concepts/csharp.html">C#</a>, <a href="../concepts/matlab.html">MATLAB</a>, <a href="../concepts/chapel.html">Chapel</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/jule.html">Jule</a>, <a href="../concepts/speedie.html">Speedie</a>
+
+***
+
+View all concepts with or missing a *hasExplicitTypeCasting* measurement
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasExplicitTypeCasting&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasExplicitTypeCasting%22%2C%22origData%22%3A%22hasExplicitTypeCasting%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasExplicitTypeCasting&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasExplicitTypeCasting%22%2C%22origData%22%3A%22hasExplicitTypeCasting%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D with
+
+***
+
+* Read more about Type Casting on the web: 1.
+ https://en.wikipedia.org/wiki/Type_conversion 1.
+
+keyboardNav hasExceptions.html hasExports.html
+
+../footer.scroll

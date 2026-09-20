@@ -1,0 +1,30 @@
+../code/conceptPage.scroll
+
+id reko-decompiler
+name Reko
+appeared 2007
+creators John Källén
+tags decompiler
+website https://uxmal.github.io/reko
+lab https://github.com/uxmal/reko/issues
+writtenIn csharp assembly-language expect c xml markdown cpp pascal cmake json python html llvmir xslt wasm yaml ring make dockerfile xsd css yacc php sql ocaml javascript go bourne-shell
+
+repoStats
+ firstCommit 2007
+ newestCommit 2025
+ commits 11098
+ mb 941
+ committers 53
+ files 7028
+ linesOfCode 8066057
+country Sweden
+
+githubRepo https://github.com/uxmal/reko
+ firstCommit 2007
+ stars 2098
+ forks 251
+ subscribers 74
+ created 2015
+ updated 2024
+ description Reko is a binary decompiler.
+ issues 164

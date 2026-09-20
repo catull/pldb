@@ -1,0 +1,33 @@
+../code/conceptPage.scroll
+
+id f-prime
+name F Prime
+appeared 2017
+creators Timothy Canham
+tags library
+website https://nasa.github.io/fprime/
+latestVersion v3.4.3
+aka F'
+description F' - A flight software and embedded systems framework
+lab https://github.com/nasa/
+writtenIn cpp cmake markdown xml python yaml json bash ini bourne-shell restructuredtext c html plantuml xslt svg csv
+
+repoStats
+ firstCommit 2017
+ commits 5858
+ committers 235
+ files 3117
+ newestCommit 2025
+ mb 433
+ linesOfCode 248536
+country United States
+
+githubRepo https://github.com/nasa/fprime
+ firstCommit 2017
+ stars 9984
+ forks 1286
+ subscribers 261
+ created 2017
+ updated 2024
+ description F´ - A flight software and embedded systems framework
+ issues 226

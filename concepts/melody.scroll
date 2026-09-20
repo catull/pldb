@@ -1,0 +1,33 @@
+../code/conceptPage.scroll
+
+id melody
+name Melody
+appeared 2022
+creators Yoav Lavi
+tags pl
+website https://yoav-lavi.github.io/melody/book/
+latestVersion 0.19.0
+description Melody - A language that compiles to regular expressions and aims to be more easily readable and maintainable
+lab https://github.com/yoav-lavi/melody/issues
+writtenIn rust java markdown json typescript toml javascript yaml kotlin svg gradle css bourne-shell html xml
+
+repoStats
+ firstCommit 2022
+ commits 776
+ committers 13
+ files 172
+ newestCommit 2024
+ mb 5
+ linesOfCode 14737
+country Israel
+reference https://reddit.com/r/ProgrammingLanguages/comments/stpvpn/melody_a_language_that_compiles_to_regular/
+
+githubRepo https://github.com/yoav-lavi/melody
+ firstCommit 2022
+ stars 4617
+ forks 55
+ subscribers 17
+ created 2022
+ updated 2024
+ description Melody is a language that compiles to regular expressions and aims to be more readable and maintainable
+ issues 8

@@ -1,0 +1,34 @@
+header.scroll
+
+title hasBuiltInRegex - language feature
+tags Feature
+printTitle hasBuiltInRegex
+
+<a class="trueBaseThemePreviousItem" href="hasBreak.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasCaseInsensitiveIdentifiers.html">&gt;</a>
+
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
+
+container 600px
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/slope.html">Slope</a>
+ (regex-match? `[0-9]+` &quot;Hello 12345&quot;)
+ (regex-replace `Hello, (\w+)!$` &quot;Hello, world!&quot; &quot;Goodbye, $1!&quot;)
+
+***
+
+* Languages *with* hasBuiltInRegex include <a href="../concepts/slope.html">Slope</a>, <a href="../concepts/tql.html">TQL</a>
+
+***
+
+* Languages *without* hasBuiltInRegex include <a href="../concepts/c3.html">C3</a>, <a href="../concepts/c2.html">C2</a>
+
+***
+
+View all concepts with or missing a *hasBuiltInRegex* measurement
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasBuiltInRegex&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasBuiltInRegex%22%2C%22origData%22%3A%22hasBuiltInRegex%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasBuiltInRegex&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasBuiltInRegex%22%2C%22origData%22%3A%22hasBuiltInRegex%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D with
+
+keyboardNav hasBreak.html hasCaseInsensitiveIdentifiers.html
+
+../footer.scroll

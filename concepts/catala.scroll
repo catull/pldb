@@ -1,0 +1,44 @@
+../code/conceptPage.scroll
+
+id catala
+name Catala
+appeared 2019
+creators Denis Merigoux
+tags pl
+website https://catala-lang.org/
+latestVersion 0.10.0
+lab https://github.com/CatalaLang
+writtenIn ocaml markdown nix json bourne-shell svg tex python toml xml cson c make vim-script javascript rescript r yaml lisp dockerfile
+
+repoStats
+ firstCommit 2019
+ commits 4658
+ committers 71
+ files 546
+ newestCommit 2025
+ mb 63
+ linesOfCode 84200
+country Various
+
+example
+ scope QualifiedEmployeeDiscount :
+  definition qualified_employee_discount
+    under condition is_property consequence
+  equals
+    if employee_discount >$
+      customer_price ×$ gross_profit_percentage
+    then customer_price ×$ gross_profit_percentage
+    else employee_discount
+
+githubRepo https://github.com/CatalaLang/catala
+ firstCommit 2019
+ stars 1951
+ forks 78
+ subscribers 21
+ created 2020
+ updated 2024
+ description Programming language for literate programming law specification
+ issues 72
+
+domainName catala-lang.org
+ registered 2020

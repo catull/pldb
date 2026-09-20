@@ -1,0 +1,35 @@
+../code/conceptPage.scroll
+
+id dexvis
+name dexvis
+appeared 2012
+creators Patrick Martin
+tags application
+website http://dexvis.net/
+description Dex : The Data Explorer -- A data visualization tool written in Java/Groovy/JavaFX capable of powerful ETL and publishing web visualizations.
+lab https://github.com/PatMartin
+writtenIn javascript html groovy css java csv markdown json php coffeescript xml sql bourne-shell yaml svg make c dockerfile r ruby
+
+repoStats
+ firstCommit 2016
+ commits 596
+ committers 2
+ files 2164
+ newestCommit 2019
+ mb 172
+ linesOfCode 1839414
+country United States
+reference https://dexvis.wordpress.com/2012/11/19/261/
+
+githubRepo https://github.com/PatMartin/Dex
+ firstCommit 2016
+ stars 1318
+ forks 310
+ subscribers 125
+ created 2016
+ updated 2024
+ description Dex : The Data Explorer -- A data visualization tool written in Java/Groovy/JavaFX capable of powerful ETL and publishing web visualizations.
+ issues 5
+
+domainName dexvis.net
+ registered 2016

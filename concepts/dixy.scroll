@@ -1,0 +1,27 @@
+../code/conceptPage.scroll
+
+id dixy
+name Dixy
+appeared 2017
+tags dataNotation
+lab https://github.com/kuyawa/Dixy/issues
+writtenIn xml swift markdown json
+
+repoStats
+ firstCommit 2017
+ commits 10
+ committers 1
+ files 12
+ newestCommit 2017
+ mb 1
+ linesOfCode 1871
+country United States
+
+githubRepo https://github.com/kuyawa/Dixy
+ stars 29
+ forks 1
+ subscribers 4
+ created 2017
+ updated 2024
+ description Data format based on dictionaries
+ issues 3

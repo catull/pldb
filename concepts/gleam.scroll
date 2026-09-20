@@ -1,0 +1,121 @@
+../code/conceptPage.scroll
+
+id gleam
+name Gleam
+appeared 2016
+creators Louis Pilfold
+tags pl
+website https://gleam.run/
+latestVersion v1.2.0-rc1
+webRepl https://tour.gleam.run/
+description Gleam is a statically typed functional programming language for building scalable concurrent systems. It compiles to Erlang and has straightforward interop with other BEAM languages such as Erlang, Elixir and LFE.
+lab https://github.com/gleam-lang
+fileExtensions gleam
+writtenIn rust gleam toml markdown javascript dockerfile erlang make yaml bourne-shell css html elixir powershell json typescript
+compilesTo erlang javascript
+
+exercism https://exercism.org/tracks/gleam
+influencedBy alpaca
+clocExtensions gleam
+docs https://gleam.run/documentation/
+repoStats
+ firstCommit 2016
+ commits 8418
+ committers 310
+ files 2845
+ newestCommit 2025
+ mb 21
+ linesOfCode 234898
+country United States and United Kingdom
+reference https://news.ycombinator.com/item?id=22902462
+
+twitter https://twitter.com/gleamlang
+discord https://discord.gg/Fm8Pwmy
+subreddit https://www.reddit.com/r/gleamlang/
+ memberCount
+  2022 2600
+example
+ import gleam/io
+ pub fn main() {
+   io.println("hello, friend!")
+ }
+
+githubRepo https://github.com/lpil/gleam
+ firstCommit 2016
+ stars 16825
+ forks 704
+ subscribers 88
+ created 2016
+ updated 2024
+ description ⭐️ A friendly language for building type-safe, scalable systems!
+ issues 145
+
+hasImports true
+ import gleam/io
+ import unix/cat as kitty
+ import animal/cat.{Cat, stroke}
+hasPrintDebugging true
+ io.println("Hello world")
+hasStrings true
+ "Hello world"
+hasComments true
+ // This is a single-line comment
+ // Gleam doesn't have multi-line comments
+ // Gleam has /// and //// comments which are used for attaching documentation to code.
+ /// is used for documenting types and functions, and should be placed immediately before the type or function it is documenting.
+ //// is used for documenting modules, and should be placed at the top of the module.
+hasLineComments true
+ // This is a line comment in Gleam
+hasSemanticIndentation false
+ // Gleam uses curly braces for blocks, not indentation
+hasIntegers true
+ let age = 30
+hasTypeAliases true
+ pub type Headers =
+  List(#(String, String))
+ let headers: Headers = [#("Content-Type", "application/json")]
+hasModules true
+ // Gleam’s file is a module and named by the file name (and its directory path). Since there is no special syntax to create a module, there can be only one module in a file.
+ // in file main.gleam
+ import wibble // if wibble was in a folder called `lib` the import would be `lib/wibble`
+ pub fn main() {
+   wibble.identity(1)
+ }
+hasUnionTypes true
+ type IntOrFloat {
+   AnInt(Int)
+   AFloat(Float)
+ }
+ fn int_or_float(x: IntOrFloat) {
+   case x {
+     AnInt(1) -> "It's an integer: 1"
+     AFloat(1.0) -> "It's a float: 1.0"
+   }
+ }
+hasFloats true
+ let pi = 3.14159
+hasBooleans true
+ let is_awesome = True
+hasLists true
+ let numbers = [1, 2, 3, 4, 5]
+hasDecorators true
+ @deprecated("Use new_function instead")
+ fn old_function() {
+  Nil
+ }
+
+domainName gleam.run
+ registered 2019
+ awisRank
+  2022 3086876
+
+githubBigQuery Gleam
+ repos 2
+ users 2
+
+githubLanguage Gleam
+ type programming
+ fileExtensions gleam
+ aceMode text
+ tmScope source.gleam
+ repos 104

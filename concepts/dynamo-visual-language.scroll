@@ -1,0 +1,40 @@
+../code/conceptPage.scroll
+
+id dynamo-visual-language
+name Dynamo
+appeared 2011
+creators Ian Keough
+tags visual
+website https://dynamobim.org/
+roadmap https://dynamobim.org/roadmap/
+lab https://github.com/DynamoDS
+writtenIn markdown csharp xml xaml json html svg yaml csv powershell python hlsl xslt standard-ml
+
+isOpenSource true
+packageRepository https://dynamopackages.com/
+repoStats
+ firstCommit 2011
+ commits 35856
+ committers 254
+ files 23178
+ newestCommit 2025
+ mb 2096
+ linesOfCode 728463
+country United States
+
+twitter https://twitter.com/dynamobim
+
+githubRepo https://github.com/DynamoDS/Dynamo
+ firstCommit 2011
+ stars 1678
+ forks 624
+ subscribers 201
+ created 2012
+ updated 2024
+ description Open Source Graphical Programming for Design
+ issues 383
+
+domainName dynamobim.org
+ registered 2013
+ awisRank
+  2022 238266

@@ -1,0 +1,4063 @@
+columnNameAtom
+ paint constant
+newColumnNameAtom
+ description Name a derived column.
+ paint variable
+
+constantAtom
+ paint constant
+
+percentAtom
+ paint constant.numeric.float
+ extends stringAtom
+ // todo: this currently extends from stringAtom b/c scrollsdk needs to be fixed. seems like if extending from number then the hard coded number typescript regex takes precedence over a custom regex
+countAtom
+ extends integerAtom
+yearAtom
+ extends integerAtom
+
+parseTimeCommandAtom
+ extends cueAtom
+ description Give parse time command atoms their own color.
+ paint constant.character.escape
+
+delimiterAtom
+ description String to use as a delimiter.
+ paint string
+
+bulletPointAtom
+ description Any token used as a bullet point such as "-" or "1." or ">"
+ paint keyword
+
+comparisonAtom
+ enum < > <= >= = != includes doesNotInclude empty notEmpty startsWith endsWith oneOf
+ paint constant
+
+personNameAtom
+ extends stringAtom
+
+// Link atom types
+urlAtom
+ paint constant.language
+absoluteUrlAtom
+ paint constant.language
+ regex (ftp|https?)://.+
+
+emailAddressAtom
+ extends stringAtom
+ paint constant.language
+
+// File system atom types
+permalinkAtom
+ paint string
+ description A string that doesn't contain characters that might interfere with most filesystems. No slashes, for instance.
+
+filePathAtom
+ paint constant.language
+
+outputFileExtensionAtom
+ extends fileExtensionAtom
+ enum html txt css js json pdf tsv csv parsers rss
+
+// HTML atom types
+tagOrUrlAtom
+ description An HTML tag or a url.
+ paint constant.language
+
+htmlAttributesAtom
+ paint constant
+
+htmlMethodAtom
+ paint constant
+ enum get post
+
+htmlTagAtom
+ paint constant.language
+ enum div span p a img ul ol li h1 h2 h3 h4 h5 h6 header nav section article aside main footer input button form label select option textarea table tr td th tbody thead tfoot br hr meta link script style title code
+
+htmlTypeAtom
+ extends stringAtom
+ paint constant.language
+ enum text password email number tel url search date time datetime-local week month color checkbox radio file submit reset button hidden range
+ description HTML input type attribute values.
+
+classNameAtom
+ paint constant
+
+htmlIdAtom
+ paint constant
+
+fontFamilyAtom
+ enum Arial Helvetica Verdana Georgia Impact Tahoma Slim
+ paint constant
+
+javascriptAnyAtom
+ extends codeAtom
+
+htmlAnyAtom
+ extends codeAtom
+
+colorAtom
+ extends codeAtom
+
+namedColorAtom
+ extends colorAtom
+ enum aliceblue antiquewhite aqua aquamarine azure beige bisque black blanchedalmond blue blueviolet brown burlywood cadetblue chartreuse chocolate coral cornflowerblue cornsilk crimson cyan darkblue darkcyan darkgoldenrod darkgray darkgreen darkkhaki darkmagenta darkolivegreen darkorange darkorchid darkred darksalmon darkseagreen darkslateblue darkslategray darkturquoise darkviolet deeppink deepskyblue dimgray dodgerblue firebrick floralwhite forestgreen fuchsia gainsboro ghostwhite gold goldenrod gray green greenyellow honeydew hotpink indianred indigo ivory khaki lavender lavenderblush lawngreen lemonchiffon lightblue lightcoral lightcyan lightgoldenrodyellow lightgray lightgreen lightpink lightsalmon lightseagreen lightskyblue lightslategray lightsteelblue lightyellow lime limegreen linen magenta maroon mediumaquamarine mediumblue mediumorchid mediumpurple mediumseagreen mediumslateblue mediumspringgreen mediumturquoise mediumvioletred midnightblue mintcream mistyrose moccasin navajowhite navy oldlace olive olivedrab orange orangered orchid palegoldenrod palegreen paleturquoise palevioletred papayawhip peachpuff peru pink plum powderblue purple rebeccapurple red rosybrown royalblue saddlebrown salmon sandybrown seagreen seashell sienna silver skyblue slateblue slategray snow springgreen steelblue tan teal thistle tomato turquoise violet wheat white whitesmoke yellow yellowgreen
+
+mimeTypeAtom
+ extends stringAtom
+ paint constant.language
+ description File MIME types (e.g. 'image/*', 'application/pdf')
+ enum image/* image/jpeg image/png image/gif image/webp image/svg+xml application/pdf text/plain text/html text/css text/javascript text/csv application/json application/xml application/zip application/msword application/vnd.openxmlformats-officedocument.wordprocessingml.document application/vnd.ms-excel application/vnd.openxmlformats-officedocument.spreadsheetml.sheet audio/* audio/mpeg audio/wav audio/ogg video/* video/mp4 video/webm video/ogg
+
+abstractScrollParser
+ atoms cueAtom
+ javascript
+  buildHtml() {
+    return ""
+  }
+  buildHtmlSnippet(buildSettings) {
+   return this.buildHtml(buildSettings)
+  }
+  buildTxt() {
+    return ""
+  }
+  getHtmlRequirements(buildSettings) {
+    const {requireOnce} = this
+    if (!requireOnce)
+      return ""
+    const set = buildSettings?.alreadyRequired || this.root.alreadyRequired
+    if (set.has(requireOnce))
+      return ""
+    set.add(requireOnce)
+    return requireOnce + "\n\n"
+  }
+
+abstractScrollWithRequirementsParser
+ extends abstractScrollParser
+ cueFromId
+ javascript
+  buildHtml(buildSettings) {
+    return this.getHtmlRequirements(buildSettings) + this.buildInstance()
+  }
+
+metaCommandAtom
+ extends cueAtom
+ description Give meta command atoms their own color.
+ paint constant.numeric
+ // Obviously this is not numeric. But I like the green color for now.
+   We need a better design to replace this "paint" concept
+   https://github.com/breck7/scrollsdk/issues/186
+
+abstractTopLevelSingleMetaParser
+ description Use these parsers once per file.
+ extends abstractScrollParser
+ inScope slashCommentParser
+ cueFromId
+ atoms metaCommandAtom
+ boolean isTopMatter true
+ boolean isSetterParser true
+
+scrollParser
+ description Scroll is a language for scientists of all ages. Refine, share and collaborate on ideas.
+ root
+ inScope abstractScrollParser blankLineParser atomTypeDefinitionParser parserDefinitionParser
+ catchAllParser errorParser
+ javascript
+  setFile(file) {
+   this.file = file
+   return this
+  }
+  buildHtml(buildSettings) {
+    this.sectionStack = []
+    return this.filter(subparticle => subparticle.buildHtml).map(subparticle => { try {return subparticle.buildHtml(buildSettings)} catch (err) {console.error(err); return ""} }).filter(i => i).join("\n") + this.clearSectionStack()
+  }
+  sectionStack = []
+  clearSectionStack() {
+   const result = this.sectionStack.join("\n")
+   this.sectionStack = []
+   return result
+  }
+  bodyStack = []
+  clearBodyStack() {
+   const result = this.bodyStack.join("")
+   this.bodyStack = []
+   return result
+  }
+  readSyncFromFileOrUrl(fileOrUrl) {
+    if (!this.isNodeJs()) return this.getInBrowser(fileOrUrl)
+    const isUrl = fileOrUrl.match(/^https?\:[^ ]+$/)
+    if (!isUrl) return this.root.readFile(fileOrUrl)
+    return this.readFile(this.makeFullPath(new URL(fileOrUrl).pathname.split('/').pop()))
+  }
+  getInBrowser(key) {
+    return localStorage.getItem(key) || (window.inMemStorage ? window.inMemStorage[key] : "") || ""
+  }
+  async fetch(url, filename) {
+    const isUrl = url.match(/^https?\:[^ ]+$/)
+    if (!isUrl) return
+    return this.isNodeJs() ? this.fetchNode(url, filename) : this.fetchBrowser(url)
+  }
+  get path() {
+    return require("path")
+  }
+  makeFullPath(filename) {
+    return this.path.join(this.folderPath, filename)
+  }
+  _nextAndPrevious(arr, index) {
+    const nextIndex = index + 1
+    const previousIndex = index - 1
+    return {
+      previous: arr[previousIndex] ?? arr[arr.length - 1],
+      next: arr[nextIndex] ?? arr[0]
+    }
+  }
+  // keyboard nav is always in the same folder. does not currently support cross folder
+  _includeFileInKeyboardNav(file) {
+    const { scrollProgram } = file
+    return scrollProgram.buildsHtml && scrollProgram.hasKeyboardNav && scrollProgram.tags.includes(this.primaryTag)
+  }
+  _timestamp
+  get timestamp() {
+   if (!this._timestamp) {
+    this._timestamp = this.file.timestamp
+    const date = this.get("date")
+    if (date) this._timestamp = this.dayjs(date).unix()
+   }
+   return this._timestamp
+  }
+  get linkToPrevious() {
+    if (!this.hasKeyboardNav)
+      // Dont provide link to next unless keyboard nav is on
+      return undefined
+    const {allScrollFiles} = this
+    let file = this._nextAndPrevious(allScrollFiles, this.timeIndex).previous
+    if (!file) return undefined
+    while (!this._includeFileInKeyboardNav(file)) {
+      file = this._nextAndPrevious(allScrollFiles, file.scrollProgram.timeIndex).previous
+    }
+    return file.scrollProgram.permalink
+  }
+  get linkToNext() {
+    if (!this.hasKeyboardNav)
+      // Dont provide link to next unless keyboard nav is on
+      return undefined
+    const {allScrollFiles} = this
+    let file = this._nextAndPrevious(allScrollFiles, this.timeIndex).next
+    if (!file) return undefined
+    while (!this._includeFileInKeyboardNav(file)) {
+      file = this._nextAndPrevious(allScrollFiles, file.scrollProgram.timeIndex).next
+    }
+    return file.scrollProgram.permalink
+  }
+  // todo: clean up this naming pattern and add a parser instead of special casing 404.html
+  get allHtmlFiles() {
+    return this.allScrollFiles.filter(file => file.scrollProgram.buildsHtml && file.scrollProgram.permalink !== "404.html")
+  }
+  parseNestedTag(tag) {
+    if (!tag.includes("/")) return;
+    const {path} = this
+    const parts = tag.split("/")
+    const group = parts.pop()
+    const relativePath = parts.join("/")
+    return {
+      group,
+      relativePath,
+      folderPath: path.join(this.folderPath, path.normalize(relativePath))
+      }
+  }
+  getFilesByTags(tags, limit) {
+    // todo: tags is currently matching partial substrings
+    const getFilesWithTag = (tag, files) => files.filter(file => file.scrollProgram.buildsHtml && file.scrollProgram.tags.includes(tag))
+    if (typeof tags === "string") tags = tags.split(" ")
+    if (!tags || !tags.length)
+      return this.allHtmlFiles
+        .filter(file => file !== this) // avoid infinite loops. todo: think this through better.
+        .map(file => {
+          return { file, relativePath: "" }
+        })
+        .slice(0, limit)
+    let arr = []
+    tags.forEach(tag => {
+      if (!tag.includes("/"))
+        return (arr = arr.concat(
+          getFilesWithTag(tag, this.allScrollFiles)
+            .map(file => {
+              return { file, relativePath: "" }
+            })
+            .slice(0, limit)
+        ))
+      const {folderPath, group, relativePath} = this.parseNestedTag(tag)
+      let files = []
+      try {
+      files = this.fileSystem.getFusedFilesInFolderIfCached(folderPath, this)
+      } catch (err) {
+        console.error(err)
+      }
+      const filtered = getFilesWithTag(group, files).map(file => {
+        return { file, relativePath: relativePath + "/" }
+      })
+      arr = arr.concat(filtered.slice(0, limit))
+    })
+    return this.lodash.sortBy(arr, file => file.file.scrollProgram.timestamp).reverse()
+  }
+  async fetchNode(url, filename) {
+    filename = filename || new URL(url).pathname.split('/').pop()
+    const fullpath = this.makeFullPath(filename)
+    if (require("fs").existsSync(fullpath)) return this.readFile(fullpath)
+    this.log(`🛜 fetching ${url} to ${fullpath} `)
+    try {
+    await this.downloadToDisk(url, fullpath)
+    return this.readFile(fullpath)
+    } catch (err) {
+      console.error(`fetching ${url} failed`)
+      console.error(err)
+      return ""
+    }
+  }
+  log(message) {
+    if (this.logger) this.logger.log(message)
+  }
+  async fetchBrowser(url) {
+    const content = this.getInBrowser(url)
+    if (content) return content
+    return this.downloadToLocalStorage(url)
+  }
+  async downloadToDisk(url, destination) {
+    const { writeFile } = require('fs').promises
+    const response = await fetch(url)
+    const fileBuffer = await response.arrayBuffer()
+    await writeFile(destination, Buffer.from(fileBuffer))
+    return this.readFile(destination)
+  }
+  async downloadToLocalStorage(url) {
+    const response = await fetch(url)
+    const blob = await response.blob()
+    const text = await blob.text()
+    try {
+      localStorage.setItem(url, text)
+      return localStorage.getItem(url)
+    } catch (err) {
+      if (!window.inMemStorage) window.inMemStorage = {}
+      window.inMemStorage[url] = text
+      console.error(err)
+      return text
+    }
+  }
+  readFile(filename) {
+    const {path} = this
+    const fs = require("fs")
+    const fullPath = path.join(this.folderPath, filename.replace(this.folderPath, ""))
+    try {
+    if (fs.existsSync(fullPath))
+      return fs.readFileSync(fullPath, "utf8")
+    console.error(`File '${filename}' not found`)
+    return ""
+    } catch (err) {
+      console.error(`Error in '${this.filePath}' reading file: '${fullPath}'`)
+      console.error(err)
+      return ""
+    }
+  }
+  alreadyRequired = new Set()
+  buildHtmlSnippet(buildSettings) {
+   this.sectionStack = []
+   return this.map(subparticle => {
+   try {
+   if (subparticle.noSnippet) return ""
+   return subparticle.buildHtmlSnippet ? subparticle.buildHtmlSnippet(buildSettings) : (subparticle.buildHtml ? subparticle.buildHtml(buildSettings) : "")} catch (err) {
+     console.error(`Error building snippet in file '${this.filename}' in particle '${subparticle.toString()}'`)
+     console.error(err)
+     return ""
+   }
+   })
+     .filter(i => i)
+     .join("\n")
+     .trim() + this.clearSectionStack()
+  }
+  get footnotes() {
+   if (this._footnotes === undefined) this._footnotes = this.filter(particle => particle.isFootnote)
+   return this._footnotes
+  }
+  get authors() {
+    return this.get("authors")
+  }
+  _addTimeIndexes(files) {
+    // A little hacky but ah well.
+    // For blogs, we want to sort posts in a folder in order of the date property.
+    // If the date property is not set, we use the file timestamp from disk.
+    const sorted = this.lodash.sortBy(files.map(a => a.scrollProgram), "timestamp")
+    sorted.forEach((scrollProgram, index) => (scrollProgram.timeIndex = index))
+  }
+  get allScrollFiles() {
+    try {
+    const files = this.fileSystem.getFusedFilesInFolderIfCached(this.folderPath, this)
+    if (this.timeIndex === undefined)
+      this._addTimeIndexes(files)
+    return files
+    } catch (err) {
+      console.error(err)
+      return []
+    }
+  }
+  async doThing(thing) {
+    await Promise.all(this.filter(particle => particle[thing]).map(async particle => particle[thing]()))
+  }
+  async load() {
+    // todo: document when to use load instead of wake? do we need both?
+    await this.doThing("load")
+  }
+  async execute() {
+    await this.doThing("execute")
+  }
+  file = {}
+  getFromParserId(parserId) {
+    return this.parserIdIndex[parserId]?.[0].content
+  }
+  notifyOnReady(particle) {
+    if (!this._toNotify)
+     this._toNotify = []
+    this._toNotify.push(particle)
+  }
+  wake() {
+    // In case the file ended on a parser definition, refresh parser pool
+    this._refreshParserPool()
+    if (this._toNotify)
+      this._toNotify.forEach(particle => particle.onReady())
+  }
+  get fileSystem() {
+    return this.file.fileSystem
+  }
+  get filePath() {
+    // Note: we currently do not support files with spaces in their filepaths
+    return this.cue
+  }
+  get folderPath() {
+    return Utils.posix.dirname(this.filePath) + "/"
+  }
+  get filename() {
+    return Utils.posix.basename(this.filePath)
+  }
+  get hasKeyboardNav() {
+    return this.has("keyboardNav")
+  }
+  get editHtml() {
+    return `<a href="${this.editUrl}" class="abstractTextLinkParser">Edit</a>`
+  }
+  get externalsPath() {
+    return this.path.join(this.fileSystem.standardParserDirectory, "..", "external")
+  }
+  get endSnippetIndex() {
+    // Get the line number that the snippet should stop at.
+    // First if its hard coded, use that
+    if (this.has("endSnippet")) return this.getParticle("endSnippet").index
+    // Next look for a dinkus
+    const snippetBreak = this.find(particle => particle.isDinkus)
+    if (snippetBreak) return snippetBreak.index
+    return -1
+  }
+  get parserIds() {
+    return this.topDownArray.map(particle => particle.definition.id)
+  }
+  get tags() {
+    return this.get("tags") || ""
+  }
+  get primaryTag() {
+    return this.tags.split(" ")[0]
+  }
+  get filenameNoExtension() {
+    return this.filename.replace(".scroll", "")
+  }
+  // todo: rename publishedUrl? Or something to indicate that this is only for stuff on the web (not localhost)
+  // BaseUrl must be provided for RSS Feeds and OpenGraph tags to work
+  get baseUrl() {
+    const baseUrl = (this.get("baseUrl") || "").replace(/\/$/, "")
+    return baseUrl + "/"
+  }
+  get canonicalUrl() {
+    return this.get("canonicalUrl") || this.baseUrl + this.permalink
+  }
+  get openGraphImage() {
+    const openGraphImage = this.get("openGraphImage")
+    if (openGraphImage !== undefined) return this.ensureAbsoluteLink(openGraphImage)
+    const images = this.filter(particle => particle.doesExtend("scrollImageParser"))
+    const hit = images.find(particle => particle.has("openGraph")) || images[0]
+    if (!hit) return ""
+    return this.ensureAbsoluteLink(hit.filename)
+  }
+  get absoluteLink() {
+    return this.ensureAbsoluteLink(this.permalink)
+  }
+  ensureAbsoluteLink(link) {
+    if (link.includes("://")) return link
+    return this.baseUrl + link.replace(/^\//, "")
+  }
+  get editUrl() {
+    const editUrl = this.get("editUrl")
+    if (editUrl) return editUrl
+    const editBaseUrl = this.get("editBaseUrl")
+    return (editBaseUrl ? editBaseUrl.replace(/\/$/, "") + "/" : "") + this.filename
+  }
+  get gitRepo() {
+    // given https://github.com/breck7/breck.lol/blob/main/four-tips-to-improve-communication.scroll
+    // return https://github.com/breck7/breck.lol
+    return this.editUrl.split("/").slice(0, 5).join("/")
+  }
+  get scrollVersion() {
+    // Keep in sync with package.json; checked by the scrollVersion test.
+    return "180.0.1"
+  }
+  // Use the first paragraph for the description
+  // todo: add a particle method version of get that gets you the first particle. (actulaly make get return array?)
+  // would speed up a lot.
+  get description() {
+    const description = this.getFromParserId("openGraphDescriptionParser")
+    if (description) return description
+    return this.generatedDescription
+  }
+  get keywords() {
+    if (this.has("keywords"))
+    return this.get("keywords")
+    const tags = this.get("tags")
+    if (tags)
+      return tags.split(" ").join(", ")
+    return ""
+  }
+  get generatedDescription() {
+    const firstParagraph = this.find(particle => particle.isArticleContent)
+    return firstParagraph ? firstParagraph.originalText.substr(0, 100).replace(/[&"<>']/g, "") : ""
+  }
+  get titleFromFilename() {
+    const unCamelCase = str => str.replace(/([a-z])([A-Z])/g, "$1 $2").replace(/^./, match => match.toUpperCase())
+    return unCamelCase(this.filenameNoExtension)
+  }
+  get title() {
+    return this.getFromParserId("scrollTitleParser") || this.titleFromFilename
+  }
+  get linkTitle() {
+    return this.getFromParserId("scrollLinkTitleParser") || this.title
+  }
+  get permalink() {
+   return this.get("permalink") || (this.filename ? this.filenameNoExtension + ".html" : "")
+  }
+  compileTo(extensionCapitalized) {
+    if (extensionCapitalized === "Txt")
+      return this.asTxt
+    if (extensionCapitalized === "Html")
+      return this.asHtml
+    const methodName = "build" + extensionCapitalized
+    return this.topDownArray
+      .filter(particle => particle[methodName])
+      .map((particle, index) => particle[methodName](index))
+      .join("\n")
+      .trim()
+  }
+  get asTxt() {
+    return (
+      this.map(particle => {
+          const text = particle.buildTxt ? particle.buildTxt() : ""
+          if (text) return text + "\n"
+          if (!particle.getLine().length) return "\n"
+          return ""
+        })
+        .join("")
+        .replace(/\n\n\n+/g, "\n\n") // Maximum 2 newlines in a row
+        .trim() + "\n" // Always end in a newline, Posix style
+    )
+  }
+  get dependencies() {
+      const dependencies = this.file.dependencies?.slice() || []
+      const files = this.topDownArray.filter(particle => particle.dependencies).map(particle => particle.dependencies).flat()
+      return dependencies.concat(files)
+  }
+  get importOnly() {
+    return this.has("importOnly")
+  }
+  get buildsHtml() {
+    const { permalink } = this
+    return !this.importOnly && (permalink.endsWith(".html") || permalink.endsWith(".htm"))
+  }
+  // Without specifying the language hyphenation will not work.
+  get lang() {
+    return this.get("htmlLang") || "en"
+  }
+  _compiledHtml = ""
+  get asHtml() {
+    if (!this._compiledHtml) {
+      const { permalink, buildsHtml } = this
+      const content = (this.buildHtml() + this.clearBodyStack()).trim()
+      // Don't add html tags to CSV feeds. A little hacky as calling a getter named _html_ to get _xml_ is not ideal. But
+      // <1% of use case so might be good enough.
+      const wrapWithHtmlTags = buildsHtml
+      const bodyTag = this.has("metaTags") ? "" : "<body>\n"
+      this._compiledHtml = wrapWithHtmlTags ? `<!DOCTYPE html>\n<html lang="${this.lang}">\n${bodyTag}${content}\n</body>\n</html>` : content
+    }
+    return this._compiledHtml
+  }
+  get wordCount() {
+    return this.asTxt.match(/\b\w+\b/g)?.length || 0
+  }
+  get minutes() {
+    return parseFloat((this.wordCount / 200).toFixed(1))
+  }
+  get date() {
+    return this.dateObject.format(`MM/DD/YYYY`)
+  }
+  get dateObject() {
+    const date = this.get("date") || (this.timestamp || 0)
+    return this.dayjs(date)
+  }
+  get year() {
+    return parseInt(this.dayjs(this.date).format(`YYYY`))
+  }
+  get dayjs() {
+    if (!this.isNodeJs()) return dayjs
+    const lib = require("dayjs")
+    const relativeTime = require("dayjs/plugin/relativeTime")
+    lib.extend(relativeTime)
+    return lib
+  }
+  get lodash() {
+    return this.isNodeJs() ? require("lodash") : lodash
+  }
+  get d3() {
+    return this.isNodeJs() ? require('d3') : d3
+  }
+  getConcepts(parsed) {
+    const concepts = []
+    let currentConcept
+    parsed.forEach(particle => {
+      if (particle.isConceptDelimiter) {
+        if (currentConcept) concepts.push(currentConcept)
+        currentConcept = []
+      }
+      if (currentConcept && particle.isMeasure) currentConcept.push(particle)
+    })
+    if (currentConcept) concepts.push(currentConcept)
+    return concepts
+  }
+  _formatConcepts(parsed) {
+    const concepts = this.getConcepts(parsed)
+    if (!concepts.length) return false
+    const {lodash} = this
+    // does a destructive sort in place on the parsed program
+    concepts.forEach(concept => {
+      let currentSection
+      const newCode = lodash
+        .sortBy(concept, ["sortIndex"])
+        .map(particle => {
+          let newLines = ""
+          const section = particle.sortIndex.toString().split(".")[0]
+          if (section !== currentSection) {
+            currentSection = section
+            newLines = "\n"
+          }
+          return newLines + particle.toString()
+        })
+        .join("\n")
+      concept.forEach((particle, index) => (index ? particle.destroy() : ""))
+      concept[0].replaceWith(newCode)
+    })
+  }
+  get formatted() {
+    return this.getFormatted(this.codeAtStart)
+  }
+  get lastCommitTime() {
+    // todo: speed this up and do a proper release. also could add more metrics like this.
+    if (this._lastCommitTime === undefined) {
+      try {
+        this._lastCommitTime = require("child_process").execSync(`git log -1 --format="%at" -- "${this.filePath}"`).toString().trim()
+      } catch (err) {
+        this._lastCommitTime = 0
+      }
+    }
+    return this._lastCommitTime
+  }
+  get codeAtStart() {
+    return this.file.codeAtStart
+  }
+  async ensureFileLoaded() {
+    // todo: cleanup
+    if (!this.codeAtStart)
+      await this.file._readCodeFromStorage()
+  }
+  getFormatted(codeAtStart = this.toString()) {
+    let formatted = codeAtStart.replace(/\r/g, "") // remove all carriage returns if there are any
+    const parsed = new this.latestConstructor(formatted)
+    parsed.topDownArray.forEach(subparticle => {
+      subparticle.format()
+      const original = subparticle.getLine()
+      const trimmed = original.replace(/(\S.*?)[  \t]*$/gm, "$1")
+      // Trim trailing whitespace unless parser allows it
+      if (original !== trimmed && !subparticle.allowTrailingWhitespace) subparticle.setLine(trimmed)
+    })
+    this._formatConcepts(parsed)
+    let importOnlys = []
+    let topMatter = []
+    let allElse = []
+    // Create any bindings
+    parsed.forEach(particle => {
+      if (particle.bindTo === "next" && !particle.isLast) particle.binding = particle.next
+      if (particle.bindTo === "previous" && !particle.isFirst) particle.binding = particle.previous
+    })
+    let noFormat = false
+    parsed.forEach(particle => {
+      if (noFormat) return allElse.push(particle)
+      if (particle.getLine() === "noFormat") {
+         noFormat = true
+         return allElse.push(particle)
+      }
+      if (particle.getLine() === "importOnly") importOnlys.push(particle)
+      else if (particle.isTopMatter) topMatter.push(particle)
+      else allElse.push(particle)
+    })
+    const combined = importOnlys.concat(topMatter, allElse)
+    // Move any bound particles
+    combined
+      .filter(particle => particle.binding)
+      .forEach(particle => {
+        // First remove the particle from its current position
+        const originalIndex = combined.indexOf(particle)
+        combined.splice(originalIndex, 1)
+        // Then insert it at the new position
+        // We need to find the binding index again after removal
+        const bindingIndex = combined.indexOf(particle.binding)
+        if (particle.bindTo === "next") combined.splice(bindingIndex, 0, particle)
+        else combined.splice(bindingIndex + 1, 0, particle)
+      })
+    const trimmed = combined
+      .map(particle => particle.toString())
+      .join("\n")
+      .replace(/^\n*/, "") // Remove leading newlines
+      .replace(/\n\n\n+/g, "\n\n") // Maximum 2 newlines in a row
+      .replace(/\n+$/, "")
+    return trimmed === "" ? trimmed : trimmed + "\n" // End non blank Scroll files in a newline character POSIX style for better working with tools like git
+  }
+  get parser() {
+    return this.constructor
+  }
+  get parsersRequiringExternals() {
+    const { parser } = this
+    // todo: could be cleaned up a bit
+    if (!parser.parsersRequiringExternals) parser.parsersRequiringExternals = parser.cachedHandParsersProgramRoot.filter(particle => particle.copyFromExternal).map(particle => particle.atoms[0])
+    return parser.parsersRequiringExternals
+  }
+  get Disk() { return this.isNodeJs() ? require("scrollsdk/products/Disk.node.js").Disk : {}}
+  async buildAll(options = {}) {
+    await this.load()
+    await this.buildOne(options)
+    await this.buildTwo(options)
+  }
+  async buildOne(options) {
+    await this.execute()
+    const toBuild = this.filter(particle => particle.buildOne)
+    for (let particle of toBuild) {
+      await particle.buildOne(options)
+    }
+  }
+  async buildTwo(options) {
+    const toBuild = this.filter(particle => particle.buildTwo)
+    for (let particle of toBuild) {
+      await particle.buildTwo(options)
+    }
+  }
+  stackParserCode(parser) {
+    // Add top level parsers only which will add their nested parsers.
+    if (parser.parent !== this) return
+    // Perf hack until we can refactor ParserPool and add incremental addition of parsers.
+    // What we see in the wild is that frequently you'll have parser definitions one after
+    // the other, separated by blank lines or comments. So we stack up those parsers and
+    // dont add them until we are done with that section.
+    if (this._parsersToRegister === undefined)
+        this._parsersToRegister = []
+    this._parsersToRegister.push(parser)
+    if (!this._beforeAppend)
+        this._beforeAppend = (block) => {
+          const line1 = block.split(/\n/)[0]
+          if (line1 === "" || line1.endsWith("Parser") || line1.startsWith("//"))
+            return
+          this._refreshParserPool()
+        }
+  }
+  _refreshParserPool() {
+    if (!this._parsersToRegister) return
+    this.registerParsers(this._parsersToRegister.map(p => p.toString()).join("\n"), this.filePath)
+    delete this._beforeAppend
+    delete this._parsersToRegister
+  }
+  get outputFileNames() {
+    return this.filter(p => p.outputFileNames).map(p => p.outputFileNames).flat()
+  }
+  _compileArray(filename, arr) {
+    const removeBlanks = data => data.map(obj => Object.fromEntries(Object.entries(obj).filter(([_, value]) => value !== "")))
+    const parts = filename.split(".")
+    const format = parts.pop()
+    if (format === "json") return JSON.stringify(removeBlanks(arr), null, 2)
+    if (format === "js") return `const ${parts[0]} = ` + JSON.stringify(removeBlanks(arr), null, 2)
+    if (format === "csv") return this.arrayToCSV(arr)
+    if (format === "tsv") return this.arrayToCSV(arr, "\t")
+    if (format === "particles") return particles.toString()
+    return particles.toString()
+  }
+  inspect(particles = this.getSubparticles()) {
+    const mapFn = particle => {
+    const atomTypes = particle.lineAtomTypes.split(" ")
+    return `${particle.constructor.name} ${particle.atoms.map((atom, index) => `${atomTypes[index]}:${atom}`).join(" ")}${(particle.length ? `\n ` + particle.map(mapFn).join("\n") + `` : "")}`}
+   return particles.map(mapFn).join("\n")
+  }
+  levenshteinDistance(a, b) {
+    const m = a.length
+    const n = b.length
+    const dp = Array.from({ length: m + 1 }, () => Array(n + 1).fill(0))
+    for (let i = 0; i <= m; i++) {
+      dp[i][0] = i
+    }
+    for (let j = 0; j <= n; j++) {
+      dp[0][j] = j
+    }
+    for (let i = 1; i <= m; i++) {
+      for (let j = 1; j <= n; j++) {
+        const cost = a[i - 1] === b[j - 1] ? 0 : 1
+        dp[i][j] = Math.min(dp[i - 1][j] + 1, dp[i][j - 1] + 1, dp[i - 1][j - 1] + cost)
+      }
+    }
+    return dp[m][n]
+  }
+  makeLodashOrderByParams(str) {
+  const part1 = str.split(" ")
+  const part2 = part1.map(col => (col.startsWith("-") ? "desc" : "asc"))
+  return [part1.map(col => col.replace(/^\-/, "")), part2]
+  }
+  arrayToCSV(data, delimiter = ",") {
+   if (!data.length) return ""
+   // Extract headers
+   const headers = Object.keys(data[0])
+   const csv = data.map(row =>
+     headers
+       .map(fieldName => {
+         const fieldValue = row[fieldName]
+         // Escape commas if the value is a string
+         if (typeof fieldValue === "string" && (fieldValue.includes(delimiter) || fieldValue.includes('"'))) {
+           return `"${fieldValue.replace(/"/g, '""')}"` // Escape double quotes and wrap in double quotes
+         }
+         return fieldValue
+       })
+       .join(delimiter)
+   )
+   csv.unshift(headers.join(delimiter)) // Add header row at the top
+   return csv.join("\n")
+   }
+  compileConcepts(filename = "csv", sortBy = "") {
+    const {lodash} = this
+    if (!sortBy) return this._compileArray(filename, this.concepts)
+    const orderBy = this.makeLodashOrderByParams(sortBy)
+    return this._compileArray(filename, lodash.orderBy(this.concepts, orderBy[0], orderBy[1]))
+  }
+  _withStats
+  get measuresWithStats() {
+    if (!this._withStats) this._withStats = this.addMeasureStats(this.concepts, this.measures)
+    return this._withStats
+  }
+  addMeasureStats(concepts, measures){
+   return measures.map(measure => {
+    let Type = false
+    concepts.forEach(concept => {
+      const value = concept[measure.Name]
+      if (value === undefined || value === "") return
+      measure.Values++
+      if (!Type) {
+        measure.Example = value.toString().replace(/\n/g, " ")
+        measure.Type = typeof value
+        Type = true
+      }
+    })
+    measure.Coverage = Math.floor((100 * measure.Values) / concepts.length) + "%"
+    return measure
+  })
+  }
+  get latestConstructor() {
+    // todo: cleanup
+    return this._modifiedConstructor || this.constructor
+  }
+  _parseMeasures() {
+  const {lodash, definition} = this
+  // cache measures on the _Parser_, since they are unique to a parser.
+  if (definition._measures)
+    return definition._measures
+  // todo: clean this up
+  // Generate a fake program with one of every of the available parsers. Then parse it. Then we can easily access the meta data on the parsers
+  const dummyCode = Array.from(new Set(definition.map(particle => particle.get("cue") || particle.getLine().replace(/Parser$/, "")))).join("\n")
+  const parser = this.latestConstructor
+  const dummyProgram = new parser(dummyCode, this.getLine())
+  // Delete any particles that are not measures
+  dummyProgram.filter(particle => !particle.isMeasure).forEach(particle => particle.destroy())
+  dummyProgram.forEach(particle => {
+    // add nested measures
+    Object.keys(particle.definition.cueMapWithDefinitions).forEach(key => particle.appendLine(key))
+  })
+  // Delete any nested particles that are not measures
+  dummyProgram.topDownArray.filter(particle => !particle.isMeasure).forEach(particle => particle.destroy())
+  const measures = dummyProgram.topDownArray.map(particle => {
+    return {
+      Name: particle.measureName,
+      Values: 0,
+      Coverage: 0,
+      Question: particle.definition.description,
+      Example: particle.definition.getParticle("example")?.subparticlesToString() || "",
+      Type: particle.typeForWebForms,
+      Source: particle.sourceDomain,
+      //Definition: parsedProgram.root.filename + ":" + particle.lineNumber
+      SortIndex: particle.sortIndex,
+      IsComputed: particle.isComputed,
+      IsRequired: particle.isMeasureRequired,
+      IsConceptDelimiter: particle.isConceptDelimiter,
+      Cue: particle.definition.get("cue")
+    }
+  })
+  definition._measures = lodash.sortBy(measures, "SortIndex")
+  return definition._measures
+  }
+  _concepts
+  get concepts() {
+    if (!this._concepts) this._concepts = this._parseConcepts()
+    return this._concepts
+  }
+  get concept() {
+    return this.concepts[0]
+  }
+  _measures
+  get measures() {
+    if (!this._measures) return this._measures = this._parseMeasures()
+    return this._measures
+  }
+  _parseConcepts(){
+  const parsedProgram = this
+  const measures = this.measures
+  // Todo: might be a perf/memory/simplicity win to have a "segment" method in ScrollSDK, where you could
+  // virtually split a Particle into multiple segments, and then query on those segments.
+  // So we would "segment" on "id ", and then not need to create a bunch of new objects, and the original
+  // already parsed lines could then learn about/access to their respective segments.
+  const conceptDelimiter = measures.filter(measure => measure.IsConceptDelimiter)[0]
+  if (!conceptDelimiter) return []
+  const concepts = parsedProgram.split(conceptDelimiter.Cue || conceptDelimiter.Name)
+  concepts.shift() // Remove the part before "id"
+  return concepts.map(concept => {
+    const row = {}
+    measures.forEach(measure => {
+      const measureName = measure.Name
+      const measureKey = measure.Cue || measureName.replace(/_/g, " ")
+      if (!measure.IsComputed) row[measureName] = concept.getParticle(measureKey)?.measureValue ?? ""
+      else row[measureName] = this.computeMeasure(parsedProgram, measureName, concept, concepts)
+    })
+    return row
+  })
+  }
+  computeMeasure(parsedProgram, measureName, concept, concepts){
+  // note that this is currently global, assuming there wont be. name conflicts in computed measures in a single scroll
+  if (!Particle.measureFnCache) Particle.measureFnCache = {}
+  const measureFnCache = Particle.measureFnCache
+  if (!measureFnCache[measureName]) {
+    // a bit hacky but works??
+    const particle = parsedProgram.appendLine(measureName)
+    measureFnCache[measureName] = particle.computeValue
+    particle.destroy()
+  }
+  return measureFnCache[measureName](concept, measureName, parsedProgram, concepts)
+  }
+  compileMeasures(filename = "csv", sortBy = "") {
+    const withStats = this.measuresWithStats
+    if (!sortBy) return this._compileArray(filename, withStats)
+    const orderBy = this.makeLodashOrderByParams(sortBy)
+    return this._compileArray(filename, this.lodash.orderBy(withStats, orderBy[0], orderBy[1]))
+  }
+  runNodeJs(particle) {
+    if (!this.isNodeJs()) return false
+    const {filePath, Disk} = this
+    const uid = particle._getUid()
+    const tempPath = filePath + `.${uid}.js`
+    if (Disk.exists(tempPath)) throw new Error(`Failed to write/require nodejs snippet since '${tempPath}' already exists.`)
+    try {
+      Disk.write(tempPath, particle.subparticlesToString())
+      return require(tempPath)
+    } catch (err) {
+      console.error(`Error in ${particle.cue} in file '${filePath}'`)
+      console.error(err)
+      return false
+    } finally {
+      Disk.rm(tempPath)
+    }
+  }
+  toRss() {
+    const { title, canonicalUrl } = this
+    return ` <item>
+  <title>${title}</title>
+  <link>${canonicalUrl}</link>
+  <pubDate>${this.dayjs(this.timestamp * 1000).format("ddd, DD MMM YYYY HH:mm:ss ZZ")}</pubDate>
+  </item>`
+  }
+ example
+  # Hello world
+  ## This is Scroll
+  * It compiles to HTML.
+  
+  code
+   // You can add code as well.
+   print("Hello world")
+
+abstractUrlSettingParser
+ extends abstractTopLevelSingleMetaParser
+ atoms metaCommandAtom urlAtom
+ cueFromId
+
+
+buildCommandAtom
+ extends cueAtom
+ description Give build command atoms their own color.
+ paint constant
+
+abstractBuildCommandParser
+ extends abstractScrollParser
+ cueFromId
+ atoms buildCommandAtom
+ catchAllAtomType filePathAtom
+ inScope slashCommentParser
+ boolean isTopMatter true
+ javascript
+  get extension() {
+    return this.cue.replace("build", "")
+  }
+  buildOutput() {
+    return this.root.compileTo(this.extension)
+  }
+  get outputFileNames() {
+    return this.content?.split(" ") || [this.root.permalink.replace(".html", "." + this.extension.toLowerCase())]
+  }
+  async _buildFileType(extension, options) {
+    const {root} = this
+    const { fileSystem, folderPath, filename, filePath, path, lodash } = root
+    const capitalized = lodash.capitalize(extension)
+    const buildKeyword = "build" + capitalized
+    const {outputFileNames} = this
+    for (let name of outputFileNames) {
+      try {
+        await fileSystem.writeProduct(path.join(folderPath, name), root.compileTo(capitalized))
+        root.log(`💾 Built ${name} from ${filename}`)
+      } catch (err) {
+        console.error(`Error while building '${filePath}' with extension '${extension}'`)
+        throw err
+      }
+    }
+  }
+
+abstractBuildOneCommandParser
+ // buildOne and buildTwo are just a dumb/temporary way to have CSVs/JSONs/TSVs build first. Will be merged at some point.
+ extends abstractBuildCommandParser
+ javascript
+  async buildOne(options) { await this._buildFileType(this.extension, options) }
+
+abstractBuildTwoCommandParser
+ extends abstractBuildCommandParser
+ javascript
+  async buildTwo(options) {
+    await this._buildFileType(this.extension, options)
+  }
+
+scrollFileAddressParser
+ catchAllAtomType filePathAtom
+ catchAllParser scrollFileAddressParser
+
+abstractInlineFileParser
+ extends abstractScrollParser
+ catchAllAtomType filePathAtom
+ catchAllParser scrollFileAddressParser
+ string joinChar ;\n\n
+ string htmlTag script
+ javascript
+  get files() {
+    const inline = this.atoms.slice(1)
+    const children = this.map(particle => particle.cue)
+    return inline.concat(children)
+  }
+  get contents() {
+    return this.files.map(filename => this.root.readFile(filename)).join(this.joinChar)
+  }
+  buildHtml() {
+   return `<${this.htmlTag}>/* ${this.files.join(" ")} */\n${this.contents}</${this.htmlTag}>`
+  }
+
+
+commentLineParser
+ catchAllAtomType commentAtom
+
+abstractCommentParser
+ description Prints nothing.
+ catchAllAtomType commentAtom
+ atoms commentAtom
+ extends abstractScrollParser
+ baseParser blobParser
+ string bindTo next
+ catchAllParser commentLineParser
+
+commentParser
+ popularity 0.000193
+ extends abstractCommentParser
+ cueFromId
+
+slashCommentParser
+ popularity 0.005643
+ extends abstractCommentParser
+ cue //
+ boolean isPopular true
+ description A comment. Prints nothing.
+
+blankLineParser
+ popularity 0.308149
+ description Print nothing. Break section.
+ atoms blankAtom
+ boolean isPopular true
+ javascript
+  buildHtml() {
+   return this.parent.clearSectionStack()
+  }
+ pattern ^$
+ tags doNotSynthesize
+
+measureNameAtom
+ extends cueAtom
+ // A regex for column names for max compatibility with a broad range of data science tools:
+ regex [a-zA-Z][a-zA-Z0-9]*
+
+buildMeasuresParser
+ popularity 0.000024
+ cueFromId
+ description Compile measures to delimited files.
+ extends abstractBuildCommandParser
+ sortByParser
+  cueFromId
+  atoms cueAtom columnNameAtom
+ javascript
+  async buildOne() {
+    const {root} = this
+    const { fileSystem, folderPath, filename, path, permalink, measures } = root
+    const files = this.getAtomsFrom(1)
+    if (!files.length) files.push(permalink.replace(".html", ".csv"))
+    const sortBy = this.get("sortBy")
+    for (let link of files) {
+      await fileSystem.writeProduct(path.join(folderPath, link), root.compileMeasures(link, sortBy))
+      root.log(`💾 Built ${measures.length} measures in ${filename} to ${link}`)
+    }
+  }
+
+abstractMeasureParser
+ atoms measureNameAtom
+ description Base parser all measures extend.
+ cueFromId
+ boolean isMeasure true
+ float sortIndex 1.9
+ boolean isComputed false
+ string typeForWebForms text
+ extends abstractScrollParser
+ javascript
+  get measureValue() {
+    return this.content ?? ""
+  }
+  get measureName() {
+    return this.getCuePath().replace(/ /g, "_")
+  }
+
+// String Measures
+abstractAtomMeasureParser
+ description Contains a single word.
+ atoms measureNameAtom atomAtom
+ example
+  nicknameParser
+   extends abstractAtomMeasureParser
+  id Breck
+  nickname breck
+ extends abstractMeasureParser
+
+abstractStringMeasureParser
+ description General text data with no specific format.
+ catchAllAtomType stringAtom
+ example
+  titleParser
+   extends abstractStringMeasureParser
+  id Breck
+  title I build languages for scientists of all ages
+ extends abstractMeasureParser
+
+abstractTextareaMeasureParser
+ string typeForWebForms textarea
+ example
+  bioParser
+   extends abstractTextareaMeasureParser
+  id Breck
+  bio
+   I build languages for scientists of all ages
+ description Long-form text content with preserved line breaks.
+ extends abstractMeasureParser
+ baseParser blobParser
+ javascript
+  get measureValue() {
+    return this.subparticlesToString().replace(/\n/g, "\\n")
+  }
+
+abstractEmailMeasureParser
+ description Email address.
+ example
+  emailParser
+   extends abstractEmailMeasureParser
+  id Breck
+  email breck7@gmail.com
+ string typeForWebForms email
+ atoms measureNameAtom emailAddressAtom
+ extends abstractAtomMeasureParser
+
+// URL Parsers
+abstractUrlMeasureParser
+ description A single url.
+ example
+  homepageParser
+   extends abstractUrlMeasureParser
+  id Breck
+  homepage https://breck.lol
+ string typeForWebForms url
+ atoms measureNameAtom urlAtom
+ extends abstractAtomMeasureParser
+
+
+// Required ID measure which denotes a concept
+abstractIdParser
+ cue id
+ description What is the ID of this concept?
+ extends abstractStringMeasureParser
+ example
+  idParser
+   extends abstractIdParser
+  id breck
+ float sortIndex 1
+ boolean isMeasureRequired true
+ boolean isConceptDelimiter true
+ javascript
+  getErrors() {
+    const errors = super.getErrors()
+    let requiredMeasureNames = this.root.measures.filter(measure => measure.isMeasureRequired).map(measure => measure.Name).filter(name => name !== "id")
+    if (!requiredMeasureNames.length) return errors
+    let next = this.next
+    while (requiredMeasureNames.length && next.cue !== "id" && next.index !== 0) {
+      requiredMeasureNames = requiredMeasureNames.filter(i => i !== next.cue)
+      next = next.next
+    }
+    requiredMeasureNames.forEach(name =>
+      errors.push(this.makeError(`Concept "${this.content}" is missing required measure "${name}".`))
+    )
+    return errors
+  }
+
+abstractIdMeasureParser
+ description Alias for abstractIdParser.
+ extends abstractIdParser
+
+// Numeric Measures
+abstractNumericMeasureParser
+ string typeForWebForms number
+ description Base number type.
+ extends abstractMeasureParser
+ javascript
+  get measureValue() {
+    const {content} = this
+    return content === undefined ? "" : parseFloat(content)
+  }
+abstractNumberMeasureParser
+ description Alias to abstractNumericMeasureParser.
+ extends abstractNumericMeasureParser
+
+abstractIntegerMeasureParser
+ description An integer.
+ example
+  ageParser
+   extends abstractIntegerMeasureParser
+  id Breck
+  age 40
+ atoms measureNameAtom integerAtom
+ extends abstractNumericMeasureParser
+ javascript
+  get measureValue() {
+    const {content} = this
+    return content === undefined ? "" : parseInt(content)
+  }
+abstractIntMeasureParser
+ description Alias to abstractIntegerMeasureParser.
+ extends abstractIntegerMeasureParser
+
+abstractFloatMeasureParser
+ description A float.
+ example
+  temperatureParser
+   extends abstractFloatMeasureParser
+  id Breck
+  temperature 31.8
+ atoms measureNameAtom floatAtom
+ extends abstractNumericMeasureParser
+
+abstractPercentageMeasureParser
+ description A percentage.
+ atoms measureNameAtom percentAtom
+ extends abstractNumericMeasureParser
+ example
+  ownershipParser
+   extends abstractPercentageMeasureParser
+  id Breck
+  ownership 31.8
+ javascript
+  get measureValue() {
+    const {content} = this
+    return content === undefined ? "" : parseFloat(content)
+  }
+
+
+// Enum Measures
+abstractEnumMeasureParser
+ description A single enum.
+ atoms measureNameAtom enumAtom
+ extends abstractMeasureParser
+ example
+  favoriteHtmlTagParser
+   extends abstractEnumMeasureParser
+   atoms measureNameAtom htmlTagAtom
+  id Breck
+  favoriteHtmlTag 2020
+
+// Boolean Measures
+abstractBooleanMeasureParser
+ description A single boolean.
+ atoms measureNameAtom booleanAtom
+ extends abstractMeasureParser
+ example
+  hasBillOfRightsParser
+   extends abstractBooleanMeasureParser
+  id USA
+  hasBillOfRights true
+ javascript
+  get measureValue() {
+    const {content} = this
+    return content === undefined ? "" : content == "true"
+  }
+abstractBoolMeasureParser
+ description Alias to abstractBooleanMeasureParser.
+ extends abstractBooleanMeasureParser
+
+// Date and time measures
+abstractDateMeasureParser
+ description Year/month/day in ISO 8601, US, European formats.
+ atoms measureNameAtom dateAtom
+ extends abstractMeasureParser
+ string typeForWebForms date
+ javascript
+  get measureValue() {
+    const {content} = this
+    if (!content) return ""
+    const {dayjs} = this.root
+    try {
+      // First try parsing with dayjs
+      const parsed = dayjs(content)
+      if (parsed.isValid())
+        return parsed.format("YYYY-MM-DD")
+      // Try parsing other common formats
+      const formats = [
+        "MM/DD/YYYY",
+        "DD/MM/YYYY", 
+        "YYYY/MM/DD",
+        "MM-DD-YYYY",
+        "DD-MM-YYYY",
+        "YYYY-MM-DD",
+        "DD.MM.YYYY",
+        "YYYY.MM.DD"
+      ]
+      for (const format of formats) {
+        const attempt = dayjs(content, format)
+        if (attempt.isValid())
+          return attempt.format("YYYY-MM-DD")
+      }
+    } catch (err) {
+      console.error(err)
+      return ""
+    }
+    return ""
+  }
+  get valueAsTimestamp() {
+    const {measureValue} = this
+    return measureValue ? this.root.dayjs(measureValue).unix() : ""
+  }
+
+
+importParser
+ description Import a file.
+ popularity 0.007524
+ cueFromId
+ atoms parseTimeCommandAtom
+ extends abstractScrollParser
+ catchAllAtomType filePathAtom
+ int filenameAt 1
+ example
+  import header.scroll
+ javascript
+  get filename() {
+    return this.getAtom(this.filenameAt)
+  }
+  get fullpath() {
+    const {fileSystem, filePath} = this.root
+    return fileSystem.makeRelativePath(filePath, this.filename)
+  }
+  async wake() {
+    const {fullpath} = this
+    const {file} = this.root
+    if (!file.importsFiles)
+     file.importsFiles = new Set()
+    file.importsFiles.add(fullpath)
+    return await this._handleImport()
+  }
+  async _handleImport() {
+    const hasCircular = await this._hasCircularImports(this.root.filePath, this.fullpath)
+    if (hasCircular)
+      return await this._handleCircularImport(hasCircular)
+    const file = await this._getFile()
+    const particleCount = file.scrollProgram.length
+    if (!file.exists)
+      return await this._handleFileDoesNotExist()
+    const newParticle = new Particle(`imported ${this.fullpath}\n exists true\n original ${this.getLine()}\n particles ${particleCount}`)
+    if (this.has("moveToFooter"))
+      newParticle.particleAt(0).set("moveToFooter", "true")
+    await this.root.appendFromStream(newParticle.toString())
+    // Don't import importOnly lines
+    // todo: look at perf
+    const block = new Particle(file.scrollProgram.toString())
+    block.delete("importOnly")
+    await this.root.appendFromStream(block.toString())
+    this.destroy()
+  }
+  async _handleFileDoesNotExist() {
+    const newParticle = new Particle(`imported ${this.fullpath}\n exists false\n original ${this.getLine()}\n particles 0`)
+    await this.root.appendFromStream(newParticle.toString())
+    this.destroy()
+  }
+  async _handleCircularImport(hasCircular) {
+    const newParticle = new Particle(`imported ${this.fullpath}\n exists true\n original ${this.getLine()}\n particles 0\n circularImportError Circular import error: ${hasCircular}`)
+    await this.root.appendFromStream(newParticle.toString())
+    this.destroy()
+  }
+  async _hasCircularImports(importer, importee) {
+    // if a.scroll requires a.scroll
+    if (importer === importee)
+      return `${importee} imports itself`
+    const {fileSystem} = this.root
+    // Now check the files that the importee is importing
+    const importeeFile = await fileSystem.getFile(importee)
+    if (!importeeFile.importsFiles)
+      return false
+    if (importeeFile.importsFiles.has(importer))
+      return `${importee} imports ${importer}`
+    for (let importPath of importeeFile.importsFiles) {
+      // console.log(`Checking if ${importPath} imports ${importer}`)
+      if (await this._hasCircularImports(importPath, importer))
+        return `${importPath} and ${importer}`
+    }
+    return false
+  }
+  async _getFile() {
+    const {fileSystem, file} = this.root
+    const fileToImport = await fileSystem.getFile(this.fullpath)
+    await fileToImport.singlePassFuse()
+    return fileToImport
+  }
+
+scrollImportedParser
+ description Inserted at import pass.
+ boolean suggestInAutocomplete false
+ cue imported
+ atoms parseTimeCommandAtom
+ extends abstractScrollParser
+ baseParser blobParser
+ catchAllAtomType filePathAtom
+ javascript
+  async wake() {
+    this.checkForFooterMoves()
+  }
+  get dependencies() { return [this.atoms[1]]}
+  checkForFooterMoves() {
+    // If a particle was imported with the "moveToFooter" subparticle set, then that means we want
+    // to move those imported particles to the end of the document.
+    if (!this.has("moveToFooter"))
+      return
+    this.root.notifyOnReady(this)
+  }
+  onReady() {
+    // We move the imported particle along with the number of lines originally imported
+    // to the bottom of the document. Note: I have not looked into perf yet.
+    const particleCount = parseInt(this.get("particles"))
+    const index = this.index
+    const particles = this.root.slice(index, index + particleCount + 1)
+    const str = particles.map(part => part.toString()).join("\n")
+    this.root.appendBlocks(str)
+    particles.forEach(particle => particle.destroy())
+  }
+  getErrors() {
+    if (this.silenceErrors) return [] // todo: generalize this?
+    if (this.has("circularImportError"))
+      return [this.makeError(this.get("circularImportError"))]
+    if (this.get("exists") === "false" && this.previous.getLine() !== "// optional")
+      return [this.makeError(`File '${this.atoms[1]}' does not exist.`)]
+    return []
+  }
+
+importToFooterParser
+ description Import to bottom of file.
+ atoms parseTimeCommandAtom
+ cue moveToFooter
+
+quickImportParser
+ popularity 0.007524
+ description Import a Scroll file.
+ extends importParser
+ boolean isPopular true
+ int filenameAt 0
+ inScope importToFooterParser abstractCommentParser
+ atoms urlAtom
+ pattern ^[^\s]+\.scroll$
+ example
+  header.scroll
+
+useParserPoolParser
+ cueFromId
+ description Load a cached parser pool.
+ extends abstractScrollParser
+ atoms cueAtom urlAtom
+ javascript
+  async wake() {
+    this.switchParserPool(this.filename)
+  }
+  get filename() { return this.atoms[1]}
+  get dependencies() { return [this.filename]}
+
+parsersImportParser
+ description Import a Parsers file.
+ extends quickImportParser
+ inScope abstractCommentParser
+ pattern ^[^\s]+\.parsers$
+ example
+  measures.parsers
+ javascript
+  async _handleImport() {
+    const file = await this._getFile()
+    if (!file.exists)
+      return await this._handleFileDoesNotExist()
+    // todo: cleanup
+    const newp = this.replaceWith(`useParserPool ${this.fullpath}`)
+    await newp[0].wake()
+  }
+
+importOnlyParser
+ popularity 0.033569
+ // This line will be not be imported into the importing file.
+ description Don't build this file.
+ cueFromId
+ atoms parseTimeCommandAtom
+ extends abstractTopLevelSingleMetaParser
+
+abstractQuickIncludeParser
+ popularity 0.007524
+ extends abstractScrollParser
+ atoms urlAtom
+ javascript
+  get dependencies() { return [this.filename]}
+  get filename() {
+    return this.getAtom(0)
+  }
+
+errorParser
+ baseParser errorParser
+
+// todo: move out of here
+monacoEditorParser
+ cueFromId
+ extends abstractScrollParser
+ description A Monaco code editor.
+ baseParser blobParser
+ example
+  monacoEditor javascript
+   // Hello world
+ javascript
+  buildHtml() {
+   return `<div id="monacoContainer"></div>
+    <script defer src="../node_modules/monaco-editor/min/vs/loader.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    require.config({ paths: { vs: '../node_modules/monaco-editor/min/vs' } })
+    require(["vs/editor/editor.main"], function() {
+      monaco.editor.create(document.getElementById('monacoContainer'), {
+          value: \`${this.subparticlesToString().replace(/\n/g, "\\n")}\`,
+          language: '${this.getAtom(1)}',
+          minimap: {
+            enabled: false
+        },
+        scrollbar: {
+            vertical:"hidden",
+            horizontal: "hidden",
+            handleMouseWheel:false,
+        },
+        overviewRulerLanes: 0,
+        hideCursorInOverviewRuler: true,
+        overviewRulerBorder: false,
+        wordWrap: 'on',
+        //lineNumbers: 'off',
+      glyphMargin: false,
+      folding: false,
+      // Undocumented see https://github.com/Microsoft/vscode/issues/30795#issuecomment-410998882
+      lineDecorationsWidth: 10,
+      lineNumbersMinChars: 2
+        });
+      });
+      })
+    </script>`
+  }
+
+// Common Measures
+
+abstractHashMapMeasureParser
+ string typeForWebForms textarea
+ extends abstractMeasureParser
+ javascript
+  get measureValue() {
+    return this.content
+  }
+
+abstractEnumsMeasureParser
+ description A measure that can have unlimited enums.
+ catchAllAtomType enumAtom
+ extends abstractEnumMeasureParser
+
+abstractCountMeasureParser
+ description A positive count of something. People, for example. Min is 0.
+ atoms measureNameAtom countAtom
+ extends abstractIntegerMeasureParser
+
+abstractYearMeasureParser
+ atoms measureNameAtom yearAtom
+ extends abstractIntegerMeasureParser
+
+abstractAnnualPopulationCountParser
+ atoms yearAtom countAtom
+ uniqueCue
+abstractAnnualPopulationCountMapParser
+ catchAllParser abstractAnnualPopulationCountParser
+ description A map of counts, one per year.
+ extends abstractHashMapMeasureParser
+
+abstractUniqueUrlMeasureParser
+ extends abstractUrlMeasureParser
+
+abstractUniqueAtomMeasureParser
+ extends abstractAtomMeasureParser
+
+abstractUniqueStringMeasureParser
+ extends abstractStringMeasureParser
+
+abstractStringListMeasureParser
+ extends abstractStringMeasureParser
+ listDelimiter  
+
+abstractPopulationCountMeasureParser
+ extends abstractIntegerMeasureParser
+
+// todo: idAtom
+// Links between concepts
+abstractConceptEdgesMeasureParser
+ description Link one concept to other concepts.
+ catchAllAtomType stringAtom
+ extends abstractStringMeasureParser
+ javascript
+  get ids() {
+    return this.getAtomsFrom(1)
+  }
+  // todo: re-add the method to update these foreign keys if an ID changes.
+
+// Common blob parsers
+abstractDelimitedValuesBlobMeasureParser
+ description A CSV, TSV, or other delimited blob of text.
+ // todo: figure out how we want to dump these in CSV export.
+ extends abstractTextareaMeasureParser
+abstractCodeMeasureParser
+ extends abstractTextareaMeasureParser
+ javascript
+  get measureValue() {
+    return this.subparticlesToString().replace(/[\n\t]/g, " ")
+  }
+
+abstractRelationshipParser
+ extends abstractConceptEdgesMeasureParser
+ // todo: remove need for sortKey in Parsers
+ string sortKey abstractRelationshipParser
+ boolean isLinks true
+abstractFilenameRelationshipParser
+ extends abstractRelationshipParser
+ float sortIndex 2.2
+ listDelimiter  
+abstractIDRelationshipParser
+ extends abstractRelationshipParser
+
+idParser
+ extends abstractIdParser
+ boolean isMeasureRequired true
+
+nameParser
+ extends abstractStringMeasureParser
+ boolean isMeasureRequired true
+ description What is the name of this concept?
+ float sortIndex 1.1
+
+abstractFeatureParser
+ extends abstractBooleanMeasureParser
+ contentKey value
+ subparticlesKey example
+ catchAllParser featureExampleCodeParser
+ float sortIndex 7
+ string sortKey abstractFeatureParser
+
+abstractComputedIntMeasureParser
+ boolean isComputed true
+ boolean suggestInAutocomplete false
+ extends abstractIntegerMeasureParser
+ javascript
+  computeValue(concept, measureName, parsedProgram, concepts) {
+    if (!parsedProgram.measureComputer) {
+      const path = require("path")
+      const {MeasureComputer} = require(path.join(path.dirname(parsedProgram.file.filePath).replace("/concepts",""), "Computer.js"))
+      parsedProgram.measureComputer = new MeasureComputer(concepts)
+    }
+    return parsedProgram.measureComputer.get(measureName, concept)
+  }
+
+
+annualReportsUrlParser
+ extends abstractUrlMeasureParser
+ description What is a URL to annual reports for this language?
+ single false
+ float sortIndex 2.7
+
+abstractUrlsMeasureParser
+ extends abstractUrlMeasureParser
+ atoms measureNameAtom
+ catchAllAtomType urlAtom
+
+antlrParser
+ extends abstractUniqueUrlMeasureParser
+ description What is a URL to an ANTLR grammar for this language?
+ // A good collection of ANTLR grammars: https://github.com/antlr/grammars-v4/tree/master/LANGUAGE)
+ string sourceDomain antlr.org
+ float sortIndex 2.8
+
+canDoShebangParser
+ extends abstractFeatureParser
+ description Does this language support shebang executable scripts?
+ string title Shebang
+ string pseudoExample #! /run
+ string reference https://en.wikipedia.org/wiki/Shebang_(Unix)
+
+canReadCommandLineArgsParser
+ description Does this language support command line arguments?
+ extends abstractFeatureParser
+
+canUseQuestionMarksAsPartOfIdentifierParser
+ description Is the question mark (?) allowed as part of an identifier?
+ extends abstractFeatureParser
+
+canWriteToDiskParser
+ extends abstractFeatureParser
+ description Does this language have methods or standard libraries for writing to disk?
+ string title Disk Output
+ string pseudoExample write("pldb.csv", "...")
+
+abstractChatUrlMeasureParser
+ description What is a URL to a chat room about the language?
+ extends abstractUrlMeasureParser
+ // todo remove the need for the below from Parsers
+ string sortKey abstractChatUrlMeasureParser
+
+leetSheetsParser
+ extends abstractUrlMeasureParser
+ description What is a URL(s) to a leet sheet(s) for this language?
+ float sortIndex 1.9999
+ catchAllAtomType urlAtom
+
+codeMirrorParser
+ extends abstractUniqueAtomMeasureParser
+ description What is a URL to a CodeMirror syntax highlighting package for this language?
+ // Many can be found here: https://github.com/codemirror/codemirror5/tree/master/mode/LANGUAGE
+ string sourceDomain codemirror.net
+ float sortIndex 2.8
+
+compilerExplorerParser
+ extends abstractUniqueStringMeasureParser
+ description What is this language's name on https://godbolt.org?
+ string sourceDomain godbolt.org
+ contentKey id
+ inScope exampleParser
+ float sortIndex 3.4
+
+hoplIdParser
+ extends abstractComputedIntMeasureParser
+ description What is the HOPL id of this language?
+
+isLanguageParser
+ // todo: i wish i had mixins and could make this a boolean and extend abstractComputedIntMeasureParser
+ extends abstractComputedIntMeasureParser
+ description Does PLDB categorize this entity as a language?
+
+measurementsParser
+ extends abstractComputedIntMeasureParser
+ float sortIndex 1.11
+ description How many measurements do we have about this thing?
+
+expandedMeasurementsParser
+ extends abstractComputedIntMeasureParser
+ float sortIndex 2.11
+ description How many measurements do we have about this thing counting each list item as a measurement?
+
+foundationScoreParser
+ extends abstractComputedIntMeasureParser
+ float sortIndex 1.3
+ description How many languages are built using this language?
+
+bookCountParser
+ float sortIndex 10
+ extends abstractComputedIntMeasureParser
+ description What is the count of booked we have published about this thing?
+
+paperCountParser
+ float sortIndex 10
+ extends abstractComputedIntMeasureParser
+ description What is the count of papers we have published about this thing?
+
+exampleCountParser
+ float sortIndex 1.5
+ extends abstractComputedIntMeasureParser
+ description How many examples do we have written in this language?
+
+writtenInCountParser
+ description How many languages is this implementation written in?
+ float sortIndex 1.6
+ extends abstractComputedIntMeasureParser
+
+numberOfUsersEstimateParser
+ float sortIndex 2.1
+ extends abstractComputedIntMeasureParser
+ description What is our estimate of number of users of this language?
+
+numberOfJobsEstimateParser
+ float sortIndex 2.1
+ extends abstractComputedIntMeasureParser
+ description What is our estimate of the number of jobs in this language?
+
+inboundLinksCountParser
+ float sortIndex 1.9
+ extends abstractComputedIntMeasureParser
+ description How many other concepts link to this one?
+
+inboundLinksParser
+ float sortIndex 1.9
+ extends abstractComputedIntMeasureParser
+ description Which other concepts link to this one?
+ atoms measureNameAtom
+ catchAllAtomType stringAtom
+
+pldbScoreParser
+ float sortIndex 1.6
+ extends abstractComputedIntMeasureParser
+ description What is the combined score of this language across all the categories of rankings?
+
+rankParser
+ float sortIndex 1.5
+ extends abstractComputedIntMeasureParser
+ description How does this concept rank amongst all other concepts?
+
+lastActivityParser
+ float sortIndex 1.55
+ extends abstractComputedIntMeasureParser
+ description In our data on this entity, what year is the most recent activity?
+
+conferencesParser
+ description What is a URL(s) to a recurring conference(s) focused on this language?
+ extends abstractUrlsMeasureParser
+
+countryParser
+ uniqueLine
+ description What country was this language first developed in?
+ boolean alwaysRecommended true
+ catchAllAtomType stringAtom
+ extends abstractStringMeasureParser
+ single false
+ float sortIndex 2.99
+
+dblpParser
+ boolean fromCrawler true
+ extends abstractStringMeasureParser
+ description What are publications about this language from https://dblp.org/?
+ string sourceDomain dblp.org
+ hitsParser
+  extends abstractCountMeasureParser
+  description How many matching publications?
+ publicationsParser
+  extends abstractDelimitedValuesBlobMeasureParser
+  description An inline PSV table of hits.
+
+demoVideoParser
+ description What is a URL of a demo video of this language?
+ extends abstractUrlMeasureParser
+ single false
+ float sortIndex 2.4
+
+descriptionParser
+ boolean alwaysRecommended true
+ extends abstractStringMeasureParser
+ float sortIndex 1.99
+ description What is a short description of this language?
+
+subDescriptionParser
+ // todo fix columnName cue path issue.
+ extends descriptionParser
+ description How is this language described here?
+ cue description
+
+tiktoksParser
+ extends abstractUrlsMeasureParser
+ description What is a URL to an official (or popular unofficial) TikTok(s) for this language?
+ float sortIndex 3
+
+instagramParser
+ extends abstractUrlMeasureParser
+ description What is a URL to an official (or popular unofficial) Instagram for this language?
+ float sortIndex 3
+
+facebookParser
+ extends abstractUrlMeasureParser
+ description What is a URL to an official (or popular unofficial) Facebook group for this language?
+ float sortIndex 3
+
+youtubesParser
+ extends abstractUrlMeasureParser
+ description What is a URL to an official (or popular unofficial) YouTube channel(s) for this language?
+ float sortIndex 3
+
+discordParser
+ extends abstractChatUrlMeasureParser
+ description What is a URL to an official (or popular unofficial) Discord for this language?
+ float sortIndex 3
+
+mastodonParser
+ extends abstractChatUrlMeasureParser
+ description What is a URL to an official (or popular unofficial) Mastodon for this language?
+ float sortIndex 3
+
+discourseParser
+ extends abstractChatUrlMeasureParser
+ description What is a URL to an official (or popular unofficial) Discourse for this language?
+ float sortIndex 3
+
+docsParser
+ extends abstractUrlsMeasureParser
+ description What is a URL(s) to the official documentation for this language?
+ float sortIndex 2.5
+
+devDocsParser
+ extends abstractUrlMeasureParser
+ description What is a URL to the official documentation for developers who want to contribute to the language project?
+ single false
+ float sortIndex 2.5
+
+ebookParser
+ extends abstractUrlMeasureParser
+ description What is a link to a free public domain high quality eBook about this language?
+ float sortIndex 2.5
+
+emailListParser
+ extends abstractUrlMeasureParser
+ description What is a link to the mailing list for this language?
+ single false
+ float sortIndex 2.5
+
+forumsParser
+ extends abstractUrlsMeasureParser
+ description What is a link to a web forum(s) for this language?
+ single false
+ float sortIndex 2.5
+
+equationParser
+ description What is a LaTeX encoding of this equation?
+ extends abstractCodeMeasureParser
+
+esolangParser
+ extends abstractUrlMeasureParser
+ description What is a URL to this language on https://esolangs.org/?
+ string sourceDomain esolangs.org
+ float sortIndex 2.5
+
+eventsPageUrlParser
+ extends abstractUrlMeasureParser
+ description What is a URL to an events pages for this language?
+ single false
+ float sortIndex 2.5
+
+abstractExampleParser
+ description What is a representative snippet for this language?
+ extends abstractCodeMeasureParser
+ boolean isExampleCode true
+ single false
+
+exampleParser
+ description What is a representative snippet for this language?
+ extends abstractExampleParser
+ float sortIndex 3
+
+// when a language is small enough to be practically defined in another language in one measurement.
+theLanguageParser
+ description What is the entire definition of the language, if it's a small one?
+ extends abstractCodeMeasureParser
+ float sortIndex 3
+ single true
+
+faqParser
+ extends abstractUrlMeasureParser
+ description What is a URL to a frequently asked questions page for this language?
+ single false
+ float sortIndex 2.5
+
+// featureTokens
+keywordsParser
+ description What are all the keywords in this language?
+ extends abstractStringListMeasureParser
+ catchAllAtomType stringAtom
+ float sortIndex 4
+abstractCommonTokenParser
+ description Most general purpose programming languages implement a set of common tokens for common features like these.
+ catchAllAtomType stringAtom
+ extends abstractStringListMeasureParser
+ float sortIndex 5
+ single false
+lineCommentTokenParser
+ extends abstractCommonTokenParser
+ description What is the token(s) that can be placed anywhere on a line and starts a comment that cannot be stopped except by a line break character or end of file?
+ example
+  javascript
+   lineCommentToken //
+multiLineCommentTokensParser
+ extends abstractCommonTokenParser
+ description What is the start delimiter and end token (which can be the same) for comments that can span multiple lines?
+ example
+  javascript
+   multiLineCommentTokens /* */
+printTokenParser
+ extends abstractCommonTokenParser
+ description What token(s) is used to print a message?
+ example
+  javascript
+   printToken console.log
+stringTokenParser
+ extends abstractCommonTokenParser
+ description What token(s) is used to delimit a string?
+ example
+  javascript
+   stringToken "
+assignmentTokenParser
+ extends abstractCommonTokenParser
+ description What token(s) is used for assignment to an identifier?
+ example
+  javascript
+   assignmentToken =
+booleanTokensParser
+ extends abstractCommonTokenParser
+ description What token(s) is used for true and false?
+ example
+  javascript
+   booleanTokens true false
+includeTokenParser
+ extends abstractCommonTokenParser
+ description What token(s) is used for including another file?
+ example
+  nodejs
+   includeToken require
+
+// features
+featureExampleCodeParser
+ description What is an example that demonstrates usage of this feature?
+ // Ideally includes any necessary boilerplate to be runnable.
+ baseParser blobParser
+
+// fileExtensionAtom
+ extends stringAtom
+
+fileExtensionsParser
+ extends abstractStringListMeasureParser
+ catchAllAtomType stringAtom
+ description What are the file extensions for this language?
+ float sortIndex 1.991
+
+clocExtensionsParser
+ extends abstractStringListMeasureParser
+ catchAllAtomType stringAtom
+ description What are the file extensions for this language recognized by Al Danial's cloc?
+ float sortIndex 2.4
+
+filenamesParser
+ extends abstractStringListMeasureParser
+ catchAllAtomType stringAtom
+ description What are the filenames commonly associated with this language?
+
+// fileType
+// fileTypeAtomAtom
+ enum paper text binary na
+ paint constant.language
+fileTypeParser
+ description What is the file encoding for programs in this language?
+ atoms measureNameAtom stringAtom
+ extends abstractEnumMeasureParser
+ float sortIndex 2.5
+
+funFactParser
+ atoms measureNameAtom urlAtom
+ description What is a code block or some text containing a fun or unusual fact about the language?
+ extends abstractCodeMeasureParser
+ float sortIndex 2.99
+
+gdbSupportParser
+ extends abstractBooleanMeasureParser
+ description Is the language supported by the GNU Debugger?
+ string sourceDomain sourceware.org
+ float sortIndex 2.4
+
+abstractGitRepoUrlMeasureParser
+ extends abstractUrlMeasureParser
+ // todo remove the need for the below from Parsers
+ string sortKey abstractGitRepoUrlMeasureParser
+ float sortIndex 4
+
+gitRepoParser
+ description What is the URL of the official git repo for the language project if not hosted on GitHub or GitLab or Sourcehut?
+ extends abstractGitRepoUrlMeasureParser
+
+mainRepoParser
+ boolean isComputed true
+ extends abstractStringMeasureParser
+ description Where is the main source code for this language?
+ javascript
+  computeValue(concept) {
+    const repo = concept.getOneOf("gitRepo githubRepo gitlabRepo sourcehutRepo".split(" "))
+    return repo || ""
+  }
+
+primaryTagParser
+ boolean isComputed true
+ extends abstractStringMeasureParser
+ description Where is the primary tag for this language?
+ javascript
+  computeValue(concept) {
+    return concept.get("tags")?.split(" ")[0] || ""
+  }
+
+githubBigQueryParser
+ float sortIndex 13
+ description What is the name of this language in the Google BigQuery Public Datasets about GitHub repos found at https://cloud.google.com/blog/topics/public-datasets/github-on-bigquery-analyze-all-the-open-source-code?
+ extends abstractUniqueStringMeasureParser
+ contentKey id
+ string sourceDomain cloud.google.com
+ usersParser
+  description How many unique users have a repo using this language according to Google BigQuery?
+  extends abstractPopulationCountMeasureParser
+ reposParser
+  description How many repos for this language are listed in Google's BigQuery Public GitHub Dataset snapshot?
+  extends abstractCountMeasureParser
+
+githubCopilotOptimizedParser
+ float sortIndex 3.5
+ description Is this language optimized for GitHub copilot, as found on this list https://docs.github.com/en/copilot/overview-of-github-copilot/about-github-copilot?
+ extends abstractBooleanMeasureParser
+
+githubLanguageParser
+ description What is the name of this language on GitHub's list of supported languages defined here https://raw.githubusercontent.com/github/linguist/master/lib/linguist/languages.yml?
+ extends abstractUniqueStringMeasureParser
+ inScope filenamesParser fileExtensionsParser
+ contentKey id
+ string sourceDomain github.com
+ float sortIndex 32
+ reposParser
+  boolean fromCrawler true
+  extends abstractCountMeasureParser
+  description How many repos for this language does GitHub report?
+ wrapParser
+  extends abstractBooleanMeasureParser
+  description Does GitHub override it's default of not wrapping lines when displaying this language?
+ trendingProjectsCountParser
+  boolean fromCrawler true
+  extends abstractCountMeasureParser
+  description How many trending repos for this language does GitHub report?
+ trendingProjectsParser
+  // todo Figure out typings.
+  extends abstractDelimitedValuesBlobMeasureParser
+  boolean fromCrawler true
+  description What are trending projects in this language GitHub?
+  example
+   author name avatar url language languageColor stars forks currentPeriodStars description
+   PavelDoGreat WebGL-Fluid-Simulation https://github.com/PavelDoGreat.png https://github.com/PavelDoGreat/WebGL-Fluid-Simulation JavaScript #f1e05a 6010 473 2246 "Play with fluids in your browser (works even on mobile)"
+ groupParser
+  extends abstractUniqueStringMeasureParser
+  description What is the name of the parent language group according to GitHub?
+ aliasesParser
+  extends abstractStringListMeasureParser
+  description What are additional aliases, excluding name.downcase which are implicitly included?
+  listDelimiter  or
+ interpretersParser
+  extends abstractStringListMeasureParser
+  description What are the associated interpreters?
+ aceModeParser
+  extends abstractAtomMeasureParser
+  description What is the name of the Ace Mode used for highlighting whenever a file is edited, matching one of the filenames in http://git.io/3XO_Cg, or "text" for everything else?
+ codemirrorModeParser
+  extends abstractAtomMeasureParser
+  description What is the name name of the CodeMirror Mode used for highlighting whenever a file is edited, from the list here https://git.io/vi9Fx?
+ codemirrorMimeTypeParser
+  extends abstractAtomMeasureParser
+  description What is the name of the file mime type used for highlighting whenever a file is edited, from the list here https://git.io/f4SoQ?
+ tmScopeParser
+  extends abstractUniqueStringMeasureParser
+  description What is the TextMate scope that represents this programming language, matching one of the scopes listed in the grammars.yml file, or "none" if there is no grammar for this language?
+ typeParser
+  extends abstractEnumMeasureParser
+  description Which of the types best describes this: data, programming, markup, prose, or nil?
+
+// githubRepo
+// githubRepoUrlAtom
+ extends urlAtom
+ regex ^https://github.com/.+/.+$
+
+// Basics
+githubRepoParser
+ description What is the URL of the official GitHub repo for the project if it is hosted there?
+ extends abstractGitRepoUrlMeasureParser
+ atoms measureNameAtom urlAtom
+ inScope subDescriptionParser
+ contentKey url
+ string sourceDomain github.com
+ createdParser
+  extends abstractYearMeasureParser
+  description When was the *Github repo* for this entity created?
+ updatedParser
+  extends abstractYearMeasureParser
+  description What year was the last commit made?
+ firstCommitParser
+  extends abstractYearMeasureParser
+  description What year the first commit made in this git repo?
+ subscribersParser
+  extends abstractCountMeasureParser
+  description How many subscribers to the repo?
+ forksParser
+  extends abstractCountMeasureParser
+  description How many forks of the repo?
+ starsParser
+  extends abstractCountMeasureParser
+  description How many stars of the repo?
+ issuesParser
+  extends abstractCountMeasureParser
+  description How many isses on the repo?
+
+gitlabRepoParser
+ description What is the URL of the official GitLab repo for the language project?
+ extends abstractGitRepoUrlMeasureParser
+ string sourceDomain gitlab.com
+
+goodreadsParser
+ boolean fromCrawler true
+ extends abstractDelimitedValuesBlobMeasureParser
+ description What are books about this language from Goodreads?
+ string sourceDomain goodreads.com
+ float sortIndex 101
+
+gourceParser
+ description What is a URL to a Gource visualization of this project's git history?
+ extends abstractUrlMeasureParser
+ string sourceDomain gource.io
+ float sortIndex 3.4
+
+hackerNewsDiscussionsParser
+ boolean fromCrawler true
+ extends abstractDelimitedValuesBlobMeasureParser
+ description What are URLS to Hacker News posts discussing this language?
+ string sourceDomain news.ycombinator.com
+ float sortIndex 18
+
+hasSinglePassParserParser
+ extends abstractFeatureParser
+ description Is the language designed for a single pass parser requiring define before use (topological sorting)?
+ string title Single Pass Compiler
+ string pseudoExample x = 2; print x
+ string reference https://en.wikipedia.org/wiki/One-pass_compiler
+
+hasAbstractTypesParser
+ extends abstractFeatureParser
+ description Does this language have a keyword for abstract classes or types?
+ string title Abstract Types
+ string pseudoExample abstract class PLDBFile {}
+ string reference https://en.wikipedia.org/wiki/Abstract_type
+
+hasAccessModifiersParser
+ extends abstractFeatureParser
+ string title Access Modifiers
+ description Does this language have access modifiers?
+ string pseudoExample class PLDBFile { public title }
+ string reference https://en.wikipedia.org/wiki/Access_modifiers
+
+hasAlgebraicTypesParser
+ extends abstractFeatureParser
+ string title Algebraic Data Type
+ description Does this language support algebraic types?
+ string pseudoExample garageContents = empty | vehicle
+ string reference https://en.wikipedia.org/wiki/Algebraic_data_type
+
+hasAnonymousFunctionsParser
+ extends abstractFeatureParser
+ string title Anonymous Functions
+ description Does the language support anonymous functions, aka Lambdas?
+ string aka Lambdas
+ string pseudoExample () => printPldb()
+ string reference https://en.wikipedia.org/wiki/Anonymous_function
+
+hasArraySlicingSyntaxParser
+ extends abstractFeatureParser
+ description Does the language have array slicing syntax, such as [0:2]?
+
+hasAssertStatementsParser
+ extends abstractFeatureParser
+ description Does the language have built in assert statements?
+ string title Assert Statements
+ string reference https://en.wikipedia.org/wiki/Debug_code#Assert_Statements
+ string pseudoExample assert(isTrue)
+
+hasAssignmentParser
+ extends abstractFeatureParser
+ description Does the language allow assigning values to variables?
+ string title Assignment
+ string pseudoExample name = "PLDB"
+ string tokenKeyword assignmentToken
+ string reference https://en.wikipedia.org/wiki/Assignment_(computer_science)
+
+hasAsyncAwaitParser
+ extends abstractFeatureParser
+ description Does the language have an async/await construct?
+ string title Async Await
+ string pseudoExample async downloadPldb => await getFiles()
+ string reference https://en.wikipedia.org/wiki/Async/await
+
+hasBinaryNumbersParser
+ extends abstractFeatureParser
+ description Does the language have a type and syntax for binary numbers?
+ string title Binary Literals
+ string pseudoExample 0b100110100000110011110010010
+ string reference https://en.wikipedia.org/wiki/Binary_number
+
+hasBinaryOperatorsParser
+ extends abstractFeatureParser
+ description Does the language have operators for operating on binary types?
+ string title Binary Operators
+ string pseudoExample 1 + 1
+ string reference https://en.wikipedia.org/wiki/Binary_operation
+
+hasBitWiseOperatorsParser
+ extends abstractFeatureParser
+ string title Bitwise Operators
+ description Does the language have operators for bitwise manipulations?
+ string reference https://en.wikipedia.org/wiki/Bitwise_operations_in_C https://en.wikipedia.org/wiki/Bitwise_operation
+ string pseudoExample 3 == (2 | 1)
+
+hasBlobsParser
+ description Does the language have a blobs concept?
+ extends abstractFeatureParser
+
+hasBooleansParser
+ extends abstractFeatureParser
+ description Does the language have a type and syntax for booleans?
+ string title Booleans
+ string pseudoExample pldb = true
+ string tokenKeyword booleanTokens
+ string reference https://en.wikipedia.org/wiki/Boolean_data_type
+
+hasBoundedCheckedArraysParser
+ description Are array boundaries checked by the language?
+ extends abstractFeatureParser
+
+hasBreakParser
+ description Does the language have a keyword for breaking out of a loop?
+ extends abstractFeatureParser
+
+hasBuiltInRegexParser
+ description Does the language include/import a regular expression language?
+ extends abstractFeatureParser
+
+hasCaseInsensitiveIdentifiersParser
+ extends abstractFeatureParser
+ description Are identifiers in this language case insensitive?
+ string title Case Insensitive Identifiers
+ string reference https://rosettacode.org/wiki/Case-sensitivity_of_identifiers
+ string pseudoExample pLdB = "PLDB"
+
+hasCharactersParser
+ extends abstractFeatureParser
+ description Does this language have a syntax and type for a "character"?
+ string title Characters
+ string pseudoExample char character = 'P';
+ string reference https://en.wikipedia.org/wiki/Character_(computing)
+
+hasClassesParser
+ extends abstractFeatureParser
+ description Does the language have a concept of classes?
+ string title Classes
+ string pseudoExample class PLDBFile {}
+ string reference https://en.wikipedia.org/wiki/Class_(computer_programming)
+
+hasClobsParser
+ extends abstractFeatureParser
+ description Does the language have a specific type for character large object?
+ string title Clobs
+ string aka Character large objects
+ string pseudoExample class PLDBFile {}
+ string reference https://en.wikipedia.org/wiki/Character_large_object
+
+hasCommentsParser
+ extends abstractFeatureParser
+ description Does the language have a syntax and support for comments?
+ string title Comments
+ string reference https://en.wikipedia.org/wiki/Comparison_of_programming_languages_(syntax)#Comments https://en.wikipedia.org/wiki/Comment_(computer_programming)
+ string pseudoExample # Hello PLDB
+
+hasConditionalsParser
+ extends abstractFeatureParser
+ description Does the language have conditional statements and/or conditional expressions?
+ string title Conditionals
+ string pseudoExample if (isTrue) printPldb()
+ string reference https://en.wikipedia.org/wiki/Conditional_(computer_programming)
+
+hasConstantsParser
+ extends abstractFeatureParser
+ description Does the language have a way to declare constant compile time variables?
+ string title Constants
+ string pseudoExample const name = "PLDB"
+ string reference https://en.wikipedia.org/wiki/Const_(computer_programming)
+
+hasConstructorsParser
+ extends abstractFeatureParser
+ description Does the language have a syntax and/or notion of constructors?
+ string title Constructors
+ string pseudoExample PLDBFile { constructor() {} }
+ string reference https://en.wikipedia.org/wiki/Constructor_(object-oriented_programming)
+
+hasContinueParser
+ description Does the language have a syntax/keyword for continuing a loop?
+ extends abstractFeatureParser
+
+hasDecimalsParser
+ description Does the language have a decimal data type?
+ extends abstractFeatureParser
+ string title Decimals
+ string pseudoExample 0.80766866
+ string reference https://en.wikipedia.org/wiki/Decimal_data_type
+
+hasDecoratorsParser
+ description Does the language have decorators?
+ extends abstractFeatureParser
+ string title Decorators
+ string pseudoExample @deprecated
+ string reference https://en.wikipedia.org/wiki/Decorator_pattern
+
+hasDefaultParametersParser
+ extends abstractFeatureParser
+ description Does the language have a way to define default parameters for functions?
+ string title Default Parameters Pattern
+ string reference https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters
+ string pseudoExample say(message = "Hello PLDB")
+
+hasDependentTypesParser
+ extends abstractFeatureParser
+ description Does a language have types who's definition depends on its value or the value of other types?
+ string title Dependent types
+ string pseudoExample pldbSortedList // a list where is sorted is true
+ string reference https://en.wikipedia.org/wiki/Dependent_type
+
+hasDestructuringParser
+ extends abstractFeatureParser
+ description Does the language have a syntax for conveniently extracting multiple values from a structure?
+ string title Destructuring
+ string website https://github.com/facebook/reason
+ string reference https://reasonml.github.io/docs/en/destructuring
+ string pseudoExample {title, rank} = pldbFile
+
+hasDirectivesParser
+ extends abstractFeatureParser
+ description Is the language embedded in a tiny compile-time directive language?
+ string title Directives
+ string pseudoExample use strict;
+ string reference https://en.wikipedia.org/wiki/Directive_(programming)
+
+hasDisposeBlocksParser
+ extends abstractFeatureParser
+ description Does the language have a syntax for dispose blocks to free up resources allocated during execution?
+ string title Dispose Blocks Pattern
+ string pseudoExample with pldb: do computeRanks()
+ string reference https://en.wikipedia.org/wiki/Dispose_pattern
+
+hasDocCommentsParser
+ extends abstractFeatureParser
+ description Is there a standard mini language written in comments for documenting code?
+ string title Doc comments
+ string pseudoExample // param1: A comment about the first param
+
+hasDuckTypingParser
+ extends abstractFeatureParser
+ description Are types defined not by their name, but by the presence of certain methods and properties?
+ string title Duck Typing
+ string pseudoExample length() // makes me an iterator
+ string reference https://en.wikipedia.org/wiki/Duck_typing
+
+hasDynamicPropertiesParser
+ extends abstractFeatureParser
+ description Does all properties have to be declared or does the language support dynamic properties?
+ string title Dynamic Properties
+ string pseudoExample pldb.score = 50
+
+hasDynamicSizedArraysParser
+ description Do arrays have to have their size specified at compile time or can they be dynamically sized?
+ extends abstractFeatureParser
+
+hasDynamicTypingParser
+ description Are types of variables fixed or can they change during runtime?
+ extends abstractFeatureParser
+ string title Dynamic Typing
+ string reference https://en.wikipedia.org/wiki/Type_system#Dynamic_type_checking_and_runtime_type_information
+
+hasEnumsParser
+ extends abstractFeatureParser
+ description Does the language have a syntax and type for enums?
+ string title Enums
+ string reference https://en.wikipedia.org/wiki/Enumerated_type
+ string pseudoExample colorsEnum { "red", "white", "blue"}
+
+hasEscapeCharactersParser
+ description Does the language have any notion of escape characters?
+ extends abstractFeatureParser
+
+hasExceptionsParser
+ extends abstractFeatureParser
+ description Does the language have a concept and syntax for exceptions?
+ string title Exceptions
+ string pseudoExample throw new Error("PLDB uh oh")
+ string reference https://en.wikipedia.org/wiki/Exception_handling
+
+hasExplicitTypeCastingParser
+ extends abstractFeatureParser
+ description Does the language have a syntax for type casting?
+ string title Type Casting
+ string pseudoExample (float)pldbRank;
+ string reference https://en.wikipedia.org/wiki/Type_conversion
+
+hasExportsParser
+ description Does the language have a syntax for explicitly exporting items from a module or file?
+ extends abstractFeatureParser
+
+hasExpressionsParser
+ extends abstractFeatureParser
+ description Does the language have a concept of expressions?
+ string title Expressions
+ string pseudoExample (1 + 2)
+ string reference https://en.wikipedia.org/wiki/Expression_(computer_science)
+
+hasFirstClassFunctionsParser
+ extends abstractFeatureParser
+ description Does the language have functions that can be passed as arguments to other functions, can be returned by other functions, and can be assigned to variables or stored in data structures?
+ string title First-Class Functions
+ string pseudoExample [2.1].map(Math.round)
+ string reference https://en.wikipedia.org/wiki/First-class_function
+
+hasFixedPointParser
+ extends abstractFeatureParser
+ description Does the language have a type and syntax for fixed point numbers, such as currencies with 2 decimal points?
+ string title Fixed Point Numbers
+ string pseudoExample 80766866.00
+ string reference https://en.wikipedia.org/wiki/Fixed-point_arithmetic
+
+hasFloatsParser
+ extends abstractFeatureParser
+ description Does the language have a syntax and type for floating points?
+ string title Floats
+ string reference https://evanw.github.io/float-toy/ https://en.wikipedia.org/wiki/Floating-point_arithmetic
+ string pseudoExample 80766866.0
+
+hasFnArgumentsParser
+ description Do functions accept arguments?
+ extends abstractFeatureParser
+
+hasForEachLoopsParser
+ description Does the language have a concept and syntax for for-each loops?
+ extends abstractFeatureParser
+
+hasForLoopsParser
+ description Does the language have a concept of and syntax for for-loops?
+ extends abstractFeatureParser
+
+hasFunctionCompositionParser
+ extends abstractFeatureParser
+ description Can you pass functions into other functions and get new combined functions?
+ string title Function Composition
+ string pseudoExample o = (f, g) => x => f(g(x))
+ string reference https://en.wikipedia.org/wiki/Function_composition_(computer_science)
+
+hasFunctionOverloadingParser
+ extends abstractFeatureParser
+ description Can you have multiple functions with the same name but different parameters?
+ string title Function Overloading
+ string reference https://en.wikibooks.org/wiki/Introduction_to_Programming_Languages/Overloading https://en.wikipedia.org/wiki/Function_overloading
+ string aka Ad hoc polymorphism
+ string pseudoExample add(string: str, string2: str)
+
+hasFunctionsParser
+ extends abstractFeatureParser
+ description Does the language have a concept of and syntax for functions?
+ string title Functions
+ string aka routines
+ string aka procedures
+ string aka methods
+ string pseudoExample function computePLDBRanks() {}
+ string reference https://en.wikipedia.org/wiki/Subroutine
+
+hasGarbageCollectionParser
+ extends abstractFeatureParser
+ description Does the language have a garbage collector or must memory of constructs be managed manually?
+ string title Garbage Collection
+ string pseudoExample var iDontNeedToFreeThis
+ string reference https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)
+
+hasGradualTypesParser
+ extends abstractFeatureParser
+ description Does the language support gradual types?
+ string aka progressive types
+ string pseudoExample a: int # the type is optional
+ string reference https://en.wikipedia.org/wiki/Gradual_typing
+
+hasGeneratorsParser
+ extends abstractFeatureParser
+ description Does the language have a concept of loops that yield?
+ string title Generators
+ string pseudoExample yield 2
+ string reference https://en.wikipedia.org/wiki/Generator_(computer_programming)
+
+hasGenericsParser
+ extends abstractFeatureParser
+ description Does the language have generics?
+ string title Generics
+ string pseudoExample function identity<T>(arg: T): T
+ string reference https://en.wikipedia.org/wiki/Generic_programming
+
+hasGlobalScopeParser
+ description Is there at least one top level scope?
+ extends abstractFeatureParser
+
+hasGotosParser
+ extends abstractFeatureParser
+ description Does the language have a concept of and syntax for gotos?
+ string title Gotos
+ string pseudoExample goto 10
+ string reference https://en.wikipedia.org/wiki/Goto
+
+hasHereDocsParser
+ extends abstractFeatureParser
+ description Does the language have a syntax for multiline text blocks?
+ string title Here Document
+ string reference https://en.wikipedia.org/wiki/Here_document
+ string pseudoExample `A big multliline text block`
+
+hasHexadecimalsParser
+ extends abstractFeatureParser
+ description Does the language have a syntax for hexadecimals?
+ string title Hexadecimals
+ string aka Base16
+ string aka hex
+ string pseudoExample 0x4D06792
+ string reference https://en.wikipedia.org/wiki/Hexadecimal
+
+hasHomoiconicityParser
+ extends abstractFeatureParser
+ description Is the language also a valid data structure in that language?
+ string title Homoiconicity
+ string pseudoExample (list ())
+ string reference https://en.wikipedia.org/wiki/Homoiconicity
+
+hasIdsParser
+ description Does the language have a concept of unique identifiers?
+ extends abstractFeatureParser
+
+hasIfElsesParser
+ description Does the language have if-else statements or expressions?
+ extends abstractFeatureParser
+
+hasIfsParser
+ description Does the language have "if" statements or expressions?
+ extends abstractFeatureParser
+
+hasImplicitArgumentsParser
+ extends abstractFeatureParser
+ // todo: should we remove this one? I would have thought it was referring to something like an "arguments" implicit parameter
+ description Does the language have a concept of contextual or implicit parameters?
+ string title Implicit Arguments
+ string reference https://docs.scala-lang.org/tour/implicit-parameters.html
+ string pseudoExample shout(implicit message: string)
+
+hasImplicitTypeConversionsParser
+ extends abstractFeatureParser
+ description Does the language automatically convert types as needed?
+ string title Implicit Type Casting
+ string reference https://en.wikipedia.org/wiki/Type_conversion
+ string pseudoExample console.log("hello " + 2)
+
+hasImportsParser
+ extends abstractFeatureParser
+ description Does this language have a syntax for importing other files?
+ string title File Imports
+ string pseudoExample import pldb
+ string tokenKeyword includeToken
+
+hasIncrementAndDecrementOperatorsParser
+ extends abstractFeatureParser
+ description Does this language have increment and decrement operators?
+ string title Increment and decrement operators
+ string pseudoExample i++
+ string reference https://en.wikipedia.org/wiki/Increment_and_decrement_operators
+
+hasInfixNotationParser
+ extends abstractFeatureParser
+ description Does this language use operators between operands?
+ string title Infix Notation
+ string pseudoExample 1 + 2
+ string reference https://en.wikipedia.org/wiki/Infix_notation
+
+hasInheritanceParser
+ extends abstractFeatureParser
+ description Does this language have class inheritance?
+ string title Inheritance
+ string pseudoExample class PLDBFile extends File
+ string reference https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)
+
+hasIntegersParser
+ extends abstractFeatureParser
+ description Does this language have a syntax and type for integers?
+ string title Integers
+ string pseudoExample 80766866
+ string reference https://en.wikipedia.org/wiki/Integer_(computer_science)
+
+hasInterfacesParser
+ extends abstractFeatureParser
+ description Does this language have a concept of interfaces?
+ string title Interfaces
+ string pseudoExample interface PLDBFile
+ string reference https://en.wikipedia.org/wiki/Protocol_(object-oriented_programming)
+
+hasIteratorsParser
+ extends abstractFeatureParser
+ description Does this language have iterators?
+ string title Iterators
+ string pseudoExample for lang in pldb()
+ string reference https://en.wikipedia.org/wiki/Iterator
+
+hasLabelsParser
+ extends abstractFeatureParser
+ description Does the language have a way to label locations within the source code?
+ string title Labels
+ string pseudoExample mainFn:
+ string reference https://en.wikipedia.org/wiki/Label_(computer_science)
+
+hasLazyEvaluationParser
+ extends abstractFeatureParser
+ description Does the language wait to evaluate expressions until needed?
+ string title Lazy Evaluation
+ string pseudoExample print(range(1000000)[2])
+ string reference https://en.wikipedia.org/wiki/Lazy_evaluation
+
+hasLineCommentsParser
+ extends abstractFeatureParser
+ description Does the language have line comments?
+ string title Line Comments
+ string reference https://en.wikipedia.org/wiki/Comparison_of_programming_languages_(syntax)#Comments
+ string pseudoExample # Hello PLDB
+ string tokenKeyword lineCommentToken
+
+hasListsParser
+ extends abstractFeatureParser
+ description Does the language have lists?
+ string title Lists
+ string aka array
+ string aka vector
+ string aka sequence
+ string pseudoExample [2, 3, 10]
+ string reference https://en.wikipedia.org/wiki/List_(abstract_data_type)
+
+hasStandardLibraryParser
+ extends abstractFeatureParser
+ description Does the language have a standard library?
+ string title Standard Library
+ string pseudoExample print("print is part of stdlib")
+ string reference https://en.wikipedia.org/wiki/Standard_library
+
+hasExplicitStandardLibraryParser
+ extends abstractFeatureParser
+ description Do you have to explicitly include the standard library?
+ string title Explicit Standard Library
+ string pseudoExample #include <stdio.h>
+ string reference https://en.wikipedia.org/wiki/Standard_library
+
+hasMacrosParser
+ extends abstractFeatureParser
+ description Does the language have a compile-time macro pass?
+ string title Macros
+ string pseudoExample #define pldbItems 4000
+ string reference https://en.wikipedia.org/wiki/Macro_(computer_science)
+
+hasMagicGettersAndSettersParser
+ extends abstractFeatureParser
+ description Does the language have a way to handle undefined getters and setters?
+ string title Magic Getters and Setters
+ string reference https://www.php.net/manual/en/language.oop5.overloading.php#object.get
+ string pseudoExample get(name) => obj[name]
+
+hasManualMemoryManagementParser
+ extends abstractFeatureParser
+ description Does the language have manual memory management?
+ string title Manual Memory Management
+ string pseudoExample malloc(4);
+ string reference https://en.wikipedia.org/wiki/Manual_memory_management
+
+hasMapFunctionsParser
+ extends abstractFeatureParser
+ description Does the language support running map over a list?
+ string title Map Functions
+ string pseudoExample pldbFiles.map(downloadFilesFn)
+ string reference https://en.wikipedia.org/wiki/Map_(higher-order_function)
+
+hasMapsParser
+ extends abstractFeatureParser
+ description Does the language have a map (aka hashtable) data structure?
+ string title Maps
+ string aka dict
+ string aka dictionary
+ string aka object
+ string aka record
+ string aka struct
+ string aka hashtable
+ string aka keyed list
+ string aka associative array
+ string pseudoExample {name: "PLDB"}
+ string reference https://en.wikipedia.org/wiki/Associative_array
+
+hasMemberVariablesParser
+ extends abstractFeatureParser
+ description Does the language have member variables?
+ string aka properties
+
+hasMessagePassingParser
+ extends abstractFeatureParser
+ description Does the language support message passing?
+ string title Message Passing
+ string pseudoExample "get pldb"
+ string reference https://en.wikipedia.org/wiki/Message_passing
+
+hasMethodChainingParser
+ extends abstractFeatureParser
+ description Does the language support method chaining?
+ string title Method Chaining
+ string pseudoExample pldbFile.toString().length
+ string reference https://en.wikipedia.org/wiki/Method_chaining
+
+hasMethodOverloadingParser
+ description Does the language support method overloading?
+ extends abstractFeatureParser
+
+hasMethodsParser
+ extends abstractFeatureParser
+ description Does the language have methods on classes?
+ string title Methods
+ string pseudoExample pldbFile.downloadWebsite()
+ string reference https://en.wikipedia.org/wiki/Method_(computer_programming)
+
+hasMixinsParser
+ extends abstractFeatureParser
+ description Does the language allow including methods from a class without inheriting from that class?
+ string title Mixins
+ string pseudoExample extends pldbFile, diskFile
+ string reference https://en.wikipedia.org/wiki/Mixin
+
+hasModulesParser
+ extends abstractFeatureParser
+ description Does the language have a concept of modules for organizing and packaging code?
+ string title Module Pattern
+ string pseudoExample module PLDB {}
+ string reference https://en.wikipedia.org/wiki/Module_pattern
+
+hasMonadsParser
+ extends abstractFeatureParser
+ description Does the language have monads?
+ string title Monad
+ string pseudoExample g >>= f
+ string reference https://en.wikipedia.org/wiki/Monad_(functional_programming)
+
+hasMultiLineCommentsParser
+ extends abstractFeatureParser
+ description Does the language have multi-line comments?
+ string title MultiLine Comments
+ string reference https://en.wikipedia.org/wiki/Comparison_of_programming_languages_(syntax)#Comments
+ string pseudoExample /* Hello PLDB */
+ string tokenKeyword multiLineCommentTokens
+
+hasMultilineStringsParser
+ extends abstractFeatureParser
+ description Does the language support multiline strings?
+ string title Multiline Strings
+ string pseudoExample hello = """Hello\nPLDB"""
+
+hasMultipleDispatchParser
+ extends abstractFeatureParser
+ description Does the language support multiple dispatch?
+ string title Multiple Dispatch
+ string pseudoExample collide_with(x::Spaceship, y::Spaceship)
+ string reference https://en.wikipedia.org/wiki/Multiple_dispatch
+
+hasMultipleInheritanceParser
+ extends abstractFeatureParser
+ description Does the language allow multiple inheritance?
+ string title Multiple Inheritance
+ string pseudoExample extends parentWhichExtendsSomethingElse
+ string reference https://en.wikipedia.org/wiki/Multiple_inheritance
+
+hasNamedArgumentsParser
+ extends abstractFeatureParser
+ description Does the language have named arguments / named parameters?
+ string title Named Arguments
+ string reference https://en.wikipedia.org/wiki/Named_parameter
+
+hasNamespacesParser
+ extends abstractFeatureParser
+ description Does the language have a namespace construct?
+ string title Namespaces
+ string pseudoExample namespace PLDB {}
+
+hasNullParser
+ extends abstractFeatureParser
+ description Does the language have a null value?
+ string title Null
+ string reference https://en.wikipedia.org/wiki/Null_pointer
+ string pseudoExample uhOh = null
+
+hasOctalsParser
+ extends abstractFeatureParser
+ description Does the language have a syntax for octal numbers?
+ string title Octals
+ string aka Base8
+ string aka oct
+ string pseudoExample 0o464063622
+ string reference https://en.wikipedia.org/wiki/Octal
+
+hasOperatorOverloadingParser
+ extends abstractFeatureParser
+ description Does the language allow operator overloading?
+ string title Operator Overloading
+ string reference https://en.wikibooks.org/wiki/Introduction_to_Programming_Languages/Overloading https://en.wikipedia.org/wiki/Operator_overloading
+ string pseudoExample def __add__(): doSomethingDifferent()
+
+hasOperatorsParser
+ extends abstractFeatureParser
+ description Does the language have operators?
+ string title Operators
+ string reference https://en.wikipedia.org/wiki/Operator_(computer_programming)
+ string pseudoExample 1 + 1
+
+hasPairsParser
+ extends abstractFeatureParser
+ description Does the language have a pair structure?
+ string title Pairs
+ string pseudoExample (pl . db)
+
+hasPartialApplicationParser
+ extends abstractFeatureParser
+ description Does the language support partial application?
+ string title Partial Application
+ string pseudoExample add5 = num => addNumbers(10, num)
+ string reference https://en.wikipedia.org/wiki/Partial_application
+
+hasPatternMatchingParser
+ extends abstractFeatureParser
+ description Does the language support pattern matching?
+ string title Pattern Matching
+ string pseudoExample fib 0 = 1; fib 1 = 1
+ string reference https://en.wikipedia.org/wiki/Pattern_matching
+
+hasPipesParser
+ extends abstractFeatureParser
+ description Does the language have a pipe operator?
+ string title Pipes
+ string pseudoExample ls pldb | wc
+ string reference https://en.wikipedia.org/wiki/Pipeline_(software)
+
+hasPointersParser
+ extends abstractFeatureParser
+ // question: are there languages that have pointers to a location in an l1/lN cache?
+ description Does the language have a structure that is a location in memory?
+ string title Pointers
+ string pseudoExample int *pldb
+ string reference https://en.wikipedia.org/wiki/Pointer_(computer_programming)
+
+hasPolymorphismParser
+ extends abstractFeatureParser
+ description Does the language have polymorphism?
+ string title Polymorphism
+ string pseudoExample a + "b"; 1 + 2
+ string reference https://en.wikipedia.org/wiki/Polymorphism_(computer_science)
+
+hasPostfixNotationParser
+ extends abstractFeatureParser
+ description Does the language allow operators to be placed at the end of the expression?
+ string title Postfix Notation
+ string pseudoExample 2 3 4 + 2 -
+ string reference https://en.wikipedia.org/wiki/Reverse_Polish_notation
+
+hasPrefixNotationParser
+ extends abstractFeatureParser
+ description Does the language allow operators to be placed at the beginning of the expression?
+ string title Prefix Notation
+ string pseudoExample + 1 2
+ string reference https://en.wikipedia.org/wiki/Polish_notation
+
+hasPrintDebuggingParser
+ extends abstractFeatureParser
+ description Does the language have a built in function that allows one to print debug?
+ string title Print() Debugging
+ string reference https://en.wikipedia.org/wiki/Debug_code#Print_debugging
+ string pseudoExample print "Hello PLDB"
+ string tokenKeyword printToken
+
+hasProcessorRegistersParser
+ extends abstractFeatureParser
+ description Does the language have named symbols for a processor's registers?
+ string title Processor Registers
+ string pseudoExample eax 2
+ string reference https://en.wikipedia.org/wiki/Processor_register
+
+hasRangeOperatorsParser
+ extends abstractFeatureParser
+ description Does the language have a syntax for creating ranges?
+ string title Range Operator
+ string reference https://docstore.mik.ua/orelly/perl4/prog/ch03_15.htm
+ string pseudoExample 1 ... 10
+
+hasReferencesParser
+ extends abstractFeatureParser
+ description Does the language have a structure for holding a reference to an existing object?
+ string title References
+ string pseudoExample fn(objPointer)
+ string reference https://en.wikipedia.org/wiki/Reference_(computer_science)
+
+hasRefinementTypesParser
+ extends abstractFeatureParser
+ description Does the language have a way to attach a predicate to a type?
+ string title Refinement Types
+ string pseudoExample evenInt where int % 2 = 0
+ string reference https://en.wikipedia.org/wiki/Refinement_type
+
+hasRegularExpressionsSyntaxSugarParser
+ extends abstractFeatureParser
+ description Does the language have special syntax for regular expressions?
+ string title Regular Expression Syntax Sugar
+ string reference https://pldb.io/concepts/regex.html
+ string pseudoExample /pldb/
+
+hasRequiredMainFunctionParser
+ description Does the language require a function named main (or similar)?
+ extends abstractFeatureParser
+
+hasReservedWordsParser
+ description Does a concept of reserved words exists, for example, not being able to use certain keywords as variable names.?
+ extends abstractFeatureParser
+
+hasRunTimeGuardsParser
+ extends abstractFeatureParser
+ description Does the language support run-time guards?
+ string title Runtime Guards
+ string pseudoExample f x | x > 0 = 1 | otherwise = 0
+ string reference https://en.wikipedia.org/wiki/Guard_(computer_science)
+
+hasSExpressionsParser
+ description Does the language have S Expressions?
+ extends abstractFeatureParser
+ string title S-Expressions
+ string pseudoExample (+ 1 1)
+ string reference https://en.wikipedia.org/wiki/S-expression
+
+hasScientificNotationParser
+ extends abstractFeatureParser
+ description Does the language have a syntax for Scientific Notation?
+ string title Scientific Notation
+ string aka E Notation
+ string pseudoExample 8076686.6e1
+ string reference https://en.wikipedia.org/wiki/Scientific_notation
+
+hasSelfOrThisWordParser
+ description Does a language have a keyword or syntax to refer to the current instance?
+ extends abstractFeatureParser
+
+hasSemanticIndentationParser
+ extends abstractFeatureParser
+ description Does the language use semantic indentation?
+ string aka off-side rule
+ string title Semantic Indentation
+ string reference https://pldb.io/blog/which-programming-languages-use-indentation.html
+ string pseudoExample line0 if true line1  print "Hello PLDB"
+
+hasSetsParser
+ extends abstractFeatureParser
+ description Does the language come with a Set data structure?
+ string title Sets
+ string pseudoExample {"pldb", "PLDB"}
+ string reference https://en.wikipedia.org/wiki/Set_(abstract_data_type)
+
+hasSingleDispatchParser
+ extends abstractFeatureParser
+ description Does the method called depended on a single operand?
+ string title Single Dispatch
+ string reference https://en.wikipedia.org/wiki/Dynamic_dispatch#Single_and_multiple_dispatch
+ string pseudoExample person.run()
+
+hasSingleTypeArraysParser
+ extends abstractFeatureParser
+ description Does the language have a list data structure that only can hold items of the same type?
+ string title Single-Type Arrays
+ string reference https://en.wikipedia.org/wiki/Array_data_structure
+ string pseudoExample const pldbRanks: int[]
+
+hasSourceMapsParser
+ extends abstractFeatureParser
+ description Does the language support the generation of source maps?
+ string title Source Maps
+ string pseudoExample {file: 'pldb.min.js',sources: ['pldb.js'], mappings: 'CAAC,IAAI,IAAM'}
+
+hasStatementTerminatorCharacterParser
+ description Does the language have a statement terminator character such as ";"?
+ extends abstractFeatureParser
+
+hasStatementsParser
+ extends abstractFeatureParser
+ description Does the language have a concept of statements?
+ string title Statements
+ string pseudoExample print "Hello PLDB"
+ string reference https://en.wikipedia.org/wiki/Statement_(computer_science)
+
+hasStaticMethodsParser
+ extends abstractFeatureParser
+ description Can a class have static methods?
+ string title Static Methods
+ string reference https://www.geeksforgeeks.org/static-methods-vs-instance-methods-java/
+ string pseudoExample static downloadPldb() {}
+
+hasStaticTypingParser
+ extends abstractFeatureParser
+ description Does the language have static typing at compile time?
+ string title Static Typing
+ string reference https://en.wikipedia.org/wiki/Type_system#Static_type_checking
+ string pseudoExample int pldbRank = 100
+
+hasStreamsParser
+ extends abstractFeatureParser
+ description Does the language have a concept of streams?
+ string title Streams
+ string pseudoExample echo 123 | 123.txt
+ string reference https://en.wikipedia.org/wiki/Stream_(computing)
+
+hasStringConcatOperatorParser
+ description Is there an operator for concatenating strings?
+ extends abstractFeatureParser
+
+hasStringsParser
+ extends abstractFeatureParser
+ description Does the language have a strings data structure?
+ string title Strings
+ string pseudoExample "Hello PLDB"
+ string tokenKeyword stringToken
+ string reference https://en.wikipedia.org/wiki/String_(computer_science)
+
+hasStructsParser
+ extends abstractFeatureParser
+ description Does the language have a structs structure?
+ string title Structs
+ string pseudoExample struct pldbFile { int rank; char *title; };
+ string reference https://en.wikipedia.org/wiki/Struct_(C_programming_language)
+
+hasStructuralTypingParser
+ extends abstractFeatureParser
+ description Does the language feature (significant) structural typing?
+ string title Structural Typing
+ string reference https://en.wikipedia.org/wiki/Structural_type_system
+
+hasSwitchParser
+ extends abstractFeatureParser
+ description Does the language have switch statements or expressions?
+ string title Switch Statements
+ string pseudoExample switch animal: case dog-buy; case cat-sell;
+ string reference https://en.wikipedia.org/wiki/Switch_statement
+
+hasSymbolTablesParser
+ extends abstractFeatureParser
+ description Does the compiler use symbol tables internally?
+ string title Symbol Tables
+ string pseudoExample SymbolName|Type|Scope;bar|function,double|extern
+ string reference https://en.wikipedia.org/wiki/Symbol_table
+
+hasSymbolsParser
+ description Does the language have a concept of symbols?
+ extends abstractFeatureParser
+
+hasTemplatesParser
+ extends abstractFeatureParser
+ description Does the language support templates?
+ string title Templates
+ string pseudoExample template TCopy(T) {}
+ string reference https://en.wikipedia.org/wiki/Template_metaprogramming
+
+hasTernaryOperatorsParser
+ extends abstractFeatureParser
+ description Does the language have ternary operators?
+ string title Ternary operators
+ string pseudoExample true ? 1 : 0
+ string reference https://en.wikipedia.org/wiki/Ternary_operation
+
+hasThreadsParser
+ extends abstractFeatureParser
+ description Does the language support a concept of threads?
+ string title Threads
+ string pseudoExample thread1(); thread2();
+ string reference https://en.wikipedia.org/wiki/Thread_(computing)
+
+hasTimestampsParser
+ description Does the language have a builtin timestamps data structure?
+ extends abstractFeatureParser
+
+hasTraitsParser
+ extends abstractFeatureParser
+ description Does the language support traits?
+ string title Traits
+ string pseudoExample use redBorder
+ string reference https://en.wikipedia.org/wiki/Trait_(computer_programming)
+
+hasTriplesParser
+ extends abstractFeatureParser
+ description Does the language have a structure for subject–predicate–object expressions?
+ string title Triples
+ string pseudoExample Javascript isListedIn PLDB
+ string reference https://en.wikipedia.org/wiki/Semantic_triple
+
+hasTryCatchParser
+ description Does the language have a try/catch construct?
+ extends abstractFeatureParser
+
+hasTypeAliasesParser
+ extends abstractFeatureParser
+ description Does the language have type aliases?
+ string title Type Aliases
+ string pseudoExample type Year = number
+
+hasTypeAnnotationsParser
+ extends abstractFeatureParser
+ description Does the language have a syntax for annotating the types of variables?
+ string title Type Annotations
+ string pseudoExample score: number
+
+hasTypeClassesParser
+ extends abstractFeatureParser
+ description Does the language have type classes?
+ string title Type Classes
+ string reference https://en.wikipedia.org/wiki/Type_class
+
+hasTypeInferenceParser
+ extends abstractFeatureParser
+ description Can the parser infer the type of a variable at compile time without an annotation?
+ string title Type Inference
+ string reference https://en.wikipedia.org/wiki/Type_inference
+ string pseudoExample imAString = "pldb"
+
+hasTypeParametersParser
+ extends abstractFeatureParser
+ description Does the language support a concept of type parameters?
+ string title Type Parameters
+ string pseudoExample function identity<T>(arg: T): T {return arg}
+ string reference https://en.wikipedia.org/wiki/TypeParameter
+
+hasTypedHolesParser
+ extends abstractFeatureParser
+ description Does the language have a syntax for typed holes?
+ string title Typed Holes
+ string reference https://wiki.haskell.org/GHC/Typed_holes
+ string pseudoExample 2 + _ => 2 + [int|float]
+
+hasUnaryOperatorsParser
+ extends abstractFeatureParser
+ description Does the language have any unary operators like ++ or --?
+ string title Unary Operators
+ string pseudoExample count++
+ string reference https://en.wikipedia.org/wiki/Unary_operation
+
+hasUnicodeIdentifiersParser
+ extends abstractFeatureParser
+ description Does the language support Unicode identifiers?
+ // some support only ASCII
+ string title Unicode Identifers
+ string pseudoExample δ = 0.00001
+
+hasUnionTypesParser
+ extends abstractFeatureParser
+ description Does the language support union types?
+ string title Union Types
+ string pseudoExample any = string | number
+ string reference https://en.wikipedia.org/wiki/Union_type
+
+hasUnitsOfMeasureParser
+ extends abstractFeatureParser
+ description Does the language support units of measure?
+ string title Units of Measure
+ string pseudoExample 42cm
+ string reference https://en.wikipedia.org/wiki/Unit_of_measurement
+
+hasUserDefinedOperatorsParser
+ description Does the language allow for defining your own operators?
+ extends abstractFeatureParser
+
+hasValueReturnedFunctionsParser
+ description Can functions return a value?
+ extends abstractFeatureParser
+
+hasVariableSubstitutionSyntaxParser
+ extends abstractFeatureParser
+ description Do you use different syntax when assigning versus referencing a variable?
+ string title Variable Substitution Syntax
+ string pseudoExample name = "PLDB"; print $name
+
+hasVariadicFunctionsParser
+ description Does the language support functions that accept a variable number of parameters?
+ extends abstractFeatureParser
+ string title Variadic Functions
+ string pseudoExample args.map(doSomething)
+ string reference https://en.wikipedia.org/wiki/Variadic_function
+
+hasVirtualFunctionsParser
+ description Does the language have virtual functions?
+ extends abstractFeatureParser
+ string title Virtual function
+ string pseudoExample virtual FetchPLDBFile();
+ string reference https://en.wikipedia.org/wiki/Virtual_function
+
+hasVoidFunctionsParser
+ description Does the language have void functions that return nothing?
+ extends abstractFeatureParser
+
+hasWhileLoopsParser
+ description Does the language have while loops?
+ extends abstractFeatureParser
+ string title While Loops
+ string pseudoExample while (pldb.pop()) loop()
+ string reference https://en.wikipedia.org/wiki/While_loop
+
+hasZeroBasedNumberingParser
+ description Does the language start counting from 0, rather than 1?
+ extends abstractFeatureParser
+ string title Zero-based numbering
+ string reference https://en.wikipedia.org/wiki/Zero-based_numbering
+ string pseudoExample firstItem = pldb[0]
+
+hasZippersParser
+ extends abstractFeatureParser
+ description Does the language have zippers built in or as a library, which are roughly a pointer with context on a tree?
+ string title Zippers
+ string reference https://wiki.haskell.org/Zipper https://en.wikipedia.org/wiki/Zipper_(data_structure)
+ string pseudoExample pldbCursor.moveLeft()
+
+helloWorldCollectionParser
+ description What is the name of this project in the Hello World Collection?
+ extends abstractExampleParser
+ cueFromId
+ atoms measureNameAtom
+ catchAllAtomType stringAtom
+ string sourceDomain helloworldcollection.de
+ float sortIndex 3
+
+appearedParser
+ float sortIndex 1.101
+ boolean isMeasureRequired true
+ description What year was the language publicly released and/or announced?
+ extends abstractYearMeasureParser
+isFinishedParser
+ description Has the creator or maintainer announced the language officially over, or has all activity stopped? Include a link to proof of the announcement.
+ extends abstractComputedIntMeasureParser
+ atoms measureNameAtom booleanAtom
+
+nativeLanguageParser
+ atoms measureNameAtom stringAtom
+ description What is the native human language for this language, if not English?
+ extends abstractEnumMeasureParser
+
+paperParser
+ description What is a URL to a paper(s) by the creator(s) introducing this language?
+ extends abstractUrlMeasureParser
+ float sortIndex 1.99
+
+interviewsParser
+ description What is a URL(s) to an interview with the creator(s) about this language?
+ extends abstractUrlMeasureParser
+ single false
+ float sortIndex 1.999
+
+isOpenSourceParser
+ description Is this an open source project?
+ extends abstractComputedIntMeasureParser
+ atoms measureNameAtom booleanAtom
+ float sortIndex 2.01
+
+isPublicDomainParser
+ boolean alwaysRecommended true
+ description Is this public domain?
+ extends abstractBooleanMeasureParser
+ float sortIndex 2.0
+
+hoplParser
+ extends abstractUniqueUrlMeasureParser
+ description What is the URL to this language in Diarmuid Pigott's Online Historical Encyclopaedia of Programming Languages site?
+ string sourceDomain hopl.info
+ float sortIndex 11.0
+
+screenshotParser
+ description What is the filename to a screenshot of this visual language in the concepts/screenshots/ folder?
+ extends abstractUrlMeasureParser
+photoParser
+ description What is a URL to a screenshot of this real world notation in the form https://pldb.io/photos/[id].png?
+ extends abstractUrlMeasureParser
+
+indeedJobsParser
+ float sortIndex 36
+ description How many job descriptions match this query for this language on indeed.com?
+ catchAllAtomType stringAtom
+ extends abstractAnnualPopulationCountMapParser
+ contentKey query
+ string sourceDomain indeed.com
+
+ircParser
+ extends abstractChatUrlMeasureParser
+ description What is a link to an official (or popular unofficial) IRC channel(s) for language development?
+ float sortIndex 2.3
+
+isCaseSensitiveParser
+ extends abstractFeatureParser
+ description Is this language case sensitive?
+ string title Case Sensitivity
+ string reference https://en.wikipedia.org/wiki/Case_sensitivity
+ string pseudoExample pldb != PLDB
+
+isbndbParser
+ boolean fromCrawler true
+ extends abstractDelimitedValuesBlobMeasureParser
+ description What are books about this language from ISBNdb?
+ string sourceDomain isbndb.com
+ float sortIndex 22
+
+jupyterKernelParser
+ extends abstractUniqueUrlMeasureParser
+ single false
+ description What is a link to a Jupyter Kernel for this language?
+ string sourceDomain jupyter.org
+ float sortIndex 9
+
+languageServerProtocolProjectParser
+ extends abstractUrlMeasureParser
+ inScope writtenInParser
+ single false
+ description What is the URL to a project implementing LSP for this language?
+ string sourceDomain langserver.org
+ float sortIndex 3.4
+
+leachim6Parser
+ extends abstractUniqueStringMeasureParser
+ description What is a URL to this language in leachim6's hello-world project?
+ string sourceDomain github.com/leachim6/hello-world
+ contentKey id
+ inScope fileExtensionsParser exampleParser
+ float sortIndex 3.2
+ filepathParser
+  description What is the filepath to this language in leachim6's hello-world project?
+  extends abstractStringMeasureParser
+
+// leaders
+//
+ creatorNameAtom
+  extends stringAtom
+creatorsParser
+ float sortIndex 1.102
+ extends abstractStringListMeasureParser
+ boolean alwaysRecommended true
+ description What are the name(s) of the original creators of the language delimited by " and "?
+ catchAllAtomType stringAtom
+ listDelimiter  and
+
+maintainersParser
+ float sortIndex 1.1021
+ extends abstractStringListMeasureParser
+ boolean alwaysRecommended true
+ description What are the name(s) of the maintainer(s) of the language delimited by " and "?
+ catchAllAtomType stringAtom
+ listDelimiter  and
+
+numberOfCreatorsParser
+ description How many creators?
+ extends abstractComputedIntMeasureParser
+ float sortIndex 2.33
+
+letterFirstIdentifiersParser
+ extends abstractFeatureParser
+ description Must identifiers start with a letter?
+ string title Letter-first Identifiers
+ string pseudoExample pldb100 = "OK" // 100pldb = "ERROR"
+
+linguistGrammarRepoParser
+ description What is the URL to the Linguist Grammar repo used by GitHub for this language?
+ // Linguist is a library used by GitHub to syntax highlight files on GitHub via a grammar. The list of languages supported by Linguist and the grammar package used for each language is listed here: https://github.com/github/linguist/blob/master/vendor/README.md. If Linguist has support for a language, it will have a repo on GitHub. Given a language is supported by Linguist, that is a good indication it has at least 200 unique :user/:repo repositories, according to their docs.
+ extends abstractUrlMeasureParser
+ atoms measureNameAtom urlAtom
+ float sortIndex 16
+ contentKey url
+ string sourceDomain github.com
+ inScope exampleParser
+ commitCountParser
+  description How many commits in this repo?
+  extends abstractCountMeasureParser
+ firstCommitParser
+  description What year was the first commit made?
+  extends abstractYearMeasureParser
+ lastCommitParser
+  description What year was the last commit made?
+  extends abstractYearMeasureParser
+ sampleCountParser
+  description How many language samples in this repo?
+  extends abstractCountMeasureParser
+ committerCountParser
+  description How many people have made commits in this repo?
+  extends abstractPopulationCountMeasureParser
+
+linkedInSkillParser
+ description How many people list this skill on LinkedIn?
+ float sortIndex 36
+ extends abstractAnnualPopulationCountMapParser
+ catchAllAtomType stringAtom
+ contentKey id
+ string sourceDomain linkedin.com
+
+meetupParser
+ description What is a URL for active meetup groups for this language on Meetup.com?
+ extends abstractUniqueUrlMeasureParser
+ contentKey url
+ string sourceDomain meetup.com
+ float sortIndex 4.0
+ memberCountParser
+  description How many people in this meetup group?
+  extends abstractPopulationCountMeasureParser
+ groupCountParser
+  description How many groups?
+  extends abstractCountMeasureParser
+
+mergesWhitespaceParser
+ extends abstractFeatureParser
+ description Does this language merge whitespace, so N spaces is treated the same as a single space?
+ string title Merges Whitespace
+ string reference http://wiki.c2.com/?SyntacticallySignificantWhitespaceConsideredHarmful
+ string pseudoExample result = 1    +    2
+
+monacoParser
+ extends abstractUniqueAtomMeasureParser
+ description What is a URL to a Monaco syntax highlighting package for this language?
+ example
+  javascript
+   monaco javascript
+ string sourceDomain microsoft.github.io/monaco-editor/
+ float sortIndex 2.8
+
+// name
+
+wordRankParser
+ description Where does this word rank in terms of common English words?
+ // where "the" is 1.
+ extends abstractIntegerMeasureParser
+ float sortIndex 2.5
+
+standsForParser
+ description If the language name is an acronym what does/did it stand for?
+ extends abstractStringMeasureParser
+
+akaParser
+ description What is this also known as?
+ extends abstractStringMeasureParser
+ single false
+
+oldNameParser
+ description What is the old name of this language?
+ extends abstractStringMeasureParser
+
+blogParser
+ extends abstractUrlMeasureParser
+ description What is the URL to the official blog for this language?
+ single false
+ float sortIndex 1.33
+
+labParser
+ description In what community(ies) did the language first originate?
+ boolean alwaysRecommended true
+ // todo Make origin community name the url for the community? instead of the name? Not sure.
+ listDelimiter  &&
+ float sortIndex 1.99
+ example
+  lab Microsoft && /r/programminglanguages && news.ycombinator.com
+ extends abstractStringListMeasureParser
+
+maintainerOrganizationParser
+ extends abstractStringListMeasureParser
+ description What organization maintains this language?
+
+packageRepositoryParser
+ extends abstractUrlMeasureParser
+ description What is a URL to the package repository for this language?
+ single false
+ float sortIndex 2.9
+
+centralPackageRepositoryCountParser
+ extends abstractCountMeasureParser
+ description How many central package repositories does this language have?
+ float sortIndex 2.9
+
+packageInstallCountParser
+ description How many packages have been downloaded?
+ extends abstractCountMeasureParser
+packageCountParser
+ description How many packages are in the repository?
+ // A package is some code with a name and a namespace, shipped as an atomic unit, with an owner(s).
+ extends abstractCountMeasureParser
+packageAuthorsParser
+ extends abstractPopulationCountMeasureParser
+ description How many people contribute packages to this cpm?
+
+forLanguagesParser
+ description Which languages is this repository for?
+ extends abstractConceptEdgesMeasureParser
+
+// paradigms
+abstractParadigmParser
+ atoms measureNameAtom booleanAtom
+ extends abstractBooleanMeasureParser
+visualParadigmParser
+ extends abstractParadigmParser
+ description Is this a visual programming thing? Sometimes called "no code" or "low code"?
+ float sortIndex 2.4
+
+projectEulerParser
+ extends abstractUniqueStringMeasureParser
+ description Is this language one of the ones listed on https://projecteuler.net/?
+ string sourceDomain projecteuler.net
+ float sortIndex 2.999
+ contentKey id
+ memberCountParser
+  description How many project euler members use this language?
+  extends abstractAnnualPopulationCountMapParser
+
+proposalsParser
+ extends abstractUrlMeasureParser
+ description What is the URL to a the place where language proposals are made, if one exists?
+ float sortIndex 2.99
+
+pygmentsHighlighterParser
+ extends abstractUniqueStringMeasureParser
+ description What is a url to a Pygments syntax highlighting class for this language https://pygments.org/?
+ string sourceDomain pygments.org
+ inScope fileExtensionsParser
+ float sortIndex 3
+ contentKey id
+ filenameParser
+  description What is the Python filename implementing the highlighting for this language?
+  extends abstractStringMeasureParser
+  atoms measureNameAtom stringAtom
+
+pyplParser
+ extends abstractUniqueStringMeasureParser
+ description What is this language's id on https://pypl.github.io?
+ string sourceDomain pypl.github.io
+ float sortIndex 11.0
+
+quineRelayParser
+ extends abstractUniqueStringMeasureParser
+ float sortIndex 2.8
+ description What is the name of this language in the Quine Relay project from here https://github.com/mame/quine-relay?
+ string sourceDomain github.com/mame/quine-relay
+
+// rankings
+// rankAtom
+  extends intAtom
+abstractAnnualRankMapParser
+ catchAllParser annualRankParser
+ description A map of ranks, one per year.
+ extends abstractHashMapMeasureParser
+annualRankParser
+ atoms yearAtom integerAtom
+ uniqueCue
+
+// reddit
+// todo trim the trailing slash
+subredditParser
+ extends abstractUniqueUrlMeasureParser
+ string sourceDomain reddit.com
+ float sortIndex 3.0
+ contentKey url
+ single false
+ description What is a URL of a subreddit(s) for this language?
+ example
+  subreddit php
+ memberCountParser
+  extends abstractAnnualPopulationCountMapParser
+  description How many members in this subreddit?
+
+redditDiscussionParser
+ description What is a link to a related discussion on reddit?
+ extends abstractUrlMeasureParser
+ string sourceDomain reddit.com
+ single false
+
+referenceParser
+ extends abstractUrlMeasureParser
+ description What is a URL to more info about this thing?
+ // You can add raw links and then auto "upgrade" them using some of the importer code.
+ single false
+ float sortIndex 2.9999
+
+relatedParser
+ extends abstractFilenameRelationshipParser
+ description What languages are related?
+ // This serves as a catch all, and it is better to use a more specific relationship node such as "supersetOf".
+runsOnVmParser
+ extends abstractFilenameRelationshipParser
+ description What virtual machine(s) does this language run on?
+influencedByParser
+ description What languages influenced this one?
+ extends abstractFilenameRelationshipParser
+successorOfParser
+ description Was this language launched as the successor of another?
+ extends abstractFilenameRelationshipParser
+dialectOfParser
+ description Is this language a dialect of a broader one?
+ extends abstractFilenameRelationshipParser
+subsetOfParser
+ description Is this language a subset of another?
+ extends abstractFilenameRelationshipParser
+implementationOfParser
+ description Is this language an implementation of another?
+ extends abstractFilenameRelationshipParser
+renamedToParser
+ description What is the new name of this language?
+ extends abstractFilenameRelationshipParser
+supersetOfParser
+ description Is this language a superset of another?
+ // If you specify this link then the superset language will inherit all features of subset language.
+ extends abstractFilenameRelationshipParser
+writtenInParser
+ description What language(s) is the main implementation written in?
+ extends abstractFilenameRelationshipParser
+ float sortIndex 1.999
+extensionOfParser
+ description What language is this language an extension of?
+ extends abstractFilenameRelationshipParser
+forkOfParser
+ description What language is this language a fork of?
+ extends abstractFilenameRelationshipParser
+compilesToParser
+ description Which language(s) does this language primarily compile to?
+ extends abstractFilenameRelationshipParser
+ float sortIndex 1.9991
+inputLanguagesParser
+ description Which language(s) does this take as input? For compilers, what languages does this compile compile?
+ extends abstractFilenameRelationshipParser
+protocolsParser
+ description Which protocols does this speak?
+ extends abstractFilenameRelationshipParser
+
+
+isSelfHostedParser
+ // currently measures if a language is at least partially self-hosted.
+ // todo: add a self-hosted rank? perhaps % self hosted, or is the most common file type of the type of the lang itself?
+ description Is the main implementation of this language written in this language?
+ extends abstractComputedIntMeasureParser
+ float sortIndex 2.33
+ atoms measureNameAtom booleanAtom
+
+releaseNotesParser
+ extends abstractUrlMeasureParser
+ description What is the URL to the release notes or changelog for this language?
+ float sortIndex 1.33
+
+replitParser
+ float sortIndex 2.8
+ extends abstractUniqueUrlMeasureParser
+ description What is a URL to try this language on replit.com?
+ string sourceDomain replit.com
+
+// repoStats
+// Basics
+repoStatsParser
+ description What are basic stats on this repo?
+ extends abstractHashMapMeasureParser
+ float sortIndex 2.9
+ firstCommitParser
+  extends abstractYearMeasureParser
+  description What year the first commit made in this git repo?
+ newestCommitParser
+  extends abstractYearMeasureParser
+  description What year was the newest commit made in this git repo?
+ commitsParser
+  extends abstractCountMeasureParser
+  description How many commits to the repo?
+ committersParser
+  extends abstractCountMeasureParser
+  description How many committers to the repo?
+ filesParser
+  extends abstractCountMeasureParser
+  description How many files in the repo?
+ mbParser
+  extends abstractCountMeasureParser
+  description How many MBs in .git/objects?
+ linesOfCodeParser
+  extends abstractCountMeasureParser
+  description How many lines of code?
+
+rijuReplParser
+ extends abstractUrlMeasureParser
+ description What is a URL to try this language on riju.codes?
+ string sourceDomain riju.codes
+ contentKey id
+ float sortIndex 3
+ inScope fileExtensionsParser subDescriptionParser websiteParser gitRepoParser exampleParser
+
+roadmapParser
+ extends abstractUrlMeasureParser
+ description What is the URL to a public roadmap page for this language, if one exists?
+
+rosettaCodeParser
+ extends abstractUniqueUrlMeasureParser
+ float sortIndex 2.8
+ description What is a URL to this language on Rosetta Code - http://www.rosettacode.org/?
+ string sourceDomain rosettacode.org
+
+semanticScholarParser
+ boolean fromCrawler true
+ extends abstractDelimitedValuesBlobMeasureParser
+ description What are papers about this language from Semantic Scholar?
+ string sourceDomain semanticscholar.org
+ float sortIndex 90
+
+sourcehutRepoParser
+ description What is the URL of the official sourcehut repo for this project?
+ extends abstractGitRepoUrlMeasureParser
+ string sourceDomain sr.ht
+
+specParser
+ extends abstractUrlMeasureParser
+ description What is a URL to the official spec for this language?
+ float sortIndex 1.22
+
+isoParser
+ extends specParser
+ description What is the link to ISO standard for this language or standard?
+ float sortIndex 2.2
+
+specRepoParser
+ description What is the URL of the official spec for the language project?
+ extends abstractGitRepoUrlMeasureParser
+
+stackOverflowSurveyParser
+ float sortIndex 36
+ extends abstractHashMapMeasureParser
+ description What is the summary of this language from the StackOverflow annual developer survey found here https://insights.stackoverflow.com/survey?
+ string sourceDomain insights.stackoverflow.com
+ stackOverflowSurveyYearParser
+  description What are the survey results for a particular year?
+  atoms yearAtom
+  pattern \d+
+  uniqueCue
+  usersParser
+   extends abstractPopulationCountMeasureParser
+   description How many developers reported using this language?
+  medianSalaryParser
+   description What is the median salary reported by developers using this language?
+   extends abstractIntegerMeasureParser
+  fansParser
+   description How many developers reported wanting to learn this language?
+   extends abstractPopulationCountMeasureParser
+  percentageUsingParser
+   description What percentage of survey respondents report using this language?
+   // todo add a percentage column type that extends from float
+   extends abstractFloatMeasureParser
+
+supportsBreakpointsParser
+ extends abstractFeatureParser
+ description Does this language support breakpoints?
+ string title Breakpoints
+ string pseudoExample debugger;
+ string reference https://en.wikipedia.org/wiki/Breakpoint
+
+tiobeParser
+ extends abstractUniqueStringMeasureParser
+ description What is the ID of this language in Tiobe's ranking of programming languages here: https://www.tiobe.com/tiobe-index/?
+ string sourceDomain tiobe.com
+ float sortIndex 11
+ contentKey id
+ currentRankParser
+  description What is the current Tiobe rank of this language?
+  extends abstractIntegerMeasureParser
+
+tryItOnlineParser
+ extends abstractUniqueUrlMeasureParser
+ description What is a link to try this language on https://tio.run?
+ string sourceDomain tio.run
+ float sortIndex 2.4
+
+twitterParser
+ extends abstractUniqueUrlMeasureParser
+ description What is a URL to the official Twitter account of this thing, if any?
+ string sourceDomain twitter.com
+ float sortIndex 3.0
+ followersParser
+  description How many followers does the linked account have?
+  extends abstractPopulationCountMeasureParser
+
+tagAtom
+ enum assembly pl barCodeFormat video audio hardwareDescriptionLanguage knowledgeBase binaryDataFormat contractLanguage timeFormat computingMachine xmlFormat yamlFormat jsonFormat compiler grammarLanguage dataValidationLanguage application ir isa queryLanguage protocol os esolang template textMarkup characterEncoding arrayLang geoCode idl library editor cloud textDataFormat visual plzoo interpreter notation binaryExecutable dataNotation stylesheetLanguage schema bytecode vm filesystem standard linter packageManager framework webApi feature optimizingCompiler numeralSystem hashFunction database font distribution headerLang dataStructure musicalNotation textEncodingFormat equation wikiMarkup decompiler configFormat diffFormat unixApplication webBrowser browserEngine constructedLanguage dataVis dataFlow commandLineApp versionControlApplication staticSiteGenerator network microblogging lisp diagramLang chemistry physics biology mathematics weather simulation messagingProtocol shadingLanguage searchEngine cryptoProtocol cad spreadsheet functional linker 3d
+ paint constant.language
+tagsParser
+ float sortIndex 1.2
+ description Which category(ies) in PLDB's subjective ontology does this entity fit into?
+ boolean isMeasureRequired true
+ extends abstractEnumsMeasureParser
+ atoms measureNameAtom tagAtom
+ catchAllAtomType tagAtom
+
+ubuntuPackageParser
+ extends abstractUniqueAtomMeasureParser
+ float sortIndex 2.9
+ description What is the name of an Ubuntu package for this language from https://packages.ubuntu.com/, if any?
+ string sourceDomain ubuntu.com
+
+// versions
+// versionAtom
+ extends stringAtom
+ description Version numbers.
+
+downloadParser
+ extends abstractUrlMeasureParser
+ description What is a URL to the download page for this language?
+ single false
+ float sortIndex 1.33
+
+latestVersionParser
+ extends abstractStringMeasureParser
+ description What is the latest version?
+ float sortIndex 1.33
+
+latestMajorVersionParser
+ description What is the latest major version (if using semver)?
+ extends abstractComputedIntMeasureParser
+ float sortIndex 2.33
+
+usesSemanticVersioningParser
+ description Does the official release of the language use semantic versioning?
+ extends abstractComputedIntMeasureParser
+ float sortIndex 2.34
+ atoms measureNameAtom booleanAtom
+
+websiteParser
+ float sortIndex 1.21
+ description What is the URL of the official homepage for this language project?
+ extends abstractUrlMeasureParser
+webReplParser
+ extends abstractUrlMeasureParser
+ description What is a URL for an online repl of this language?
+ single false
+
+exercismParser
+ extends abstractUrlMeasureParser
+ float sortIndex 2.1
+ description What is a URL to learn this language on Exercism?
+ example
+  exercism https://exercism.org/tracks/bash
+
+//
+ extends stringAtom
+ float sortIndex 1.8
+domainNameParser
+ description What is the domain for this language's website if it has its own?
+ atoms measureNameAtom stringAtom
+ extends abstractAtomMeasureParser
+ contentKey name
+ float sortIndex 12
+ registeredParser
+  extends abstractYearMeasureParser
+  description When was this domain first registered?
+ awisRankParser
+  extends abstractAnnualRankMapParser
+  description What is the Alexa Web Information Service (AWIS) domain ranking?
+  string sourceDomain aws.amazon.com
+
+// wikipedia
+// todo Scoping by file in Parsers would be really useful for this file. Also, multiple inheritance or mixins.
+wikipediaParser
+ float sortIndex 9
+ inScope fileExtensionsParser exampleParser
+ extends abstractUrlMeasureParser
+ description What is the URL of this entity on Wikipedia, if and only if it has a page dedicated to it?
+ atoms measureNameAtom urlAtom
+ string sourceDomain wikipedia.org
+ contentKey url
+ relatedParser
+  description What languages does Wikipedia have as related?
+  extends abstractConceptEdgesMeasureParser
+ summaryParser
+  description What is the text summary of the language from the Wikipedia page?
+  extends abstractStringMeasureParser
+ createdParser
+  extends abstractYearMeasureParser
+  description When was the *Wikipedia page* for this entity created?
+ appearedParser
+  extends abstractYearMeasureParser
+  description When does Wikipedia claim this entity first appeared?
+ dailyPageViewsParser
+  extends abstractCountMeasureParser
+  description How many page views per day does this Wikipedia page get? Useful as a signal for rankings. Available via WP api.
+ backlinksCountParser
+  extends abstractCountMeasureParser
+  description How many pages on WP link to this page?
+ revisionCountParser
+  extends abstractCountMeasureParser
+  description How many revisions does this page have?
+ pageIdParser
+  extends abstractIntegerMeasureParser
+  description What is the internal ID for this entity on WP?
+
+zulipParser
+ extends abstractChatUrlMeasureParser
+ description What is a URL to an official (or popular unofficial) Zulip for language development?

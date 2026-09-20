@@ -1,0 +1,13 @@
+../code/conceptPage.scroll
+
+id ilu
+name ILU
+appeared 1994
+tags pl
+standsFor Inter-Language Unification
+lab Xerox PARC
+
+country United States
+reference https://ftp.icm.edu.pl/packages/ILU/2.0b1/manual-html/manual_19.html
+
+hopl https://hopl.info/showlanguage.prx?exp=3631

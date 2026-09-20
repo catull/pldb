@@ -1,0 +1,48 @@
+../code/conceptPage.scroll
+
+id smallbasic
+name SmallBASIC
+appeared 2001
+tags pl
+website https://smallbasic.github.io
+latestVersion v0.12.6
+lab https://sourceforge.net/p/smallbasic/_list/tickets
+writtenIn visual-basic c cpp tex make xml java html css gradle m4 jsx csv bourne-shell perl lisp php dtd xslt markdown json java-server-pages javascript
+
+isOpenSource true
+repoStats
+ firstCommit 2003
+ commits 2624
+ committers 14
+ files 620
+ newestCommit 2024
+ mb 16
+ linesOfCode 131787
+country Greece
+reference https://learnxinyminutes.com/docs/smallbasic/
+reference https://github.com/chrisws/SmallBASIC
+reference https://sourceforge.net/projects/smallbasic/
+
+githubRepo https://github.com/smallbasic/SmallBASIC
+ firstCommit 2003
+ stars 210
+ forks 37
+ subscribers 10
+ created 2012
+ updated 2024
+ description SmallBASIC is a fast and easy to learn BASIC language interpreter ideal for everyday calculations, scripts and prototypes. SmallBASIC includes trigonometric, matrices and algebra functions, a built in IDE, a powerful string library, system, sound, and graphic commands along with structured programming syntax
+ issues 33
+
+wikipedia https://en.wikipedia.org/wiki/SmallBASIC
+ related microsoft-small-basic basic qbasic c gw-basic brainfuck linux android
+ summary SmallBASIC is a BASIC programming language dialect with interpreters released as  free software under the GNU General Public License version 2.
+ created 2003
+ backlinksCount 107
+ pageId 320475
+ revisionCount 125
+ dailyPageViews 15
+ appeared 2018
+
+domainName smallbasic.github.io
+ awisRank
+  2022 7190149

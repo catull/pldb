@@ -1,0 +1,32 @@
+../code/conceptPage.scroll
+
+id statsplorer
+name Statsplorer
+appeared 2014
+creators Krishna Subramanian and Chat Wacharamanotham
+tags visual
+website https://hci.rwth-aachen.de/statsplorer
+oldName VisiStat
+lab RWTH Aachen University
+writtenIn javascript r html css svg coffeescript less json markdown csv xml scss ruby
+
+related r
+repoStats
+ firstCommit 2013
+ commits 1565
+ committers 4
+ files 489
+ newestCommit 2017
+ mb 11
+ linesOfCode 163130
+country Germany
+
+githubRepo https://github.com/imkrishsub/VisiStat
+ firstCommit 2013
+ stars 9
+ forks 15
+ subscribers 4
+ created 2013
+ updated 2024
+ description An application that allows users to do basic statistical analysis on-the-fly.
+ issues 1

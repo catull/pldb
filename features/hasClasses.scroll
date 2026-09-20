@@ -1,0 +1,71 @@
+header.scroll
+
+title Classes - language feature
+tags Feature
+printTitle Classes
+
+<a class="trueBaseThemePreviousItem" href="hasCharacters.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasClobs.html">&gt;</a>
+
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
+
+container 600px
+
+codeWithHeader Example from <b>2 languages</b>: <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/typescript.html">TypeScript</a>
+ class Person {}
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/python.html">Python</a>
+ class Person (object):
+   def __init__(self, name):
+     self.name = name
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/ruby.html">Ruby</a>
+ # A tiny Person class in Ruby:
+ class Person
+   attr_accessor :name, :age, :   # getter and setter methods
+   def initialize(name, age)
+     @name = name
+     @age = age
+   end
+ end
+ 
+ # Create a new Person object:
+ person = Person.new(&quot;John&quot;, 30)
+ puts person.name
+ puts person.age
+ 
+ # Change the age of the person:
+ person.age = 35
+ puts person.age
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/chapel.html">Chapel</a>
+ class
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/toit.html">Toit</a>
+ // Creating a custom class.
+ class Point:
+   x /int := 42
+   y /int := 103
+
+***
+
+* Languages *with* Classes include <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/python.html">Python</a>, <a href="../concepts/java.html">Java</a>, <a href="../concepts/cpp.html">C++</a>, <a href="../concepts/ruby.html">Ruby</a>, <a href="../concepts/php.html">PHP</a>, <a href="../concepts/typescript.html">TypeScript</a>, <a href="../concepts/csharp.html">C#</a>, <a href="../concepts/powershell.html">PowerShell</a>, <a href="../concepts/swift.html">Swift</a>, <a href="../concepts/scala.html">Scala</a>, <a href="../concepts/kotlin.html">Kotlin</a>, <a href="../concepts/haskell.html">Haskell</a>, <a href="../concepts/coffeescript.html">CoffeeScript</a>, <a href="../concepts/dart.html">Dart</a>, <a href="../concepts/crystal.html">Crystal</a>, <a href="../concepts/reason.html">Reason</a>, <a href="../concepts/chapel.html">Chapel</a>, <a href="../concepts/groovy.html">Groovy</a>, <a href="../concepts/ocaml.html">OCaml</a>, <a href="../concepts/f-sharp.html">F#</a>, <a href="../concepts/abap.html">ABAP</a>, <a href="../concepts/systemverilog.html">SystemVerilog</a>, <a href="../concepts/toit.html">Toit</a>, <a href="../concepts/clean.html">Clean</a>, <a href="../concepts/x10.html">X10</a>, <a href="../concepts/angelscript.html">Angelscript</a>, <a href="../concepts/apex.html">Apex</a>, <a href="../concepts/aardvark.html">Aardvark</a>, <a href="../concepts/jspp.html">JS++</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/simula-67.html">Simula 67</a>
+
+***
+
+* Languages *without* Classes include <a href="../concepts/c.html">C</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/lil.html">Lil</a>, <a href="../concepts/c2.html">C2</a>, <a href="../concepts/progsbase.html">progsbase</a>, <a href="../concepts/sako.html">SAKO</a>
+
+***
+
+View all concepts with or missing a *hasClasses* measurement
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasClasses&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasClasses%22%2C%22origData%22%3A%22hasClasses%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasClasses&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasClasses%22%2C%22origData%22%3A%22hasClasses%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D with
+
+***
+
+* Read more about Classes on the web: 1.
+ https://en.wikipedia.org/wiki/Class_(computer_programming) 1.
+
+keyboardNav hasCharacters.html hasClobs.html
+
+../footer.scroll

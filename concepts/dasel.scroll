@@ -1,0 +1,34 @@
+../code/conceptPage.scroll
+
+id dasel
+name Dasel
+appeared 2020
+creators Tom Wright
+tags queryLanguage library
+website https://daseldocs.tomwright.me
+standsFor DAta SELector
+description A tool to query and modify data structures using selectors.
+writtenIn go yaml json markdown xml bourne-shell python dockerfile
+
+related jq
+repoStats
+ firstCommit 2020
+ newestCommit 2024
+ commits 801
+ committers 29
+ files 171
+ mb 9
+ linesOfCode 6281
+
+example
+ echo '{"name": "Tom"}' | dasel -r json 'name'
+ "Tom"
+
+githubRepo https://github.com/TomWright/dasel
+ stars 6817
+ forks 126
+ subscribers 31
+ created 2020
+ updated 2024
+ description Select, put and delete data from JSON, TOML, YAML, XML and CSV files with a single tool. Supports conversion between formats and can be used as a Go package.
+ issues 34

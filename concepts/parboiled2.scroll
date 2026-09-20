@@ -1,0 +1,28 @@
+../code/conceptPage.scroll
+
+id parboiled2
+name parboiled2
+appeared 2009
+creators Mathias Sirthias
+tags grammarLanguage library
+description A macro-based PEG parser generator for Scala 2.10+
+writtenIn scala markdown yaml json restructuredtext
+
+successorOf parboiled
+repoStats
+ firstCommit 2013
+ newestCommit 2025
+ commits 1034
+ committers 42
+ files 102
+ mb 3
+ linesOfCode 25074
+
+githubRepo https://github.com/sirthias/parboiled2
+ stars 715
+ forks 86
+ subscribers 28
+ created 2013
+ updated 2024
+ description A macro-based PEG parser generator for Scala 2.10+
+ issues 36

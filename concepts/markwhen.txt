@@ -1,0 +1,78 @@
+Markwhen
+========
+
+Markwhen is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22textMarkup%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">text markup language</a> created in 2022 by Rob Koch.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222022%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2022
+ https://pldb.io/concepts/../lists/creators.html#q=Rob%20Koch Rob Koch
+
+#522 on PLDB
+4 Years Old
+
+```Download source code:
+git clone https://github.com/mark-when/markwhen
+```
+
+Make a cascading timeline from Markdown-like text.
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"textMarkup"%5D%7D%5D%2C"logic"%3A"AND"%7D'>text markup language</a>
+- Markwhen is developed on <a href="https://github.com/mark-when/markwhen">GitHub</a> and has 3,443 stars
+- Early development of Markwhen happened in <a href="../lists/labs.html#q=https://github.com/mark-when">https://github.com/mark-when</a>
+- <a href="markdown.html">Markdown</a> influenced the design of Markwhen
+- Markwhen is written in <a href="typescript.html">TypeScript</a>, <a href="json.html">JSON</a>, <a href="html.html">HTML</a>, <a href="javascript.html">JavaScript</a>, <a href="markdown.html">Markdown</a>, <a href="css.html">CSS</a>, <a href="svg.html">SVG</a>, <a href="dockerfile.html">Dockerfile</a>, <a href="yaml.html">YAML</a>
+
+```Example from the web:
+title: Welcome to Markwhen 👋
+
+#Project1: #d336b1
+
+section Welcome #welcome
+now: This example timeline showcases some of markwhen&#39;s features.
+
+Feel free to delete everything to start making your own timeline #welcome
+
+now: You can also view this example timeline at [markwhen.com/example](https://markwhen.com/example) #welcome
+
+Or you can save this timeline so you can refer to it later, by going to Browser storage &amp; files, and clicking Save current.
+
+now: For more information, view the documentation [here](https://docs.markwhen.com) or join the [discord](https://discord.gg/kQbqP4uz)
+#welcome
+endSection
+
+section All Projects
+group Project 1 #Project1
+// Supports ISO8601
+2023-01/2023-03: Sub task #John
+2023-03/2023-06: Sub task 2 #Michelle
+More info about sub task 2
+
+- [ ] We need to get this done
+- [x] And this
+- [ ] This one is extra
+
+2023-07: Yearly planning
+endGroup
+ group Project 2 #Project2
+2023-04/4 months: Larger sub task #Danielle
+
+// Supports American date formats
+03/2023 - 1 year: Longer ongoing task #Michelle
+
+- [x] Sub task 1
+- [x] Sub task 2
+- [ ] Sub task 3
+- [ ] Sub task 4
+- [ ] so many checkboxes omg
+
+10/2023 - 2 months: Holiday season
+endGroup
+
+group Project 3
+01/2024: Project kickoff
+02/2024-04/2024: Other stuff
+endGroup
+endSection
+
+2023-01-03 every other week for 1 year: Biweekly meeting
+```
+
+Built with Scroll v180.0.1

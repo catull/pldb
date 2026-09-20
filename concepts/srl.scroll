@@ -1,0 +1,46 @@
+../code/conceptPage.scroll
+
+id srl
+name SRL
+appeared 2016
+creators Karim Geiger
+tags queryLanguage
+website https://simple-regex.com/
+standsFor Simple Regex Language
+lab https://github.com/SimpleRegex
+writtenIn php markdown json xml yaml
+
+isOpenSource true
+fileType text
+repoStats
+ firstCommit 2016
+ commits 61
+ committers 4
+ files 51
+ newestCommit 2017
+ mb 1
+ linesOfCode 3182
+country Estonia
+
+example
+ begin with any of (digit, letter, one of "._%+-") once or more,
+ literally "@",
+ any of (digit, letter, one of ".-") once or more,
+ literally ".",
+ letter at least 2 times,
+ must end, case insensitive
+
+githubRepo https://github.com/SimpleRegex/SRL-PHP
+ stars 1800
+ forks 112
+ subscribers 52
+ created 2016
+ updated 2024
+ firstCommit 2016
+ description Simple Regex Language
+ issues 13
+
+domainName simple-regex.com
+ registered 2016
+ awisRank
+  2017 5551277

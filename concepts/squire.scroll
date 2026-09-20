@@ -1,0 +1,29 @@
+../code/conceptPage.scroll
+
+id squire
+name Squire
+appeared 2021
+creators Sam Westerman
+tags pl
+lab https://github.com/sampersand/squire/issues
+writtenIn c markdown make bourne-shell
+
+repoStats
+ firstCommit 2021
+ commits 341
+ committers 5
+ files 115
+ newestCommit 2024
+ mb 2
+ linesOfCode 13681
+country United States
+
+githubRepo https://github.com/sampersand/squire
+ firstCommit 2021
+ stars 60
+ forks 5
+ subscribers 4
+ created 2021
+ updated 2024
+ description The medieval language held together by twine.
+ issues 2

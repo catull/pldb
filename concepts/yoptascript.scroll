@@ -1,0 +1,56 @@
+../code/conceptPage.scroll
+
+id yoptascript
+name YoptaScript
+appeared 2016
+creators Sam Gozman
+tags pl
+website https://yopta.space/
+latestVersion 2.0.4
+nativeLanguage Russian
+writtenIn javascript typescript yaml json html markdown css
+compilesTo javascript
+
+repoStats
+ firstCommit 2016
+ commits 591
+ committers 26
+ files 53
+ newestCommit 2024
+ mb 5
+ linesOfCode 14088
+
+rijuRepl https://riju.codes/yoptascript
+ example
+  красноглазое.чмо("Привет мир!") нах
+  
+ description The world's first scripting programming language for gopniks and real boys
+ fileExtensions yopta
+ website https://yopta.space/
+ gitRepo https://github.com/samgozman/YoptaScript
+leachim6 YoptaScript
+ filepath y/YoptaScript
+ example
+  ксива.малява("Hello World") нах
+  
+
+githubRepo https://github.com/samgozman/YoptaScript
+ firstCommit 2016
+ stars 2101
+ forks 106
+ subscribers 52
+ created 2016
+ updated 2024
+ description Joke programming language for 'gopniks' in Russia. Back from 2016!
+ issues 20
+
+printToken ксива.малява
+stringToken "
+
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+
+domainName yopta.space
+ awisRank
+  2022 4097333

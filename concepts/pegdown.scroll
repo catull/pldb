@@ -1,0 +1,29 @@
+../code/conceptPage.scroll
+
+id pegdown
+name pegdown
+appeared 2010
+creators Mathias Sirthias
+tags textMarkup
+website https://pegdown.org/
+isFinished true
+description A pure-Java Markdown processor based on a parboiled PEG parser supporting a number of extensions
+writtenIn markdown html java scala xhtml
+
+repoStats
+ firstCommit 2010
+ newestCommit 2016
+ commits 300
+ committers 31
+ files 582
+ mb 12
+ linesOfCode 8454
+
+githubRepo https://github.com/sirthias/pegdown
+ stars 1290
+ forks 218
+ subscribers 62
+ created 2010
+ updated 2024
+ description A pure-Java Markdown processor based on a parboiled PEG parser supporting a number of extensions
+ issues 84

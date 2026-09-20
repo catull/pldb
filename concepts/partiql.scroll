@@ -1,0 +1,37 @@
+../code/conceptPage.scroll
+
+id partiql
+name partiql
+appeared 2019
+creators James Siri
+tags queryLanguage
+website https://partiql.org/
+latestVersion v2.1.4
+lab Amazon Web Services
+writtenIn kotlin sql markdown gradle csv yaml java asciidoc bourne-shell xml html
+
+repoStats
+ firstCommit 2019
+ commits 2861
+ committers 42
+ files 1310
+ newestCommit 2025
+ mb 20
+ linesOfCode 173974
+country United States
+reference https://aws.amazon.com/blogs/opensource/announcing-partiql-one-query-language-for-all-your-data/
+
+githubRepo https://github.com/partiql/partiql-lang-kotlin
+ firstCommit 2019
+ stars 538
+ forks 60
+ subscribers 23
+ created 2019
+ updated 2024
+ description PartiQL libraries and tools in Kotlin.
+ issues 287
+
+domainName partiql.org
+ registered 2019
+ awisRank
+  2022 1299218

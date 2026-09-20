@@ -1,0 +1,31 @@
+../code/conceptPage.scroll
+
+id asdf
+name ASDF
+appeared 2015
+creators Perry Greenfield and Michael Droettboom and Erik M. Bray
+tags pl
+website https://asdf.readthedocs.io/
+latestVersion 3.2.0
+lab Space Telescope Science Institute
+writtenIn json python restructuredtext yaml diff markdown ini toml make
+
+repoStats
+ firstCommit 2011
+ commits 4988
+ committers 68
+ files 889
+ newestCommit 2025
+ mb 8
+ linesOfCode 138596
+country United States
+
+githubRepo https://github.com/asdf-format/asdf
+ firstCommit 2011
+ stars 512
+ forks 57
+ subscribers 30
+ created 2014
+ updated 2024
+ description ASDF (Advanced Scientific Data Format) is a next generation interchange format for scientific data
+ issues 115

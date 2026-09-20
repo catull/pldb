@@ -1,0 +1,39 @@
+../code/conceptPage.scroll
+
+id savi
+name Savi
+appeared 2018
+creators Joe Eli McIlvain
+tags pl
+latestVersion v0.20240428.0
+lab https://github.com/savi-lang
+writtenIn crystal markdown yaml json cpp bourne-shell make typescript ruby python c xml lua lisp dockerfile javascript nix
+
+repoStats
+ firstCommit 2018
+ commits 2418
+ committers 14
+ files 762
+ newestCommit 2024
+ mb 8
+ linesOfCode 126189
+country United States
+
+pygmentsHighlighter Savi
+ filename savi.py
+ fileExtensions savi
+
+githubRepo https://github.com/savi-lang/savi
+ firstCommit 2018
+ stars 154
+ forks 12
+ subscribers 8
+ created 2018
+ updated 2024
+ description A fast language for programmers who are passionate about their craft.
+ issues 84
+
+hasHexadecimals true
+hasBinaryNumbers true
+hasLineComments true
+hasComments true

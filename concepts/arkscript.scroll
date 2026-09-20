@@ -1,0 +1,94 @@
+../code/conceptPage.scroll
+
+id arkscript
+name ArkScript
+appeared 2019
+creators Alexandre Plateau and Pierre Pharel and Natendrtfm
+tags pl
+website https://arkscript-lang.dev
+latestVersion v4.0.0-rc5
+description ArkScript is a small, fast, functional and scripting language for C++ projects
+lab Alexandre Plateau
+writtenIn cpp markdown yaml json csv cmake bash python bourne-shell svg xml dockerfile
+
+isOpenSource true
+docs https://arkscript-lang.dev/documentation.html
+repoStats
+ firstCommit 2019
+ commits 2681
+ committers 43
+ files 1226
+ newestCommit 2025
+ mb 7
+ linesOfCode 40126
+country France
+
+example
+ (import std.random)
+ (import std.Math)
+ 
+ (let number (mod (math:abs (random)) 10000))
+ 
+ (let game (fun () {
+     (let impl (fun (tries) {
+         (let guess (toNumber (input "Input a numeric value: ")))
+ 
+         (if (< guess number)
+             {
+                 (print "It's more than " guess)
+                 (impl (+ tries 1))}
+             (if (= guess number)
+                 {
+                     (print "You found it!")
+                     tries }
+                 {
+                     (print "It's less than " guess)
+                     (impl (+ tries 1))}))}))
+ 
+     (let tries (impl 0))
+     (print "You won in " tries " tries.")}))
+ 
+ (game)
+leachim6 ArkScript
+ filepath a/ArkScript.ark
+ fileExtensions ark
+ example
+  (print "Hello World")
+  
+
+githubRepo https://github.com/ArkScript-lang/Ark
+ firstCommit 2019
+ stars 578
+ forks 44
+ subscribers 12
+ created 2019
+ updated 2024
+ description ArkScript is a small, fast, functional and scripting language for C++ projects
+ issues 8
+
+lineCommentToken #
+printToken print
+stringToken "
+booleanTokens true false
+
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasImports true
+ (import std.List)
+ (import std.Math :max)
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+hasBooleans true
+
+domainName arkscript-lang.dev
+
+hackerNewsDiscussions
+ id|title|time|timestamp|by|comments|score
+ 22695517|Show HN: ArkScript, a small and fast language for scripting video games|2020-03-26 16:57:12 UTC|1585238232|jackrabbit_|42|101
+ 40695579|Show HN: An Online Playground for ArkScript|2024-06-16 08:29:32 UTC|1718519372|jackrabbit_|1|1
+
+semanticScholar 0

@@ -1,0 +1,36 @@
+../code/conceptPage.scroll
+
+id gogs-editor
+name gogs-editor
+appeared 2014
+creators Joe Chen
+tags editor
+website https://gogs.io/
+latestVersion v0.13.0
+webRepl https://try.gogs.io/user/login
+description Gogs is a painless self-hosted Git service
+lab https://github.com/gogs
+writtenIn go javascript html ini bourne-shell markdown yaml less svg css json dockerfile xml toml sql
+
+docs https://gogs.io/docs
+repoStats
+ firstCommit 2014
+ newestCommit 2025
+ commits 6195
+ committers 599
+ files 2098
+ mb 200
+ linesOfCode 205259
+country China
+
+githubRepo https://github.com/gogs/gogs
+ firstCommit 2014
+ stars 44623
+ forks 4842
+ subscribers 1017
+ created 2014
+ updated 2024
+ description Gogs is a painless self-hosted Git service
+ issues 929
+
+domainName gogs.io

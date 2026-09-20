@@ -1,0 +1,29 @@
+../code/conceptPage.scroll
+
+id mountain
+name mountain
+appeared 2019
+tags pl
+description A (hopefully) fast, C compatible, language designed to enable greatness
+lab https://github.com/ForLoveOfCats/Mountain/pulls
+writtenIn c markdown bourne-shell
+
+repoStats
+ firstCommit 2018
+ commits 422
+ committers 2
+ files 37
+ newestCommit 2021
+ mb 1
+ linesOfCode 6274
+country Unknown
+
+githubRepo https://github.com/MountainLang/Bootstrap
+ firstCommit 2018
+ stars 8
+ subscribers 3
+ created 2019
+ updated 2023
+ description Compiler I once wrote for a custom language called Mountain
+ forks 0
+ issues 0

@@ -1,0 +1,38 @@
+../code/conceptPage.scroll
+
+id clash
+name clash
+appeared 2015
+tags pl
+website http://www.clash-lang.org
+latestVersion v1.8.1
+lab Haskell Foundation
+writtenIn haskell yaml xml svg markdown restructuredtext bourne-shell c nix python tcl json dockerfile bash make powershell ini css
+
+repoStats
+ firstCommit 2012
+ commits 7453
+ committers 89
+ files 1372
+ newestCommit 2025
+ mb 23
+ linesOfCode 285006
+country The Netherlands
+
+githubRepo https://github.com/clash-lang/clash-compiler
+ stars 1404
+ forks 149
+ subscribers 58
+ created 2013
+ updated 2024
+ description Haskell to VHDL/Verilog/SystemVerilog compiler
+ issues 307
+
+domainName clash-lang.org
+ registered 2015
+ awisRank
+  2022 456913
+
+hackerNewsDiscussions
+ id|title|url|time|timestamp|by|comments|score
+ 9516217|CλaSH – From Haskell to Hardware|http://www.clash-lang.org/|2015-05-09 12:50:01 UTC|1431175801|jdmoreira|55|158

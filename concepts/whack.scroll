@@ -1,0 +1,31 @@
+../code/conceptPage.scroll
+
+id whack
+name whack
+appeared 2018
+creators Onchere Bironga
+tags pl
+writtenIn markdown python yaml c cpp cmake
+
+repoStats
+ firstCommit 2018
+ commits 4
+ committers 1
+ files 128
+ newestCommit 2019
+ mb 2
+ linesOfCode 18047
+
+githubRepo https://github.com/onchere/whack
+ firstCommit 2018
+ stars 61
+ forks 3
+ subscribers 5
+ created 2018
+ updated 2024
+ description The Whack Programming Language
+ issues 0
+
+hackerNewsDiscussions
+ id|title|time|timestamp|by|comments|score
+ 18319468|Show HN: Whack – A simply-designed compiled programming language|2018-10-28 07:01:55 UTC|1540710115|wycliffb|45|57

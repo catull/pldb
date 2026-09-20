@@ -1,0 +1,35 @@
+../code/conceptPage.scroll
+
+id 11ty
+name 11ty
+appeared 2017
+creators Zach Leatherman
+tags staticSiteGenerator
+website https://www.11ty.dev/
+blog https://www.11ty.dev/blog/
+conferences https://conf.11ty.dev/
+description A simpler site generator. Transforms a directory of templates (of varying types) into HTML.
+writtenIn javascript markdown liquid json yaml html scss typescript
+
+docs https://www.11ty.dev/docs/
+repoStats
+ firstCommit 2017
+ newestCommit 2025
+ commits 3075
+ committers 133
+ files 872
+ mb 6
+ linesOfCode 57675
+
+youtubes https://www.youtube.com/c/EleventyVideo
+discord https://www.11ty.dev/blog/discord/
+mastodon https://fosstodon.org/@eleventy
+
+githubRepo https://github.com/11ty/eleventy/
+ stars 16669
+ forks 484
+ subscribers 92
+ created 2017
+ updated 2024
+ description A simpler site generator. Transforms a directory of templates (of varying types) into HTML.
+ issues 396

@@ -1,0 +1,37 @@
+../code/conceptPage.scroll
+
+id vimwiki
+name Vimwiki
+appeared 2008
+creators Maxim Kim
+tags wikiMarkup
+website http://vimwiki.github.io/
+latestVersion v2.4.1
+writtenIn vim-script markdown bourne-shell svg yaml css dockerfile toml
+
+repoStats
+ firstCommit 2008
+ commits 1147
+ committers 172
+ files 115
+ newestCommit 2024
+ mb 7
+ linesOfCode 43944
+
+rijuRepl https://riju.codes/vimwiki
+ example
+  Hello, world!
+
+githubRepo https://github.com/vimwiki/vimwiki
+ firstCommit 2008
+ stars 8674
+ forks 625
+ subscribers 110
+ created 2012
+ updated 2024
+ description Personal Wiki for Vim
+ issues 193
+
+domainName vimwiki.github.io
+ awisRank
+  2022 4874969

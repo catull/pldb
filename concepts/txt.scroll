@@ -1,0 +1,18 @@
+../code/conceptPage.scroll
+
+id txt
+name Plain text
+appeared 1963
+ // todo: figure out correct year
+tags textMarkup dataNotation
+description Plain txt files.
+fileExtensions txt
+
+isPublicDomain true
+isOpenSource true
+related ascii utf-8
+
+example
+ A plain text file.
+
+wikipedia https://en.wikipedia.org/wiki/Text_file

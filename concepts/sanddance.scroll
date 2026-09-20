@@ -1,0 +1,32 @@
+../code/conceptPage.scroll
+
+id sanddance
+name SandDance
+appeared 2018
+creators Steven M. Drucker
+tags visual dataVis
+website https://microsoft.github.io/SandDance/
+screenshot sanddance.png
+webRepl https://microsoft.github.io/SandDance/app/
+lab Microsoft
+writtenIn html typescript json javascript markdown scss css python handlebars yaml svg less bourne-shell
+
+demoVideo https://www.youtube.com/watch?v=sj2tzW2uhZo
+docs https://microsoft.github.io/SandDance/docs/
+repoStats
+ firstCommit 2018
+ newestCommit 2025
+ commits 724
+ committers 20
+ files 799
+ mb 65
+ linesOfCode 1370653
+
+githubRepo https://github.com/Microsoft/SandDance
+ stars 6355
+ forks 524
+ subscribers 112
+ created 2018
+ updated 2024
+ description Visually explore, understand, and present your data.
+ issues 96

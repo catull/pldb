@@ -1,0 +1,32 @@
+../code/conceptPage.scroll
+
+id psyche-c
+name psyche-c
+appeared 2016
+creators Leandro T. C. Melo
+tags compiler
+description <a href='https://github.com/ltcmelo/psychec'>Psyche-c</a> is a compiler for incomplete C code. It features a Hindley/Milner-inspired type inference engine for C.
+lab https://github.com/ltcmelo/psychec/issues
+writtenIn cpp c python cmake markdown yaml haskell bourne-shell pascal
+
+isOpenSource true
+fileType na
+repoStats
+ firstCommit 2016
+ commits 640
+ committers 9
+ files 446
+ newestCommit 2025
+ mb 13
+ linesOfCode 101731
+country Brazil
+
+githubRepo https://github.com/ltcmelo/psychec
+ stars 526
+ forks 39
+ subscribers 17
+ created 2016
+ updated 2024
+ firstCommit 2016
+ description A compiler frontend for the C programming language
+ issues 10

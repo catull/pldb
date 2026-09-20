@@ -1,0 +1,41 @@
+../code/conceptPage.scroll
+
+id sizzle
+name sizzle
+appeared 2008
+tags queryLanguage
+website https://sizzlejs.com/
+latestVersion 2.3.11-pre
+lab https://github.com/jquery
+writtenIn javascript json html css markdown yaml
+
+isOpenSource true
+fileType text
+repoStats
+ firstCommit 2008
+ commits 1067
+ committers 65
+ files 76
+ newestCommit 2023
+ mb 5
+ linesOfCode 88331
+country United States
+reference https://openjsf.org/about/contact/
+
+githubRepo https://github.com/jquery/sizzle
+ firstCommit 2008
+ stars 6279
+ forks 953
+ subscribers 291
+ created 2008
+ updated 2024
+ description A sizzlin' hot selector engine.
+ issues 11
+
+domainName sizzlejs.com
+ registered 2008
+
+isbndb 2
+ year|publisher|title|authors|isbn13
+ 1993|Cas Education Group|Performance Programming: Making Rpg Sizzle|Mike Dawson|9781884322082
+ 1993|29th Street Pr|Performance Programming: Making Rpg Sizzle|Mike Dawson|9781882419395

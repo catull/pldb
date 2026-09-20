@@ -1,0 +1,13 @@
+../code/conceptPage.scroll
+
+id icml
+name ICML
+appeared 2008
+tags xmlFormat
+standsFor InCopy Markup Language
+description Adobe InDesign file format.
+lab Adobe
+fileExtensions icml
+
+reference https://www.oreilly.com/library/view/xml-publishing-with/9781449397234/ar01s12.html
+reference https://helpx.adobe.com/incopy/using/using-incopy-workflow.html

@@ -1,0 +1,30 @@
+../code/conceptPage.scroll
+
+id caffeine
+name Caffeine
+appeared 2012
+creators Roman I. Kuzmin
+tags pl
+website https://github.com/ich/caffeine
+lab https://github.com/ich
+fileExtensions coffee
+writtenIn coffeescript javascript markdown html json yaml
+
+repoStats
+ firstCommit 2009
+ commits 3581
+ committers 105
+ files 88
+ newestCommit 2013
+ mb 13
+ linesOfCode 20031
+country Russia
+
+githubRepo https://github.com/ich/caffeine
+ stars 22
+ forks 5
+ subscribers 2
+ created 2012
+ updated 2024
+ description Caffeine extends CoffeeScript.
+ issues 1

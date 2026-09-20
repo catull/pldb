@@ -1,0 +1,40 @@
+../code/conceptPage.scroll
+
+id dale
+name Dale
+appeared 2013
+creators tomhrr
+tags pl lisp
+website https://github.com/tomhrr/dale/
+fileExtensions dt
+writtenIn diet perl cpp markdown yaml bourne-shell cmake vim-script dockerfile
+
+repoStats
+ firstCommit 2013
+ commits 1364
+ committers 15
+ files 1404
+ newestCommit 2024
+ mb 5
+ linesOfCode 88217
+country Unknown
+
+githubRepo https://github.com/tomhrr/dale/
+ stars 1024
+ forks 48
+ subscribers 22
+ created 2013
+ updated 2024
+ description Lisp-flavoured C
+ issues 28
+
+hasGarbageCollection false
+hasImports true
+hasPointers true
+hasBitWiseOperators true
+hasComments true
+hasManualMemoryManagement true
+hasFunctionOverloading true
+hasNamespaces true
+hasConstructors true
+hasReferences true

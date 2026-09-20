@@ -1,0 +1,99 @@
+header.scroll
+
+title Lists - language feature
+tags Feature
+printTitle Lists
+
+<a class="trueBaseThemePreviousItem" href="hasLineComments.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasStandardLibrary.html">&gt;</a>
+
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
+
+container 600px
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/javascript.html">JavaScript</a>
+ const list = [1,2,3]
+
+codeWithHeader Example from <b>2 languages</b>: <a href="../concepts/python.html">Python</a>, <a href="../concepts/speedie.html">Speedie</a>
+ myList = [1, 2, 3, 4, 5]
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/go.html">Go</a>
+ myList := []int{1, 2, 3}
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/json.html">JSON</a>
+ [1, 2, 3]
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/lua.html">Lua</a>
+ myList = {1, 2, 3}
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/elixir.html">Elixir</a>
+ my_list = [1, 2, 3, 4, 5]
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/gleam.html">Gleam</a>
+ let numbers = [1, 2, 3, 4, 5]
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/lil.html">Lil</a>
+ myList:(1,2,3)
+ end
+
+codeWithHeader Example from <b>2 languages</b>: <a href="../concepts/rebol.html">REBOL</a>, <a href="../concepts/boron.html">Boron</a>
+ my-list: [1 two 3.0 &quot;four&quot;]
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/wax.html">Wax</a>
+ (let x (arr (vec 3 float)))
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/sako.html">SAKO</a>
+ TABLICA(4): B
+ 1 2.0 3.4
+ 4.1 5.6
+ *
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/off.html">Object File Format</a>
+ 3 0 1 2 # Example: face definition with vertex indices
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/bel.html">Bel</a>
+ ; here is a list of a, b, and c:
+ (a . (b . (c . nil)))
+ ; can be written as
+ (a b c)
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/funcsug.html">FuncSug</a>
+ myParallelList := |1, 2, 3, 4, 5|
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/uxf.html">Uniform eXchange Format</a>
+ [1 2]
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/ion.html">Ion</a>
+ null.list         // A null list value
+ []                // An empty list value
+ [1, 2, 3]         // List of three ints
+ [ 1 , two ]       // List of an int and a symbol
+ [a , [b]]         // Nested list
+ [ 1.2, ]          // Trailing comma is legal in Ion (unlike JSON)
+ [ 1, , 2 ]        // ERROR: missing element between commas
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/balgol.html">BALGOL</a>
+ ARRAY MONTHDAYS(12) = (31,28,31,30,31,30,31,31,30,31,30,31)$
+
+***
+
+* Languages *with* Lists include <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/python.html">Python</a>, <a href="../concepts/go.html">Go</a>, <a href="../concepts/json.html">JSON</a>, <a href="../concepts/lua.html">Lua</a>, <a href="../concepts/elixir.html">Elixir</a>, <a href="../concepts/graphql.html">GraphQL</a>, <a href="../concepts/gleam.html">Gleam</a>, <a href="../concepts/edn.html">EDN</a>, <a href="../concepts/janet.html">Janet</a>, <a href="../concepts/lil.html">Lil</a>, <a href="../concepts/rebol.html">REBOL</a>, <a href="../concepts/wax.html">Wax</a>, <a href="../concepts/fp3.html">fp</a>, <a href="../concepts/sako.html">SAKO</a>, <a href="../concepts/aardvark.html">Aardvark</a>, <a href="../concepts/ply.html">PLY</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/off.html">Object File Format</a>, <a href="../concepts/morloc.html">Morloc</a>, <a href="../concepts/bel.html">Bel</a>, <a href="../concepts/lone.html">Lone</a>, <a href="../concepts/boron.html">Boron</a>, <a href="../concepts/funcsug.html">FuncSug</a>, <a href="../concepts/uxf.html">Uniform eXchange Format</a>, <a href="../concepts/ion.html">Ion</a>, <a href="../concepts/hecl.html">hecl</a>, <a href="../concepts/balgol.html">BALGOL</a>
+
+***
+
+* Languages *without* Lists include <a href="../concepts/progsbase.html">progsbase</a>, <a href="../concepts/mmcif.html">mmCIF</a>
+
+***
+
+View all concepts with or missing a *hasLists* measurement
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasLists&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasLists%22%2C%22origData%22%3A%22hasLists%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasLists&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasLists%22%2C%22origData%22%3A%22hasLists%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D with
+
+***
+
+* Read more about Lists on the web: 1.
+ https://en.wikipedia.org/wiki/List_(abstract_data_type) 1.
+
+keyboardNav hasLineComments.html hasStandardLibrary.html
+
+../footer.scroll

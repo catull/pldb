@@ -1,0 +1,37 @@
+../code/conceptPage.scroll
+
+id commonmark
+name commonmark
+appeared 2014
+creators John MacFarlane
+tags textMarkup
+website https://commonmark.org/
+latestVersion 0.31.2
+description A strongly defined, highly compatible specification of Markdown
+lab codinghorror.com && github && University of California Berkeley
+writtenIn python markdown javascript lua html dtd make json yaml
+
+repoStats
+ firstCommit 2014
+ commits 1872
+ committers 112
+ files 22
+ newestCommit 2025
+ mb 4
+ linesOfCode 11874
+country United States
+
+githubRepo https://github.com/commonmark/commonmark-spec
+ firstCommit 2014
+ stars 4855
+ forks 313
+ subscribers 152
+ created 2014
+ updated 2024
+ description CommonMark spec, with reference implementations in C and JavaScript
+ issues 104
+
+domainName commonmark.org
+ registered 2014
+ awisRank
+  2022 184319

@@ -1,0 +1,38 @@
+../code/conceptPage.scroll
+
+id fp3
+name fp
+appeared 2022
+creators Joona Piirainen
+tags pl
+latestVersion 0.0.1
+standsFor Functional Programming
+lab https://japiirainen.com/
+writtenIn glsl haskell yaml bash nix markdown toml
+
+repoStats
+ firstCommit 2022
+ commits 83
+ committers 4
+ files 105
+ newestCommit 2023
+ mb 1
+ linesOfCode 3600
+country Finland
+reference https://dl.acm.org/doi/10.1145/359576.359579
+
+githubRepo https://github.com/japiirainen/fp
+ firstCommit 2022
+ stars 102
+ forks 1
+ description A small, weird and unpractical programming language.
+ subscribers 2
+ created 2022
+ updated 2024
+ issues 1
+
+hasConditionals true
+hasWhileLoops true
+hasLists true
+hasFunctionComposition true
+ /+∘α(bu + 1):<1,2,3,4,5,6,7,8,9,10>

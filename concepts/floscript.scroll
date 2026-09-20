@@ -1,0 +1,42 @@
+../code/conceptPage.scroll
+
+id floscript
+name FloScript
+appeared 2013
+creators Samuel Smith
+tags pl
+latestVersion v2.0.2
+lab ProSapien LLC
+writtenIn python markdown
+
+repoStats
+ firstCommit 2013
+ commits 1233
+ committers 14
+ files 221
+ newestCommit 2024
+ mb 9
+ linesOfCode 53599
+country United States
+
+pygmentsHighlighter FloScript
+ filename floscript.py
+ fileExtensions flo
+
+githubRepo https://github.com/ioflo/ioflo
+ firstCommit 2013
+ stars 153
+ forks 34
+ subscribers 19
+ created 2013
+ updated 2024
+ description Automated Reasoning Engine and Flow Based Programming Framework
+ issues 0
+
+hasOctals true
+hasHexadecimals true
+hasFloats true
+hasIntegers true
+hasBinaryNumbers true
+hasLineComments true
+hasComments true

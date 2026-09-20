@@ -1,0 +1,12 @@
+../code/conceptPage.scroll
+
+id miniprolog
+name miniprolog
+appeared 2013
+tags plzoo
+website http://plzoo.andrej.com/language/miniprolog.html
+description logic programming, Horn clauses, unification
+lab University of Ljubljana
+
+country Slovenia
+reference https://github.com/andrejbauer/plzoo

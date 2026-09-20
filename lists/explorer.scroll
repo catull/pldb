@@ -1,0 +1,31 @@
+openGraphImage explorer.png
+tags All
+title PLDB Explorer
+
+settings.scroll
+../header.scroll
+printTitle
+
+endSnippet
+
+<div style="">
+<div style="float: left; width: 200px;">
+<div id="measureLinks" style="font-size:80%;"></div>
+</div>
+
+<div style="float: left; max-width: calc(100% - 250px);" id="tableHolder">
+<table id="exploreTable" class="scrollTable"></table>
+</div>
+</div>
+
+<div style="clear:both;"></div>
+
+footer.scroll
+
+css .dt-search{font-family: "SF Pro", "Helvetica Neue", "Segoe UI", "Arial";}
+../.jquery-3.7.1.min.js
+../code/browser/explorer/datatables.min.css
+../code/browser/explorer/datatables.min.js
+../pldb.js
+../measures.js
+../code/browser/explorer/explorer.js

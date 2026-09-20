@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <title>Liquid - Template language</title>
+ <script>/* This HTML was generated from liquid.scroll by 📜 Scroll v180.0.1. https://scroll.surf */</script>
+ <style>@media print {.doNotPrint {display: none !important;}}</style>
+ <link rel="canonical" href="https://pldb.io/concepts/liquid.html">
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+ <meta name="description" content="Liquid is an open source a href=../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22">
+ <meta name="keywords" content="template">
+ <meta name="generator" content="Scroll v180.0.1">
+ <meta property="og:title" content="Liquid - Template language">
+ <meta property="og:description" content="Liquid is an open source a href=../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22">
+ <meta property="og:image" content="">
+ 
+ <link rel="source" type="application/git" title="Source Code Repository" href="https://github.com/breck7/pldb">
+ <link rel="alternate" type="application/rss+xml" title="Liquid - Template language" href="../blog/feed.xml">
+ <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="../allStyles.css">
+<div id="particle21" noSnippet="undefined" class="trueBaseThemeHeader" class="trueBaseThemeHeader"><a id="particle2" href="../index.html" class="trueBaseThemeLogo" class="trueBaseThemeLogo">PLDB</a>
+<form id="particle3"  method="get" action="../search.html"  style="display:inline-block;;undefined;undefined;undefined"><input type="search" id="trueBaseThemeHeaderSearch" name="q" placeholder="Search" autocomplete="off"  /></form>
+<a id="particle4" href="../lists/top1000.html" >Top 1K</a>
+<a id="particle5" href="../lists/features.html" >Features</a>
+<a id="particle6" href="../lists/creators.html" >Creators</a>
+<a id="particle7" href="../lists/events.html" >Events</a>
+<a id="particle8" href="../lists/podcasts.html" >Podcasts</a>
+<a id="particle9" href="../books/index.html" >Books</a>
+<a id="particle10" href="../lists/extensions.html" >Extensions</a>
+<a id="particle11" href="../blog/interviews.html" >Interviews</a>
+<a id="particle12" href="../blog/index.html" >Blog</a>
+<a id="particle13" href="../lists/explorer.html" >Explorer</a>
+<a id="particle14" href="../csv.html" >CSV</a></div>
+<style>.abstractIconButtonParser {position:absolute;top:0.25rem; }.abstractIconButtonParser svg {fill: rgba(204,204,204,.8);width:1.875rem;height:1.875rem; padding: 0 7px;} .abstractIconButtonParser:hover svg{fill: #333;}</style><a href="https://github.com/breck7/pldb/blob/main/concepts/liquid.scroll" class="doNotPrint abstractIconButtonParser" style="right:2rem;"><svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M21.1213 2.70705C19.9497 1.53548 18.0503 1.53547 16.8787 2.70705L15.1989 4.38685L7.29289 12.2928C7.16473 12.421 7.07382 12.5816 7.02986 12.7574L6.02986 16.7574C5.94466 17.0982 6.04451 17.4587 6.29289 17.707C6.54127 17.9554 6.90176 18.0553 7.24254 17.9701L11.2425 16.9701C11.4184 16.9261 11.5789 16.8352 11.7071 16.707L19.5556 8.85857L21.2929 7.12126C22.4645 5.94969 22.4645 4.05019 21.2929 2.87862L21.1213 2.70705ZM18.2929 4.12126C18.6834 3.73074 19.3166 3.73074 19.7071 4.12126L19.8787 4.29283C20.2692 4.68336 20.2692 5.31653 19.8787 5.70705L18.8622 6.72357L17.3068 5.10738L18.2929 4.12126ZM15.8923 6.52185L17.4477 8.13804L10.4888 15.097L8.37437 15.6256L8.90296 13.5112L15.8923 6.52185ZM4 7.99994C4 7.44766 4.44772 6.99994 5 6.99994H10C10.5523 6.99994 11 6.55223 11 5.99994C11 5.44766 10.5523 4.99994 10 4.99994H5C3.34315 4.99994 2 6.34309 2 7.99994V18.9999C2 20.6568 3.34315 21.9999 5 21.9999H16C17.6569 21.9999 19 20.6568 19 18.9999V13.9999C19 13.4477 18.5523 12.9999 18 12.9999C17.4477 12.9999 17 13.4477 17 13.9999V18.9999C17 19.5522 16.5523 19.9999 16 19.9999H5C4.44772 19.9999 4 19.5522 4 18.9999V7.99994Z"/></svg></a>
+<div class="scrollSection"><h1 id="particle28" class="printTitleParser"><a href="liquid.html">Liquid</a></h1>
+</div>
+<a class="trueBaseThemePreviousItem" href="tcl.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="vhdl.html">&gt;</a>
+<div id="particle36" class="scrollContainerParser" style="width: 100%; box-sizing: border-box; max-width: 800px; margin: 0 auto;">
+<div class="trueBaseThemeQuickLinks"><a href="https://shopify.github.io/liquid/" class="material-symbols-outlined">home</a> <a href="https://github.com/Shopify/liquid"><svg xmlns="http://www.w3.org/2000/svg" width="92pt" height="92pt" viewBox="0 0 92 92"><path d="M90.156 41.965 50.036 1.848a5.913 5.913 0 0 0-8.368 0l-8.332 8.332 10.566 10.566a7.03 7.03 0 0 1 7.23 1.684 7.043 7.043 0 0 1 1.673 7.277l10.183 10.184a7.026 7.026 0 0 1 7.278 1.672 7.04 7.04 0 0 1 0 9.957 7.045 7.045 0 0 1-9.961 0 7.038 7.038 0 0 1-1.532-7.66l-9.5-9.497V59.36a7.04 7.04 0 0 1 1.86 11.29 7.04 7.04 0 0 1-9.957 0 7.04 7.04 0 0 1 0-9.958 7.034 7.034 0 0 1 2.308-1.539V33.926a7.001 7.001 0 0 1-2.308-1.535 7.049 7.049 0 0 1-1.516-7.7L29.242 14.273 1.734 41.777a5.918 5.918 0 0 0 0 8.371L41.855 90.27a5.92 5.92 0 0 0 8.368 0l39.933-39.934a5.925 5.925 0 0 0 0-8.371"/></svg></a> <a href="/edit.html?folderName=pldb.io&fileName=concepts%2Fliquid.scroll" class="material-symbols-outlined">edit</a></div>
+<p id="particle40" class="scrollParagraph">Liquid is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22template%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">template language</a> created in <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">2008</a> by <a href="../lists/creators.html#q=Tobias%20L%C3%BCtke">Tobias Lütke</a>.</p>
+<table class="scrollDashboard"><tr><td>#80<span>on PLDB</span></td>
+<td>18<span>Years Old</span></td>
+<td>11k<span><span title="Liquid repos on GitHub.">Repos</span></span></td></tr>
+</table>
+<div class="codeWithHeader"><div class="codeHeader">Download source code:</div><code class="scrollCodeBlock">git clone https://github.com/Shopify/liquid</code></div>
+<div id="monacoContainer"></div>
+  <script defer src="../node_modules/monaco-editor/min/vs/loader.js"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+  require.config({ paths: { vs: '../node_modules/monaco-editor/min/vs' } })
+  require(["vs/editor/editor.main"], function() {
+    monaco.editor.create(document.getElementById('monacoContainer'), {
+        value: `<h3>We have wonderful products!</h3>\n<ul id="products">\n  <div id="productpage">\n    <div id="productimages"><div id="productimages-top"><div id="productimages-bottom">\n      {% for image in product.images %}\n        {% if forloop.first %}\n          <a href="{{ image | product_img_url: 'large' }}" class="productimage" rel="lightbox">\n            <img src="{{ image | product_img_url: 'medium'}}" alt="{{product.title | escape }}" />\n          </a>\n        {% else %}\n          <a href="{{ image | product_img_url: 'large' }}" class="productimage-small" rel="lightbox">\n            <img src="{{ image | product_img_url: 'small'}}" alt="{{product.title | escape }}" />\n          </a>\n        {% endif %}\n      {% endfor %}\n    </div></div></div>\n\n    <h2>{{ product.title }}</h2>\n\n    <ul id="details" class="hlist">\n      <li>Vendor: {{ product.vendor | link_to_vendor }}</li>\n      <li>Type: {{ product.type | link_to_type }}</li>\n    </ul>\n\n    <small>{{ product.price_min | money }}{% if product.price_varies %} - {{ product.price_max | money }}{% endif %}</small>\n\n    <div id="variant-add">\n      <form action="/cart/add" method="post">\n\n        <select id="variant-select" name="id" class="product-info-options">\n          {% for variant in product.variants %}\n            <option value="{{ variant.id }}">{{ variant.title }} - {{ variant.price | money }}</option>\n          {% endfor %}\n        </select>\n\n        <div id="price-field" class="price"></div>\n\n      <div style="text-align:center;"><input type="image" name="add" value="Add to Cart" id="add" src="{{ 'addtocart.gif' | asset_url }}" /></div>\n      </form>\n    </div>\n\n    <div class="description textile">\n      {{ product.description }}\n    </div>\n  </div>\n\n  <script type="text/javascript">\n  <!--\n    // prototype callback for multi variants dropdown selector\n    var selectCallback = function(variant, selector) {\n      if (variant && variant.available == true) {\n        // selected a valid variant\n        $('add').removeClassName('disabled'); // remove unavailable class from add-to-cart button\n        $('add').disabled = false;           // reenable add-to-cart button\n        $('price-field').innerHTML = Shopify.formatMoney(variant.price, "{{shop.money_with_currency_format}}");  // update price field\n      } else {\n        // variant doesn't exist\n        $('add').addClassName('disabled');      // set add-to-cart button to unavailable class\n        $('add').disabled = true;              // disable add-to-cart button\n        $('price-field').innerHTML = (variant) ? "Sold Out" : "Unavailable"; // update price-field message\n      }\n    };\n\n    // initialize multi selector for product\n    Event.observe(document, 'dom:loaded', function() {\n      new Shopify.OptionSelectors("variant-select", { product: {{ product | json }}, onVariantSelected: selectCallback });\n    });\n  -->\n  </script>\n</ul>`,
+        language: 'liquid',
+        minimap: {
+          enabled: false
+      },
+      scrollbar: {
+          vertical:"hidden",
+          horizontal: "hidden",
+          handleMouseWheel:false,
+      },
+      overviewRulerLanes: 0,
+      hideCursorInOverviewRuler: true,
+      overviewRulerBorder: false,
+      wordWrap: 'on',
+      //lineNumbers: 'off',
+    glyphMargin: false,
+    folding: false,
+    // Undocumented see https://github.com/Microsoft/vscode/issues/30795#issuecomment-410998882
+    lineDecorationsWidth: 10,
+    lineNumbersMinChars: 2
+      });
+    });
+    })
+  </script>
+<a href="https://shopify.github.io/liquid/">Homepage</a> · <a href="https://github.com/Shopify/liquid">Source Code</a> · <a href="https://shopify.dev/api/liquid">Docs</a>
+<p id="particle50" class="scrollParagraph">Liquid markup language. Safe, customer facing template language for flexible web apps.</p>
+<ul ><li id="particle52" >Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"template"%5D%7D%5D%2C"logic"%3A"AND"%7D'>template language</a></li>
+<li id="particle53" >Liquid is developed on <a href="https://github.com/Shopify/liquid">GitHub</a> and has 10,950 stars</li>
+<li id="particle54" >There are at least 11,459 Liquid repos on <a href="https://github.com/search?q=language:Liquid">GitHub</a></li>
+<li id="particle55" >Early development of Liquid happened in <a href="../lists/labs.html#q=https://github.com/Shopify">https://github.com/Shopify</a></li>
+<li id="particle56" >Liquid is written in <a href="ruby.html">Ruby</a>, <a href="liquid.html">Liquid</a>, <a href="yaml.html">YAML</a>, <a href="markdown.html">Markdown</a></li>
+<li id="particle57" >The  Google BigQuery Public Dataset GitHub snapshot shows 947 users using Liquid in 1k repos on <a href="https://api.github.com/search/repositories?q=language:Liquid">GitHub</a></li>
+<li id="particle58" ><a href="monaco.html">Monaco</a> <a href="https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages/liquid">package</a> for syntax highlighting Liquid</li>
+<li id="particle59" ><a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/templates.py">syntax highlighting</a> for Liquid</li>
+<li id="particle60" >GitHub supports <a href="https://github.com/bastilian/validcode-textmate-bundles" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Liquid</li>
+<li id="particle61" >Indeed.com has 325 matches for <a href="https://www.indeed.com/jobs?q=liquid engineer">"liquid engineer"</a>.</li>
+<li id="particle62" >5 PLDB concepts link to Liquid: <a href="11ty.html">11ty</a>, <a href="ace.html">Ace Editor</a>, <a href="liquid.html">Liquid</a>, <a href="mochajs.html">mochajs</a>, <a href="pygments.html">Pygments</a></li></ul>
+<br>
+<div class="codeWithHeader"><div class="codeHeader">Example from <a href='https://github.com/bastilian/validcode-textmate-bundles'>Linguist</a>:</div><code class="scrollCodeBlock">&lt;h3&gt;We have wonderful products!&lt;/h3&gt;
+&lt;ul id=&quot;products&quot;&gt;
+  &lt;div id=&quot;productpage&quot;&gt;
+    &lt;div id=&quot;productimages&quot;&gt;&lt;div id=&quot;productimages-top&quot;&gt;&lt;div id=&quot;productimages-bottom&quot;&gt;
+      {% for image in product.images %}
+        {% if forloop.first %}
+          &lt;a href=&quot;{{ image | product_img_url: &#39;large&#39; }}&quot; class=&quot;productimage&quot; rel=&quot;lightbox&quot;&gt;
+            &lt;img src=&quot;{{ image | product_img_url: &#39;medium&#39;}}&quot; alt=&quot;{{product.title | escape }}&quot; /&gt;
+          &lt;/a&gt;
+        {% else %}
+          &lt;a href=&quot;{{ image | product_img_url: &#39;large&#39; }}&quot; class=&quot;productimage-small&quot; rel=&quot;lightbox&quot;&gt;
+            &lt;img src=&quot;{{ image | product_img_url: &#39;small&#39;}}&quot; alt=&quot;{{product.title | escape }}&quot; /&gt;
+          &lt;/a&gt;
+        {% endif %}
+      {% endfor %}
+    &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
+    &lt;h2&gt;{{ product.title }}&lt;/h2&gt;
+
+    &lt;ul id=&quot;details&quot; class=&quot;hlist&quot;&gt;
+      &lt;li&gt;Vendor: {{ product.vendor | link_to_vendor }}&lt;/li&gt;
+      &lt;li&gt;Type: {{ product.type | link_to_type }}&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;small&gt;{{ product.price_min | money }}{% if product.price_varies %} - {{ product.price_max | money }}{% endif %}&lt;/small&gt;
+
+    &lt;div id=&quot;variant-add&quot;&gt;
+      &lt;form action=&quot;/cart/add&quot; method=&quot;post&quot;&gt;
+
+        &lt;select id=&quot;variant-select&quot; name=&quot;id&quot; class=&quot;product-info-options&quot;&gt;
+          {% for variant in product.variants %}
+            &lt;option value=&quot;{{ variant.id }}&quot;&gt;{{ variant.title }} - {{ variant.price | money }}&lt;/option&gt;
+          {% endfor %}
+        &lt;/select&gt;
+
+        &lt;div id=&quot;price-field&quot; class=&quot;price&quot;&gt;&lt;/div&gt;
+
+      &lt;div style=&quot;text-align:center;&quot;&gt;&lt;input type=&quot;image&quot; name=&quot;add&quot; value=&quot;Add to Cart&quot; id=&quot;add&quot; src=&quot;{{ &#39;addtocart.gif&#39; | asset_url }}&quot; /&gt;&lt;/div&gt;
+      &lt;/form&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;description textile&quot;&gt;
+      {{ product.description }}
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;script type=&quot;text/javascript&quot;&gt;
+  &lt;!--
+    // prototype callback for multi variants dropdown selector
+    var selectCallback = function(variant, selector) {
+      if (variant &amp;&amp; variant.available == true) {
+        // selected a valid variant
+        $(&#39;add&#39;).removeClassName(&#39;disabled&#39;); // remove unavailable class from add-to-cart button
+        $(&#39;add&#39;).disabled = false;           // reenable add-to-cart button
+        $(&#39;price-field&#39;).innerHTML = Shopify.formatMoney(variant.price, &quot;{{shop.money_with_currency_format}}&quot;);  // update price field
+      } else {
+        // variant doesn&#39;t exist
+        $(&#39;add&#39;).addClassName(&#39;disabled&#39;);      // set add-to-cart button to unavailable class
+        $(&#39;add&#39;).disabled = true;              // disable add-to-cart button
+        $(&#39;price-field&#39;).innerHTML = (variant) ? &quot;Sold Out&quot; : &quot;Unavailable&quot;; // update price-field message
+      }
+    };
+
+    // initialize multi selector for product
+    Event.observe(document, &#39;dom:loaded&#39;, function() {
+      new Shopify.OptionSelectors(&quot;variant-select&quot;, { product: {{ product | json }}, onVariantSelected: selectCallback });
+    });
+  --&gt;
+  &lt;/script&gt;
+&lt;/ul&gt;</code></div>
+<div class="scrollSection"><h2 id="particle68" class="scrollParagraph">Language <a href="../lists/features.html">features</a></h2>
+</div>
+<table id="table550" class="scrollTable">
+ <thead><tr><th>Feature</th>
+
+<th>Supported</th>
+
+<th>Example</th>
+
+<th>Token</th>
+</tr></thead>
+ <tbody><tr><td><a href="../features/hasBooleans.html">Booleans</a></td>
+<td><span class="hasFeature">✓</span></td>
+<td></td>
+<td>true false</td>
+</tr></tbody>
+ </table>
+<div class="scrollKeyboardNav" style="display:none;"><a href="tcl.html">tcl.html</a> · liquid.html · <a href="vhdl.html">vhdl.html</a><script>document.addEventListener('keydown', function(event) {
+  if (document.activeElement !== document.body) return
+  if (event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return // dont interfere with keyboard back button shortcut
+  const getLinks = () => document.getElementsByClassName("scrollKeyboardNav")[0].getElementsByTagName("a")
+  if (event.key === "ArrowLeft")
+    getLinks()[0].click()
+  else if (event.key === "ArrowRight")
+    getLinks()[1].click()
+ });</script></div>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".scrollCodeBlock").forEach(block =>
+ {
+  if (!navigator.clipboard) return
+  const button = document.createElement("span")
+  button.classList.add("scrollCopyButton")
+  block.appendChild(button)
+  button.addEventListener("click", async () => {
+    await navigator.clipboard.writeText(block.innerText)
+    button.classList.add("scrollCopiedButton")
+  })
+ }
+))
+</script>
+
+
+<center><p id="particle82" class="scrollParagraph"></p>
+<div id="particle83" noSnippet="undefined" class="trueBaseThemeFooter" class="trueBaseThemeFooter"><a id="particle2" href="../index.html" class="trueBaseThemeLogo" class="trueBaseThemeLogo">PLDB</a>
+<span id="particle3" >- Build the next great programming language</span>
+<span id="particle4" >·</span>
+<a id="particle5" href="../edit.html?folderName=pldb.io&buffer=..%2Fcode%2FconceptPage.scroll%0A%0Aid%20%0Aname%20%0Aappeared%20%0Acreators%20%0Atags%20pl%0Awebsite%20%0Adescription%20%0A%0AgitRepo%20%0A%0Aexample%0A%20&bufferName=concepts/untitled.scroll" >Add</a>
+<span id="particle6" >·</span>
+<a id="particle7" href="addPrompt.txt" >Add Prompt</a>
+<span id="particle8" >·</span>
+<a id="particle9" href="https://issues.pldb.io/" >Issues</a>
+<span id="particle10" >·</span>
+<a id="particle11" href="../pages/about.html" >About</a>
+<span id="particle12" >·</span>
+<a id="particle13" href="../search.html" >Search</a>
+<span id="particle14" >·</span>
+<a id="particle15" href="../lists/keywords.html" >Keywords</a>
+<span id="particle16" >·</span>
+<a id="particle17" href="../lists/live.html" >Livestreams</a>
+<span id="particle18" >·</span>
+<a id="particle19" href="../lists/labs.html" >Labs</a>
+<span id="particle20" >·</span>
+<a id="particle21" href="../lists/resources.html" >Resources</a>
+<span id="particle22" >·</span>
+<a id="particle23" href="../pages/acknowledgements.html" >Acknowledgements</a></div>
+</center>
+<script  src="../lists/autocompleteCombined.js"></script>
+<script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script>
+<center><p id="particle88" class="scrollParagraph"></p>
+<div class="abstractTextLinkParser"><a href="https://scroll.surf">Built with Scroll v180.0.1</a></div>
+</center></div>
+</body>
+</html>

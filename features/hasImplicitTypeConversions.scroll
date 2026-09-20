@@ -1,0 +1,34 @@
+header.scroll
+
+title Implicit Type Casting - language feature
+tags Feature
+printTitle Implicit Type Casting
+
+<a class="trueBaseThemePreviousItem" href="hasImplicitArguments.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasImports.html">&gt;</a>
+
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
+
+container 600px
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/javascript.html">JavaScript</a>
+ console.log(&quot;hello &quot; + 2)
+
+***
+
+* Languages *with* Implicit Type Casting include <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/lil.html">Lil</a>
+
+***
+
+View all concepts with or missing a *hasImplicitTypeConversions* measurement
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasImplicitTypeConversions&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasImplicitTypeConversions%22%2C%22origData%22%3A%22hasImplicitTypeConversions%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasImplicitTypeConversions&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasImplicitTypeConversions%22%2C%22origData%22%3A%22hasImplicitTypeConversions%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D with
+
+***
+
+* Read more about Implicit Type Casting on the web: 1.
+ https://en.wikipedia.org/wiki/Type_conversion 1.
+
+keyboardNav hasImplicitArguments.html hasImports.html
+
+../footer.scroll

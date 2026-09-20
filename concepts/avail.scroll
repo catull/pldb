@@ -1,0 +1,64 @@
+../code/conceptPage.scroll
+
+id avail
+name Avail
+appeared 2010
+creators Mark van Gulik and Todd L. Smith
+tags pl
+website https://www.availlang.org/
+description Avail is a multi-paradigmatic general purpose programming language whose feature set emphasizes support for articulate programming.
+lab The Avail Foundation, LLC
+writtenIn kotlin svg xml json css gradle javascript markdown html bash bourne-shell java json5
+
+repoStats
+ firstCommit 2010
+ commits 3904
+ committers 63
+ files 2784
+ newestCommit 2023
+ mb 265
+ linesOfCode 492989
+country United States
+
+example
+ Public method "Play Wump the Wumpus with reader_with reporter_" is
+ [
+     reader : []→string,
+     writer : [string]→⊤
+ |
+     /* Set up the game's I/O. */
+     Wump the Wumpus reader := reader;
+     Wump the Wumpus reporter := writer;
+     /* Create a new game. All references to game objects within the block are
+      * implicitly understood as relative to this new game.
+      */
+     newGame ::= a game of Wump the Wumpus;
+     Use newGame as the implied game and do
+     [
+         Welcome;
+         Look around, having just entered;
+         Until the game is over, do
+         [
+             Give the agent a turn;
+             Give the first swarm a turn;
+             Give the second swarm a turn;
+             Give the wumpus a turn;
+         ];
+         If the agent is alive then
+         [
+             If the wumpus is dead then [Report victory;]
+             else [Report cowardice;];
+         ]
+         else [Report defeat;];
+         Goodbye;
+     ];
+ ] : ⊤;
+
+githubRepo https://github.com/AvailLang/Avail
+ stars 53
+ forks 5
+ subscribers 12
+ created 2015
+ updated 2024
+ description The Avail programming language. Includes the virtual machine, standard library, and standard examples.
+ issues 75

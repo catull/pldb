@@ -1,0 +1,14 @@
+../code/conceptPage.scroll
+
+id pursuit-pm
+name Pursuit PureScript Package Repository
+appeared 2014
+tags packageManager
+website https://pursuit.purescript.org/
+packageCount 800
+description Pursuit hosts API documentation for PureScript packages.
+lab https://github.com/purescript
+
+country Various
+
+domainName pursuit.purescript.org

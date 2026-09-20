@@ -1,0 +1,30 @@
+../code/conceptPage.scroll
+
+id mewl
+name Mewl
+appeared 2022
+creators Palash Bauri
+tags esolang
+website https://bauripalash.github.io/mewlbook/
+lab https://github.com/bauripalash/mewl/issues
+writtenIn rust yaml toml markdown bourne-shell
+
+repoStats
+ firstCommit 2022
+ commits 57
+ committers 4
+ files 44
+ newestCommit 2022
+ mb 1
+ linesOfCode 1904
+country India
+
+githubRepo https://github.com/bauripalash/mewl
+ firstCommit 2022
+ stars 17
+ forks 3
+ subscribers 2
+ created 2022
+ updated 2024
+ description Mewl, program in cats' language; A just-for-fun language
+ issues 0

@@ -1,0 +1,32 @@
+../code/conceptPage.scroll
+
+id keli
+name keli
+appeared 2018
+creators Wong Jia Hau
+tags pl
+website https://keli-language.gitbook.io/doc/specification/
+latestVersion 0.0.3-alpha
+lab https://github.com/KeliLanguage
+writtenIn haskell markdown yaml javascript
+
+repoStats
+ firstCommit 2018
+ commits 224
+ committers 3
+ files 227
+ newestCommit 2019
+ mb 1
+ linesOfCode 6512
+country Malaysia and Germany
+reference https://news.ycombinator.com/item?id=24331635
+
+githubRepo https://github.com/KeliLanguage/compiler
+ firstCommit 2018
+ stars 171
+ forks 1
+ subscribers 8
+ created 2018
+ updated 2024
+ description The compiler for Keli
+ issues 16

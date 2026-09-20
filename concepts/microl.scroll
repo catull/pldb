@@ -1,0 +1,29 @@
+../code/conceptPage.scroll
+
+id microl
+name microl
+appeared 2021
+creators Mike Redko
+tags pl
+lab https://github.com/somerandomdev49/microl/issues
+writtenIn markdown c json python make
+
+repoStats
+ firstCommit 2021
+ commits 33
+ committers 4
+ files 21
+ newestCommit 2022
+ mb 1
+ linesOfCode 4001
+country Russia
+
+githubRepo https://github.com/somerandomdev49/microl
+ firstCommit 2021
+ stars 7
+ forks 0
+ subscribers 3
+ created 2021
+ updated 2023
+ description a little minimalistic programming language :o
+ issues 0

@@ -1,0 +1,43 @@
+../code/conceptPage.scroll
+
+id hexagony
+name hexagony
+appeared 2015
+creators Martin Büttner
+tags esolang
+lab https://github.com/m-ender/hexagony/issues
+writtenIn ruby markdown
+
+isOpenSource true
+tryItOnline https://tio.run/#hexagony
+fileType text
+repoStats
+ firstCommit 2015
+ commits 32
+ committers 6
+ files 20
+ newestCommit 2021
+ mb 1
+ linesOfCode 1116
+country Germany
+
+rijuRepl https://riju.codes/hexagony
+ example
+     H ; e ;
+    l ; d ; *
+   ; r ; o ; w
+  l ; ; o ; * 4
+   3 3 ; @ . >
+    ; 2 3 < \
+     4 ; * /
+  
+
+githubRepo https://github.com/m-ender/hexagony
+ stars 563
+ forks 7
+ subscribers 15
+ created 2015
+ updated 2024
+ firstCommit 2015
+ description A two-dimensional, hexagonal programming language.
+ issues 1

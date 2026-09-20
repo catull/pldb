@@ -1,0 +1,17 @@
+../code/conceptPage.scroll
+
+id hdt
+name Header Dictionary Triples
+appeared 2012
+tags binaryDataFormat
+website http://www.rdfhdt.org/
+standsFor Header Dictionary Triples
+description HDT compresses big RDF datasets while maintaining search operations
+lab Spanish Ministry of Economy and Competitiveness
+
+country Spain
+
+twitter https://twitter.com/rdfhdt
+
+domainName rdfhdt.org
+ registered 2012

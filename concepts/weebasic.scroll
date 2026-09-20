@@ -1,0 +1,28 @@
+../code/conceptPage.scroll
+
+id weebasic
+name weebasic
+appeared 2021
+creators Maxime Chevalier-Boisvert
+tags pl
+website https://github.com/maximecm/weebasic/
+writtenIn visual-basic rust markdown
+
+repoStats
+ firstCommit 2021
+ commits 62
+ committers 5
+ files 6
+ newestCommit 2025
+ mb 1
+ linesOfCode 910
+country Canada
+
+githubRepo https://github.com/maximecb/weebasic/
+ stars 12
+ forks 3
+ subscribers 3
+ created 2021
+ updated 2024
+ description weebasic
+ issues 0

@@ -1,0 +1,32 @@
+../code/conceptPage.scroll
+
+id htl
+name HTL
+appeared 2019
+creators Mike Bostock
+tags template library
+website https://observablehq.com/@observablehq/htl
+latestVersion 0.3.1
+description Inspired by lit-html and HTM, and referencing the fantastically precise HTML5 spec, we built hypertext literal: a tagged template literal for HTML which interpolates values based on context, allowing automatic escaping and the interpolation of non-serializable values, such as event listeners, style objects, and other DOM nodes.
+writtenIn html javascript json markdown yaml
+
+repoStats
+ firstCommit 2019
+ newestCommit 2021
+ commits 78
+ committers 5
+ files 54
+ mb 1
+ linesOfCode 3073
+
+example
+ html`<span style="background: ${"yellow; font-style: italic"};">It’s yellow (and italic).</span>`
+
+githubRepo https://github.com/observablehq/htl
+ stars 298
+ forks 24
+ subscribers 9
+ created 2019
+ updated 2024
+ description A tagged template literal that allows safe interpolation of values into HTML, following the HTML5 spec
+ issues 12

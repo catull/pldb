@@ -1,0 +1,31 @@
+../code/conceptPage.scroll
+
+id bizubee
+name Bizubee
+appeared 2015
+creators Gabe and Gabe
+tags pl
+website https://bizubee.github.io/
+latestVersion 0.3.0
+lab https://github.com/bizubee/
+fileExtensions jsl
+writtenIn javascript json markdown
+
+repoStats
+ firstCommit 2015
+ commits 33
+ committers 11
+ files 12
+ newestCommit 2017
+ mb 1
+ linesOfCode 923
+country United States
+
+githubRepo https://github.com/bizubee/bizubee
+ stars 15
+ forks 4
+ subscribers 4
+ created 2016
+ updated 2021
+ description This is the bizubee command line tool. For other bizubee tools and libraries check out bizubee.github.io/tools
+ issues 1

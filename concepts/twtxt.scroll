@@ -1,0 +1,27 @@
+../code/conceptPage.scroll
+
+id twtxt
+name twtxt
+appeared 2016
+tags protocol microblogging
+website http://twtxt.readthedocs.org/en/stable/
+description twtxt is a decentralised, minimalist microblogging service.
+writtenIn python restructuredtext make yaml markdown css svg ini
+
+repoStats
+ firstCommit 2016
+ newestCommit 2024
+ commits 300
+ committers 43
+ files 42
+ mb 1
+ linesOfCode 3439
+
+githubRepo https://github.com/buckket/twtxt
+ stars 1911
+ forks 79
+ subscribers 46
+ created 2016
+ updated 2024
+ description Decentralised, minimalist microblogging service for hackers.
+ issues 23

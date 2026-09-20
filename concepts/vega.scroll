@@ -1,0 +1,30 @@
+../code/conceptPage.scroll
+
+id vega
+name Vega
+appeared 2013
+creators Jeffrey Heer
+tags dataVis library
+website https://vega.github.io/vega/
+latestVersion v5.29.0
+description Vega is a visualization grammar, a declarative language for creating, saving, and sharing interactive visualization designs. With Vega, you can describe the visual appearance and interactive behavior of a visualization in a JSON format, and generate web-based views using Canvas or SVG.
+writtenIn javascript json markdown typescript svg csv html yaml css bourne-shell
+compilesTo svg
+
+repoStats
+ firstCommit 2013
+ newestCommit 2025
+ commits 6774
+ committers 177
+ files 1892
+ mb 101
+ linesOfCode 2133644
+
+githubRepo https://github.com/vega/vega
+ stars 11005
+ forks 1488
+ subscribers 287
+ created 2013
+ updated 2024
+ description A visualization grammar.
+ issues 459

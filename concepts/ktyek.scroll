@@ -1,0 +1,28 @@
+../code/conceptPage.scroll
+
+id ktyek
+name ktye/k
+appeared 2019
+tags pl arrayLang
+webRepl https://ktye.github.io/kdoc.htm#intro
+description ktye/k is an implementation of the k programming language.
+writtenIn go c javascript markdown html bourne-shell awk yaml wasm css make xml csv
+
+implementationOf k
+repoStats
+ firstCommit 2019
+ newestCommit 2025
+ commits 2563
+ committers 7
+ files 480
+ mb 5
+ linesOfCode 17938
+
+githubRepo https://github.com/ktye/i
+ stars 98
+ forks 16
+ subscribers 13
+ created 2019
+ updated 2024
+ description interpret
+ issues 16

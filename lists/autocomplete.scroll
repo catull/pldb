@@ -1,0 +1,4 @@
+buildJs autocompleteCombined.js
+runNodejs
+ const {Tables} = require("../Computer.js")
+ module.exports = Tables.autocompleteJs

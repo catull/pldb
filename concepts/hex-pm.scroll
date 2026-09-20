@@ -1,0 +1,17 @@
+../code/conceptPage.scroll
+
+id hex-pm
+name Hex
+appeared 2014
+tags packageManager
+website https://hex.pm/
+packageCount 8069
+packageInstallCount 405525906
+forLanguages erlang
+lab https://github.com/hexpm
+
+country Poland and Sweden and United States
+
+domainName hex.pm
+ awisRank
+  2022 330230

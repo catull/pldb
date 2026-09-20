@@ -1,0 +1,17 @@
+../code/conceptPage.scroll
+
+id smithy
+name Smithy
+appeared 2016
+tags pl
+website https://smithy.io/
+lab Amazon Web Services
+
+country United States
+
+pygmentsHighlighter Smithy
+ filename smithy.py
+ fileExtensions smithy
+
+hasMultiLineComments true
+hasComments true

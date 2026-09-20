@@ -1,0 +1,31 @@
+../code/conceptPage.scroll
+
+id dplyr
+name dplyr
+appeared 2012
+creators Hadley Wickham
+tags dataFlow library
+website https://dplyr.tidyverse.org
+latestVersion v1.1.4
+description dplyr is a grammar of data manipulation, providing a consistent set of verbs that help you solve the most common data manipulation challenges: mutate() adds new variables that are functions of existing variables. select() picks variables based on their names. filter() picks cases based on their values. summarise() reduces multiple values down to a single summary. arrange() changes the ordering of the rows.
+writtenIn r markdown cpp svg yaml bourne-shell csv
+leetSheets https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf
+
+related tidyverse
+repoStats
+ firstCommit 2012
+ newestCommit 2025
+ commits 10039
+ committers 321
+ files 481
+ mb 65
+ linesOfCode 96349
+
+githubRepo https://github.com/tidyverse/dplyr/
+ stars 4714
+ forks 2116
+ subscribers 247
+ created 2012
+ updated 2024
+ description dplyr: A grammar of data manipulation
+ issues 81

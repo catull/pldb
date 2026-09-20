@@ -1,0 +1,9 @@
+title The PLDB Blog
+
+settings.scroll
+../header.scroll
+printTitle
+
+printSnippets All
+
+footer.scroll

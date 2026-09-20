@@ -1,0 +1,17 @@
+../code/conceptPage.scroll
+
+id minecraft
+name Minecraft
+appeared 2011
+creators Markus Alexej Persson
+tags visual
+website https://www.minecraft.net/
+description Minecraft is a 3D sandbox game.
+writtenIn java cpp
+ // note: original version in java. bedrock edition is written in c++
+
+isOpenSource false
+
+subreddit https://www.reddit.com/r/Minecraft/
+
+wikipedia https://en.wikipedia.org/wiki/Minecraft

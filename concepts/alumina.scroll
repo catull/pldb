@@ -1,0 +1,37 @@
+../code/conceptPage.scroll
+
+id alumina
+name Alumina
+appeared 2021
+tags pl
+website https://docs.alumina-lang.net
+webRepl https://play.alumina-lang.net/
+writtenIn rust markdown json yaml javascript toml python svg css make dockerfile c bourne-shell xml
+compilesTo c
+
+influencedBy rust
+docs https://docs.alumina-lang.net/
+repoStats
+ firstCommit 2021
+ commits 318
+ committers 1
+ files 323
+ newestCommit 2025
+ mb 11
+ linesOfCode 123375
+reference https://www.reddit.com/r/ProgrammingLanguages/comments/x4xhdj/alumina_programming_language/
+
+example
+ fn main() {
+     println!("Hello, world!");
+ }
+
+githubRepo https://github.com/tibordp/alumina
+ firstCommit 2021
+ stars 163
+ forks 8
+ subscribers 9
+ created 2021
+ updated 2024
+ description A general purpose programming language
+ issues 1

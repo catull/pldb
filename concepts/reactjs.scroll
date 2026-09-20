@@ -1,0 +1,29 @@
+../code/conceptPage.scroll
+
+id reactjs
+name ReactJS
+appeared 2013
+creators Jordan Walke
+tags framework
+website https://react.dev/
+writtenIn javascript markdown typescript json css html yaml bourne-shell jsx svg cpp coffeescript python toml make
+
+repoStats
+ firstCommit 2013
+ newestCommit 2025
+ commits 27132
+ committers 1966
+ files 6036
+ mb 5596
+ linesOfCode 905391
+
+githubRepo https://github.com/facebook/react
+ stars 225732
+ forks 46047
+ subscribers 6637
+ created 2013
+ updated 2024
+ description The library for web and native user interfaces.
+ issues 811
+
+wikipedia https://en.wikipedia.org/wiki/React_(JavaScript_library)

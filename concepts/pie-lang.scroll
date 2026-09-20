@@ -1,0 +1,35 @@
+../code/conceptPage.scroll
+
+id pie-lang
+name pie-lang
+appeared 2018
+creators David Christiansen
+tags pl lisp
+website http://thelittletyper.com/
+description Pie: A Little Language with Dependent Types. Pie is a Racket language, requiring Racket version 6.5 or newer.
+lab https://github.com/the-little-typer
+writtenIn racket yaml markdown
+
+isOpenSource true
+repoStats
+ firstCommit 2018
+ commits 57
+ committers 7
+ files 31
+ newestCommit 2021
+ mb 1
+ linesOfCode 8813
+country Denmark
+
+githubRepo https://github.com/the-little-typer/pie
+ stars 685
+ forks 57
+ subscribers 34
+ created 2018
+ updated 2024
+ description The Pie language, which accompanies The Little Typer by Friedman and Christiansen
+ issues 6
+ firstCommit 2018
+
+domainName thelittletyper.com
+ registered 2017

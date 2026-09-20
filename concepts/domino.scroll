@@ -1,0 +1,11 @@
+../code/conceptPage.scroll
+
+id domino
+name domino
+appeared 1989
+tags pl
+website http://web.mit.edu/domino/
+description A packet transaction is a block of code written in an imperative language called Domino.
+lab MIT && University of Washington && Barefoot Networks && Microsoft && Stanford University
+
+country United States

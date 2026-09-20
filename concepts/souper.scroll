@@ -1,0 +1,29 @@
+../code/conceptPage.scroll
+
+id souper
+name souper
+appeared 2014
+tags optimizingCompiler
+description A superoptimizer for LLVM IR
+lab Google
+writtenIn llvmir cpp c markdown bourne-shell cmake dockerfile yaml python perl
+
+repoStats
+ firstCommit 2014
+ commits 868
+ committers 31
+ files 819
+ newestCommit 2024
+ mb 3
+ linesOfCode 49691
+country United States
+
+githubRepo https://github.com/google/souper
+ firstCommit 2014
+ stars 2097
+ forks 167
+ subscribers 64
+ created 2014
+ updated 2024
+ description A superoptimizer for LLVM IR
+ issues 93

@@ -1,0 +1,39 @@
+replaceNodejs
+ const {Tables} = require("../Computer.js")
+ module.exports = Tables.creatorsTable
+tags All
+title List of people who created a programming language
+
+header.scroll
+printTitle
+
+container
+
+Here is the list of COUNT people who created a language(s) (or other significant programming project) in PLDB.
+
+Help us out by adding any missing information.
+ /edit.html?folderName=pldb.io&fileName=creators%2Fcreators.scroll adding any missing information
+
+Download as JSON | TSV | CSV
+ link ../creators/creators.json JSON
+ link ../creators/creators.tsv TSV
+ link ../creators/creators.csv CSV
+
+endSnippet
+
+center
+sparkline SPARKDATA
+ start 1906
+  // Grace Hopper is first in our set
+ width 480
+ height 30
+ color green
+
+TABLE
+
+//
+ Todo:
+ Name | Wikipedia | Website | GitHub
+
+footer.scroll
+tableSearch

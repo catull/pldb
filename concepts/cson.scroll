@@ -1,0 +1,74 @@
+../code/conceptPage.scroll
+
+id cson
+name CSON
+appeared 2011
+creators Benjamin Lupton
+tags dataNotation
+latestVersion 8.4.0
+standsFor CoffeeScript Object Notation
+lab https://bevry.me/
+writtenIn json cson coffeescript markdown yaml javascript
+
+isOpenSource true
+clocExtensions cson
+fileType text
+repoStats
+ firstCommit 2011
+ commits 208
+ committers 19
+ files 49
+ newestCommit 2023
+ mb 1
+ linesOfCode 4197
+country Australia
+
+leachim6 CSON
+ filepath c/CSON.cson
+ fileExtensions cson
+ example
+  {'Hello': 'World'}
+  
+
+githubRepo https://github.com/bevry/cson
+ firstCommit 2011
+ stars 1334
+ forks 56
+ subscribers 23
+ created 2011
+ updated 2024
+ description CoffeeScript-Object-Notation. Same as JSON but for CoffeeScript objects.
+ issues 2
+
+githubBigQuery CSON
+ repos 2
+ users 1
+
+linguistGrammarRepo https://github.com/atom/language-coffee-script
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 30
+ commitCount 332
+ sampleCount 4
+ example
+  'menu': [
+    {
+      'label': 'Packages'
+      'submenu': [
+        'label': 'Wercker Status'
+        'submenu': [
+          { 'label': 'Check now!', 'command': 'wercker-status:checknow' }
+        ]
+      ]
+    }
+  ]
+
+githubLanguage CSON
+ fileExtensions cson
+ trendingProjectsCount 0
+ type data
+ aceMode coffee
+ codemirrorMode coffeescript
+ codemirrorMimeType text/x-coffeescript
+ tmScope source.coffee
+ repos 16

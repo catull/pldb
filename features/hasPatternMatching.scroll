@@ -1,0 +1,93 @@
+header.scroll
+
+title Pattern Matching - language feature
+tags Feature
+printTitle Pattern Matching
+
+<a class="trueBaseThemePreviousItem" href="hasPartialApplication.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasPipes.html">&gt;</a>
+
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
+
+container 600px
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/python.html">Python</a>
+ def get_two_ends(l):
+   match l:
+     case [first, *_, last]:
+       return (first, last)
+     case [_] | []:
+       raise ValueError(&quot;list is too short to have two ends&quot;)
+     case _:
+       raise ValueError(&quot;not a list&quot;)
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/haskell.html">Haskell</a>
+ fib 0 = 1
+ fib 1 = 1
+ fib n | n &gt;= 2
+       = fib (n-1) + fib (n-2)
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/elixir.html">Elixir</a>
+ def fib(0), do: 1
+ def fib(1), do: 1
+ def fib(n) when n &gt;= 2, do: fib(n-1) + fib(n-2)
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/coconut.html">Coconut</a>
+ match [head] + tail in [0, 1, 2, 3]:
+    print(head, tail)
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/felix.html">Felix</a>
+ match x with
+  | Some x =&gt; println$ x;
+  | None =&gt; println &quot;NONE&quot;;
+  endmatch;
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/rhombus.html">Rhombus</a>
+ // pattern matching on objects, lists, and maps
+ class Rect(left, top, right, bottom)
+                      
+ fun rect_like_to_rect(v):
+   match v
+   | Rect(_, _, _, _): v
+   | {&quot;LT&quot;: [l, t], &quot;RB&quot;: [r, b]}: Rect(l, t, r, b)
+   | {&quot;TL&quot;: [t, l], &quot;RB&quot;: [b, r]}: Rect(l, t, r, b)
+                                 
+ rect_like_to_rect({&quot;TL&quot;: [0, 2], &quot;RB&quot;: [10, 5]})
+ // ⇒ Rect(0, 2, 10, 5)
+ rect_like_to_rect({&quot;LT&quot;: [0, 2], &quot;RB&quot;: [10, 5]})
+ // ⇒ Rect(2, 0, 5, 10)
+ // pattern matching in all binding positions
+ class Posn(x, y)
+ fun flip_all([Posn(x, y), ...]):
+   [Posn(y, x), ...]
+  
+ flip_all([Posn(1, 2), Posn(3, 4)])
+ // ⇒ [Posn(2, 1), Posn(4, 3)]
+ flip_all([Posn(5, 6)])
+ // ⇒ [Posn(6, 5)]
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/aardvark.html">Aardvark</a>
+ This functionality is included in switch statements.
+
+***
+
+* Languages *with* Pattern Matching include <a href="../concepts/python.html">Python</a>, <a href="../concepts/rust.html">Rust</a>, <a href="../concepts/haskell.html">Haskell</a>, <a href="../concepts/elixir.html">Elixir</a>, <a href="../concepts/coconut.html">Coconut</a>, <a href="../concepts/moonbit.html">MoonBit</a>, <a href="../concepts/felix.html">Felix</a>, <a href="../concepts/egison.html">Egison</a>, <a href="../concepts/rhombus.html">Rhombus</a>, <a href="../concepts/hope.html">HOPE</a>, <a href="../concepts/aardvark.html">Aardvark</a>, <a href="../concepts/morloc.html">Morloc</a>, <a href="../concepts/nova.html">NOVA</a>, <a href="../concepts/cobrust.html">Cobrust</a>, <a href="../concepts/lateralus.html">Lateralus</a>, <a href="../concepts/npl-lang.html">NPL</a>
+
+***
+
+* Languages *without* Pattern Matching include <a href="../concepts/progsbase.html">progsbase</a>, <a href="../concepts/veryl.html">Veryl</a>
+
+***
+
+View all concepts with or missing a *hasPatternMatching* measurement
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasPatternMatching&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasPatternMatching%22%2C%22origData%22%3A%22hasPatternMatching%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasPatternMatching&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasPatternMatching%22%2C%22origData%22%3A%22hasPatternMatching%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D with
+
+***
+
+* Read more about Pattern Matching on the web: 1.
+ https://en.wikipedia.org/wiki/Pattern_matching 1.
+
+keyboardNav hasPartialApplication.html hasPipes.html
+
+../footer.scroll

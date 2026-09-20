@@ -1,0 +1,30 @@
+../code/conceptPage.scroll
+
+id ail
+name AIL
+appeared 2016
+tags ir
+latestVersion v9.2.102
+standsFor angr Intermediate Language
+lab University of California && Arizona State University
+writtenIn python yaml restructuredtext toml make markdown
+
+repoStats
+ firstCommit 2016
+ commits 819
+ committers 31
+ files 36
+ newestCommit 2025
+ mb 1
+ linesOfCode 5679
+reference https://angr.io/
+
+githubRepo https://github.com/angr/ailment
+ firstCommit 2016
+ stars 27
+ forks 16
+ subscribers 11
+ created 2017
+ updated 2024
+ description AIL: The angr Intermediate Language.
+ issues 1

@@ -1,0 +1,32 @@
+../code/conceptPage.scroll
+
+id blackcoffee
+name BlackCoffee
+appeared 2014
+creators Frank van Viegen
+tags pl
+website https://github.com/paiq/blackcoffee
+latestVersion 0.2.0
+lab Paiq BV
+fileExtensions coffee
+writtenIn coffeescript javascript html css markdown json
+
+repoStats
+ firstCommit 2009
+ commits 4133
+ committers 196
+ files 246
+ newestCommit 2014
+ mb 15
+ linesOfCode 60507
+country The Netherlands
+
+keywords macro
+githubRepo https://github.com/paiq/blackcoffee
+ stars 105
+ forks 9
+ subscribers 10
+ created 2013
+ updated 2023
+ description CoffeeScript + hygienic macros
+ issues 2

@@ -1,0 +1,29 @@
+../code/conceptPage.scroll
+
+id twine
+name Twine
+appeared 2013
+creators Chris Klimas
+tags application
+website https://twinery.org/
+spec https://github.com/iftechfoundation/twine-specs
+description Twine, a tool for telling interactive, nonlinear stories.
+writtenIn typescript markdown css json javascript svg yaml html toml
+
+repoStats
+ firstCommit 2013
+ newestCommit 2025
+ commits 3108
+ committers 77
+ files 917
+ mb 22
+ linesOfCode 81257
+
+githubRepo https://github.com/klembot/twinejs
+ stars 1883
+ forks 291
+ subscribers 49
+ created 2018
+ updated 2024
+ description Twine, a tool for telling interactive, nonlinear stories
+ issues 228

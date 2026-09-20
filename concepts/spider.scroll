@@ -1,0 +1,34 @@
+../code/conceptPage.scroll
+
+id spider
+name spider
+appeared 2014
+creators Alon Gubkin
+tags pl
+website http://spiderlang.org/
+latestVersion 0.1.5
+lab https://github.com/alongubkin/spider/issues
+fileExtensions spider
+writtenIn javascript markdown json yaml
+compilesTo javascript
+
+repoStats
+ firstCommit 2014
+ commits 368
+ committers 10
+ files 159
+ newestCommit 2017
+ mb 2
+ linesOfCode 29116
+country Israel
+
+githubRepo https://github.com/alongubkin/spider
+ stars 1340
+ forks 46
+ subscribers 51
+ created 2014
+ updated 2024
+ description Unsurprising JavaScript - No longer active
+ issues 30
+
+hasInheritance true

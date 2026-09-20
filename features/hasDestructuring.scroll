@@ -1,0 +1,65 @@
+header.scroll
+
+title Destructuring - language feature
+tags Feature
+printTitle Destructuring
+
+<a class="trueBaseThemePreviousItem" href="hasDependentTypes.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasDirectives.html">&gt;</a>
+
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
+
+container 600px
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/javascript.html">JavaScript</a>
+ const o = {p: 42, q: true};
+ const {p, q} = o;
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/python.html">Python</a>
+ # destructuring assignment works for sequences, including nested ones:
+ (a, (b, c), *d) = (1, (2, 3), 4, 5, 6)  # result: a=1, b=2, c=3, d=(4,5,6)
+ 
+ # it is NOT implemented for more complicated types like dictionaries:
+ {&quot;a&quot;: a} = {&quot;a&quot;: 1}  # ERROR
+ 
+ # more complex destructuring is possible using the match statement:
+ d = {&quot;a&quot;: {&quot;b&quot;: [1, 2]}}
+ match d:
+   case {&quot;a&quot;: {&quot;b&quot;: [1, x]}}: pass  # result: x=2
+   case _: raise ValueError(&quot;destructuring failed!&quot;)
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/reason.html">Reason</a>
+ type person = {name: string, age: int};
+ let somePerson = {name: &quot;Guy&quot;, age: 30};
+ let {name, age} = somePerson;
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/coconut.html">Coconut</a>
+ {&quot;list&quot;: [0] + rest} = {&quot;list&quot;: [0, 1, 2, 3]}
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/bog.html">bog</a>
+ let add = fn ((a,b)) a + b
+ let tuplify = fn (a,b) (a,b)
+ return add(tuplify(1,2)) # 3
+
+***
+
+* Languages *with* Destructuring include <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/python.html">Python</a>, <a href="../concepts/reason.html">Reason</a>, <a href="../concepts/coconut.html">Coconut</a>, <a href="../concepts/bog.html">bog</a>, <a href="../concepts/bio.html">Bio</a>
+
+***
+
+* Languages *without* Destructuring include <a href="../concepts/lil.html">Lil</a>
+
+***
+
+View all concepts with or missing a *hasDestructuring* measurement
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasDestructuring&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasDestructuring%22%2C%22origData%22%3A%22hasDestructuring%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasDestructuring&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasDestructuring%22%2C%22origData%22%3A%22hasDestructuring%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D with
+
+***
+
+* Read more about Destructuring on the web: 1.
+ https://reasonml.github.io/docs/en/destructuring 1.
+
+keyboardNav hasDependentTypes.html hasDirectives.html
+
+../footer.scroll

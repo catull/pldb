@@ -1,0 +1,110 @@
+../code/conceptPage.scroll
+
+id pony
+name Pony
+appeared 2012
+creators Sylvan Clebsch
+tags pl
+website https://www.ponylang.org/
+latestVersion 0.58.4
+lab https://github.com/ponylang
+writtenIn c markdown cpp yaml bash dockerfile cmake dtrace powershell make d llvmir ini
+
+isOpenSource true
+tryItOnline https://tio.run/#pony
+clocExtensions pony
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Pony
+repoStats
+ firstCommit 2012
+ commits 7569
+ committers 272
+ files 1100
+ newestCommit 2025
+ mb 22
+ linesOfCode 198720
+country Various
+
+pygmentsHighlighter Pony
+ filename pony.py
+ fileExtensions pony
+subreddit https://reddit.com/r/ponylang
+ memberCount
+  2017 375
+  2022 672
+example
+ actor Main
+  new create(env: Env) =>
+    env.out.print("Hello, world!")
+twitter https://twitter.com/ponylang
+leachim6 Pony
+ filepath p/Pony.pony
+ fileExtensions pony
+ example
+  actor Main
+    new create(env: Env) =>
+      env.out.print("Hello World")
+  
+compilerExplorer Pony
+ example
+  actor Main
+    var _env: Env
+  
+    new create(env: Env) =>
+      _env = env
+      square(3)
+  
+    fun square(num: I32): I32 =>
+      num * num
+  
+
+githubRepo https://github.com/ponylang/ponyc
+ stars 5654
+ forks 412
+ subscribers 143
+ created 2012
+ updated 2024
+ description Pony is an open-source, actor-model, capabilities-secure, high performance programming language
+ issues 266
+
+printToken env.out.print
+stringToken "
+
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+hasHexadecimals true
+hasFloats true
+hasIntegers true
+hasLineComments true
+hasMultiLineComments true
+hasComments true
+
+domainName ponylang.org
+ registered 2015
+
+githubBigQuery Pony
+ repos 78
+ users 59
+
+linguistGrammarRepo https://github.com/CausalityLtd/sublime-pony
+ firstCommit 2014
+ lastCommit 2018
+ committerCount 10
+ commitCount 32
+ sampleCount 6
+ example
+  actor Main
+    new create(env: Env) =>
+      env.out.print("Hello, world.")
+  
+
+githubLanguage Pony
+ fileExtensions pony
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.pony
+ repos 549
+
+semanticScholar 0

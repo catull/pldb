@@ -1,0 +1,33 @@
+../code/conceptPage.scroll
+
+id lsd
+name lsd
+appeared 2016
+tags textMarkup
+latestVersion 0.0.2
+lab https://github.com/fiatjaf/LSD/issues
+writtenIn javascript json yaml
+
+repoStats
+ firstCommit 2016
+ commits 3
+ committers 1
+ files 7
+ newestCommit 2016
+ mb 1
+ linesOfCode 1061
+country Unknown
+
+githubRepo https://github.com/fiatjaf/LSD
+ firstCommit 2016
+ stars 3
+ forks 1
+ subscribers 3
+ created 2016
+ updated 2019
+ description Loose Structured Data
+ issues 0
+
+hackerNewsDiscussions
+ id|title|time|timestamp|by|comments|score
+ 12200000|Show HN: A very loose JSON-like markup language|2016-08-01 03:08:11 UTC|1470020891|fiatjaf|0|1

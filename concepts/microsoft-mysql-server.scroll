@@ -1,0 +1,10 @@
+../code/conceptPage.scroll
+
+id microsoft-mysql-server
+name Microsoft SQL Server
+appeared 1989
+tags database
+description Relational database management system (RDBMS)
+lab Microsoft
+
+country United States

@@ -1,0 +1,36 @@
+../code/conceptPage.scroll
+
+id open-nn
+name OpenNN
+appeared 2003
+tags library
+website https://www.opennn.net/
+latestVersion v6.0.8
+lab https://github.com/Artelnics/opennn
+writtenIn cpp cmake fortran-77 csv xml c cuda bourne-shell python markdown yaml html bash javascript css xslt dtd
+
+docs https://www.opennn.net/documentation/opennn_start.html
+repoStats
+ firstCommit 2015
+ commits 8163
+ committers 97
+ files 12297
+ newestCommit 2024
+ mb 502
+ linesOfCode 1043002
+
+githubRepo https://github.com/Artelnics/opennn
+ stars 1136
+ forks 352
+ updated 2024
+ description OpenNN - Open Neural Networks Library
+ issues 37
+ subscribers 106
+ created 2015
+
+wikipedia https://en.wikipedia.org/wiki/OpenNN
+ summary OpenNN (Open Neural Networks Library) is a software library written in the C++ programming language which implements neural networks, a main area of deep learning research.
+ pageId 42129549
+ dailyPageViews 11
+
+domainName opennn.net

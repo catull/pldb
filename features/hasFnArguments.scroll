@@ -1,0 +1,29 @@
+header.scroll
+
+title hasFnArguments - language feature
+tags Feature
+printTitle hasFnArguments
+
+<a class="trueBaseThemePreviousItem" href="hasFloats.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasForEachLoops.html">&gt;</a>
+
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
+
+container 600px
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/speedie.html">Speedie</a>
+ function ABC (|string| name)
+
+***
+
+* Languages *with* hasFnArguments include <a href="../concepts/jule.html">Jule</a>, <a href="../concepts/aardvark.html">Aardvark</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/morloc.html">Morloc</a>
+
+***
+
+View all concepts with or missing a *hasFnArguments* measurement
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasFnArguments&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasFnArguments%22%2C%22origData%22%3A%22hasFnArguments%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasFnArguments&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasFnArguments%22%2C%22origData%22%3A%22hasFnArguments%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D with
+
+keyboardNav hasFloats.html hasForEachLoops.html
+
+../footer.scroll

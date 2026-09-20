@@ -1,0 +1,41 @@
+header.scroll
+
+title Type Inference - language feature
+tags Feature
+printTitle Type Inference
+
+<a class="trueBaseThemePreviousItem" href="hasTypeClasses.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasTypeParameters.html">&gt;</a>
+
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
+
+container 600px
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/speedie.html">Speedie</a>
+ || x = &quot;Hello&quot;
+ || y = FunctionThatReturnsAString() // is now a string
+ x = 1 // fails to compile
+ y = 2 // fails to compile
+
+***
+
+* Languages *with* Type Inference include <a href="../concepts/go.html">Go</a>, <a href="../concepts/typescript.html">TypeScript</a>, <a href="../concepts/rust.html">Rust</a>, <a href="../concepts/swift.html">Swift</a>, <a href="../concepts/scala.html">Scala</a>, <a href="../concepts/kotlin.html">Kotlin</a>, <a href="../concepts/haskell.html">Haskell</a>, <a href="../concepts/prolog.html">Prolog</a>, <a href="../concepts/crystal.html">Crystal</a>, <a href="../concepts/d.html">D</a>, <a href="../concepts/elm.html">Elm</a>, <a href="../concepts/haxe.html">Haxe</a>, <a href="../concepts/chapel.html">Chapel</a>, <a href="../concepts/ocaml.html">OCaml</a>, <a href="../concepts/f-sharp.html">F#</a>, <a href="../concepts/standard-ml.html">Standard ML</a>, <a href="../concepts/wa.html">Wa-lang</a>, <a href="../concepts/ml.html">ML</a>, <a href="../concepts/frege.html">Frege</a>, <a href="../concepts/opa.html">Opa</a>, <a href="../concepts/rdf.html">RDF</a>, <a href="../concepts/ceylon.html">Ceylon</a>, <a href="../concepts/nemerle.html">Nemerle</a>, <a href="../concepts/boo.html">Boo</a>, <a href="../concepts/xtend.html">Xtend</a>, <a href="../concepts/stan.html">Stan</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/morloc.html">Morloc</a>, <a href="../concepts/nova.html">NOVA</a>, <a href="../concepts/lateralus.html">Lateralus</a>, <a href="../concepts/obliq.html">Obliq</a>
+
+***
+
+* Languages *without* Type Inference include <a href="../concepts/veryl.html">Veryl</a>
+
+***
+
+View all concepts with or missing a *hasTypeInference* measurement
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasTypeInference&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasTypeInference%22%2C%22origData%22%3A%22hasTypeInference%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasTypeInference&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasTypeInference%22%2C%22origData%22%3A%22hasTypeInference%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D with
+
+***
+
+* Read more about Type Inference on the web: 1.
+ https://en.wikipedia.org/wiki/Type_inference 1.
+
+keyboardNav hasTypeClasses.html hasTypeParameters.html
+
+../footer.scroll

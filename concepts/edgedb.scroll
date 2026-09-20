@@ -1,0 +1,34 @@
+../code/conceptPage.scroll
+
+id edgedb
+name edgedb
+appeared 2017
+tags database
+website https://edgedb.com
+lab https://github.com/edgedb
+writtenIn python restructuredtext rust cython yaml hcl markdown svg toml javascript make css csv
+
+repoStats
+ firstCommit 2008
+ commits 12045
+ committers 154
+ files 1526
+ newestCommit 2025
+ mb 73
+ linesOfCode 694188
+country United States
+
+githubRepo https://github.com/edgedb/edgedb
+ firstCommit 2008
+ stars 12835
+ forks 393
+ subscribers 105
+ created 2017
+ updated 2024
+ description A graph-relational database with declarative schema, built-in migration system, and a next-generation query language
+ issues 776
+
+domainName edgedb.com
+ registered 2014
+ awisRank
+  2022 571163

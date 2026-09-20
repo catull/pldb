@@ -1,0 +1,38 @@
+../code/conceptPage.scroll
+
+id prismjs
+name Prism
+appeared 2012
+creators Lea Verou
+tags library
+website https://prismjs.com/
+latestVersion 1.29.0
+description Prism is a lightweight, extensible syntax highlighter, built with modern web standards in mind. It’s used in millions of websites, including some of those you visit daily.
+lab https://github.com/PrismJS
+writtenIn javascript html css svg markdown json yaml xml lua bash awk
+
+related codemirror monaco highlightjs ace pygments
+repoStats
+ firstCommit 2012
+ commits 3887
+ committers 425
+ files 3718
+ newestCommit 2022
+ mb 15
+ linesOfCode 272153
+country United States and Germany
+
+githubRepo https://github.com/PrismJS/prism
+ stars 12155
+ forks 1288
+ subscribers 121
+ created 2012
+ updated 2024
+ description Lightweight, robust, elegant syntax highlighting.
+ issues 403
+ firstCommit 2012
+
+domainName prismjs.com
+ registered 2012
+ awisRank
+  2022 142007

@@ -1,0 +1,10 @@
+../code/conceptPage.scroll
+
+id sap-hana
+name SAP HANA
+appeared 2010
+tags database
+description In-memory relational database management system (RDBMS)
+lab SAP
+
+country Germany

@@ -1,0 +1,29 @@
+../code/conceptPage.scroll
+
+id ircis
+name ircis
+appeared 2019
+creators Arjun Nair
+tags esolang
+lab https://github.com/batman-nair/IRCIS/issues
+writtenIn cpp html cmake markdown bourne-shell
+
+repoStats
+ firstCommit 2019
+ commits 111
+ committers 2
+ files 71
+ newestCommit 2021
+ mb 9
+ linesOfCode 617605
+country Germany
+
+githubRepo https://github.com/batman-nair/IRCIS
+ firstCommit 2019
+ stars 107
+ forks 4
+ subscribers 5
+ created 2019
+ updated 2024
+ description I Run Chars I See(IRCIS) - a 2d grid based esoteric programming language.
+ issues 0

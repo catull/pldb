@@ -1,0 +1,34 @@
+../code/conceptPage.scroll
+
+id opencomal
+name OpenComal
+appeared 2006
+creators Christian Pietsch
+tags pl
+website https://www.josvisser.nl/opencomal
+latestVersion v0.3.0
+lab http://www.josvisser.nl
+writtenIn c markdown bourne-shell make yacc lex bazel
+
+repoStats
+ firstCommit 2012
+ commits 288
+ committers 5
+ files 247
+ newestCommit 2019
+ mb 2
+ linesOfCode 31222
+country The Netherlands
+reference https://slackbuilds.org/repository/14.2/development/opencomal
+
+githubRepo https://github.com/poldy/OpenCOMAL
+ firstCommit 2012
+ stars 21
+ forks 5
+ subscribers 6
+ created 2017
+ updated 2024
+ description OpenCOMAL aims to be a compliant Common COMAL interpreter. It has been tested on Linux and macOS.
+ issues 3
+
+hopl https://hopl.info/showlanguage.prx?exp=8618

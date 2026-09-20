@@ -1,0 +1,38 @@
+header.scroll
+
+title Zero-based numbering - language feature
+tags Feature
+printTitle Zero-based numbering
+
+<a class="trueBaseThemePreviousItem" href="hasWhileLoops.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasZippers.html">&gt;</a>
+
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
+
+container 600px
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/speedie.html">Speedie</a>
+ printline [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;][0] // prints &quot;a&quot;
+
+***
+
+* Languages *with* Zero-based numbering include <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/c.html">C</a>, <a href="../concepts/python.html">Python</a>, <a href="../concepts/java.html">Java</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/lil.html">Lil</a>, <a href="../concepts/progsbase.html">progsbase</a>, <a href="../concepts/slope.html">Slope</a>, <a href="../concepts/sako.html">SAKO</a>, <a href="../concepts/speedie.html">Speedie</a>
+
+***
+
+* Languages *without* Zero-based numbering include <a href="../concepts/r.html">R</a>, <a href="../concepts/cobol.html">COBOL</a>, <a href="../concepts/fortran.html">Fortran</a>
+
+***
+
+View all concepts with or missing a *hasZeroBasedNumbering* measurement
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasZeroBasedNumbering&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasZeroBasedNumbering%22%2C%22origData%22%3A%22hasZeroBasedNumbering%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasZeroBasedNumbering&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasZeroBasedNumbering%22%2C%22origData%22%3A%22hasZeroBasedNumbering%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D with
+
+***
+
+* Read more about Zero-based numbering on the web: 1.
+ https://en.wikipedia.org/wiki/Zero-based_numbering 1.
+
+keyboardNav hasWhileLoops.html hasZippers.html
+
+../footer.scroll

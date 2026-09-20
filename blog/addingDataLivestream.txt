@@ -1,0 +1,12 @@
+Data entry Livestream
+=====================
+by Breck Yunits
+ https://twitter.com/breckyunits Breck Yunits
+
+Data Entry Livestream: Adding `appeared` to four entities
+=========================================================
+February 8, 2023
+
+In this Livestream I show the sometimes boring and laborious process for adding data to PLDB.io.
+
+Built with Scroll v180.0.1

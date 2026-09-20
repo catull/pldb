@@ -1,0 +1,27 @@
+../code/conceptPage.scroll
+
+id cytosol
+name cytosol
+appeared 2020
+creators tiatomee
+tags pl
+writtenIn rust toml yaml markdown c make
+
+repoStats
+ firstCommit 2020
+ commits 59
+ committers 4
+ files 83
+ newestCommit 2022
+ mb 1
+ linesOfCode 7546
+
+githubRepo https://github.com/cuddlefishie/cytosol
+ firstCommit 2020
+ stars 34
+ forks 3
+ subscribers 2
+ created 2020
+ updated 2023
+ description A programming language somewhat resembling cellular processes.
+ issues 0

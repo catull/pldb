@@ -1,0 +1,31 @@
+../code/conceptPage.scroll
+
+id kasaya
+name kasaya
+appeared 2018
+tags application
+latestVersion 0.1.0
+description A "WYSIWYG" (kind of) scripting language and runtime for browser automation
+lab https://github.com/syscolabs
+writtenIn javascript json markdown
+
+repoStats
+ firstCommit 2020
+ commits 24
+ committers 3
+ files 106
+ newestCommit 2020
+ mb 4
+ linesOfCode 14291
+country Sri Lanka
+reference https://news.ycombinator.com/item?id=22374991
+
+githubRepo https://github.com/AshanthaLahiru/kasaya
+ firstCommit 2020
+ stars 20
+ forks 57
+ subscribers 4
+ created 2020
+ updated 2024
+ description Browser automation for human beings
+ issues 0

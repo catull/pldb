@@ -1,0 +1,32 @@
+../code/conceptPage.scroll
+
+id lwjgl
+name LWJGL
+appeared 2007
+creators Caspian Prince
+tags library
+website https://www.lwjgl.org/
+standsFor Lightweight Java Game Library
+description The Lightweight Java Game Library (LWJGL) is an open-source software library that provides bindings to a variety of C libraries for video game developers to Java.
+interviews https://www.youtube.com/watch?v=eEOCmuei3W8
+writtenIn java kotlin c xml cpp markdown yaml glsl json gradle bourne-shell assembly-language objective-c opencl objective-cpp
+
+repoStats
+ firstCommit 2012
+ newestCommit 2025
+ commits 4241
+ committers 57
+ files 8667
+ mb 130
+ linesOfCode 602512
+
+githubRepo https://github.com/LWJGL/lwjgl3
+ stars 4701
+ forks 633
+ subscribers 161
+ created 2012
+ updated 2024
+ description LWJGL is a Java library that enables cross-platform access to popular native APIs useful in the development of graphics (OpenGL, Vulkan, bgfx), audio (OpenAL, Opus), parallel computing (OpenCL, CUDA) and XR (OpenVR, LibOVR, OpenXR) applications.
+ issues 84
+
+wikipedia https://en.wikipedia.org/wiki/LWJGL

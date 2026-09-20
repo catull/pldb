@@ -1,0 +1,44 @@
+../code/conceptPage.scroll
+
+id claro
+name Claro
+appeared 2021
+creators Jason Steving
+tags pl
+website https://docs.clarolang.com/
+latestVersion v0.1.509
+lab https://github.com/JasonSteving99
+writtenIn bazel java markdown starlark typescript json javascript css protobuf html yaml bourne-shell diff vim-script toml dockerfile
+
+repoStats
+ firstCommit 2020
+ commits 673
+ committers 7
+ files 1202
+ newestCommit 2024
+ mb 9
+ linesOfCode 42311
+country United States
+
+githubRepo https://github.com/JasonSteving99/claro-lang
+ firstCommit 2020
+ stars 138
+ forks 10
+ subscribers 4
+ created 2020
+ updated 2024
+ description Claro Lang
+ issues 11
+
+lineCommentToken #
+printToken print
+
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+
+domainName clarolang.com
+ registered 2020

@@ -1,0 +1,24 @@
+../code/conceptPage.scroll
+
+id realbasic
+name REALBasic (now Xojo)
+appeared 1996
+tags pl
+description REALBasic is now known as Xojo.
+lab https://github.com/xojo
+
+related xojo
+rosettaCode http://www.rosettacode.org/wiki/Category:REALbasic
+country United States
+
+githubBigQuery REALbasic
+ repos 17
+ users 5
+
+githubLanguage REALbasic
+ fileExtensions rbbas rbfrm rbmnu rbres rbtbar rbuistate
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.vbnet
+ repos 99

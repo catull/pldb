@@ -1,0 +1,31 @@
+header.scroll
+
+title Triples - language feature
+tags Feature
+printTitle Triples
+
+<a class="trueBaseThemePreviousItem" href="hasTraits.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasTryCatch.html">&gt;</a>
+
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
+
+container 600px
+
+***
+
+* Languages *with* Triples include <a href="../concepts/rdf.html">RDF</a>
+
+***
+
+View all concepts with or missing a *hasTriples* measurement
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasTriples&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasTriples%22%2C%22origData%22%3A%22hasTriples%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasTriples&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasTriples%22%2C%22origData%22%3A%22hasTriples%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D with
+
+***
+
+* Read more about Triples on the web: 1.
+ https://en.wikipedia.org/wiki/Semantic_triple 1.
+
+keyboardNav hasTraits.html hasTryCatch.html
+
+../footer.scroll

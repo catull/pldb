@@ -1,0 +1,27 @@
+../code/conceptPage.scroll
+
+id kgl
+name KGL
+appeared 2024
+tags queryLanguage
+website https://jamesg.blog/kgl/
+standsFor Knowledge Graph Language
+writtenIn python html markdown toml json csv
+
+repoStats
+ firstCommit 2024
+ newestCommit 2024
+ commits 63
+ committers 4
+ files 22
+ mb 1
+ linesOfCode 2685
+
+githubRepo https://github.com/capjamesg/knowledge-graph-language
+ stars 131
+ forks 5
+ subscribers 3
+ created 2024
+ updated 2024
+ description A query language for exploring knowledge graphs.
+ issues 0

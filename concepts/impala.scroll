@@ -1,0 +1,50 @@
+../code/conceptPage.scroll
+
+id impala
+name Impala
+appeared 2012
+tags queryLanguage
+website https://impala.apache.org
+latestVersion 4.4.0
+lab Apache Software Foundation
+writtenIn cpp java python xml json bourne-shell sql cmake css csv javascript thrift bash markdown protobuf dockerfile c yaml restructuredtext diff ini svg cython make
+
+isOpenSource true
+fileType text
+repoStats
+ firstCommit 2011
+ commits 13151
+ committers 328
+ files 6877
+ newestCommit 2025
+ mb 233
+ linesOfCode 12407166
+country United States
+
+twitter https://twitter.com/apacheimpala
+
+githubRepo https://github.com/apache/impala
+ firstCommit 2011
+ stars 1110
+ forks 501
+ subscribers 71
+ created 2016
+ updated 2024
+ description Apache Impala
+ issues 27
+
+wikipedia https://en.wikipedia.org/wiki/Apache_Impala
+ related java sql pig aws
+ summary Apache Impala is an open source massively parallel processing (MPP) SQL query engine for data stored in a computer cluster running Apache Hadoop. Impala has been described as the open-source equivalent of Google F1, which inspired its development in 2012.
+ backlinksCount 174
+ pageId 40147148
+ created 2013
+ revisionCount 62
+ dailyPageViews 120
+ appeared 2018
+
+domainName impala.apache.org
+
+isbndb 1
+ year|publisher|title|authors|isbn13
+ 2013-12-24|Packt Publishing|Learning Cloudera Impala|Avkash Chauhan|9781783281282

@@ -1,0 +1,19 @@
+../code/conceptPage.scroll
+
+id jmespath
+name JMESPath
+appeared 2013
+tags pl
+website https://jmespath.org
+lab https://github.com/jmespath
+
+country United States
+
+pygmentsHighlighter JMESPath
+ filename jmespath.py
+ fileExtensions jp
+
+domainName jmespath.org
+ registered 2013
+ awisRank
+  2022 662962

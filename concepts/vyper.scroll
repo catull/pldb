@@ -1,0 +1,75 @@
+../code/conceptPage.scroll
+
+id vyper
+name Vyper
+appeared 2016
+creators Vitalik Buterin
+tags contractLanguage
+website https://vyperlang.org
+blog https://blog.vyperlang.org/
+latestVersion v0.3.10
+description Pythonic language for the EVM.
+writtenIn python restructuredtext markdown yaml make html dockerfile toml bash svg bourne-shell
+
+clocExtensions vy
+docs https://docs.vyperlang.org/en/latest/
+repoStats
+ firstCommit 2016
+ commits 6070
+ committers 273
+ files 557
+ newestCommit 2025
+ mb 14
+ linesOfCode 111098
+reference https://ethereumclassic.org/blog/2017-03-13-viper
+
+discord https://discord.com/invite/6tw7PTM7C2
+twitter https://x.com/vyperlang
+example
+ # @version >=0.2.4 <0.3.0
+ 
+ DNA_DIGITS: constant(uint256) = 16
+ DNA_MODULUS: constant(uint256) = 10 ** DNA_DIGITS
+ 
+ struct Pokemon:
+     name: String[32]
+     dna: uint256
+     HP: uint256
+     matches: uint256
+     wins: uint256
+ 
+ # Declare totalPokemonCount
+ pokemonList: HashMap[uint256, Pokemon]
+ 
+ @internal
+ def _createPokemon(_name: String[32], _dna: uint256, _HP: uint256):
+     # use totalPokemonCount
+     self.pokemonList[0] = Pokemon({
+         name: _name,
+         dna: _dna,
+         HP: _HP,
+         matches: 0,
+         wins: 0
+     })
+     # increment totalPokemonCount by 1
+
+githubRepo https://github.com/ethereum/vyper
+ firstCommit 2016
+ stars 4828
+ forks 790
+ subscribers 166
+ created 2016
+ updated 2024
+ description Pythonic Smart Contract Language for the EVM
+ issues 436
+
+githubBigQuery Vyper
+ repos 1
+ users 1
+
+githubLanguage Vyper
+ type programming
+ fileExtensions vy
+ aceMode text
+ tmScope source.vyper
+ repos 117

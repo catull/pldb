@@ -1,0 +1,30 @@
+../code/conceptPage.scroll
+
+id edgelisp
+name edgelisp
+appeared 2008
+creators Manuel Simoni
+tags pl
+website http://manuel.github.com/edgelisp/repl.html
+lab https://github.com/manuel
+writtenIn javascript lisp html markdown
+
+repoStats
+ firstCommit 2008
+ commits 613
+ committers 1
+ files 29
+ newestCommit 2011
+ mb 1
+ linesOfCode 13639
+country Austria
+
+githubRepo https://github.com/manuel/edgelisp
+ firstCommit 2008
+ stars 123
+ forks 5
+ subscribers 9
+ created 2008
+ updated 2024
+ description A Lisp->JavaScript compiler
+ issues 0

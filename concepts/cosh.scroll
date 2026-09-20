@@ -1,0 +1,33 @@
+../code/conceptPage.scroll
+
+id cosh
+name cosh
+appeared 2022
+tags pl
+latestVersion v0.2.0
+description Concatenative command-line shell
+lab https://github.com/tomhrr/cosh/issues
+writtenIn rust markdown yaml perl xml toml make json
+
+related bash
+repoStats
+ firstCommit 2022
+ commits 552
+ committers 5
+ files 68
+ newestCommit 2024
+ mb 2
+ linesOfCode 31419
+country United States
+
+example
+ lsr; [test m] grep; [f<; [data m] grep] map
+
+githubRepo https://github.com/tomhrr/cosh
+ stars 131
+ forks 2
+ subscribers 6
+ created 2022
+ updated 2024
+ description Concatenative command-line shell
+ issues 13

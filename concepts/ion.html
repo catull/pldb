@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <title>Ion - Interface design language</title>
+ <script>/* This HTML was generated from ion.scroll by 📜 Scroll v180.0.1. https://scroll.surf */</script>
+ <style>@media print {.doNotPrint {display: none !important;}}</style>
+ <link rel="canonical" href="https://pldb.io/concepts/ion.html">
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+ <meta name="description" content="Ion is an a href=../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A">
+ <meta name="keywords" content="idl">
+ <meta name="generator" content="Scroll v180.0.1">
+ <meta property="og:title" content="Ion - Interface design language">
+ <meta property="og:description" content="Ion is an a href=../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A">
+ <meta property="og:image" content="">
+ 
+ <link rel="source" type="application/git" title="Source Code Repository" href="https://github.com/breck7/pldb">
+ <link rel="alternate" type="application/rss+xml" title="Ion - Interface design language" href="../blog/feed.xml">
+ <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="../allStyles.css">
+<div id="particle21" noSnippet="undefined" class="trueBaseThemeHeader" class="trueBaseThemeHeader"><a id="particle2" href="../index.html" class="trueBaseThemeLogo" class="trueBaseThemeLogo">PLDB</a>
+<form id="particle3"  method="get" action="../search.html"  style="display:inline-block;;undefined;undefined;undefined"><input type="search" id="trueBaseThemeHeaderSearch" name="q" placeholder="Search" autocomplete="off"  /></form>
+<a id="particle4" href="../lists/top1000.html" >Top 1K</a>
+<a id="particle5" href="../lists/features.html" >Features</a>
+<a id="particle6" href="../lists/creators.html" >Creators</a>
+<a id="particle7" href="../lists/events.html" >Events</a>
+<a id="particle8" href="../lists/podcasts.html" >Podcasts</a>
+<a id="particle9" href="../books/index.html" >Books</a>
+<a id="particle10" href="../lists/extensions.html" >Extensions</a>
+<a id="particle11" href="../blog/interviews.html" >Interviews</a>
+<a id="particle12" href="../blog/index.html" >Blog</a>
+<a id="particle13" href="../lists/explorer.html" >Explorer</a>
+<a id="particle14" href="../csv.html" >CSV</a></div>
+<style>.abstractIconButtonParser {position:absolute;top:0.25rem; }.abstractIconButtonParser svg {fill: rgba(204,204,204,.8);width:1.875rem;height:1.875rem; padding: 0 7px;} .abstractIconButtonParser:hover svg{fill: #333;}</style><a href="https://github.com/breck7/pldb/blob/main/concepts/ion.scroll" class="doNotPrint abstractIconButtonParser" style="right:2rem;"><svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M21.1213 2.70705C19.9497 1.53548 18.0503 1.53547 16.8787 2.70705L15.1989 4.38685L7.29289 12.2928C7.16473 12.421 7.07382 12.5816 7.02986 12.7574L6.02986 16.7574C5.94466 17.0982 6.04451 17.4587 6.29289 17.707C6.54127 17.9554 6.90176 18.0553 7.24254 17.9701L11.2425 16.9701C11.4184 16.9261 11.5789 16.8352 11.7071 16.707L19.5556 8.85857L21.2929 7.12126C22.4645 5.94969 22.4645 4.05019 21.2929 2.87862L21.1213 2.70705ZM18.2929 4.12126C18.6834 3.73074 19.3166 3.73074 19.7071 4.12126L19.8787 4.29283C20.2692 4.68336 20.2692 5.31653 19.8787 5.70705L18.8622 6.72357L17.3068 5.10738L18.2929 4.12126ZM15.8923 6.52185L17.4477 8.13804L10.4888 15.097L8.37437 15.6256L8.90296 13.5112L15.8923 6.52185ZM4 7.99994C4 7.44766 4.44772 6.99994 5 6.99994H10C10.5523 6.99994 11 6.55223 11 5.99994C11 5.44766 10.5523 4.99994 10 4.99994H5C3.34315 4.99994 2 6.34309 2 7.99994V18.9999C2 20.6568 3.34315 21.9999 5 21.9999H16C17.6569 21.9999 19 20.6568 19 18.9999V13.9999C19 13.4477 18.5523 12.9999 18 12.9999C17.4477 12.9999 17 13.4477 17 13.9999V18.9999C17 19.5522 16.5523 19.9999 16 19.9999H5C4.44772 19.9999 4 19.5522 4 18.9999V7.99994Z"/></svg></a>
+<div class="scrollSection"><h1 id="particle28" class="printTitleParser"><a href="ion.html">Ion</a></h1>
+</div>
+<a class="trueBaseThemePreviousItem" href="aiml.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="uuid.html">&gt;</a>
+<div id="particle36" class="scrollContainerParser" style="width: 100%; box-sizing: border-box; max-width: 800px; margin: 0 auto;">
+<div class="trueBaseThemeQuickLinks"><a href="/edit.html?folderName=pldb.io&fileName=concepts%2Fion.scroll" class="material-symbols-outlined">edit</a></div>
+<p id="particle40" class="scrollParagraph">Ion is an <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22idl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">interface design language</a> created in <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222016%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">2016</a>.</p>
+<table class="scrollDashboard"><tr><td>#1696<span>on PLDB</span></td>
+<td>10<span>Years Old</span></td></tr>
+</table>
+<p id="particle44" class="scrollParagraph">Amazon Ion is a richly-typed, self-describing, hierarchical data serialization format offering interchangeable binary and text representations. The text format (a superset of JSON) is easy to read and author, supporting rapid prototyping. The binary representation is efficient to store, transmit, and skip-scan parse.</p>
+<ul ><li id="particle46" >Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"idl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>interface design language</a></li>
+<li id="particle47" >Ion is a <a href="../lists/explorer.html#columns=rank~id~appeared~tags~creators~supersetOf&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22supersetOf%22%2C%22origData%22%3A%22supersetOf%22%2C%22tags%22%3A%22html%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">superset</a> of <a href="json.html">JSON</a></li>
+<li id="particle48" >Early development of Ion happened in <a href="../lists/labs.html#q=Amazon">Amazon</a></li>
+<li id="particle49" >See also: (1 related languages) <a href="protobuf.html">Protocol Buffers</a></li>
+<li id="particle50" >Read more about Ion on the web: <a href="https://amzn.github.io/ion-docs/">1.</a></li>
+<li id="particle51" >1 PLDB concepts link to Ion: <a href="ion-schema.html">Ion Schema Language</a></li></ul>
+<br>
+<div class="codeWithHeader"><div class="codeHeader">Example from the web:</div><code class="scrollCodeBlock">/* Ion supports comments. */
+// Here is a struct, which is similar to a JSON object
+{
+  // Field names don&#39;t always have to be quoted
+  name: &quot;Fido&quot;,
+
+  // This is an integer with a &#39;years&#39; annotation
+  age: years::4,
+
+  // This is a timestamp with day precision
+  birthday: 2012-03-01T,
+
+  // Here is a list, which is like a JSON array
+  toys: [
+    // These are symbol values, which are like strings,
+    // but get encoded as integers in binary
+    ball,
+    rope,
+  ],
+
+  // This is a decimal -- a base-10 floating point value
+  weight: pounds::41.2,
+
+  // Here is a blob -- binary data, which is
+  // base64-encoded in Ion text encoding
+  buzz: {{VG8gaW5maW5pdHkuLi4gYW5kIGJleW9uZCE=}},
+}</code></div>
+<div class="scrollSection"><h2 id="particle57" class="scrollParagraph">Language <a href="../lists/features.html">features</a></h2>
+</div>
+<table id="table461" class="scrollTable">
+ <thead><tr><th>Feature</th>
+
+<th>Supported</th>
+
+<th>Example</th>
+
+<th>Token</th>
+</tr></thead>
+ <tbody><tr><td><a href="../features/hasMultiLineComments.html">MultiLine Comments</a></td>
+<td><span class="hasFeature">✓</span></td>
+<td>
+/* A comment
+*/</td>
+<td>/* */</td>
+</tr>
+<tr><td><a href="../features/hasLineComments.html">Line Comments</a></td>
+<td><span class="hasFeature">✓</span></td>
+<td>
+// A comment</td>
+<td>//</td>
+</tr>
+<tr><td><a href="../features/hasSExpressions.html">S-Expressions</a></td>
+<td><span class="hasFeature">✓</span></td>
+<td>
+null.sexp         // A null S-expression value
+()                // An empty expression value
+(cons 1 2)        // S-expression of three values
+([hello][there])  // S-expression containing two lists
+
+(a+-b)  ( 'a' '+-' 'b' )    // Equivalent; three symbols
+(a.b;)  ( 'a' '.' 'b' ';')  // Equivalent; four symbols</td>
+<td></td>
+</tr>
+<tr><td><a href="../features/hasLists.html">Lists</a></td>
+<td><span class="hasFeature">✓</span></td>
+<td>
+null.list         // A null list value
+[]                // An empty list value
+[1, 2, 3]         // List of three ints
+[ 1 , two ]       // List of an int and a symbol
+[a , [b]]         // Nested list
+[ 1.2, ]          // Trailing comma is legal in Ion (unlike JSON)
+[ 1, , 2 ]        // ERROR: missing element between commas</td>
+<td></td>
+</tr>
+<tr><td><a href="../features/hasTypeAnnotations.html">Type Annotations</a></td>
+<td><span class="hasFeature">✓</span></td>
+<td>
+int32::12                                // Suggests 32 bits as end-user type
+'my.custom.type' :: { x : 12 , y : -1 }  // Gives a struct a user-defined type
+
+{ field: something::'another thing'::value }  // Field's name must precede annotations of its value
+
+jpeg :: {{ ... }}                        // Indicates the blob contains jpeg data
+bool :: null.int                         // A very misleading annotation on the integer null
+'' :: 1                                  // An empty annotation
+null.symbol :: 1                         // ERROR: type annotation cannot be null</td>
+<td></td>
+</tr>
+<tr><td><a href="../features/hasSymbols.html">hasSymbols</a></td>
+<td><span class="hasFeature">✓</span></td>
+<td>
+myvar2       // A different symbol
+'hi ho'      // Symbol requiring quotes</td>
+<td></td>
+</tr>
+<tr><td><a href="../features/hasDecimals.html">Decimals</a></td>
+<td><span class="hasFeature">✓</span></td>
+<td>
+null.decimal      // A null decimal value
+0.123             // Type is decimal
+-0.12d4           // Type is decimal
+123_456.789_012   // Decimal with underscores
+-0d-1             // Decimal maintains precision: -0. != -0.0
+-0d0              // Negative zero decimal (distinct from positive zero)</td>
+<td></td>
+</tr>
+<tr><td><a href="../features/hasTimestamps.html">hasTimestamps</a></td>
+<td><span class="hasFeature">✓</span></td>
+<td>
+// Timestamps represent a specific moment in time, always include a local offset, and are capable of arbitrary precision.
+2007-02-23T12:14Z                // Seconds are optional, but local offset is not
+2007-01-01T00:00-00:00           // Happy New Year in UTC, unknown local offset</td>
+<td></td>
+</tr>
+<tr><td><a href="../features/hasClobs.html">Clobs</a></td>
+<td><span class="hasFeature">✓</span></td>
+<td>
+// The clob type is similar to blob in that it holds uninterpreted binary data. The difference is that the content is expected to be text, so we use a text notation that’s more readable than Base64.
+// An Ion clob type is similar to the blob type except that the denotation in the Ion text format uses an ASCII-based string notation rather than a base64 encoding to denote its binary value. It is important to make the distinction that clob is a sequence of raw octets and string is a sequence of Unicode code points.
+// The string may only contain legal 7-bit ASCII character</td>
+<td></td>
+</tr>
+<tr><td><a href="../features/hasBlobs.html">hasBlobs</a></td>
+<td><span class="hasFeature">✓</span></td>
+<td>
+// In the text format, blob values are denoted as RFC 4648-compliant Base64 text within two pairs of curly braces.
+// A valid blob value with one required padding character.
+{{ VG8gaW5maW5pdHkuLi4gYW5kIGJleW9uZCE= }}</td>
+<td></td>
+</tr>
+<tr><td><a href="../features/hasStrings.html">Strings</a></td>
+<td><span class="hasFeature">✓</span></td>
+<td>
+"hello world"</td>
+<td></td>
+</tr>
+<tr><td><a href="../features/hasNull.html">Null</a></td>
+<td><span class="hasFeature">✓</span></td>
+<td>
+null</td>
+<td></td>
+</tr>
+<tr><td><a href="../features/hasMultilineStrings.html">Multiline Strings</a></td>
+<td><span class="hasFeature">✓</span></td>
+<td>
+( '''hello '''     // Sexp with one element
+  '''world!'''  )
+
+("hello world!")   // The exact same sexp value
+
+// This Ion value is a string containing three newlines. The serialized
+// form's first newline is escaped into nothingness.
+'''\
+The first line of the string.
+This is the second line of the string,
+and this is the third line.
+'''</td>
+<td></td>
+</tr>
+<tr><td><a href="../features/hasIntegers.html">Integers</a></td>
+<td><span class="hasFeature">✓</span></td>
+<td>
+// http://amzn.github.io/ion-docs/docs/spec.html
+null.int   // A null int value
+0          // Zero.  Surprise!
+-0         //   ...the same value with a minus sign
+123        // A normal int
+-123       // Another negative int
+0xBeef     // An int denoted in hexadecimal
+0b0101     // An int denoted in binary
+1_2_3      // An int with underscores
+0xFA_CE    // An int denoted in hexadecimal with underscores
+0b10_10_10 // An int denoted in binary with underscores</td>
+<td></td>
+</tr>
+<tr><td><a href="../features/hasAssignment.html">Assignment</a></td>
+<td><span class="hasFeature">✓</span></td>
+<td>
+// A subset of symbols called identifiers can be denoted in text without single-quotes.</td>
+<td></td>
+</tr>
+<tr><td><a href="../features/hasFloats.html">Floats</a></td>
+<td><span class="hasFeature">✓</span></td>
+<td>
+// http://amzn.github.io/ion-docs/docs/spec.html
+-0.12e4           // Type is float</td>
+<td></td>
+</tr>
+<tr><td><a href="../features/hasStructs.html">Structs</a></td>
+<td><span class="hasFeature">✓</span></td>
+<td>
+{ first : "Tom" , last: "Riddle" }  // Structure with two fields
+{"first":"Tom","last":"Riddle"}     // The same value with confusing style
+{center:{x:1.0, y:12.5}, radius:3}  // Nested struct</td>
+<td></td>
+</tr>
+<tr><td><a href="../features/hasComments.html">Comments</a></td>
+<td><span class="hasFeature">✓</span></td>
+<td></td>
+<td></td>
+</tr>
+<tr><td><a href="../features/hasBooleans.html">Booleans</a></td>
+<td><span class="hasFeature">✓</span></td>
+<td>
+null.bool
+true
+false</td>
+<td></td>
+</tr>
+<tr><td><a href="../features/hasSemanticIndentation.html">Semantic Indentation</a></td>
+<td><span class="doesNotHaveFeature">X</span></td>
+<td></td>
+<td></td>
+</tr></tbody>
+ </table>
+<div class="scrollKeyboardNav" style="display:none;"><a href="aiml.html">aiml.html</a> · ion.html · <a href="uuid.html">uuid.html</a><script>document.addEventListener('keydown', function(event) {
+  if (document.activeElement !== document.body) return
+  if (event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return // dont interfere with keyboard back button shortcut
+  const getLinks = () => document.getElementsByClassName("scrollKeyboardNav")[0].getElementsByTagName("a")
+  if (event.key === "ArrowLeft")
+    getLinks()[0].click()
+  else if (event.key === "ArrowRight")
+    getLinks()[1].click()
+ });</script></div>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".scrollCodeBlock").forEach(block =>
+ {
+  if (!navigator.clipboard) return
+  const button = document.createElement("span")
+  button.classList.add("scrollCopyButton")
+  block.appendChild(button)
+  button.addEventListener("click", async () => {
+    await navigator.clipboard.writeText(block.innerText)
+    button.classList.add("scrollCopiedButton")
+  })
+ }
+))
+</script>
+
+
+<center><p id="particle71" class="scrollParagraph"></p>
+<div id="particle72" noSnippet="undefined" class="trueBaseThemeFooter" class="trueBaseThemeFooter"><a id="particle2" href="../index.html" class="trueBaseThemeLogo" class="trueBaseThemeLogo">PLDB</a>
+<span id="particle3" >- Build the next great programming language</span>
+<span id="particle4" >·</span>
+<a id="particle5" href="../edit.html?folderName=pldb.io&buffer=..%2Fcode%2FconceptPage.scroll%0A%0Aid%20%0Aname%20%0Aappeared%20%0Acreators%20%0Atags%20pl%0Awebsite%20%0Adescription%20%0A%0AgitRepo%20%0A%0Aexample%0A%20&bufferName=concepts/untitled.scroll" >Add</a>
+<span id="particle6" >·</span>
+<a id="particle7" href="addPrompt.txt" >Add Prompt</a>
+<span id="particle8" >·</span>
+<a id="particle9" href="https://issues.pldb.io/" >Issues</a>
+<span id="particle10" >·</span>
+<a id="particle11" href="../pages/about.html" >About</a>
+<span id="particle12" >·</span>
+<a id="particle13" href="../search.html" >Search</a>
+<span id="particle14" >·</span>
+<a id="particle15" href="../lists/keywords.html" >Keywords</a>
+<span id="particle16" >·</span>
+<a id="particle17" href="../lists/live.html" >Livestreams</a>
+<span id="particle18" >·</span>
+<a id="particle19" href="../lists/labs.html" >Labs</a>
+<span id="particle20" >·</span>
+<a id="particle21" href="../lists/resources.html" >Resources</a>
+<span id="particle22" >·</span>
+<a id="particle23" href="../pages/acknowledgements.html" >Acknowledgements</a></div>
+</center>
+<script  src="../lists/autocompleteCombined.js"></script>
+<script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script>
+<center><p id="particle77" class="scrollParagraph"></p>
+<div class="abstractTextLinkParser"><a href="https://scroll.surf">Built with Scroll v180.0.1</a></div>
+</center></div>
+</body>
+</html>

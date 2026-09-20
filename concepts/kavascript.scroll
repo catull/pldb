@@ -1,0 +1,29 @@
+../code/conceptPage.scroll
+
+id kavascript
+name KavaScript
+appeared 2021
+creators Maxime Chevalier-Boisvert
+tags pl
+website https://github.com/maximecb/kavascript/
+lab https://github.com/maximecb/kavascript/issues
+writtenIn rust markdown toml
+
+repoStats
+ firstCommit 2021
+ commits 88
+ committers 2
+ files 11
+ newestCommit 2022
+ mb 1
+ linesOfCode 2104
+country Canada
+
+githubRepo https://github.com/maximecb/kavascript/
+ stars 28
+ forks 13
+ subscribers 2
+ created 2021
+ updated 2023
+ description Minimalistic dynamically-typed programming language for didactic purposes.
+ issues 0

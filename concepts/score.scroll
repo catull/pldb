@@ -1,0 +1,41 @@
+../code/conceptPage.scroll
+
+id score
+name score
+appeared 2013
+creators Jean-Michaël Celerier
+tags pl
+website https://ossia.io
+latestVersion v3.1.14
+lab https://github.com/OSSIA
+writtenIn cpp svg cmake bourne-shell c yaml xml objective-cpp markdown qml bash html python json javascript objective-c dockerfile powershell z-shell
+
+visualParadigm true
+repoStats
+ firstCommit 2013
+ commits 11945
+ committers 73
+ files 4403
+ newestCommit 2025
+ mb 66
+ linesOfCode 555023
+country France
+
+githubRepo https://github.com/OSSIA/score
+ firstCommit 2013
+ stars 1469
+ forks 101
+ subscribers 58
+ created 2013
+ updated 2024
+ description ossia score, an interactive sequencer for the intermedia arts
+ issues 357
+
+domainName ossia.io
+ registered 2017
+ awisRank
+  2022 6212665
+
+hackerNewsDiscussions
+ id|title|time|timestamp|by|comments|score
+ 17982771|Show HN: Ossia score, a visual programming language for time|2018-09-13 21:27:39 UTC|1536874059|jcelerier|1|5

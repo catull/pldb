@@ -1,0 +1,30 @@
+../code/conceptPage.scroll
+
+id xgboost
+name XGBoost
+appeared 2014
+creators Tianqi Chen
+tags library
+website https://xgboost.readthedocs.io/en/stable/
+latestVersion v2.0.3
+writtenIn cpp python cuda scala r restructuredtext bourne-shell java markdown yaml cmake dockerfile c csv xml make powershell css svg protobuf json toml m4 tex groovy javascript jupyter-notebook ini
+
+repoStats
+ firstCommit 2014
+ newestCommit 2025
+ commits 8053
+ committers 716
+ files 1370
+ mb 36
+ linesOfCode 236188
+
+githubRepo https://github.com/dmlc/xgboost
+ stars 25893
+ forks 8688
+ subscribers 912
+ created 2014
+ updated 2024
+ description Scalable, Portable and Distributed Gradient Boosting (GBDT, GBRT or GBM) Library,  for Python, R, Java, Scala, C++ and more. Runs on single machine, Hadoop, Spark, Dask, Flink and DataFlow
+ issues 449
+
+wikipedia https://en.wikipedia.org/wiki/XGBoost

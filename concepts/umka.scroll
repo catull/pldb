@@ -1,0 +1,30 @@
+../code/conceptPage.scroll
+
+id umka
+name Umka
+appeared 2020
+creators Vasiliy Tereshkov
+tags pl
+latestVersion v1.5.1
+description Umka is a statically typed embeddable scripting language.
+writtenIn c umka
+
+clocExtensions um
+repoStats
+ firstCommit 2020
+ commits 943
+ committers 20
+ files 171
+ newestCommit 2025
+ mb 36
+ linesOfCode 28356
+
+githubRepo https://github.com/vtereshkov/umka-lang
+ firstCommit 2020
+ stars 1010
+ forks 53
+ subscribers 20
+ created 2020
+ updated 2024
+ description Umka: a statically typed embeddable scripting language
+ issues 34

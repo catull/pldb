@@ -1,0 +1,31 @@
+../code/conceptPage.scroll
+
+id rakudo
+name Rakudo
+appeared 2006
+creators Patrick Michaud
+tags pl compiler
+website https://rakudo.org
+latestVersion 2024.04
+download https://rakudo.org/downloads
+writtenIn raku markdown c perl java powershell bourne-shell javascript json yaml cpp csv svg html
+
+implementationOf raku
+docs https://docs.raku.org/
+repoStats
+ firstCommit 2006
+ newestCommit 2025
+ commits 43497
+ committers 446
+ files 1013
+ mb 82
+ linesOfCode 514492
+
+githubRepo https://github.com/rakudo/rakudo
+ stars 1719
+ forks 372
+ subscribers 115
+ created 2009
+ updated 2024
+ description 🦋 Rakudo – Raku on MoarVM, JVM, and JS
+ issues 1394

@@ -1,0 +1,140 @@
+carth
+=====
+
+carth is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2018 by Johan Johansson.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222018%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2018
+ https://pldb.io/concepts/../lists/creators.html#q=Johan%20Johansson Johan Johansson
+
+#1426 on PLDB
+8 Years Old
+
+```Download source code:
+git clone https://github.com/bryal/carth
+```
+
+Purely functional programming with lisp-syntax. Less infix, more parens!
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- carth is developed on <a href="https://github.com/bryal/carth">GitHub</a> and has 22 stars
+- carth is written in <a href="haskell.html">Haskell</a>, <a href="yaml.html">YAML</a>, <a href="rust.html">Rust</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="toml.html">TOML</a>, <a href="scheme.html">Scheme</a>, <a href="markdown.html">Markdown</a>, <a href="make.html">Make</a>, <a href="dockerfile.html">Dockerfile</a>
+
+```Example from the web:
+;; Note that many of these functions are/will be in the standard
+;; library in some shape or form. We just include them all in the same
+;; file here to show off more of the syntax and features.
+
+;; ~start~ is the programs entrypoint
+(define (start _) (fizzbuzz unit))
+
+(define (fizzbuzz _)
+  (for (range 1 100)
+       (comp display fizzbuzz&#39;)))
+
+(define (fizzbuzz&#39; n)
+  (match (Pair (divisible? n 3) (divisible? n 5))
+    (case (Pair false false) (my-show-int n))
+    (case (Pair true false) &quot;Fizz&quot;)
+    (case (Pair false true) &quot;Buzz&quot;)
+    (case (Pair true true) &quot;Fizzbuzz&quot;)))
+
+(define my-show-int
+  (fun-match
+    (case 1 &quot;one&quot;)
+    (case 2 &quot;two&quot;)
+    (case n (show-int n))))
+
+;; Apply an action to each element in an iterator
+(define (for xs f)
+  (match (next xs)
+    (case None unit)
+    (case (Some (Pair x xs&#39;))
+          (seq (f x) (for xs&#39; f)))))
+
+;; Iterator over the closed range $[a, b]$
+(define (range a b)
+  (Iter (Lazy (if (&gt; a b)
+                  (fun _ None)
+                (fun _ (Some (Pair a (range (+ a 1) b))))))))
+
+;; Advances an iterator, returning the next value and the rest of the
+;; iterator
+(define (next (Iter it)) (lively it))
+
+;; An iterator / non-strict list
+(type (Iter a)
+  (Iter (Lazy (Maybe (Pair a (Iter a))))))
+
+(define (lively (Lazy f))
+  (f unit))
+
+;; A lazy, or rather a non-strict value
+(type (Lazy a)
+  (Lazy (Fun Unit a)))
+
+(type (Maybe a)
+  None
+  (Some a))
+
+(define (seq a b)
+  b)
+
+;; Function composition
+(define (comp f g a)
+  (f (g a)))
+
+(define (divisible? n m)
+  (= (rem n m) 0))
+
+(define (display s)
+  (display-inline (str-append s &quot;\n&quot;)))
+
+;;; Currying wrappers
+
+(define (rem a b)          (rem-int     (Pair a b)))
+(define (= a b)            (eq-int      (Pair a b)))
+(define (&gt; a b)            (gt-int      (Pair a b)))
+(define (+ a b)            (add-int     (Pair a b)))
+(define (str-append s1 s2) (-str-append (Pair s1 s2)))
+
+;;; External functions defined in the foreign-core library
+
+(extern show-int (Fun Int Str))
+(extern eq-int (Fun (Pair Int Int) Bool))
+(extern gt-int (Fun (Pair Int Int) Bool))
+(extern rem-int (Fun (Pair Int Int) Int))
+(extern add-int (Fun (Pair Int Int) Int))
+(extern display-inline (Fun Str Unit))
+(extern -str-append (Fun (Pair Str Str) Str))
+```
+
+Language <a href="../lists/features.html">features</a>
+======================================================
+
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token true false
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  ; A comment
+ Token 
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  ; A comment
+ Token ;
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token
+
+Built with Scroll v180.0.1

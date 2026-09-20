@@ -1,0 +1,46 @@
+../code/conceptPage.scroll
+
+id numba
+name Numba
+appeared 2012
+creators Travis E. Oliphant
+tags compiler
+website http://numba.pydata.org/
+latestVersion 0.59.1
+description Numba is an open source JIT compiler that translates a subset of Python and NumPy code into fast machine code.
+lab https://github.com/numba
+writtenIn python restructuredtext c yaml cpp bourne-shell markdown cuda svg javascript html make toml ini css
+
+repoStats
+ firstCommit 2012
+ commits 28706
+ committers 465
+ files 1019
+ newestCommit 2025
+ mb 83
+ linesOfCode 388802
+country United States and United Kingdom and Germany
+
+example
+ from numba import njit
+ import random
+ 
+ @njit
+ def monte_carlo_pi(nsamples):
+     acc = 0
+     for i in range(nsamples):
+         x = random.random()
+         y = random.random()
+         if (x ** 2 + y ** 2) < 1.0:
+             acc += 1
+     return 4.0 * acc / nsamples
+
+githubRepo https://github.com/numba/numba
+ firstCommit 2012
+ stars 9676
+ forks 1110
+ subscribers 202
+ created 2012
+ updated 2024
+ description NumPy aware dynamic Python compiler using LLVM
+ issues 1624

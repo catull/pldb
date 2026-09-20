@@ -1,0 +1,76 @@
+../code/conceptPage.scroll
+
+id janet
+name Janet
+appeared 2018
+creators Calvin Rose
+tags pl
+website https://janet-lang.org
+latestVersion v1.34.0
+webRepl https://janet-lang.org/
+lab https://github.com/janet-lang
+writtenIn c yaml bourne-shell markdown make meson svg assembly-language
+
+clocExtensions janet
+docs https://janet-lang.org/docs/index.html https://janet.guide/all/
+repoStats
+ firstCommit 2017
+ commits 4645
+ committers 125
+ files 199
+ newestCommit 2025
+ mb 16
+ linesOfCode 56599
+country Czech Republic and New Zealand and United States
+
+example
+ import joy)
+ 
+ (defn home [request]
+   (joy/render :text "You found joy!"))
+ 
+ (def routes [[:get "/" home]])
+ 
+ (def app (joy/handler routes))
+ 
+ (joy/server app 8000)
+subreddit https://www.reddit.com/r/janetlang/
+
+githubRepo https://github.com/janet-lang/janet
+ stars 3396
+ forks 220
+ subscribers 65
+ created 2017
+ updated 2024
+ description A dynamic language and bytecode vm
+ issues 43
+
+hasComments true
+hasMultiLineComments false
+hasPrintDebugging true
+hasFloats true
+hasIntegers true
+hasBooleans true
+hasConditionals true
+hasLists true
+hasAssignment true
+hasFunctions true
+
+domainName janet-lang.org
+ registered 2018
+ awisRank
+  2022 3137783
+
+hackerNewsDiscussions
+ id|title|url|time|timestamp|by|comments|score
+ 19171121|Janet is a Lisp for scripting, or embedding in other programs|https://janet-lang.org/|2019-02-15 14:26:40 UTC|1550240800|rainygold|0|3
+
+githubLanguage Janet
+ type programming
+ fileExtensions janet
+ interpreters janet
+ aceMode scheme
+ codemirrorMode scheme
+ codemirrorMimeType text/x-scheme
+ tmScope source.janet
+ repos 88

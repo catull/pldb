@@ -1,0 +1,45 @@
+../code/conceptPage.scroll
+
+id quint
+name Quint
+appeared 2021
+tags pl
+website https://quint-lang.org/
+description A modern and executable specification language.
+fileExtensions qnt
+writtenIn typescript json markdown svg bourne-shell xml javascript make yaml nix java lisp tex python jsx html css protobuf vim-script
+
+influencedBy tla
+docs https://quint-lang.org/docs
+repoStats
+ firstCommit 2021
+ newestCommit 2025
+ commits 3786
+ committers 40
+ files 564
+ mb 66
+ linesOfCode 131093
+
+example
+ /// A state variable to store the balance of each account
+ var balances: str -> int
+ pure val ADDRESSES = Set("alice", "bob", "charlie")
+ action withdraw(account, amount) = {
+   // Decrement balance of account by amount
+   // Whoops, we forgot to check for enough balance
+   balances' = balances.setBy(account, curr => curr - amount)
+ }
+ // ...
+ /// Invariant: Account balances should never be negative
+ val no_negatives = ADDRESSES.forall(addr =>
+   balances.get(addr) >= 0
+ )
+
+githubRepo https://github.com/informalsystems/quint
+ stars 732
+ forks 30
+ subscribers 23
+ created 2021
+ updated 2024
+ description An executable specification language  with delightful tooling based on the temporal logic of actions (TLA)
+ issues 221

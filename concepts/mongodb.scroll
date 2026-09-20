@@ -1,0 +1,73 @@
+../code/conceptPage.scroll
+
+id mongodb
+name MongoDB
+appeared 2009
+creators Eliot Horowitz and Dwight Merriman
+tags database
+website https://www.mongodb.com/
+latestVersion 1.0.0
+lab https://www.mongodb.com/community/forums/
+writtenIn cpp javascript c python yaml idl bourne-shell markdown protobuf json starlark assembly-language cmake bazel make xml bash tex dockerfile m4 restructuredtext html pascal diff perl ini ruby meson lua css tcl toml php java objective-cpp reason swift csv jupyter-notebook powershell svg rust awk r d objective-c
+leetSheets https://cheatsheets.zip/mongodb
+
+isOpenSource true
+fileType text
+docs https://www.mongodb.com/docs/
+repoStats
+ firstCommit 2007
+ commits 133662
+ committers 1463
+ files 46426
+ newestCommit 2025
+ mb 1132
+ linesOfCode 12426793
+
+rijuRepl https://riju.codes/mongodb
+ example
+  db.collection.find()
+subreddit https://www.reddit.com/r/mongodb
+ memberCount
+  2022 17286
+twitter https://twitter.com/mongodb
+
+keywords find findOne drop createIndex
+githubRepo https://github.com/mongodb/mongo
+ stars 25860
+ forks 5519
+ subscribers 1244
+ created 2009
+ updated 2024
+ firstCommit 2007
+ description The MongoDB Database
+ issues 82
+
+hasComments true
+ $comment: "A comment"
+hasStrings true
+hasBooleans true
+
+wikipedia https://en.wikipedia.org/wiki/MongoDB
+ related c javascript linux solaris freebsd json nginx-config sql
+ summary MongoDB (from humongous) is a free and open-source cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with schemas. MongoDB is developed by MongoDB Inc., and is published under a combination of the GNU Affero General Public License and the Apache License.
+ pageId 21855450
+ dailyPageViews 1760
+ created 2009
+ backlinksCount 348
+ revisionCount 1385
+ appeared 2007
+
+domainName mongodb.com
+ registered 2008
+ awisRank
+  2022 1421
+
+indeedJobs mongodb developer and dba
+ 2022 1243
+linkedInSkill MongoDB
+ 2018 254440
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ 50 Tips and Tricks for MongoDB Developers|2011|Kristina Chodorow|16286777|3.63|60|5
+ Mongodb (Programming)|2014|Paula Drew|42282006|3.00|2|0

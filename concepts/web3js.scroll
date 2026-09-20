@@ -1,0 +1,27 @@
+../code/conceptPage.scroll
+
+id web3js
+name Web3.js
+appeared 2014
+creators Fabian Vogelsteller
+tags library
+website https://web3js.org
+writtenIn typescript markdown json javascript yaml solidity bourne-shell svg html css
+
+repoStats
+ firstCommit 2014
+ newestCommit 2025
+ commits 8669
+ committers 352
+ files 1649
+ mb 137
+ linesOfCode 335350
+
+githubRepo https://github.com/web3/web3.js
+ stars 19182
+ forks 4909
+ subscribers 460
+ created 2014
+ updated 2024
+ description Collection of comprehensive TypeScript libraries for Interaction with the Ethereum JSON RPC API and utility functions.
+ issues 199

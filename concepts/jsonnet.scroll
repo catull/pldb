@@ -1,0 +1,72 @@
+../code/conceptPage.scroll
+
+id jsonnet
+name Jsonnet
+appeared 2014
+creators Dave Cunningham
+tags dataNotation
+website https://jsonnet.org/
+latestVersion v0.20.0
+webRepl https://jsonnet.org/
+lab Google
+writtenIn javascript html cpp svg bourne-shell python markdown bazel yaml cmake json css java c bash starlark xml make dockerfile
+
+supersetOf json
+repoStats
+ firstCommit 2014
+ commits 1349
+ committers 169
+ files 4062
+ newestCommit 2025
+ mb 54
+ linesOfCode 501384
+country United States
+
+example
+ // A function that returns an object.
+ local Person(name='Alice') = {
+   name: name,
+   welcome: 'Hello ' + name + '!',
+ };
+ {
+   person1: Person(),
+   person2: Person('Bob'),
+ }
+
+githubRepo https://github.com/google/jsonnet
+ firstCommit 2014
+ stars 6861
+ forks 435
+ subscribers 108
+ created 2014
+ updated 2024
+ description Jsonnet - The data templating language
+ issues 237
+
+lineCommentToken //
+multiLineCommentTokens /* */
+
+hasLineComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasComments true
+ // A comment
+hasSemanticIndentation false
+
+domainName jsonnet.org
+ registered 2015
+ awisRank
+  2022 1098488
+
+githubBigQuery Jsonnet
+ repos 190
+ users 104
+
+githubLanguage Jsonnet
+ type programming
+ fileExtensions jsonnet libsonnet
+ aceMode text
+ tmScope source.jsonnet
+ repos 1430

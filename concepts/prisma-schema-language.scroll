@@ -1,0 +1,11 @@
+../code/conceptPage.scroll
+
+id prisma-schema-language
+name Prisma Schema Language
+appeared 2019
+tags idl
+description The Prisma schema file (short: schema file, Prisma schema or schema) is the main configuration file for your Prisma setup. It is typically called schema.prisma and consists of the following parts:
+lab Prisma Data,Inc
+
+country Germany
+reference https://github.com/prisma/specs/tree/master/schema

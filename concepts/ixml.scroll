@@ -1,0 +1,52 @@
+../code/conceptPage.scroll
+
+id ixml
+name Invisible XML
+appeared 2020
+creators Steven Pemberton
+tags grammarLanguage
+website https://invisiblexml.org/
+aka ixml
+description Invisible XML is a language for describing the implicit structure of data, and a set of technologies for making that structure explicit as XML markup. It allows you to write a declarative description of the format of some text and then leverage that format to represent the text as structured information.
+lab https://github.com/invisibleXML
+writtenIn xml markdown xslt xquery html css javascript yaml bourne-shell gradle svg make lisp
+
+related xml
+repoStats
+ firstCommit 2020
+ commits 829
+ committers 8
+ files 3993
+ newestCommit 2025
+ mb 33
+ linesOfCode 295512
+country The Netherlands
+reference https://news.ycombinator.com/item?id=32120230
+
+example
+ url: scheme, ":", authority, path.
+ 
+ scheme: letter+.
+ 
+ authority: "//", host.
+ host: sub++".".
+ sub: letter+.
+ 
+ path: ("/", seg)+.
+ seg: fletter*.
+ -letter: ["a"-"z"]; ["A"-"Z"]; ["0"-"9"].
+ -fletter: letter; ".".
+
+githubRepo https://github.com/invisiblexml/ixml/
+ stars 48
+ forks 7
+ subscribers 10
+ created 2020
+ updated 2024
+ description Invisible XML
+ issues 21
+
+domainName invisiblexml.org
+ registered 2020
+ awisRank
+  2022 6592461

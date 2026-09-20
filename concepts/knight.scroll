@@ -1,0 +1,29 @@
+../code/conceptPage.scroll
+
+id knight
+name Knight
+appeared 2021
+creators Sam Westerman
+tags pl
+lab https://github.com/knight-lang
+writtenIn ruby markdown html bourne-shell
+
+repoStats
+ firstCommit 2021
+ commits 233
+ committers 10
+ files 82
+ newestCommit 2024
+ mb 1
+ linesOfCode 6345
+country United States
+
+githubRepo https://github.com/knight-lang/knight-lang
+ firstCommit 2021
+ stars 63
+ forks 6
+ subscribers 3
+ created 2021
+ updated 2024
+ description The Knight Programming Language
+ issues 2

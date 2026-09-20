@@ -1,0 +1,39 @@
+../code/conceptPage.scroll
+
+id 05ab1e
+name 05AB1E
+appeared 2015
+tags esolang
+writtenIn elixir markdown yaml
+
+repoStats
+ firstCommit 2015
+ commits 872
+ committers 28
+ files 49
+ newestCommit 2024
+ mb 4
+ linesOfCode 18431
+
+example
+ PUSH 4
+ PUSH 5
+ MULTIPLY
+leachim6 05AB1E
+ filepath #/05AB1E
+ example
+  "Hello World
+
+githubRepo https://github.com/Adriandmen/05AB1E
+ firstCommit 2015
+ stars 755
+ forks 48
+ subscribers 24
+ created 2015
+ updated 2024
+ description A concise stack-based golfing language
+ issues 40
+
+printToken "
+
+hasPrintDebugging true

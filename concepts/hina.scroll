@@ -1,0 +1,29 @@
+../code/conceptPage.scroll
+
+id hina
+name Hina
+appeared 2020
+creators Mark
+tags pl
+lab https://github.com/markpwns1/hina/issues
+writtenIn lua c markdown make json
+
+repoStats
+ firstCommit 2020
+ commits 31
+ committers 2
+ files 138
+ newestCommit 2020
+ mb 1
+ linesOfCode 5851
+country Unknown
+
+githubRepo https://github.com/markpwns1/hina
+ firstCommit 2020
+ stars 5
+ forks 0
+ subscribers 2
+ created 2020
+ updated 2023
+ description A sane programming language that compiles to Lua
+ issues 0

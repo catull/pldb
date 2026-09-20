@@ -1,0 +1,30 @@
+../code/conceptPage.scroll
+
+id workfl
+name Workfl
+appeared 2019
+creators Adam Dullage
+tags textMarkup
+standsFor Workflow Markup Language
+description workfl is a lightweight markup language for simple workflow diagrams.
+writtenIn python markdown
+
+related dot flowchart-fun
+repoStats
+ firstCommit 2019
+ commits 10
+ committers 2
+ files 6
+ newestCommit 2019
+ mb 1
+ linesOfCode 471
+
+githubRepo https://github.com/Dullage/workfl
+ firstCommit 2019
+ stars 5
+ forks 0
+ subscribers 3
+ created 2019
+ updated 2024
+ description A simple flow-diagram markup language.
+ issues 0

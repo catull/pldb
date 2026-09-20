@@ -1,0 +1,28 @@
+../code/conceptPage.scroll
+
+id jelly
+name Jelly
+appeared 2015
+creators Dennis Mitchell
+tags pl
+description A recreational programming language inspired by J
+writtenIn python c markdown make bash
+
+related j
+repoStats
+ firstCommit 2015
+ commits 320
+ committers 17
+ files 14
+ newestCommit 2019
+ mb 2
+ linesOfCode 251898
+
+githubRepo https://github.com/DennisMitchell/jellylanguage
+ stars 860
+ forks 47
+ subscribers 39
+ created 2015
+ updated 2024
+ description Jelly is a recreational programming language inspired by J.
+ issues 22

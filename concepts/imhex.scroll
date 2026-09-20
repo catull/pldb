@@ -1,0 +1,30 @@
+../code/conceptPage.scroll
+
+id imhex
+name ImHex
+appeared 2020
+tags editor
+website https://imhex.werwolv.net/
+description A Hex Editor for Reverse Engineers, Programmers and people who value their retinas when working at 3 AM
+writtenIn cpp json cmake markdown yaml svg csharp xml glsl dockerfile bourne-shell python c javascript css objective-c html diff
+
+docs https://imhex.werwolv.net/docs/
+repoStats
+ firstCommit 2020
+ newestCommit 2025
+ commits 5410
+ committers 176
+ files 981
+ mb 42
+ linesOfCode 475942
+
+discord https://imhex.werwolv.net/discord
+
+githubRepo https://github.com/WerWolv/ImHex
+ stars 41800
+ forks 1825
+ subscribers 475
+ created 2020
+ updated 2024
+ description 🔍 A Hex Editor for Reverse Engineers, Programmers and people who value their retinas when working at 3 AM.
+ issues 273

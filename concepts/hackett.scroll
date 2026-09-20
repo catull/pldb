@@ -1,0 +1,52 @@
+../code/conceptPage.scroll
+
+id hackett
+name Hackett
+appeared 2017
+creators Alexis King
+tags pl lisp
+website https://lexi-lambda.github.io/hackett/
+description Hackett is an attempt to implement a Haskell-like language with support for Racket’s macro system, built using the techniques described in the paper Type Systems as Macros.
+lab https://github.com/lexi-lambda/hackett/issues
+writtenIn racket markdown yaml css bourne-shell
+
+isOpenSource true
+fileType text
+repoStats
+ firstCommit 2017
+ commits 293
+ committers 11
+ files 86
+ newestCommit 2020
+ mb 2
+ linesOfCode 9516
+country United States
+
+example
+ #lang hackett
+ 
+ (data (Maybe a)
+   Nothing
+   (Just a))
+ 
+ (def x : Integer
+   (let ([y 3]
+         [z 7])
+     {y + z}))
+ 
+ (class (Show a)
+   [show : {a -> String}])
+ 
+ (instance (forall [a] (Show a) => (Show (Maybe a)))
+   [show (λ* [[(Just x)] {"(Just " ++ (show x) ++ ")"}]
+             [[Nothing ] "Nothing"])])
+
+githubRepo https://github.com/lexi-lambda/hackett
+ firstCommit 2017
+ stars 1159
+ forks 49
+ subscribers 67
+ created 2016
+ updated 2024
+ description WIP implementation of a Haskell-like Lisp in Racket
+ issues 35

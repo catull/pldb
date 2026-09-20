@@ -1,0 +1,14 @@
+../code/conceptPage.scroll
+
+id emu
+name emu
+appeared 2019
+tags pl
+website https://calebwin.github.io/emu/
+lab https://github.com/banyan-team
+
+country United States
+
+hackerNewsDiscussions
+ id|title|time|timestamp|by|comments|score
+ 20030491|Show HN: Emu – language for numerical computing embedded in Rust|2019-05-28 14:36:19 UTC|1559054179|calebwin|0|1

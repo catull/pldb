@@ -1,0 +1,13 @@
+../code/conceptPage.scroll
+
+id explor
+name EXPLOR
+appeared 1972
+tags pl
+lab Bell Labs && University of California Santa Cruz
+
+influencedBy fortran
+country United States
+reference https://semanticscholar.org/paper/597c70028c7bb1956a558d0f856cb61e476feff4
+
+hopl https://hopl.info/showlanguage.prx?exp=4101

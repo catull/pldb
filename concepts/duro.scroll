@@ -1,0 +1,31 @@
+../code/conceptPage.scroll
+
+id duro
+name duro
+appeared 2003
+tags queryLanguage
+website http://duro.sourceforge.net/
+lab https://sourceforge.net/p/duro/mailman/duro-devel/
+writtenIn c bourne-shell java html tcl xml ini yacc lex make cpp css
+
+repoStats
+ firstCommit 2003
+ commits 1399
+ committers 8
+ files 386
+ newestCommit 2020
+ mb 29
+ linesOfCode 107879
+country Unknown
+
+githubRepo https://github.com/rehartmann/durodbms
+ firstCommit 2003
+ stars 15
+ forks 1
+ subscribers 5
+ created 2015
+ updated 2023
+ description Relational Database Management System
+ issues 0
+
+domainName duro.sourceforge.net

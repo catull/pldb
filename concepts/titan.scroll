@@ -1,0 +1,30 @@
+../code/conceptPage.scroll
+
+id titan
+name titan
+appeared 2017
+tags pl
+website http://titan-lang.org
+writtenIn lua markdown c yaml
+
+repoStats
+ firstCommit 2017
+ commits 1144
+ committers 13
+ files 53
+ newestCommit 2019
+ mb 2
+ linesOfCode 1493
+
+githubRepo https://github.com/titan-lang/titan
+ firstCommit 2017
+ stars 406
+ forks 13
+ subscribers 33
+ created 2017
+ updated 2024
+ description The Titan programming language
+ issues 14
+
+domainName titan-lang.org
+ registered 2021

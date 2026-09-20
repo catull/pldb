@@ -1,0 +1,15 @@
+../code/conceptPage.scroll
+
+id pypi-pm
+name PyPI
+appeared 2015
+tags packageManager
+website https://pypi.org/
+standsFor Python Package Index
+packageCount 167097
+forLanguages python
+lab https://github.com/pypi
+
+country Various
+
+twitter https://twitter.com/pypi

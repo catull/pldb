@@ -1,0 +1,21 @@
+../code/conceptPage.scroll
+
+id boa
+name boa
+appeared 2013
+tags plzoo
+website http://plzoo.andrej.com/language/boa.html
+description object-oriented, eager, first-class functions, dynamic types, extensible objects
+lab University of Ljubljana
+
+country Slovenia
+reference https://github.com/andrejbauer/plzoo
+
+pygmentsHighlighter Boa
+ filename boa.py
+ fileExtensions boa
+
+hasIntegers true
+hasLineComments true
+hasMultiLineComments true
+hasComments true

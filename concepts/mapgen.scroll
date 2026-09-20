@@ -1,0 +1,31 @@
+../code/conceptPage.scroll
+
+id mapgen
+name Mapgen
+appeared 2017
+creators Amit Patel
+tags visual
+website https://www.redblobgames.com/maps/mapgen4/
+screenshot mapgen.jpg
+webRepl https://www.redblobgames.com/maps/mapgen4/
+description Procedural wilderness map generator
+writtenIn typescript javascript json html bourne-shell
+
+repoStats
+ firstCommit 2017
+ newestCommit 2024
+ commits 162
+ committers 1
+ files 38
+ stars 598
+ mb 1
+ linesOfCode 4660
+
+githubRepo https://github.com/redblobgames/mapgen4
+ stars 602
+ forks 88
+ subscribers 19
+ created 2018
+ updated 2024
+ description Mapgen4 procedural wilderness map generator
+ issues 1

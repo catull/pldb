@@ -1,0 +1,16 @@
+../code/conceptPage.scroll
+
+id gasp
+name General Activity Simulation Program
+appeared 1961
+tags pl simulation
+standsFor General Activity Simulation Program
+lab RAND
+
+country United States
+reference https://www.rand.org/pubs/papers/P2864.html
+
+wikipedia https://en.wikipedia.org/wiki/Gaspé
+ backlinksCount 21
+
+hopl https://hopl.info/showlanguage.prx?exp=408

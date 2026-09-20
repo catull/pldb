@@ -1,0 +1,40 @@
+../code/conceptPage.scroll
+
+id plang
+name plang
+appeared 2023
+creators Ingi Gauti
+tags pl
+website https://plang.is/
+description Plang is a programming language written in natural language.
+writtenIn csharp markdown json xml python csv javascript css
+
+repoStats
+ firstCommit 2023
+ newestCommit 2025
+ commits 235
+ committers 3
+ files 2564
+ mb 30
+ linesOfCode 154109
+
+example
+ Start
+ - write out "Hello PLang world"
+
+githubRepo https://github.com/PLangHQ/plang
+ stars 35
+ forks 2
+ subscribers 3
+ created 2023
+ updated 2024
+ description The code repository from plang programming language
+ issues 25
+
+hasFunctions true
+ - call !FooBar %name%
+hasConditionals true
+ - if %products.Count% > 0 then
+  - go through %products% call !ProcessProduct
+hasAssignment true
+ - set %name% as "Dwight Shrewd"

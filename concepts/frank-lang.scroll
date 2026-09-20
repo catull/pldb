@@ -1,0 +1,30 @@
+../code/conceptPage.scroll
+
+id frank-lang
+name Frank
+appeared 2017
+creators Sam Lindley and Conor McBride and Craig McLaughlin and Lukas Convent
+tags pl
+website https://github.com/frank-lang/frank/
+lab https://github.com/frank-lang/
+fileExtensions fk
+writtenIn haskell markdown python yaml make
+
+repoStats
+ firstCommit 2016
+ commits 321
+ committers 9
+ files 168
+ newestCommit 2022
+ mb 1
+ linesOfCode 12519
+country United Kingdom
+
+githubRepo https://github.com/frank-lang/frank/
+ stars 272
+ forks 9
+ subscribers 25
+ created 2017
+ updated 2024
+ description Frank compiler
+ issues 3

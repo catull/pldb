@@ -1,0 +1,59 @@
+../code/conceptPage.scroll
+
+id dlvm
+name dlvm
+appeared 2017
+creators Chris Lattner
+tags ir
+website http://dlvm.org/
+description Modern Compiler Infrastructure for Deep Learning Systems
+lab University of Illinois Urbana-Champaign && Purdue University
+writtenIn swift cpp cmake python restructuredtext json markdown objective-c objective-cpp bash bourne-shell llvmir c vim-script lisp xml make html d yaml css ini javascript ruby perl matlab
+
+fileType text
+repoStats
+ firstCommit 2010
+ commits 67857
+ committers 769
+ files 14310
+ newestCommit 2017
+ mb 259
+ linesOfCode 1888648
+country United States
+reference https://dlvm-team.github.io/
+
+example
+ // Dimension-erased functions are flexible because input shapes are dynamic.
+ // They may be slower and less optimized than their shape-specialized counterparts.
+ 
+ // f(x, w, b) = dot(x, w) + pad(b, at: 0)
+ func @f: (<_ x _ x f32>, <_ x _ x f32>, <_ x f32>) -> <_ x _ x f32> {
+ 'entry(%x: <_ x _ x f32>, %w: <_ x _ x f32>, %b: <_ x f32>):
+     %0.0 = dot %x: <_ x _ x f32>, %w: <_ x _ x f32>
+     %0.1 = padShape %b: <_ x f32> at 0
+     %0.2 = add %0.0: <_ x _ x f32>, %0.1: <1 x _ x f32>
+     return %0.2: <_ x _ x f32>
+ }
+
+githubRepo https://github.com/dlvm-team/swift
+ firstCommit 2010
+ stars 0
+ forks 0
+ subscribers 2
+ created 2017
+ updated 2024
+ description The Swift Programming Language
+ issues 0
+
+lineCommentToken //
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
+
+domainName dlvm.org
+ registered 2022
+ awisRank
+  2017 17839534

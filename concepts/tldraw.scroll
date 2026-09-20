@@ -1,0 +1,27 @@
+../code/conceptPage.scroll
+
+id tldraw
+name tldraw
+appeared 2021
+creators Steve Ruiz
+tags visual application
+website https://www.tldraw.com/
+writtenIn typescript svg markdown json css javascript yaml bourne-shell toml diff html dockerfile
+
+repoStats
+ firstCommit 2021
+ newestCommit 2025
+ commits 7651
+ committers 189
+ files 2923
+ mb 710
+ linesOfCode 376640
+
+githubRepo https://github.com/tldraw/tldraw
+ stars 34649
+ forks 2085
+ subscribers 156
+ created 2021
+ updated 2024
+ description SDK for creating whiteboards and canvas experiences on the web.
+ issues 253

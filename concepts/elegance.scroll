@@ -1,0 +1,31 @@
+../code/conceptPage.scroll
+
+id elegance
+name elegance
+appeared 2017
+creators Nathan Merrill
+tags pl
+description <a href='https://github.com/nathanmerrill/elegance'>Elegance</a> Objected oriented language aiming for high type-safety and readability.
+lab https://github.com/nathanmerrill/
+writtenIn java xml gradle bash markdown lisp
+
+isOpenSource true
+fileType text
+repoStats
+ firstCommit 2017
+ commits 4
+ committers 2
+ files 47
+ newestCommit 2017
+ mb 1
+ linesOfCode 805
+country United States
+
+githubRepo https://github.com/nathanmerrill/elegance
+ stars 1
+ forks 0
+ subscribers 2
+ created 2017
+ updated 2018
+ firstCommit 2017
+ issues 0

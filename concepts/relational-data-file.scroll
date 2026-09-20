@@ -1,0 +1,18 @@
+../code/conceptPage.scroll
+
+id relational-data-file
+name Relational Data File
+appeared 1965
+creators Roger Levien and M. E. Maron
+tags queryLanguage
+aka rdf
+description A tool for mechanized inference execution and data retrieval.
+lab RAND
+
+fileType text
+reference https://www.rand.org/pubs/research_memoranda/RM4793.html
+
+example
+ IF (x AUTHORED PAPER y)
+ AND (y SUBJECT INDEXED UNDER pattern recognition)
+ THEN (x CONDUCTS RESEARCH ON pattern recognition)

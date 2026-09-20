@@ -1,0 +1,35 @@
+../code/conceptPage.scroll
+
+id roc
+name Roc
+appeared 2020
+creators Richard Feldman
+tags pl
+website https://www.roc-lang.org/
+lab https://github.com/roc-lang
+writtenIn rust toml markdown yaml zig typescript bourne-shell c nix json javascript html dockerfile svg css swift python java perl ruby
+
+exercism https://exercism.org/tracks/roc
+repoStats
+ firstCommit 2019
+ commits 33140
+ committers 341
+ files 3796
+ newestCommit 2025
+ mb 135
+ linesOfCode 507521
+country United States
+
+example
+ credits = List.map(songs, |song|
+     "Performed by ${song.artist}"
+ )
+
+githubRepo https://github.com/roc-lang/roc
+ stars 3930
+ forks 290
+ subscribers 119
+ created 2019
+ updated 2024
+ description A fast, friendly, functional language.
+ issues 1132

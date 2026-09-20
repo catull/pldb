@@ -1,0 +1,30 @@
+../code/conceptPage.scroll
+
+id mycroft
+name mycroft
+appeared 2013
+tags pl
+website https://enkiv2.github.io/mycroft/
+description A prolog-like language with compound truth value logic
+lab http://www.lord-enki.net
+writtenIn lua markdown bourne-shell python vim-script make z-shell
+
+repoStats
+ firstCommit 2013
+ commits 207
+ committers 3
+ files 32
+ newestCommit 2018
+ mb 1
+ linesOfCode 774
+country United States
+
+githubRepo https://github.com/enkiv2/mycroft
+ firstCommit 2013
+ stars 69
+ forks 6
+ subscribers 7
+ created 2013
+ updated 2023
+ description A prolog-like language with compound truth value logic
+ issues 1

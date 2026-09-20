@@ -1,0 +1,65 @@
+json-graph-format
+=================
+
+json-graph-format is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22jsonFormat%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">json format</a> created in 2014.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222014%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2014
+
+#968 on PLDB
+12 Years Old
+
+```Download source code:
+git clone https://github.com/jsongraph/json-graph-specification
+```
+
+A proposal for representing graph structure (nodes / edges) in JSON.
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"jsonFormat"%5D%7D%5D%2C"logic"%3A"AND"%7D'>jsonFormat</a>
+- json-graph-format is developed on <a href="https://github.com/jsongraph/json-graph-specification">GitHub</a> and has 446 stars
+- Early development of json-graph-format happened in <a href="../lists/labs.html#q=https://github.com/jsongraph">https://github.com/jsongraph</a>
+- json-graph-format is written in <a href="json.html">JSON</a>, <a href="markdown.html">Markdown</a>, <a href="yaml.html">YAML</a>, <a href="python.html">Python</a>
+- <a href="http://jsongraphformat.info/">jsongraphformat.info</a> was registered in 2015
+
+```Example from the web:
+{
+    &quot;graph&quot;: {
+        &quot;directed&quot;: false,
+        &quot;type&quot;: &quot;graph type&quot;,
+        &quot;label&quot;: &quot;graph label&quot;,
+        &quot;metadata&quot;: {
+            &quot;user-defined&quot;: &quot;values&quot;
+        },
+        &quot;nodes&quot;: [
+            {
+                &quot;id&quot;: &quot;0&quot;,
+                &quot;type&quot;: &quot;node type&quot;,
+                &quot;label&quot;: &quot;node label(0)&quot;,
+                &quot;metadata&quot;: {
+                    &quot;user-defined&quot;: &quot;values&quot;
+                }
+            },
+            {
+                &quot;id&quot;: &quot;1&quot;,
+                &quot;type&quot;: &quot;node type&quot;,
+                &quot;label&quot;: &quot;node label(1)&quot;,
+                &quot;metadata&quot;: {
+                    &quot;user-defined&quot;: &quot;values&quot;
+                }
+            }
+        ],
+        &quot;edges&quot;: [
+            {
+                &quot;source&quot;: &quot;0&quot;,
+                &quot;relation&quot;: &quot;edge relationship&quot;,
+                &quot;target&quot;: &quot;1&quot;,
+                &quot;directed&quot;: false,
+                &quot;label&quot;: &quot;edge label&quot;,
+                &quot;metadata&quot;: {
+                    &quot;user-defined&quot;: &quot;values&quot;
+                }
+            }
+        ]
+    }
+}
+```
+
+Built with Scroll v180.0.1

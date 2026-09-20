@@ -1,0 +1,31 @@
+../code/conceptPage.scroll
+
+id pharen
+name Pharen
+appeared 2009
+creators Tamreen Khan
+tags pl
+website http://www.pharen.org
+lab http://github.com/scriptor/pharen/issues
+fileExtensions phn
+writtenIn php markdown json bourne-shell
+compilesTo php
+
+repoStats
+ firstCommit 2009
+ commits 1190
+ committers 17
+ files 58
+ newestCommit 2018
+ mb 2
+ linesOfCode 7645
+country United States
+
+githubRepo https://github.com/scriptor/pharen/
+ stars 217
+ forks 31
+ subscribers 15
+ updated 2023
+ description Lisp to PHP Compiler
+ created 2009
+ issues 10

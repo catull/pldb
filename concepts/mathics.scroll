@@ -1,0 +1,44 @@
+../code/conceptPage.scroll
+
+id mathics
+name mathics
+appeared 2012
+tags pl
+website https://mathics.github.io/
+latestVersion 5.0.0
+description Mathics is a free, general-purpose online computer algebra system featuring Mathematica-compatible syntax and functions. It is backed by highly extensible Python code, relying on SymPy for most mathematical tasks.
+lab https://github.com/Mathics3
+writtenIn python mathematica yaml restructuredtext svg bourne-shell xml make tex markdown csv matlab html perl json ini
+
+isOpenSource true
+tryItOnline https://tio.run/#mathics
+fileType text
+repoStats
+ firstCommit 2011
+ commits 5749
+ committers 59
+ files 299
+ newestCommit 2021
+ mb 22
+ linesOfCode 129740
+country United States
+reference https://news.ycombinator.com/item?id=11459186
+
+example
+ StringJoin[Riffle[Map[ToString, Table[Fibonacci[i], {i,16}]], ", "]] <> "..."
+
+githubRepo https://github.com/mathics/Mathics
+ firstCommit 2011
+ stars 2075
+ forks 208
+ subscribers 68
+ created 2011
+ updated 2024
+ description This repository is for archival. Please see https://github.com/Mathics3/mathics-core
+ issues 161
+
+jupyterKernel http://nbviewer.ipython.org/gist/sn6uv/8381447
+
+domainName mathics.github.io
+
+semanticScholar 0

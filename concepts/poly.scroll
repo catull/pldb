@@ -1,0 +1,13 @@
+../code/conceptPage.scroll
+
+id poly
+name poly
+appeared 2013
+tags plzoo
+website http://plzoo.andrej.com/language/poly.html
+description lazy, functional, statically typed, parametric polymorphism, type inference
+lab https://github.com/andrejbauer/plzoo/issues
+
+wordRank 7762
+country Slovenia
+reference https://github.com/andrejbauer/plzoo

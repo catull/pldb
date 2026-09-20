@@ -1,0 +1,28 @@
+../code/conceptPage.scroll
+
+id vcpkg-pm
+name Vcpkg
+appeared 2016
+tags packageManager
+latestVersion 2023.12.12
+description Vcpkg helps you manage C and C++ libraries on Windows, Linux and MacOS. This tool and ecosystem are constantly evolving; your involvement is vital to its success!
+writtenIn json cmake diff powershell markdown yaml bourne-shell python xml bash cpp make c perl nix dockerfile z-shell
+
+repoStats
+ firstCommit 2016
+ newestCommit 2025
+ commits 24623
+ committers 2583
+ files 12165
+ mb 90
+ linesOfCode 555194
+
+githubRepo https://github.com/microsoft/vcpkg
+ firstCommit 2016
+ stars 22468
+ forks 6202
+ subscribers 434
+ created 2016
+ updated 2024
+ description C++ Library Manager for Windows, Linux, and MacOS
+ issues 1218

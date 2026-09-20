@@ -1,0 +1,40 @@
+../code/conceptPage.scroll
+
+id aretext
+name aretext
+appeared 2020
+creators Will Daly
+tags editor
+website https://aretext.org
+latestVersion 1.0
+blog https://devnonsense.com/posts/
+description Minimalist text editor with vim-compatible key bindings.
+lab https://dev-nonsense.com
+writtenIn go markdown yaml json bourne-shell make xml html python c rust
+leetSheets https://aretext.org/docs/cheat-sheet.html
+
+isOpenSource true
+demoVideo https://raw.githubusercontent.com/aretext/aretext/main/screencast.gif
+docs https://aretext.org/docs/#getting-started
+repoStats
+ firstCommit 2020
+ commits 1577
+ committers 9
+ files 267
+ newestCommit 2025
+ mb 5
+ linesOfCode 33029
+country United States
+reference https://aretext.org/docs/#getting-started
+
+githubRepo https://github.com/aretext/aretext
+ firstCommit 2020
+ stars 248
+ forks 14
+ subscribers 11
+ created 2021
+ updated 2024
+ description Minimalist text editor with vim-compatible key bindings.
+ issues 4
+
+domainName aretext.org

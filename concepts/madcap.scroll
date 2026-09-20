@@ -1,0 +1,14 @@
+../code/conceptPage.scroll
+
+id madcap
+name MADCAP
+appeared 1960
+tags pl
+lab University of California Los Alamos
+
+country United States
+reference https://semanticscholar.org/paper/4bef4a1b67016e569ca7ef57bfc356829c2152ba
+
+hasSemanticIndentation true
+
+hopl https://hopl.info/showlanguage.prx?exp=148

@@ -1,0 +1,52 @@
+../code/conceptPage.scroll
+
+id neut
+name Neut
+appeared 2018
+tags pl
+website https://vekatze.github.io/neut/
+latestVersion 0.13.0
+lab https://github.com/vekatze/neut/issues
+writtenIn haskell markdown json yaml bourne-shell javascript css typescript handlebars dockerfile svg toml c
+
+repoStats
+ firstCommit 2018
+ commits 6667
+ committers 6
+ files 579
+ newestCommit 2025
+ mb 35
+ linesOfCode 54909
+country Unknown
+reference https://www.reddit.com/r/ProgrammingLanguages/comments/gprche/neut_a_dependentlytyped_programming_language_with/
+
+example
+ ; download the core library
+ (ensure core/0.1.0.0
+   "https://github.com/u2zv1wx/neut-core/raw/master/release/0.1.0.0.tar.gz")
+ 
+ (include "core/0.1.0.0/core.neut")
+ 
+ (with identity.bind
+   (let str "a")
+   (let _ (string.print str))
+   (let _ (string.print str))
+   (string.print str))
+
+githubRepo https://github.com/u2zv1wx/neut
+ firstCommit 2018
+ stars 831
+ forks 10
+ subscribers 21
+ created 2020
+ updated 2024
+ description A dependently-typed programming language with static memory management
+ issues 0
+
+lineCommentToken ;
+
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasSemanticIndentation false

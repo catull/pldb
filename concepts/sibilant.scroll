@@ -1,0 +1,32 @@
+../code/conceptPage.scroll
+
+id sibilant
+name Sibilant
+appeared 2010
+creators Jacob Rothstein
+tags pl lisp
+website https://sibilant.org/
+latestVersion 0.5.6
+lab https://github.com/jbr/sibilant/issues
+fileExtensions sibilant
+writtenIn javascript markdown yaml json html scss css
+
+repoStats
+ firstCommit 2010
+ commits 641
+ committers 15
+ files 90
+ newestCommit 2020
+ mb 6
+ linesOfCode 47731
+country United States
+
+keywords assign def do each if lambda pipe set this var when
+githubRepo https://github.com/jbr/sibilant
+ stars 384
+ forks 47
+ subscribers 19
+ created 2010
+ updated 2024
+ description Just another compile-to-js LISP-like language
+ issues 25

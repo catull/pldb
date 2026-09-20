@@ -1,0 +1,29 @@
+../code/conceptPage.scroll
+
+id hpp
+name H++
+appeared 2013
+creators Harold L. Marzan
+tags pl
+lab Marzan Mercado Consulting, S.R.L.
+writtenIn assembly-language cpp xml html pascal markdown
+
+repoStats
+ firstCommit 2013
+ commits 3
+ committers 1
+ files 274
+ newestCommit 2013
+ mb 10
+ linesOfCode 228192
+country Dominican Republic
+
+githubRepo https://github.com/hmarzan/HCC
+ firstCommit 2013
+ stars 2
+ forks 2
+ subscribers 1
+ created 2013
+ updated 2019
+ description The H++ Programming Language
+ issues 0

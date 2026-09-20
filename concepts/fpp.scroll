@@ -1,0 +1,33 @@
+../code/conceptPage.scroll
+
+id fpp
+name Functional PHP Preprocessor
+appeared 2018
+creators Sascha-Oliver Prolic
+tags pl
+website https://github.com/prolic/fpp
+latestVersion v0.1.0
+aka fpp
+lab https://www.sasaprolic.com/
+fileExtensions fpp
+writtenIn php markdown yaml json
+
+repoStats
+ firstCommit 2018
+ commits 614
+ committers 23
+ files 68
+ newestCommit 2021
+ mb 2
+ linesOfCode 7137
+country Paraguay
+
+keywords namespace use data bool string float int enum uuid guid event command
+githubRepo https://github.com/prolic/fpp
+ stars 285
+ forks 26
+ subscribers 16
+ created 2018
+ updated 2024
+ description Functional PHP Preprocessor - Generate Immutable Data Types
+ issues 5

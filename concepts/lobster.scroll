@@ -1,0 +1,33 @@
+../code/conceptPage.scroll
+
+id lobster
+name lobster
+appeared 2011
+creators Wouter Van Oortmerssen
+tags pl
+website http://strlen.com/lobster/
+lab https://github.com/aardappel/lobster/issues
+writtenIn c cpp make objective-c bourne-shell markdown html xml typescript json cmake java perl python yaml hlsl javascript assembly-language m4 gradle css diff bash svg metal
+
+isOpenSource true
+fileType text
+rosettaCode http://www.rosettacode.org/wiki/Category:Lobster
+repoStats
+ firstCommit 2013
+ commits 2221
+ committers 59
+ files 2744
+ newestCommit 2025
+ mb 112
+ linesOfCode 1406170
+country United States
+
+githubRepo https://github.com/aardappel/lobster
+ stars 2212
+ forks 118
+ subscribers 55
+ created 2013
+ updated 2024
+ firstCommit 2013
+ description The Lobster Programming Language
+ issues 13

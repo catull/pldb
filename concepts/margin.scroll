@@ -1,0 +1,40 @@
+../code/conceptPage.scroll
+
+id margin
+name Margin
+appeared 2019
+creators Alex Gamburg
+tags textMarkup
+website https://margin.love
+description Margin is a lightweight markup language for hierarchically structured thought, like notes and to-do lists.
+lab https://github.com/gamburg/margin/issues
+writtenIn javascript markdown css html
+
+repoStats
+ firstCommit 2019
+ commits 70
+ committers 7
+ files 24
+ newestCommit 2022
+ mb 1
+ linesOfCode 1895
+country United States
+
+example
+ Favorite Movies
+   Eyes Wide Shut [year: 1999]
+   Black Narcissus [year: 1947]
+   Adaptation [year: 2002]
+
+githubRepo https://github.com/gamburg/margin
+ firstCommit 2019
+ stars 190
+ forks 9
+ subscribers 11
+ created 2019
+ updated 2024
+ description Lightweight markup designed for an open mind
+ issues 7
+
+domainName margin.love
+ registered 2019

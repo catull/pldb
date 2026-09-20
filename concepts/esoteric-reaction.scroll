@@ -1,0 +1,31 @@
+../code/conceptPage.scroll
+
+id esoteric-reaction
+name Esoteric Reaction
+appeared 2020
+tags esolang
+lab https://bigyihsuan.github.io
+writtenIn rust markdown csv json python toml
+
+repoStats
+ firstCommit 2020
+ commits 62
+ committers 1
+ files 43
+ newestCommit 2023
+ mb 2
+ linesOfCode 4299
+country Unknown
+
+example
+  <code>	   ::= <equation> | <equation> <code>
+  <equation> ::= <reagent> <rhs> | <COMMENT> | <reagent> <rhs> <COMMENT>
+
+githubRepo https://github.com/bigyihsuan/EsotericReaction
+ stars 4
+ forks 0
+ subscribers 2
+ created 2020
+ updated 2023
+ description Esolang using chemical "formulas" as code
+ issues 0

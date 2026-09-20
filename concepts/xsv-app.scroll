@@ -1,0 +1,27 @@
+../code/conceptPage.scroll
+
+id xsv-app
+name xsv-app
+appeared 2014
+tags application
+latestVersion 0.13.0
+writtenIn rust bourne-shell markdown yaml toml make vim-script
+
+repoStats
+ firstCommit 2014
+ commits 418
+ committers 30
+ files 66
+ newestCommit 2021
+ mb 1
+ linesOfCode 8527
+
+githubRepo https://github.com/BurntSushi/xsv
+ firstCommit 2014
+ stars 10237
+ forks 317
+ subscribers 100
+ created 2014
+ updated 2024
+ description A fast CSV command line toolkit written in Rust.
+ issues 161

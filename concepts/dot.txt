@@ -1,0 +1,140 @@
+DOT
+===
+
+DOT is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22diagramLang%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">diagram lang</a> created in 2007 by Emden R. Gansner and Eleftherios Koutsofios and Stephen North.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222007%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2007
+ https://pldb.io/concepts/../lists/creators.html#q=Emden%20R.%20Gansner Emden R. Gansner
+ https://pldb.io/concepts/../lists/creators.html#q=Eleftherios%20Koutsofios Eleftherios Koutsofios
+ https://pldb.io/concepts/../lists/creators.html#q=Stephen%20North Stephen North
+
+#193 on PLDB
+19 Years Old
+28k <span title="DOT repos on GitHub.">Repos</span>
+
+DOT is a plain text graph description language. DOT graphs are typically files with the file extension gv or dot. The extension gv is preferred to avoid confusion with the extension dot used by early (pre-2007) versions of Microsoft Word. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/DOT_(graph_description_language) Read more on Wikipedia...
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"diagramLang"%5D%7D%5D%2C"logic"%3A"AND"%7D'>diagramLang</a>
+- There are at least 27,831 DOT repos on <a href="https://github.com/search?q=language:Graphviz (DOT)">GitHub</a>
+- Early development of DOT happened in <a href="../lists/labs.html#q=AT&T">AT&T</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 67 users using DOT in 68 repos on <a href="https://api.github.com/search/repositories?q=language:Graphviz (DOT)">GitHub</a>
+- <a href="antlr.html">ANTLR</a> <a href="https://github.com/antlr/grammars-v4/tree/master/dot">grammar</a> for DOT
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/graphviz.py">syntax highlighting</a> for DOT
+- GitHub supports <a href="https://github.com/textmate/graphviz.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for DOT
+- There is 1 <a href="jupyter-notebook.html">Jupyter</a> <a href="https://github.com/laixintao/jupyter-dot-kernel">Kernel</a> for DOT
+- See also: (6 related languages) <a href="javascript.html">JavaScript</a>, <a href="java.html">Java</a>, <a href="python.html">Python</a>, <a href="google-cloud.html">Google Cloud Platform</a>, <a href="actionscript.html">ActionScript</a>, <a href="svg.html">SVG</a>
+- Read more about DOT on the web: 1.
+ https://www.graphviz.org/pdf/dotguide.pdf 1.
+- 7 PLDB concepts link to DOT: <a href="d2.html">D2</a>, <a href="fcl.html">FCL</a>, <a href="flowchart-fun.html">FlowchartFun</a>, <a href="flowgorithm.html">Flowgorithm</a>, <a href="fsl.html">Finite State Language</a>, <a href="mscgen.html">Mscgen</a>, <a href="workfl.html">Workfl</a>
+
+```Example from the web:
+ // The graph name and the semicolons are optional
+graph graphname {
+    a -- b -- c;
+    b -- d;
+}
+```
+
+```Example from <a href='https://github.com/textmate/graphviz.tmbundle'>Linguist</a>:
+/*
+  Huffman Tree DOT graph.
+
+  DOT Reference :  http://www.graphviz.org/doc/info/lang.html
+                   http://en.wikipedia.org/wiki/DOT_language
+  Timestamp     :  1415989074
+  Phrase        :  &#39;OH GOD WHY IS LINGUIST SO ANAL ABOUT THIS STUFF&#39;
+
+  Generated on http://huffman.ooz.ie/
+*/
+
+digraph G {
+    edge [label=0];
+    graph [ranksep=0];
+    T [shape=record, label=&quot;{{T|4}|000}&quot;];
+    S [shape=record, label=&quot;{{S|5}|001}&quot;];
+    SPACE [shape=record, label=&quot;{{SPACE|9}|01}&quot;];
+    A [shape=record, label=&quot;{{A|3}|1000}&quot;];
+    H [shape=record, label=&quot;{{H|3}|1001}&quot;];
+    U [shape=record, label=&quot;{{U|3}|1010}&quot;];
+    L [shape=record, label=&quot;{{L|2}|10110}&quot;];
+    N [shape=record, label=&quot;{{N|2}|10111}&quot;];
+    I [shape=record, label=&quot;{{I|4}|1100}&quot;];
+    O [shape=record, label=&quot;{{O|4}|1101}&quot;];
+    G [shape=record, label=&quot;{{G|2}|11100}&quot;];
+    F [shape=record, label=&quot;{{F|2}|11101}&quot;];
+    GF [label=4];
+    W [shape=record, label=&quot;{{W|1}|111100}&quot;];
+    Y [shape=record, label=&quot;{{Y|1}|111101}&quot;];
+    B [shape=record, label=&quot;{{B|1}|111110}&quot;];
+    D [shape=record, label=&quot;{{D|1}|111111}&quot;];
+    BD [label=2];
+    WYBD [label=4];
+    GFWYBD [label=8];
+    47 -&gt; 18 -&gt; 9 -&gt; T;
+    29 -&gt; 13 -&gt; 6 -&gt; A;
+    7 -&gt; U;
+    4 -&gt; L;
+    16 -&gt; 8 -&gt; I;
+    GFWYBD -&gt; GF -&gt; G;
+    WYBD -&gt; 2 -&gt; W;
+    BD -&gt; B;9 -&gt; S [label=1];
+    18 -&gt; SPACE [label=1];
+    6 -&gt; H [label=1];
+    13 -&gt; 7 -&gt; 4 -&gt; N [label=1];
+    8 -&gt; O [label=1];
+    GF -&gt; F [label=1];
+    2 -&gt; Y [label=1];
+    47 -&gt; 29 -&gt; 16 -&gt; GFWYBD -&gt; WYBD -&gt; BD -&gt; D [label=1];
+}
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/DOT_(graph_description_language)'>Wikipedia</a>:
+digraph g {
+	node [shape=plaintext];
+	A1 -&gt; B1;
+	A2 -&gt; B2;
+	A3 -&gt; B3;
+	
+	A1 -&gt; A2 [label=f];
+	A2 -&gt; A3 [label=g];
+	B2 -&gt; B3 [label=&quot;g&#39;&quot;];
+	B1 -&gt; B3 [label=&quot;(g o f)&#39;&quot; tailport=s headport=s];
+
+	{ rank=same; A1 A2 A3 }
+	{ rank=same; B1 B2 B3 }
+}
+```
+
+Language <a href="../lists/features.html">features</a>
+======================================================
+
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  /* A comment
+  */
+ Token /* */
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  // A comment
+ Token 
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  // A comment
+ Token //
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token
+
+Built with Scroll v180.0.1

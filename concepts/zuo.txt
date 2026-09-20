@@ -1,0 +1,41 @@
+Zuo
+===
+
+Zuo, aka derived from the Chinese word for “make.”, is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2022 by Matthew Flatt.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222022%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2022
+ https://pldb.io/concepts/../lists/creators.html#q=Matthew%20Flatt Matthew Flatt
+
+#2209 on PLDB
+4 Years Old
+
+A Tiny Racket for Scripting
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- <a href="racket.html">Racket</a> influenced the design of Zuo
+- Zuo is written in <a href="c.html">C</a>
+- See also: (1 related languages) <a href="racket.html">Racket</a>
+- Read more about Zuo on the web: 1.
+ https://github.com/racket/racket/tree/master/racket/src/zuo 1.
+
+```Example from the web:
+#lang zuo/datum
+
+;; The classic toy benchmark
+(provide fib)
+
+(define input
+  (let ([args (hash-ref (runtime-env) &#39;args)])
+    (if (null? args)
+        30
+        (string-&gt;integer (car args)))))
+
+(define (fib n)
+  (cond
+    [(= n 0) 1]
+    [(= n 1) 1]
+    [else (+ (fib (- n 1)) (fib (- n 2)))]))
+
+(fib input)
+```
+
+Built with Scroll v180.0.1

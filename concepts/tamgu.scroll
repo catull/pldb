@@ -1,0 +1,27 @@
+../code/conceptPage.scroll
+
+id tamgu
+name tamgu
+appeared 2019
+creators Claude Roux
+tags pl
+writtenIn markdown cpp xml c make objective-c java python cmake json bourne-shell
+
+repoStats
+ firstCommit 2019
+ commits 796
+ committers 6
+ files 2314
+ newestCommit 2025
+ mb 464
+ linesOfCode 1822989
+
+githubRepo https://github.com/naver/tamgu
+ firstCommit 2019
+ stars 191
+ subscribers 11
+ created 2019
+ updated 2024
+ description Tamgu (탐구), a FIL programming language: Functional, Imperative, Logical all in one for annotation and data augmentation
+ forks 13
+ issues 0

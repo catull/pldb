@@ -1,0 +1,43 @@
+../code/conceptPage.scroll
+
+id fetlang
+name fetlang
+appeared 2017
+tags esolang
+description A nsfw esolang.
+lab https://dagans.dev
+writtenIn cpp markdown c json python yaml meson bourne-shell
+
+isOpenSource true
+fileType text
+repoStats
+ firstCommit 2017
+ commits 310
+ committers 13
+ files 105
+ newestCommit 2024
+ mb 3
+ linesOfCode 56390
+country United States
+
+leachim6 Fetlang
+ filepath f/Fetlang.fet
+ fileExtensions fet
+ example
+  Make slave scream "Hello World"
+  
+
+githubRepo https://github.com/Property404/fetlang
+ stars 1486
+ forks 36
+ subscribers 51
+ created 2017
+ updated 2024
+ firstCommit 2017
+ description Fetish-themed programming language
+ issues 10
+
+stringToken "
+
+hasStrings true
+ "Hello world"

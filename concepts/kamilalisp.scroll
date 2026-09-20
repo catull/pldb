@@ -1,0 +1,29 @@
+../code/conceptPage.scroll
+
+id kamilalisp
+name KamilaLisp
+appeared 2021
+creators Kamila Szewczyk
+tags pl
+website https://github.com/kspalaiologos/kamilalisp
+lab https://github.com/kspalaiologos/kamilalisp/issues
+writtenIn lisp java tex html xml bash markdown yaml json
+
+repoStats
+ firstCommit 2021
+ commits 1554
+ committers 12
+ files 11747
+ newestCommit 2024
+ mb 31
+ linesOfCode 1307579
+country Germany
+
+githubRepo https://github.com/kspalaiologos/kamilalisp
+ stars 268
+ forks 10
+ subscribers 10
+ created 2021
+ updated 2024
+ description A functional, flexible and concise Lisp.
+ issues 6

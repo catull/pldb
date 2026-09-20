@@ -1,0 +1,35 @@
+../code/conceptPage.scroll
+
+id starpial
+name starpial
+appeared 2012
+tags pl
+description <a href='https://github.com/ColonelJ/Starpial'>Starpial</a> is a stack-oriented functional logic programming language with OOP, recursive regex, dependent types, refinement types, and automatic parallelization based on transactions.
+lab https://github.com/ColonelJ/Starpial/issues
+writtenIn markdown
+
+isOpenSource true
+fileType text
+repoStats
+ firstCommit 2012
+ commits 15
+ committers 2
+ files 10
+ newestCommit 2017
+ mb 1
+ linesOfCode 340
+country Unknown
+
+githubRepo https://github.com/ColonelJ/Starpial
+ stars 7
+ forks 0
+ subscribers 3
+ created 2012
+ updated 2020
+ firstCommit 2012
+ description Description of Starpial plus example programs
+ issues 0
+
+hasDependentTypes true
+
+semanticScholar 0

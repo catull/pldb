@@ -1,0 +1,30 @@
+../code/conceptPage.scroll
+
+id fishlang
+name ><>
+appeared 2009
+tags esolang
+lab https://esolangs.org
+
+esolang https://esolangs.org/wiki/Fish
+country Unknown
+
+rijuRepl https://riju.codes/fishlang
+ example
+  "Hello, world!"r\
+             o;!?l<
+  
+ description Stack-based, reflective, two-dimensional esoteric programming language
+ fileExtensions fish
+ gitRepo https://gist.github.com/anonymous/6392418
+leachim6 ><>
+ filepath #/><>
+ example
+  "Hello World"r\
+            o;!?l<
+  
+
+stringToken "
+
+hasStrings true
+ "Hello world"

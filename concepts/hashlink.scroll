@@ -1,0 +1,34 @@
+../code/conceptPage.scroll
+
+id hashlink
+name hashlink
+appeared 2015
+creators Nicolas Cannasse
+tags bytecode
+website https://hashlink.haxe.org/
+lab https://github.com/HaxeFoundation
+writtenIn c haxe xml cmake json markdown cpp yaml make objective-c
+
+isOpenSource true
+fileType text
+repoStats
+ firstCommit 2015
+ commits 1755
+ committers 84
+ files 803
+ newestCommit 2025
+ mb 10
+ linesOfCode 721119
+country Various
+
+githubRepo https://github.com/HaxeFoundation/hashlink
+ firstCommit 2015
+ stars 801
+ forks 149
+ subscribers 46
+ created 2015
+ updated 2024
+ description A virtual machine for Haxe
+ issues 83
+
+domainName hashlink.haxe.org

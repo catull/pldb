@@ -1,0 +1,22 @@
+authors Breck Yunits
+ https://twitter.com/breckyunits Breck Yunits
+date 02/8/2023
+tags pldbBehindTheScenes
+title Data entry Livestream
+
+postHeader.scroll
+printTitle
+wideColumns 1
+printAuthors
+
+# Data Entry Livestream: Adding `appeared` to four entities
+In this Livestream I show the sometimes boring and laborious process for adding data to PLDB.io.
+ dateline
+
+endSnippet
+
+youTube https://www.youtube.com/watch?v=gXc5ellj93g
+
+endColumns
+
+../footer.scroll

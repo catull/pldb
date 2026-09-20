@@ -1,0 +1,30 @@
+../code/conceptPage.scroll
+
+id blazex
+name BlazeX
+appeared 2020
+creators RoMeAh
+tags pl
+website https://www.blazex.blazify.rocks/
+lab Blazify
+writtenIn rust toml c markdown yaml make json
+
+repoStats
+ firstCommit 2020
+ commits 286
+ committers 9
+ files 69
+ newestCommit 2024
+ mb 1
+ linesOfCode 8590
+country Unknown
+
+githubRepo https://github.com/BlazifyOrg/blazex
+ firstCommit 2020
+ stars 48
+ forks 3
+ subscribers 3
+ created 2020
+ updated 2024
+ description AOT compiled object oriented programming language
+ issues 0

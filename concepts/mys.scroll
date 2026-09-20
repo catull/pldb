@@ -1,0 +1,32 @@
+../code/conceptPage.scroll
+
+id mys
+name mys
+appeared 2020
+creators Erik Moqvist
+tags pl
+latestVersion 0.452.0
+lab https://github.com/mys-lang
+writtenIn python c restructuredtext toml cpp javascript make markdown css yaml html svg scss json bourne-shell
+
+repoStats
+ firstCommit 2020
+ commits 2943
+ committers 4
+ files 980
+ newestCommit 2022
+ mb 9
+ linesOfCode 327709
+country Iran
+
+githubRepo https://github.com/eerimoq/mys
+ firstCommit 2020
+ stars 132
+ subscribers 10
+ created 2020
+ updated 2024
+ description The Mys programming language - an attempt to create a statically typed Python-like language that produces fast binaries. See https://mys-lang.org for more information.
+ forks 5
+ issues 8
+
+semanticScholar 0

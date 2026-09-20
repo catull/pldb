@@ -1,0 +1,31 @@
+../code/conceptPage.scroll
+
+id luajit
+name LuaJIT
+appeared 2005
+creators Mike Pall
+tags compiler
+website http://luajit.org/luajit.html
+latestVersion v2.1.0-beta3
+lab https://github.com/LuaJIT
+writtenIn c lua html make css
+
+repoStats
+ firstCommit 2009
+ commits 2905
+ committers 1
+ files 232
+ newestCommit 2025
+ mb 11
+ linesOfCode 131820
+country Germany and Denmark
+
+githubRepo https://github.com/LuaJIT/LuaJIT
+ firstCommit 2009
+ stars 4555
+ forks 944
+ subscribers 254
+ created 2015
+ updated 2024
+ description Mirror of the LuaJIT git repository
+ issues 62

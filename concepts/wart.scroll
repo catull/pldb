@@ -1,0 +1,43 @@
+../code/conceptPage.scroll
+
+id wart
+name Wart
+appeared 2010
+creators Kartik K. Agaram
+tags pl
+website http://akkartik.name/post/wart
+writtenIn cpp make vim-script bash z-shell
+
+repoStats
+ firstCommit 2010
+ commits 4134
+ committers 6
+ files 1081
+ newestCommit 2018
+ mb 7
+ linesOfCode 120099
+
+example
+ def (foo (a | (b c)))     # 'b' and 'c' name parts of list 'a'
+   (list a b c)
+ (foo '(1 2))
+
+githubRepo https://github.com/akkartik/wart
+ firstCommit 2010
+ stars 139
+ forks 12
+ subscribers 10
+ created 2010
+ updated 2024
+ description An experimental, small, readable Lisp with thorough unit tests and extensible functions/macros.
+ issues 0
+
+lineCommentToken #
+
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
+
+semanticScholar 0

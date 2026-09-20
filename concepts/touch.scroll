@@ -1,0 +1,82 @@
+../code/conceptPage.scroll
+
+id touch
+name Touch
+appeared 2020
+tags textMarkup
+website http://touchlabs.io/play
+latestVersion v1.0.0-beta.1
+writtenIn go json markdown
+
+related markdown
+repoStats
+ firstCommit 2020
+ commits 272
+ committers 2
+ files 1125
+ newestCommit 2022
+ mb 1
+ linesOfCode 8340
+
+example
+ / this is a block comment
+ 
+ = Title
+ _ Subtitle
+ 
+ == h2
+ === h3
+ 
+ / numbered headings (prefixed with 1 and 1.1)
+ ## h2
+ ### h3
+ 
+ > blockquote
+ * note
+ - list
+ 1. numbered list
+ 
+ / code block
+ `js
+ function num() {
+     return 1
+ }
+ `
+ 
+ / preformatted block
+ '
+       ___________________________
+     < I'm an expert in my field. >
+       ---------------------------
+           \   ^__^
+            \  (oo)\_______
+               (__)\       )\/\
+                   ||----w |
+                   ||     ||
+ '
+ / art from https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre#example
+example
+ // an inline comment //
+ __emphasis__ // italics //
+ **strong**   // bold //
+ ``code``
+ ((link))
+ [[link text]]((link URL))
+ 
+ a \ // line break //
+ b
+ 
+ / autolinks
+ www.example.test
+ http://example.test
+ https://example.test
+
+githubRepo https://github.com/touchmarine/to
+ firstCommit 2020
+ stars 18
+ forks 1
+ subscribers 2
+ created 2020
+ updated 2024
+ description 📜 Touch Lightweight Markup Language; Familiar, Extendable, Auto-Formattable
+ issues 1

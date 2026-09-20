@@ -1,0 +1,19 @@
+../code/conceptPage.scroll
+
+id sh
+name sh
+appeared 1971
+creators Stephen Richard Bourne
+tags pl
+lab Bell Labs
+
+wordRank 5250
+country United States
+reference https://semanticscholar.org/paper/4d9cdae4e506c6b9e445e78f918b0b5ca2d60991
+reference https://ieeexplore.ieee.org/document/6770407
+
+rijuRepl https://riju.codes/sh
+ example
+  echo "Hello, world!"
+
+hopl https://hopl.info/showlanguage.prx?exp=568

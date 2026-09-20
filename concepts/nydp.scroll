@@ -1,0 +1,36 @@
+../code/conceptPage.scroll
+
+id nydp
+name nydp
+appeared 2014
+tags pl
+lab https://github.com/conanite/nydp/issues
+writtenIn ruby markdown yaml
+
+repoStats
+ firstCommit 2014
+ commits 1002
+ committers 2
+ files 219
+ newestCommit 2025
+ mb 2
+ linesOfCode 13793
+country United States
+
+example
+ (def pre-compile (expr)
+   (map pre-compile
+     (if (mac-names (car expr))
+         (pre-compile (mac-expand (car expr) (cdr expr)))
+         expr)))
+ (mac yoyo (thing) `(do-yoyo ,thing))
+
+githubRepo https://github.com/conanite/nydp
+ firstCommit 2014
+ stars 8
+ subscribers 5
+ created 2014
+ updated 2024
+ description nydp - a modern, more dangerous kind of lisp
+ forks 0
+ issues 0

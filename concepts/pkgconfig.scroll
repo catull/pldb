@@ -1,0 +1,18 @@
+../code/conceptPage.scroll
+
+id pkgconfig
+name PkgConfig
+appeared 2000
+tags configFormat
+website http://www.freedesktop.org/wiki/Software/pkg-config/
+lab X.Org Foundation
+
+related make autoconf
+country United States
+
+pygmentsHighlighter PkgConfig
+ filename configs.py
+ fileExtensions pc
+
+hasLineComments true
+hasComments true

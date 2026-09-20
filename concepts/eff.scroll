@@ -1,0 +1,32 @@
+../code/conceptPage.scroll
+
+id eff
+name eff
+appeared 2012
+tags pl
+website https://www.eff-lang.org/
+lab University of Ljubljana
+writtenIn ocaml xml svg html markdown matlab yaml bourne-shell lisp javascript python make
+
+repoStats
+ firstCommit 2012
+ commits 2577
+ committers 24
+ files 393
+ newestCommit 2024
+ mb 16
+ linesOfCode 42734
+country Slovenia
+
+githubRepo https://github.com/matijapretnar/eff
+ firstCommit 2012
+ stars 854
+ forks 41
+ subscribers 35
+ created 2012
+ updated 2024
+ description A functional programming language based on algebraic effect handlers
+ issues 6
+
+domainName eff-lang.org
+ registered 2012

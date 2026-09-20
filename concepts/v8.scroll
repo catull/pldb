@@ -1,0 +1,38 @@
+../code/conceptPage.scroll
+
+id v8
+name V8
+appeared 2008
+creators Lars Bak
+tags vm
+website https://v8.dev/
+latestVersion 12.7.131
+lab Google
+writtenIn javascript cpp python json typescript html bourne-shell markdown c wasm pascal css starlark yaml vim-script xml assembly-language bash svg scheme r bazel make
+
+isOpenSource true
+inputLanguages javascript
+inputLanguages javascript wasm
+fileType text
+repoStats
+ firstCommit 2008
+ newestCommit 2025
+ commits 130036
+ committers 1300
+ files 17162
+ mb 1089
+ linesOfCode 3859858
+
+gource https://www.youtube.com/watch?v=Mbpd1K-ToYg
+
+githubRepo https://github.com/v8/v8
+ firstCommit 2008
+ stars 23018
+ forks 3931
+ subscribers 968
+ created 2014
+ updated 2024
+ description The official mirror of the V8 Git repository
+ issues 14
+
+wikipedia https://en.wikipedia.org/wiki/V8_(JavaScript_engine)

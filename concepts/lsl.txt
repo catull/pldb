@@ -1,0 +1,168 @@
+Linden Scripting Language
+=========================
+
+Linden Scripting Language, aka Linden Scripting Language, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2003.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222003%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2003
+
+#814 on PLDB
+23 Years Old
+638 <span title="Linden Scripting Language repos on GitHub.">Repos</span>
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 638 Linden Scripting Language repos on <a href="https://github.com/search?q=language:LSL">GitHub</a>
+- Early development of Linden Scripting Language happened in <a href="../lists/labs.html#q=Linden Research, Inc">Linden Research, Inc</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 373 users using Linden Scripting Language in 397 repos on <a href="https://api.github.com/search/repositories?q=language:LSL">GitHub</a>
+- Explore Linden Scripting Language snippets on <a href="http://www.rosettacode.org/wiki/Category:LSL">Rosetta Code</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/scripting.py">syntax highlighting</a> for Linden Scripting Language
+- GitHub supports <a href="https://github.com/textmate/secondlife-lsl.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Linden Scripting Language
+- Read more about Linden Scripting Language on the web: 1.
+ http://wiki.secondlife.com/wiki/LSL_Portal 1.
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/l/LSL.lsl'>hello-world</a>:
+default
+{
+    state_entry()
+    {
+        llSay(0, &quot;Hello World&quot;);
+    }
+}
+```
+
+```Example from <a href='https://github.com/textmate/secondlife-lsl.tmbundle'>Linguist</a>:
+/*
+    Testing syntax highlighting
+    for the Linden Scripting Language
+*/
+
+integer someIntNormal       = 3672;
+integer someIntHex          = 0x00000000;
+integer someIntMath         = PI_BY_TWO;
+
+integer event               = 5673;// &#39;event&#39; is invalid.illegal
+
+key someKeyTexture          = TEXTURE_DEFAULT;
+string someStringSpecial    = EOF;
+
+some_user_defined_function_without_return_type(string inputAsString)
+{
+    llSay(PUBLIC_CHANNEL, inputAsString);
+}
+
+string user_defined_function_returning_a_string(key inputAsKey)
+{
+    return (string)inputAsKey;
+}
+
+default
+{
+    state_entry()
+    {
+        key someKey = NULL_KEY;
+        someKey = llGetOwner();
+
+        string someString = user_defined_function_returning_a_string(someKey);
+
+        some_user_defined_function_without_return_type(someString);
+    }
+
+    touch_start(integer num_detected)
+    {
+        list agentsInRegion = llGetAgentList(AGENT_LIST_REGION, []);
+        integer numOfAgents = llGetListLength(agentsInRegion);
+
+        integer index;                                                          // defaults to 0
+        for (; index &lt;= numOfAgents - 1; index++)                               // for each agent in region
+        {
+            llRegionSayTo(llList2Key(agentsInRegion, index), PUBLIC_CHANNEL, &quot;Hello, Avatar!&quot;);
+        }
+    }
+
+    touch_end(integer num_detected)
+    {
+        someIntNormal       = 3672;
+        someIntHex          = 0x00000000;
+        someIntMath         = PI_BY_TWO;
+
+        event               = 5673;// &#39;event&#39; is invalid.illegal
+
+        someKeyTexture      = TEXTURE_DEFAULT;
+        someStringSpecial   = EOF;
+
+        llSetInventoryPermMask(&quot;some item&quot;, MASK_NEXT, PERM_ALL);// &#39;llSetInventoryPermMask&#39; is reserved.godmode
+
+        llWhisper(PUBLIC_CHANNEL, &quot;Leaving \&quot;default\&quot; now...&quot;);
+        state other;
+    }
+}
+
+state other
+{
+    state_entry()
+    {
+        llWhisper(PUBLIC_CHANNEL, &quot;Entered \&quot;state other\&quot;, returning to \&quot;default\&quot; again...&quot;);
+        state default;
+    }
+}
+```
+
+Language <a href="../lists/features.html">features</a>
+======================================================
+
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  // \d+
+ Token 
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  // (\d+\.\d*|\.\d+|\d+)[eE][+-]?\d*
+ Token 
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  // 0[xX][0-9a-fA-F]+
+ Token 
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  "Hello world"
+ Token "
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  /* A comment
+  */
+ Token /* */
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  // A comment
+ Token 
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  // A comment
+ Token //
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token
+
+Built with Scroll v180.0.1

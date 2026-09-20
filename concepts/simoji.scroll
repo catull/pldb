@@ -1,0 +1,33 @@
+../code/conceptPage.scroll
+
+id simoji
+name Simoji
+appeared 2021
+creators Breck Yunits
+tags pl simulation visual
+website https://simoji.treenotation.org
+screenshot simoji.png
+webRepl https://simoji.treenotation.org/
+description Create back-of-the-envelope multi-agent simulations using emojis.
+lab Breck's Lab
+writtenIn javascript html css json svg
+leetSheets https://simoji.treenotation.org/cheatSheet.html
+
+esolang https://esolangs.org/wiki/Simoji
+repoStats
+ firstCommit 2021
+ newestCommit 2024
+ commits 194
+ committers 2
+ files 91
+ mb 3
+ linesOfCode 29682
+
+githubRepo https://github.com/breck7/simoji
+ stars 6
+ forks 0
+ subscribers 3
+ created 2021
+ updated 2024
+ description Create back-of-the-envelope multi-agent simulations using emojis.
+ issues 5

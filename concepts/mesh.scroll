@@ -1,0 +1,29 @@
+../code/conceptPage.scroll
+
+id mesh
+name Mesh Spreadsheet
+appeared 2017
+ // old version: https://github.com/chrispsn/mesh
+creators Chris Pearson
+tags visual
+screenshot mesh.gif
+description Mesh is a data and code editor that feels like a spreadsheet. The formula language is ngn/k, and the backend logic is also written in ngn/k.
+writtenIn ngnk python html markdown dockerfile
+
+repoStats
+ firstCommit 2024
+ newestCommit 2024
+ commits 26
+ committers 1
+ files 9
+ mb 1
+ linesOfCode 2682
+
+githubRepo https://github.com/chrispsn/mesh-spreadsheet/
+ stars 130
+ forks 4
+ subscribers 2
+ created 2024
+ updated 2024
+ description A data and code editor that feels like a spreadsheet.
+ issues 1

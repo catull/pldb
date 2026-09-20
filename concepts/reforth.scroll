@@ -1,0 +1,47 @@
+../code/conceptPage.scroll
+
+id reforth
+name reforth
+appeared 2013
+tags pl
+description Reforth tries to solve my gripes without fundamentally changing Forth's elegance and simplicity.
+lab https://github.com/seanpringle/reforth/issues
+writtenIn forth c markdown make f-sharp bourne-shell
+
+repoStats
+ firstCommit 2013
+ commits 77
+ committers 3
+ files 14
+ newestCommit 2020
+ mb 1
+ linesOfCode 8154
+country Unknown
+
+example
+ begin
+     condition
+     if    operation
+         next
+     end
+     condition1
+     if    operation1
+         leave
+     end
+ end
+ 10 for
+     condition
+     if    operation
+         leave
+     end
+ end
+
+githubRepo https://github.com/seanpringle/reforth
+ firstCommit 2013
+ stars 91
+ forks 13
+ subscribers 17
+ created 2013
+ updated 2024
+ description Rethinking Forth
+ issues 2

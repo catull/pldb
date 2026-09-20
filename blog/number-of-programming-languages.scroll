@@ -1,0 +1,26 @@
+authors Breck Yunits
+ https://github.com/breck7 Breck Yunits
+date 9/2/2022
+openGraphImage https://pldb.io/blog/images/languageTrends.png
+tags All
+title What is the growth in programming languages over time?
+
+postHeader.scroll
+printTitle
+wideColumns 1
+printAuthors
+printDate
+
+images/languageTrends.svg
+ caption The above SVG is also available as a png.
+  link images/languageTrends.png png
+
+The code for the visualization above was written in the Explorer language.
+ link explorers/number-of-programming-languages.explorer code
+ BASE_URL/concepts/explorer.html Explorer language
+
+endSnippet
+
+endColumns
+
+../footer.scroll

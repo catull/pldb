@@ -1,0 +1,9 @@
+title Interviews with Programming Language Creators
+
+settings.scroll
+../header.scroll
+printTitle
+
+thinColumns 4
+printSnippets interviews
+footer.scroll

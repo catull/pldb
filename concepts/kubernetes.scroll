@@ -1,0 +1,38 @@
+../code/conceptPage.scroll
+
+id kubernetes
+name Kubernetes
+appeared 2014
+creators Craig McLuckie and Joe Beda and Brendan Burns
+tags application
+website https://kubernetes.io
+latestVersion v1.31.0-alpha.0
+lab Google
+writtenIn go yaml markdown json bourne-shell protobuf make assembly-language dockerfile starlark bash powershell python c svg toml sed csv html z-shell
+leetSheets https://cheatsheets.zip/kubernetes
+
+packageRepository https://docs.helm.sh/
+repoStats
+ firstCommit 2014
+ newestCommit 2025
+ commits 147545
+ committers 5485
+ files 26339
+ mb 1152
+ linesOfCode 1462028
+country United States
+
+subreddit https://www.reddit.com/r/kubernetes/
+gource https://www.youtube.com/watch?v=8ZSxYJ0IaTc
+
+githubRepo https://github.com/kubernetes/kubernetes
+ stars 108808
+ forks 39005
+ subscribers 3224
+ created 2014
+ updated 2024
+ description Production-Grade Container Scheduling and Management
+ issues 2514
+
+wikipedia https://en.wikipedia.org/wiki/Kubernetes
+ dailyPageViews 2560

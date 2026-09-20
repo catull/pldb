@@ -1,0 +1,17 @@
+../code/conceptPage.scroll
+
+id pseint
+name PSeInt
+appeared 2003
+tags pl
+website http://pseint.sourceforge.net/index.php
+nativeLanguage Spanish
+lab https://pseint.sourceforge.net/index.php?page=contacto.php
+
+country Argentina
+
+rijuRepl https://riju.codes/pseint
+ example
+  Proceso Main
+      Escribir "¡Hola, mundo!";
+  FinProceso

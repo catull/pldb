@@ -1,0 +1,51 @@
+../code/conceptPage.scroll
+
+id popr
+name popr
+appeared 2012
+tags pl
+website https://popr.dev
+webRepl http://hackerfoo.com/eval.html
+paper http://hackerfoo.com/presentations/ttpl_slides.html
+description <a href='https://github.com/HackerFoo/poprc'>Popr</a> applies concatenative programming to types as well as values, striving for purity and correctness, and efficient execution.
+lab https://github.com/HackerFoo/poprc/issues
+writtenIn c svg bourne-shell make python nix lisp markdown yaml tex html css bash json
+compilesTo c
+
+isOpenSource true
+fileType text
+repoStats
+ firstCommit 2012
+ commits 1806
+ committers 3
+ files 164
+ newestCommit 2021
+ mb 4
+ linesOfCode 47585
+country United States
+
+example
+ 1 2 | 3 +
+
+githubRepo https://github.com/HackerFoo/poprc
+ stars 240
+ forks 10
+ subscribers 19
+ created 2012
+ updated 2024
+ firstCommit 2012
+ description A Compiler for the Popr Language
+ issues 0
+
+lineCommentToken __
+
+hasGarbageCollection false
+hasLazyEvaluation true
+hasLineComments true
+ __ A comment
+hasComments true
+ __ A comment
+hasSemanticIndentation false
+
+domainName popr.dev
+ registered 2019

@@ -1,0 +1,36 @@
+../code/conceptPage.scroll
+
+id activity-pub
+name ActivityPub
+appeared 2018
+creators Christine Lemmer-Webber and Jessica Tallon and Erin Shepherd and Amy Guy and Evan Prodromou
+tags protocol
+website https://activitypub.rocks/
+screenshot activity-pub.png
+description ActivityPub is an open, decentralized social networking protocol based on Pump.io's ActivityPump protoco
+lab W3C
+writtenIn markdown html svg json
+
+isOpenSource true
+docs https://w3c.github.io/activitypub/
+repoStats
+ firstCommit 2014
+ commits 650
+ committers 29
+ files 26
+ newestCommit 2024
+ mb 2
+ linesOfCode 15585
+country United States
+reference https://w3c.github.io/activitypub/
+
+githubRepo https://github.com/w3c/activitypub
+ firstCommit 2014
+ stars 1167
+ forks 70
+ subscribers 83
+ created 2014
+ updated 2024
+ issues 82
+
+domainName w3c.github.io

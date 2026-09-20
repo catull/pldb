@@ -1,0 +1,36 @@
+../code/conceptPage.scroll
+
+id lucid-lang
+name Lucid
+appeared 2014
+creators Chris Done
+tags template
+latestVersion 2.11.0
+lab https://github.com/chrisdone/lucid/issues
+writtenIn haskell markdown yaml css javascript dockerfile
+
+repoStats
+ firstCommit 2014
+ commits 263
+ committers 32
+ files 45
+ newestCommit 2025
+ mb 1
+ linesOfCode 5815
+country England
+
+example
+ table_ [rows_ "2"]
+        (tr_ (do td_ [class_ "top",colspan_ "2",style_ "color:red"]
+                     (p_ "Hello, attributes!")
+                 td_ "yay!"))
+
+githubRepo https://github.com/chrisdone/lucid
+ firstCommit 2014
+ stars 279
+ forks 40
+ subscribers 12
+ created 2014
+ updated 2024
+ description Clear to write, read and edit DSL for writing HTML
+ issues 1

@@ -1,0 +1,38 @@
+../code/conceptPage.scroll
+
+id dasm
+name Dasm
+appeared 1988
+tags assembly
+website https://dasm-assembler.github.io/
+latestVersion 2.20.14
+lab https://github.com/dasm-assembler/
+writtenIn assembly-language c tex make bourne-shell python yaml dockerfile
+
+repoStats
+ firstCommit 2019
+ commits 339
+ committers 29
+ files 379
+ newestCommit 2024
+ mb 17
+ linesOfCode 42798
+country United States and Germany and Canada
+
+pygmentsHighlighter DASM16
+ filename asm.py
+ fileExtensions dasm16 dasm
+
+githubRepo https://github.com/dasm-assembler/dasm
+ firstCommit 2019
+ stars 208
+ forks 39
+ subscribers 21
+ created 2019
+ updated 2024
+ description Macro assembler with support for several 8-bit microprocessors
+ issues 44
+
+domainName dasm-assembler.github.io
+ awisRank
+  2022 7232296

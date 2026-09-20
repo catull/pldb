@@ -1,0 +1,13 @@
+../code/conceptPage.scroll
+
+id 3d-logo
+name 3D Logo
+appeared 1986
+tags pl 3d
+description “3D Logo” for the Apple IIGS, which supports 3D drawing by rotating the turtle into or out of the screen
+lab Apple
+
+related logo
+reference https://en.wikipedia.org/wiki/Apple_IIGS
+
+hopl https://hopl.info/showlanguage.prx?exp=7684

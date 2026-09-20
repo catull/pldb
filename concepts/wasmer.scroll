@@ -1,0 +1,35 @@
+../code/conceptPage.scroll
+
+id wasmer
+name wasmer
+appeared 2018
+creators Syrus Akbary
+tags vm
+website https://wasmer.io
+latestVersion v4.3.1
+writtenIn rust wasm markdown toml svg c cpp graphql yaml bourne-shell xml python sql json dockerfile swift make html nix javascript diff php
+
+repoStats
+ firstCommit 2018
+ newestCommit 2025
+ commits 21939
+ committers 252
+ files 2468
+ mb 1102
+ linesOfCode 2667716
+
+twitter https://twitter.com/wasmerio
+
+githubRepo https://github.com/wasmerio/wasmer
+ firstCommit 2018
+ stars 18285
+ forks 775
+ subscribers 205
+ created 2018
+ updated 2024
+ description 🚀 The leading Wasm Runtime supporting WASIX, WASI and Emscripten
+ issues 321
+
+domainName wasmer.io
+ awisRank
+  2022 825153

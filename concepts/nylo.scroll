@@ -1,0 +1,32 @@
+../code/conceptPage.scroll
+
+id nylo
+name nylo
+appeared 2017
+tags pl
+website http://veggero.altervista.org/nylo.html
+description <a href='http://veggero.altervista.org/nylo.html'>Nylo</a>: any task in one line of code
+lab https://github.com/veggero/nylo/issues
+writtenIn python restructuredtext
+
+isOpenSource true
+fileType text
+repoStats
+ firstCommit 2017
+ commits 390
+ committers 9
+ files 13
+ newestCommit 2019
+ mb 6
+ linesOfCode 2075
+country Italy
+
+githubRepo https://github.com/veggero/nylo
+ firstCommit 2017
+ stars 22
+ forks 3
+ subscribers 5
+ created 2017
+ updated 2024
+ description Nylo's programming language interpreter.
+ issues 0

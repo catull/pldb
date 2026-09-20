@@ -1,0 +1,38 @@
+../code/conceptPage.scroll
+
+id buzz
+name buzz
+appeared 2021
+creators Benoit Giannangeli
+tags pl
+website https://buzz-lang.dev
+latestVersion 0.1.0-rc.1
+releaseNotes https://github.com/buzz-language/buzz/releases
+screenshot buzz.png
+description A small/lightweight typed scripting language (in development)
+lab https://github.com/buzz-language/
+fileExtensions buzz
+writtenIn zig lua markdown json yaml dart typescript html
+
+isOpenSource true
+influencedBy lua
+docs https://github.com/buzz-language/buzz/blob/main/README.md
+repoStats
+ firstCommit 2021
+ commits 1133
+ committers 13
+ files 229
+ newestCommit 2025
+ mb 8
+ linesOfCode 60905
+country France
+
+githubRepo https://github.com/buzz-language/buzz
+ firstCommit 2021
+ stars 1168
+ forks 32
+ subscribers 16
+ created 2021
+ updated 2024
+ description 👨‍🚀  buzz, A small/lightweight statically typed scripting language
+ issues 78

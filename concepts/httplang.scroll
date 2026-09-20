@@ -1,0 +1,32 @@
+../code/conceptPage.scroll
+
+id httplang
+name httplang
+appeared 2015
+tags pl
+lab https://github.com/f-prime
+writtenIn python markdown json
+
+repoStats
+ firstCommit 2015
+ commits 49
+ committers 11
+ files 21
+ newestCommit 2017
+ mb 1
+ linesOfCode 558
+country United States and Kazakhstan
+
+githubRepo https://github.com/Max00355/HTTPLang
+ firstCommit 2015
+ stars 500
+ forks 26
+ subscribers 19
+ created 2015
+ updated 2024
+ description A scripting langauge to do HTTP routines.
+ issues 2
+
+hackerNewsDiscussions
+ id|title|time|timestamp|by|comments|score
+ 9598443|Show HN: HTTPLang – a scripting language for making HTTP requests|2015-05-25 02:58:33 UTC|1432522713|max0563|8|44

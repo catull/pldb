@@ -1,0 +1,31 @@
+../code/conceptPage.scroll
+
+id p
+name P
+appeared 2013
+tags pl
+website https://p-org.github.io/P/
+latestVersion 2.0.15
+description P is a state machine based programming language for modeling and specifying complex distributed systems.
+lab https://github.com/p-org
+writtenIn pascal csharp java markdown bourne-shell yaml c xml python cmake json svg powershell
+
+repoStats
+ firstCommit 2013
+ commits 4484
+ committers 89
+ files 1389
+ newestCommit 2025
+ mb 149
+ linesOfCode 152141
+country United States
+
+githubRepo https://github.com/p-org/P
+ firstCommit 2013
+ stars 2967
+ forks 173
+ subscribers 107
+ created 2015
+ updated 2024
+ description The P programming language.
+ issues 13

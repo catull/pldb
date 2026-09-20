@@ -1,0 +1,31 @@
+../code/conceptPage.scroll
+
+id rainbow
+name rainbow
+appeared 2009
+tags pl
+website https://vmlanguages.is-research.de/rainbow/
+description Rainbow is an implementation of Arc in Java. It is fairly complete, providing continuations and tail-call optimization.
+lab https://github.com/conanite/rainbow/issues
+writtenIn java scheme xml bourne-shell javascript html css
+
+isOpenSource true
+repoStats
+ firstCommit 2008
+ commits 114
+ committers 4
+ files 374
+ newestCommit 2010
+ mb 2
+ linesOfCode 17786
+country United States
+
+githubRepo https://github.com/conanite/rainbow
+ firstCommit 2008
+ stars 58
+ forks 4
+ subscribers 5
+ created 2008
+ updated 2024
+ description arc in java
+ issues 1

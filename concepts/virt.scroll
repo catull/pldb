@@ -1,0 +1,14 @@
+../code/conceptPage.scroll
+
+id virt
+name Virt
+appeared 1998
+tags pl
+description A universal programming language
+
+influencedBy pascal
+reference https://link.springer.com/article/10.1007/BF02667049
+
+hopl https://hopl.info/showlanguage.prx?exp=2608
+
+semanticScholar 0

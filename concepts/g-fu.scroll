@@ -1,0 +1,31 @@
+../code/conceptPage.scroll
+
+id g-fu
+name g-fu
+appeared 2019
+tags pl
+lab https://github.com/codr7/g-fu/issues
+writtenIn go markdown python svg yaml
+
+rosettaCode http://www.rosettacode.org/wiki/Category:G-fu
+repoStats
+ firstCommit 2019
+ commits 903
+ committers 3
+ files 100
+ newestCommit 2019
+ mb 2
+ linesOfCode 2435
+country Unknown
+
+githubRepo https://github.com/codr7/g-fu
+ firstCommit 2019
+ stars 240
+ forks 9
+ subscribers 11
+ created 2019
+ updated 2024
+ description Lisp 2 Go
+ issues 0
+
+semanticScholar 0

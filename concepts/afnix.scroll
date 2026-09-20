@@ -1,0 +1,21 @@
+../code/conceptPage.scroll
+
+id afnix
+name Afnix
+appeared 2003
+tags pl
+
+reference http://freshmeat.sourceforge.net/projects/afnix
+
+rijuRepl https://riju.codes/afnix
+ example
+  println "Hello, world!"
+  
+
+printToken println
+
+hasPrintDebugging true
+
+hopl https://hopl.info/showlanguage.prx?exp=8506
+
+semanticScholar 0

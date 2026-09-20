@@ -1,0 +1,36 @@
+../code/conceptPage.scroll
+
+id redprl
+name redprl
+appeared 2016
+creators Jonathan Sterling
+tags pl
+website http://www.redprl.org/
+latestVersion v0.1.0
+lab https://github.com/RedPRL
+writtenIn standard-ml bourne-shell restructuredtext markdown vim-script python tex lisp lex css yaml make json
+
+repoStats
+ firstCommit 2016
+ commits 1234
+ committers 21
+ files 185
+ newestCommit 2019
+ mb 12
+ linesOfCode 22610
+country Various
+
+githubRepo https://github.com/redprl/sml-redprl
+ firstCommit 2016
+ stars 227
+ forks 18
+ subscribers 33
+ created 2016
+ updated 2024
+ description The People's Refinement Logic
+ issues 7
+
+domainName redprl.org
+ registered 2016
+
+semanticScholar 0

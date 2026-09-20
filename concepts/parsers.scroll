@@ -1,0 +1,57 @@
+../code/conceptPage.scroll
+
+id parsers
+name Parsers
+appeared 2017
+creators Breck Yunits
+tags grammarLanguage compiler
+website https://sdk.scroll.pub/langs/parsers/
+releaseNotes https://sdk.scroll.pub/langs/parsers/
+latestVersion 77.1.0
+oldName Grammar
+webRepl https://sdk.scroll.pub/designer/
+roadmap https://sdk.scroll.pub/langs/parsers/
+description Parsers is a language for building languages on top of Particle Notation. A compiler compiler. By creating a parsers file you get a parser, a type checker, syntax highlighting, autocomplete, a compiler, and interpreter for executing your new language. Parsers uses both postfix and prefix language features.
+lab Breck's Lab
+writtenIn particles javascript typescript html json svg css yaml markdown
+leetSheets https://scroll.pub/parserLeetsheet.html
+
+isPublicDomain true
+isOpenSource true
+subsetOf particles
+related particles antlr
+influencedBy antlr yacc ebnf bnf
+repoStats
+ firstCommit 2017
+ commits 1597
+ committers 11
+ files 230
+ newestCommit 2025
+ mb 34
+ linesOfCode 81413
+country United States and Ireland and Norway and India
+
+tiktoks https://www.tiktok.com/@scrollhits
+youtubes https://www.youtube.com/@breckyunits
+subreddit https://www.reddit.com/r/WorldWideScroll/
+example
+ latinNode
+  root
+  catchAllParser anyNode
+ anyNode
+  baseParser blobNode
+
+githubRepo https://github.com/breck7/scrollsdk
+ firstCommit 2017
+ stars 379
+ forks 17
+ subscribers 9
+ created 2017
+ updated 2024
+ description Build on top of Scroll.
+ issues 2
+
+hasVariableSubstitutionSyntax false
+hasEnums true
+ boolCell
+  enum true false

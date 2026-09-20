@@ -1,0 +1,36 @@
+../code/conceptPage.scroll
+
+id calcit
+name Calcit
+appeared 2021
+creators tí yè
+tags pl lisp
+website https://calcit-lang.org/
+writtenIn rust toml markdown yaml json bourne-shell javascript
+compilesTo javascript
+
+repoStats
+ firstCommit 2021
+ newestCommit 2025
+ commits 1022
+ committers 10
+ files 105
+ mb 3
+ linesOfCode 25642
+
+example
+ tag-match shape
+   (:circle base radius) $ println "Circle with radius:" radius
+   (:rect base width height) $ println "Rect with height:" height
+   _ $ println "Unknown shape"
+
+githubRepo https://github.com/calcit-lang/calcit/
+ stars 109
+ forks 1
+ subscribers 6
+ created 2021
+ updated 2024
+ description Indentation-based ClojureScript dialect in Rust and compiling to JavaScript ES Modules
+ issues 1
+
+hasSemanticIndentation true

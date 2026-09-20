@@ -1,0 +1,165 @@
+Alloy
+=====
+
+Alloy is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1997.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221997%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1997
+
+#702 on PLDB
+29 Years Old
+759 <span title="Alloy repos on GitHub.">Repos</span>
+
+In computer science and software engineering, Alloy is a declarative specification language for expressing complex structural constraints and behavior in a software system. Alloy provides a simple structural modeling tool based on first-order logic. Alloy is targeted at the creation of micro-models that can then be automatically checked for correctness. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Alloy_(specification_language) Read more on Wikipedia...
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 759 Alloy repos on <a href="https://github.com/search?q=language:Alloy">GitHub</a>
+- Early development of Alloy happened in <a href="../lists/labs.html#q=MIT">MIT</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 84 users using Alloy in 90 repos on <a href="https://api.github.com/search/repositories?q=language:Alloy">GitHub</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/dsls.py">syntax highlighting</a> for Alloy
+- GitHub supports <a href="https://github.com/macekond/Alloy.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Alloy
+- <a href="http://alloytools.org/">alloytools.org</a> was registered in 2017
+- See also: (1 related languages) <a href="z-notation.html">Z notation</a>
+
+```Example from the web:
+// A file system object in the file system
+sig FSObject { parent: lone Dir }
+
+// A directory in the file system
+sig Dir extends FSObject { contents: set FSObject }
+
+// A file in the file system
+sig File extends FSObject { }
+
+// A directory is the parent of its contents
+fact { all d: Dir, o: d.contents | o.parent = d }
+
+// All file system objects are either files or directories
+fact { File + Dir = FSObject }
+
+// There exists a root
+one sig Root extends Dir { } { no parent }
+
+// File system is connected
+fact { FSObject in Root.*contents }
+
+// The contents path is acyclic
+assert acyclic { no d: Dir | d in d.^contents }
+
+// Now check it for a scope of 5
+check acyclic for 5
+
+// File system has one root
+assert oneRoot { one d: Dir | no d.parent }
+
+// Now check it for a scope of 5
+check oneRoot for 5
+
+// Every fs object is in at most one directory
+assert oneLocation { all o: FSObject | lone d: Dir | o in d.contents }
+
+// Now check it for a scope of 5
+check oneLocation for 5
+```
+
+```Example from <a href='https://github.com/macekond/Alloy.tmbundle'>Linguist</a>:
+module examples/systems/file_system
+
+/*
+ * Model of a generic file system.
+ */
+
+abstract sig Object {}
+
+sig Name {}
+
+sig File extends Object {} { some d: Dir | this in d.entries.contents }
+
+sig Dir extends Object {
+  entries: set DirEntry,
+  parent: lone Dir
+} {
+  parent = this.~@contents.~@entries
+  all e1, e2 : entries | e1.name = e2.name =&gt; e1 = e2
+  this !in this.^@parent
+  this != Root =&gt; Root in this.^@parent
+}
+
+one sig Root extends Dir {} { no parent }
+
+lone sig Cur extends Dir {}
+
+sig DirEntry {
+  name: Name,
+  contents: Object
+} {
+  one this.~entries
+}
+
+/**
+ * all directories besides root have one parent
+ */
+pred OneParent_buggyVersion {
+    all d: Dir - Root | one d.parent
+}
+
+/**
+ * all directories besides root have one parent
+ */
+pred OneParent_correctVersion {
+    all d: Dir - Root | (one d.parent &amp;&amp; one contents.d)
+}
+
+/**
+ * Only files may be linked (that is, have more than one entry)
+ * That is, all directories are the contents of at most one directory entry
+ */
+pred NoDirAliases {
+    all o: Dir | lone o.~contents
+}
+
+check { OneParent_buggyVersion =&gt; NoDirAliases } for 5 expect 1
+
+check { OneParent_correctVersion =&gt; NoDirAliases } for 5 expect 0
+
+```
+
+Language <a href="../lists/features.html">features</a>
+======================================================
+
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  // [0-9]+
+ Token 
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  /* A comment
+  */
+ Token /* */
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  // A comment
+ Token 
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  // A comment
+ Token //
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token
+
+Built with Scroll v180.0.1

@@ -1,0 +1,41 @@
+../code/conceptPage.scroll
+
+id onnx
+name onnx
+appeared 2017
+creators Junjie Bai
+tags binaryDataFormat
+website https://onnx.ai/
+latestVersion v1.16.1
+lab https://github.com/onnx
+writtenIn python markdown cpp yaml json protobuf cmake jupyter-notebook toml bourne-shell svg css powershell make javascript
+
+isOpenSource true
+fileType binary
+repoStats
+ firstCommit 2017
+ commits 3591
+ committers 388
+ files 7607
+ newestCommit 2025
+ mb 38
+ linesOfCode 398036
+country United States
+
+twitter https://twitter.com/onnxai
+
+githubRepo https://github.com/onnx/onnx
+ stars 17369
+ forks 3638
+ subscribers 437
+ created 2017
+ updated 2024
+ firstCommit 2017
+ description Open standard for machine learning interoperability
+ issues 323
+
+domainName onnx.ai
+ registered 2017
+ awisRank
+  2022 408680
+  2017 957966

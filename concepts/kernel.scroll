@@ -1,0 +1,22 @@
+../code/conceptPage.scroll
+
+id kernel
+name Kernel
+appeared 2005
+creators John Shutt
+tags pl
+website https://web.cs.wpi.edu/~jshutt/kernel.html
+aka klisp
+description Kernel is a conservative, Scheme-like dialect of Lisp in which everything is a first-class object.
+lab Worcester Polytechnic Institute
+
+country United States
+reference https://bitbucket.org/AndresNavarro/klisp
+reference https://web.cs.wpi.edu/~jshutt/sink-01m10.tar.gz
+
+example
+ ($define! copy-es-immutable
+  ($lambda (object)
+   (((wrap $vau) ()
+    #ignore
+     (cons (unwrap list) object)))))

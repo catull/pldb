@@ -1,0 +1,12 @@
+../code/conceptPage.scroll
+
+id minihaskell
+name minihaskell
+appeared 2013
+tags plzoo
+website http://plzoo.andrej.com/language/minihaskell.html
+description lazy, functional, integers, booleans, lists, recursion, statically typed
+lab University of Ljubljana
+
+country Slovenia
+reference https://github.com/andrejbauer/plzoo

@@ -1,0 +1,46 @@
+../code/conceptPage.scroll
+
+id ok
+name OK
+appeared 2021
+creators Jesse Duffield
+tags pl
+webRepl https://www.okquestionmark.org
+lab https://github.com/jesseduffield/OK/issues
+writtenIn go json typescript yaml css bourne-shell markdown javascript html
+
+repoStats
+ firstCommit 2021
+ commits 91
+ committers 3
+ files 76
+ newestCommit 2022
+ mb 1
+ linesOfCode 19905
+country Australia
+reference https://news.ycombinator.com/item?id=32640918
+
+example
+ let divide = fn(a, b) {
+   return switch b {
+     case 0: [NO!, "cannot divide by zero"];
+     default: [a / b, ""];
+   };
+ };
+ 
+ result = divide(5, 0)
+ switch result[1] {
+   case "": puts(result[0])
+   default: puts(result[1]) // prints "cannot divide by zero"
+ }
+ 
+
+githubRepo https://github.com/jesseduffield/OK
+ firstCommit 2021
+ stars 519
+ forks 19
+ subscribers 4
+ created 2021
+ updated 2024
+ description Welcome to the future of programming languages: OK?
+ issues 11

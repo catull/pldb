@@ -1,0 +1,30 @@
+../code/conceptPage.scroll
+
+id chika
+name Chika
+appeared 2019
+creators Patrick
+tags pl
+website https://phunanon.github.io/Chika
+lab https://github.com/phunanon
+writtenIn cpp markdown svg bourne-shell html
+
+repoStats
+ firstCommit 2019
+ commits 216
+ committers 3
+ files 64
+ newestCommit 2020
+ mb 1
+ linesOfCode 6803
+country United Kingdom
+
+githubRepo https://github.com/phunanon/Chika
+ firstCommit 2019
+ stars 11
+ forks 2
+ subscribers 3
+ created 2019
+ updated 2023
+ description S-expression programming language with VM targeting both PC and Arduino.
+ issues 2

@@ -1,0 +1,34 @@
+header.scroll
+
+title hasTimestamps - language feature
+tags Feature
+printTitle hasTimestamps
+
+<a class="trueBaseThemePreviousItem" href="hasThreads.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasTraits.html">&gt;</a>
+
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
+
+container 600px
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/speedie.html">Speedie</a>
+ printline __time_id__
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/ion.html">Ion</a>
+ // Timestamps represent a specific moment in time, always include a local offset, and are capable of arbitrary precision.
+ 2007-02-23T12:14Z                // Seconds are optional, but local offset is not
+ 2007-01-01T00:00-00:00           // Happy New Year in UTC, unknown local offset
+
+***
+
+* Languages *with* hasTimestamps include <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/ion.html">Ion</a>
+
+***
+
+View all concepts with or missing a *hasTimestamps* measurement
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasTimestamps&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasTimestamps%22%2C%22origData%22%3A%22hasTimestamps%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasTimestamps&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasTimestamps%22%2C%22origData%22%3A%22hasTimestamps%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D with
+
+keyboardNav hasThreads.html hasTraits.html
+
+../footer.scroll

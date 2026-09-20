@@ -1,0 +1,32 @@
+../code/conceptPage.scroll
+
+id aiml
+name AIML
+appeared 2001
+tags dataNotation
+website http://www.aiml.foundation/
+standsFor Artificial Intelligence Markup Language
+lab https://mindsdb.com/community
+writtenIn markdown
+
+docs http://www.aiml.foundation/doc.html
+repoStats
+ firstCommit 2018
+ commits 1
+ committers 1
+ files 1
+ newestCommit 2018
+ mb 1
+ linesOfCode 1664
+
+githubRepo https://github.com/AIML-Foundation/AIML-2.1-Spec
+ stars 17
+ forks 6
+ subscribers 2
+ created 2018
+ updated 2023
+ issues 0
+
+wikipedia https://en.wikipedia.org/wiki/Artificial_Intelligence_Markup_Language
+
+domainName aiml.foundation

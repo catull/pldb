@@ -1,0 +1,10 @@
+../code/conceptPage.scroll
+
+id greenplum
+name Greenplum
+appeared 2005
+tags database
+description Massively parallel processing (MPP) database management system
+lab Pivotal Software
+
+country United States

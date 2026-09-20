@@ -1,0 +1,21 @@
+../code/conceptPage.scroll
+
+id shiv
+name shiv
+appeared 2018
+tags pl
+description The Shiv programming language is a language designed around extending the langauge itself. Its main features include: Simple, light-weight yet expressive syntax; Powerful metaprogramming capabilities.
+lab https://gitlab.com/count.j0ecool/shiv/-/issues
+writtenIn nim bourne-shell markdown javascript python yaml c xml
+
+repoStats
+ firstCommit 2018
+ commits 366
+ committers 1
+ files 125
+ newestCommit 2019
+ mb 2
+ linesOfCode 18596
+country Unknown
+
+gitlabRepo https://gitlab.com/count.j0ecool/shiv

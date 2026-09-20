@@ -1,0 +1,31 @@
+../code/conceptPage.scroll
+
+id hush
+name Hush
+appeared 2021
+creators Gabriel Bastos
+tags pl
+website https://hush-shell.github.io/
+latestVersion v0.1.4-alpha
+lab https://github.com/hush-shell/
+writtenIn rust json bourne-shell markdown python lua toml lisp dockerfile make
+
+repoStats
+ firstCommit 2020
+ commits 299
+ committers 7
+ files 224
+ newestCommit 2024
+ mb 1
+ linesOfCode 19270
+country Brazil
+
+githubRepo https://github.com/hush-shell/hush
+ firstCommit 2020
+ stars 633
+ forks 23
+ subscribers 12
+ created 2020
+ updated 2024
+ description Hush is a unix shell based on the Lua programming language
+ issues 17

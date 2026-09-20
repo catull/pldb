@@ -1,0 +1,37 @@
+../code/conceptPage.scroll
+
+id dgraph
+name dgraph
+appeared 2015
+tags application
+website https://dgraph.io
+latestVersion v24.0.0-alpha3
+lab https://github.com/dgraph-io
+writtenIn go yaml graphql hcl markdown bourne-shell json make xml dockerfile javascript tex ruby bash protobuf python
+
+related graphql-plus-minus
+repoStats
+ firstCommit 2015
+ commits 11408
+ committers 274
+ files 1378
+ newestCommit 2025
+ mb 467
+ linesOfCode 256719
+country United States
+
+twitter https://twitter.com/dgraphlabs
+
+githubRepo https://github.com/dgraph-io/dgraph
+ firstCommit 2015
+ stars 20213
+ forks 1479
+ subscribers 371
+ created 2015
+ updated 2024
+ description The high-performance database for modern applications
+ issues 224
+
+domainName dgraph.io
+ awisRank
+  2022 224762

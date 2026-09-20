@@ -1,0 +1,37 @@
+../code/conceptPage.scroll
+
+id roslyn-compiler
+name Roslyn compiler
+appeared 2009
+tags compiler
+website https://docs.microsoft.com/dotnet/csharp/roslyn-sdk/
+latestVersion v4.2.0
+lab https://github.com/dotnet
+writtenIn csharp visual-basic.net xml markdown yaml powershell xaml cadence-skill bourne-shell json diff xsd cpp f-sharp cmake csv dockerfile
+
+repoStats
+ firstCommit 2014
+ newestCommit 2025
+ commits 119552
+ committers 1043
+ files 19272
+ mb 2229
+ linesOfCode 8831629
+country United States
+
+githubRepo https://github.com/dotnet/roslyn
+ firstCommit 2014
+ stars 18765
+ forks 3992
+ subscribers 1030
+ created 2015
+ updated 2024
+ description The Roslyn .NET compiler provides C# and Visual Basic languages with rich code analysis APIs.
+ issues 9252
+
+wikipedia https://en.wikipedia.org/wiki/Roslyn_(compiler)
+ summary .NET Compiler Platform, also known by its nickname Roslyn, is a set of open-source compilers and code analysis APIs for C# and Visual Basic .NET languages from Microsoft.The project notably includes self-hosting versions of the C# and VB.NET compilers – compilers written in the languages themselves. The compilers are available via the traditional command-line programs but also as APIs available natively from within .NET code. Roslyn exposes modules for syntactic (lexical) analysis of code, semantic analysis, dynamic compilation to CIL, and code emission.
+ backlinksCount 13
+ pageId 33644243
+ dailyPageViews -1
+ appeared 2010

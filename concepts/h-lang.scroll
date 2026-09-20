@@ -1,0 +1,37 @@
+../code/conceptPage.scroll
+
+id h-lang
+name h
+appeared 2019
+creators Christine Dodrill
+tags esolang
+website https://h.christine.website/
+lab https://github.com/Xe/hlang/issues
+writtenIn go dockerfile yaml markdown
+
+repoStats
+ firstCommit 2019
+ commits 6
+ committers 1
+ files 15
+ newestCommit 2020
+ mb 1
+ linesOfCode 230
+country Canada
+reference https://xeiaso.net/blog/h-language-2019-06-30
+reference https://www.reddit.com/r/programming/comments/c7ch43/the_h_programming_language/
+
+example
+ h
+
+githubRepo https://github.com/Xe/hlang
+ firstCommit 2019
+ stars 17
+ forks 2
+ subscribers 3
+ created 2020
+ updated 2023
+ description The h programming language
+ issues 1
+
+domainName h.christine.website

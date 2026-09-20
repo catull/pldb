@@ -1,0 +1,122 @@
+Jasmin
+======
+
+Jasmin is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1997.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221997%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1997
+
+#889 on PLDB
+29 Years Old
+74 <span title="Jasmin repos on GitHub.">Repos</span>
+
+Jasmin is an assembler for the Java Virtual Machine. It takes ASCII descriptions of Java classes, written in a simple assembler-like syntax using the Java Virtual Machine instruction set. It converts them into binary Java class files, suitable for loading by a Java runtime system.
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 74 Jasmin repos on <a href="https://github.com/search?q=language:Jasmin">GitHub</a>
+- Early development of Jasmin happened in <a href="../lists/labs.html#q=https://jasmin.sourceforge.net/">https://jasmin.sourceforge.net/</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 194 users using Jasmin in 204 repos on <a href="https://api.github.com/search/repositories?q=language:Jasmin">GitHub</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/jvm.py">syntax highlighting</a> for Jasmin
+- GitHub supports <a href="https://github.com/atmarksharp/jasmin-sublime" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Jasmin
+
+```Example from <a href='https://riju.codes/jasmin'>Riju</a>:
+.class public Main
+.super java/lang/Object
+
+.method public &lt;init&gt;()V
+    aload_0
+    invokenonvirtual java/lang/Object/&lt;init&gt;()V
+    return
+.end method
+
+.method public static main([Ljava/lang/String;)V
+    .limit stack 2
+    getstatic java/lang/System/out Ljava/io/PrintStream;
+    ldc &quot;Hello, world!&quot;
+    invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+    return
+.end method
+
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/j/Jasmin.j'>hello-world</a>:
+.class public Jasmin
+.super java/lang/Object
+
+.method public static main([Ljava/lang/String;)V
+	.limit stack 2
+	getstatic java/lang/System/out Ljava/io/PrintStream;
+	ldc &quot;Hello World&quot;
+	invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+	return
+.end method
+
+```
+
+```Example from <a href='https://github.com/atmarksharp/jasmin-sublime'>Linguist</a>:
+.class public op2
+.super java/lang/Object
+;
+; standard initializer (calls java.lang.Object&#39;s initializer)
+;
+.method public &lt;init&gt;()V
+aload_0
+invokenonvirtual java/lang/Object/&lt;init&gt;()V
+return
+.end method
+
+.method public static main([Ljava/lang/String;)V
+
+.limit locals 1
+.limit stack 5
+BeginGlobal:
+	.line 2
+		getstatic		java/lang/System/out Ljava/io/PrintStream;
+		ldc		0x1
+		ldc		0x0
+		iand
+		invokevirtual		java/io/PrintStream/println(Z)V
+
+	.line 3
+		getstatic		java/lang/System/out Ljava/io/PrintStream;
+		ldc		0x1
+		ldc		0x0
+		ior
+		invokevirtual		java/io/PrintStream/println(Z)V
+
+EndGlobal:
+return
+.end method
+
+```
+
+Language <a href="../lists/features.html">features</a>
+======================================================
+
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  "Hello world"
+ Token "
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  ; A comment
+ Token 
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  ; A comment
+ Token ;
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token
+
+Built with Scroll v180.0.1

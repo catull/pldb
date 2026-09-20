@@ -1,0 +1,28 @@
+../code/conceptPage.scroll
+
+id v-golf
+name V
+appeared 2016
+creators DJMcMayhem
+tags esolang
+website https://github.com/DJMcMayhem/V/
+writtenIn vim-script bash python markdown
+
+repoStats
+ firstCommit 2016
+ commits 233
+ committers 14
+ files 17
+ newestCommit 2019
+ mb 4
+ linesOfCode 2038
+country Unknown
+
+githubRepo https://github.com/DJMcMayhem/V/
+ stars 77
+ forks 9
+ subscribers 8
+ created 2016
+ updated 2023
+ description A golfing language inspired by everybody's favorite text editor, vim.
+ issues 8

@@ -1,0 +1,44 @@
+../code/conceptPage.scroll
+
+id hamler
+name hamler
+appeared 2019
+creators Feng Lee
+tags pl
+website https://www.hamler-lang.org/
+latestVersion 0.4.1
+description Hamler is a strongly-typed language with compile-time typechecking and built-in support for concurrency and distribution.
+lab https://github.com/hamler-lang/
+writtenIn erlang haskell make dockerfile yaml markdown bourne-shell xml
+
+repoStats
+ firstCommit 2019
+ commits 601
+ committers 28
+ files 315
+ newestCommit 2021
+ mb 2
+ linesOfCode 26233
+country China
+reference https://news.ycombinator.com/item?id=23491516
+
+example
+ module Main where
+ 
+ import System.IO
+ 
+ main = print "Hello, World!"
+twitter https://twitter.com/hamlerlang
+
+githubRepo https://github.com/hamler-lang/hamler
+ firstCommit 2019
+ stars 1026
+ forks 39
+ subscribers 31
+ created 2019
+ updated 2024
+ description Haskell-style functional programming language running on Erlang VM.
+ issues 32
+
+domainName hamler-lang.org
+ registered 2020

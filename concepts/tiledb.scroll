@@ -1,0 +1,35 @@
+../code/conceptPage.scroll
+
+id tiledb
+name tiledb
+appeared 2017
+tags database
+website https://tiledb.com/
+latestVersion 2.23.0
+writtenIn cpp cmake markdown c yaml bourne-shell diff python json svg powershell restructuredtext dockerfile css make bash javascript scss
+
+repoStats
+ firstCommit 2014
+ commits 10162
+ committers 114
+ files 2052
+ newestCommit 2025
+ mb 107
+ linesOfCode 630202
+
+twitter https://twitter.com/tiledb
+
+githubRepo https://github.com/TileDB-Inc/TileDB
+ firstCommit 2014
+ stars 1817
+ forks 181
+ subscribers 72
+ created 2017
+ updated 2024
+ description The Universal Storage Engine
+ issues 115
+
+domainName tiledb.com
+ registered 2010
+ awisRank
+  2022 639511

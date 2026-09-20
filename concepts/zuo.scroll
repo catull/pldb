@@ -1,0 +1,38 @@
+../code/conceptPage.scroll
+
+id zuo
+name Zuo
+appeared 2022
+creators Matthew Flatt
+tags pl
+spec https://docs.racket-lang.org/zuo/zuo-base.html
+standsFor derived from the Chinese word for “make.”
+description A Tiny Racket for Scripting
+fileExtensions zuo
+writtenIn c
+
+isOpenSource true
+related racket
+influencedBy racket
+docs https://docs.racket-lang.org/zuo/index.html
+reference https://github.com/racket/racket/tree/master/racket/src/zuo
+
+example
+ #lang zuo/datum
+ 
+ ;; The classic toy benchmark
+ (provide fib)
+ 
+ (define input
+   (let ([args (hash-ref (runtime-env) 'args)])
+     (if (null? args)
+         30
+         (string->integer (car args)))))
+ 
+ (define (fib n)
+   (cond
+     [(= n 0) 1]
+     [(= n 1) 1]
+     [else (+ (fib (- n 1)) (fib (- n 2)))]))
+ 
+ (fib input)

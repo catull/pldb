@@ -1,0 +1,28 @@
+../code/conceptPage.scroll
+
+id psyche
+name psyche
+appeared 2018
+tags pl
+lab https://github.com/0918nobita/psyche/issues
+writtenIn ocaml wasm json markdown javascript make html c bourne-shell yaml
+
+repoStats
+ firstCommit 2018
+ commits 437
+ committers 2
+ files 103
+ newestCommit 2023
+ mb 1
+ linesOfCode 16339
+country Japan
+
+githubRepo https://github.com/0918nobita/psyche
+ firstCommit 2018
+ stars 1
+ forks 0
+ subscribers 1
+ created 2023
+ updated 2023
+ description A WASM friendly lightweight programming language implemented in OCaml
+ issues 0

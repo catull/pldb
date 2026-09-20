@@ -1,0 +1,21 @@
+title PLDB.CSV
+
+rootHeader.scroll
+printTitle
+
+container
+
+Download the PLDB ScrollSet as: CSV | TSV | JSON
+ link pldb.csv CSV
+ link pldb.tsv TSV
+ link pldb.json JSON
+
+Statistics on the measures (columns) are below and can be downloaded as: CSV | TSV | JSON
+ link measures.csv CSV
+ link measures.tsv TSV
+ link measures.json JSON
+datatable measures.csv
+ printTable
+tableSearch
+
+footer.scroll

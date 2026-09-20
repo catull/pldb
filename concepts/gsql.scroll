@@ -1,0 +1,16 @@
+../code/conceptPage.scroll
+
+id gsql
+name GSQL
+appeared 2015
+tags pl
+website https://docs.tigergraph.com/dev/gsql-ref
+lab https://dev.tigergraph.com/forum/
+
+country United States
+
+pygmentsHighlighter GSQL
+ filename gsql.py
+ fileExtensions gsql
+
+semanticScholar 0

@@ -1,0 +1,32 @@
+../code/conceptPage.scroll
+
+id ren-c
+name Ren-C
+appeared 2012
+tags pl
+description Ren-C is a deeply redesigned LGPL 3.0-licensed derivative of the Rebol 3 codebase. It explores solutions to some of the Rebol language's longstanding open questions, adding fundamental new evaluation abilities and API embeddings.
+lab https://github.com/metaeducation
+writtenIn c r markdown yaml bourne-shell javascript html json
+
+forkOf rebol
+repoStats
+ firstCommit 2012
+ commits 9789
+ committers 57
+ files 993
+ newestCommit 2024
+ mb 106
+ linesOfCode 324887
+country Unknown
+
+githubRepo https://github.com/metaeducation/ren-c
+ firstCommit 2012
+ stars 126
+ forks 27
+ subscribers 28
+ created 2015
+ updated 2024
+ description Library for embedding a Rebol interpreter into C codebases
+ issues 102
+
+semanticScholar 0

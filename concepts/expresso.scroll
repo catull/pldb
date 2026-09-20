@@ -1,0 +1,34 @@
+../code/conceptPage.scroll
+
+id expresso
+name expresso
+appeared 2012
+creators Tim Williams
+tags pl
+lab https://github.com/willtim/Expresso
+writtenIn haskell logos markdown nix yaml
+
+repoStats
+ firstCommit 2012
+ commits 78
+ committers 9
+ files 22
+ newestCommit 2023
+ mb 1
+ linesOfCode 4509
+country United Kingdom
+
+example
+ let sqmag = {x, y} -> x*x + y*y
+
+githubRepo https://github.com/willtim/Expresso
+ firstCommit 2012
+ stars 301
+ forks 15
+ subscribers 16
+ created 2012
+ updated 2024
+ description A simple expressions language with polymorphic extensible row types.
+ issues 5
+
+semanticScholar 0

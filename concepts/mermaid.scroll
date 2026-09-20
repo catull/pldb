@@ -1,0 +1,53 @@
+../code/conceptPage.scroll
+
+id mermaid
+name mermaid
+appeared 2014
+creators Knut Sveidqvist
+tags diagramLang
+website https://mermaidjs.github.io/
+latestVersion 10.2.4
+lab https://github.com/mermaid-js
+writtenIn typescript javascript markdown html yaml json svg bash css toml bourne-shell csv diff dockerfile
+
+repoStats
+ firstCommit 2014
+ commits 13179
+ committers 782
+ files 999
+ newestCommit 2025
+ mb 241
+ linesOfCode 183096
+country Various
+
+example
+ gitGraph:
+ options
+ {
+     "nodeSpacing": 150,
+     "nodeRadius": 10
+ }
+ end
+ commit
+ branch newbranch
+ checkout newbranch
+ commit
+ commit
+ checkout master
+ commit
+ commit
+ merge newbranch
+
+githubRepo https://github.com/mermaid-js/mermaid
+ firstCommit 2014
+ stars 69540
+ forks 6168
+ subscribers 639
+ created 2014
+ updated 2024
+ description Generation of diagrams like flowcharts or sequence diagrams from text in a similar manner as markdown
+ issues 981
+
+domainName mermaidjs.github.io
+ awisRank
+  2022 385735

@@ -1,0 +1,60 @@
+../code/conceptPage.scroll
+
+id imba
+name Imba
+appeared 2014
+tags pl
+website https://imba.io/
+latestVersion v2.0.0-y.0
+description Imba is a Web programming language that's fast in two ways: Imba's time-saving syntax with built-in tags and styles results in less typing and switching files so you can build things fast. Imba's groundbreaking memoized DOM is an order of magnitude faster than virtual DOM libraries, so you can build fast things.
+lab https://github.com/imba/
+writtenIn imba javascript json typescript markdown html css yaml svg xml bourne-shell
+compilesTo javascript
+
+clocExtensions imba
+repoStats
+ firstCommit 2015
+ commits 4031
+ committers 47
+ files 1115
+ newestCommit 2025
+ mb 28
+ linesOfCode 237048
+country Norway and United States
+
+example
+ tag app-canvas
+ 	prop dpr = window.devicePixelRatio
+ 	prop state = {}
+ 
+ 	def draw e
+ 		let path = e.#path ||= new Path2D
+ 		let ctx = $canvas.getContext('2d')
+ 		path.lineTo(e.x * dpr,e.y * dpr)
+ 		ctx.lineWidth = state.stroke * dpr
+ 		ctx.strokeStyle = state.color
+ 		ctx.stroke(path)
+ 	
+ 	def resized e
+ 		$canvas.width = offsetWidth * dpr
+ 		$canvas.height = offsetHeight * dpr
+ 
+ 	<self @resize=resized @touch.prevent.moved.fit(self)=draw>
+ 		<canvas$canvas[pos:abs w:100% h:100%]>
+
+githubRepo https://github.com/imba/imba
+ firstCommit 2015
+ stars 6276
+ forks 173
+ subscribers 108
+ created 2014
+ updated 2024
+ description 🐤 The friendly full-stack language
+ issues 158
+
+hasSemanticIndentation true
+
+domainName imba.io
+ registered 2013
+ awisRank
+  2022 1540067

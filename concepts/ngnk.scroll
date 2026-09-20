@@ -1,0 +1,22 @@
+../code/conceptPage.scroll
+
+id ngnk
+name ngn/k
+appeared 2017
+tags pl arrayLang
+webRepl https://ngn.bitbucket.io/k/
+description ngn/k is an implementation of K6 created by ngn.
+writtenIn c vim-script make javascript python html dockerfile
+
+isOpenSource true
+implementationOf k
+repoStats
+ firstCommit 2019
+ newestCommit 2025
+ commits 4254
+ committers 19
+ files 1141
+ mb 6
+ linesOfCode 102218
+
+gitRepo https://codeberg.org/ngn/k

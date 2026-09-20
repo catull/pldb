@@ -1,0 +1,34 @@
+Low*
+====
+
+Low* is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2008.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2008
+
+#2366 on PLDB
+18 Years Old
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of Low* happened in <a href="../lists/labs.html#q=Microsoft">Microsoft</a> and <a href="../lists/labs.html#q=Inria">Inria</a>
+- Low* compiles to <a href="c.html">C</a>
+- <a href="https://arxiv.org/abs/1703.00053">First announcement of</a> Low*
+
+```Example from the web:
+let chacha20
+ (len: uint32{len ≤ blocklen})
+ (output: bytes{len = output.length})
+ (key: keyBytes)
+ (nonce: nonceBytes{disjoint [output; key; nonce]})
+ (counter: uint32) : Stack unit
+ (requires (λ m0 → output ∈ m0 ∧ key ∈ m0 ∧ nonce ∈ m0))
+ (ensures (λ m0 _m1 → modifies1 output m0 m1 ∧
+ m1.[output] ==
+  Seq.prefix len (Spec.chacha20 m0.[key] m0.[nonce]) counter))) =
+  push_frame ();
+  let state = Buffer.create 0ul 32ul in
+  let block = Buffer.sub state 16ul 16ul in
+  chacha20_init block key nonce counter;
+  chacha20_update output state len;
+  pop_frame ()
+```
+
+Built with Scroll v180.0.1

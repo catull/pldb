@@ -1,0 +1,72 @@
+holyc
+=====
+
+holyc is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2005 by Terry A. Davis.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222005%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2005
+ https://pldb.io/concepts/../lists/creators.html#q=Terry%20A.%20Davis Terry A. Davis
+
+#2076 on PLDB
+21 Years Old
+137 <span title="holyc repos on GitHub.">Repos</span>
+
+HolyC is a variation of C developed by Terry A. Davis. HolyC is the official programming language for The Temple Operating System (TempleOS).
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 137 holyc repos on <a href="https://github.com/search?q=language:HolyC">GitHub</a>
+- Early development of holyc happened in <a href="../lists/labs.html#q=https://github.com/cia-foundation/TempleOS/issues">https://github.com/cia-foundation/TempleOS/issues</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 9 users using holyc in 9 repos on <a href="https://api.github.com/search/repositories?q=language:HolyC">GitHub</a>
+- Read more about holyc on the web: 1.
+ https://web.archive.org/web/20170325000321/http://www.templeos.org/Wb/Doc/HolyC.html 1.
+
+```Example from the web:
+U0 Main()
+  {
+    I16 i1;
+    I32 j1;
+    j1=i1=0x12345678;           //Resulting i1 is 0x5678 but j1 is 0x12345678
+  
+    I64 i2=0x8000000000000000;
+    Print(&quot;%X\n&quot;,i2&gt;&gt;1);        //Res is 0xC000000000000000 as expected
+  
+    U64 u3=0x8000000000000000;
+    Print(&quot;%X\n&quot;,u3&gt;&gt;1);        //Res is 0x4000000000000000 as expected
+  
+    I32 i4=0x80000000;          //const is loaded into a 64-bit reg var.
+    Print(&quot;%X\n&quot;,i4&gt;&gt;1);        //Res is 0x40000000
+  
+    I32 i5=-0x80000000;
+    Print(&quot;%X\n&quot;,i5&gt;&gt;1);        //Res is 0xFFFFFFFFC0000000
+  }
+```
+
+Language <a href="../lists/features.html">features</a>
+======================================================
+
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token Print
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  // A comment
+ Token 
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  // A comment
+ Token //
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token
+
+Built with Scroll v180.0.1

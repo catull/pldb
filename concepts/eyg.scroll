@@ -1,0 +1,38 @@
+../code/conceptPage.scroll
+
+id eyg
+name EYG
+appeared 2021
+creators Peter Saxton
+tags pl
+website https://eyg.run/
+standsFor Eat Your Greens
+webRepl https://eyg.run/
+description Experiments in building "better" languages and tools; for some measure of better.
+writtenIn gleam go markdown javascript json html elixir toml yaml dockerfile css csv cpp bourne-shell
+
+docs https://eyg.run/documentation
+repoStats
+ firstCommit 2021
+ newestCommit 2025
+ commits 2291
+ committers 2
+ files 481
+ mb 14
+ linesOfCode 58348
+
+example
+ let message = "Hello, World!"
+ let greet = message -> perform Alert(message)
+ greet(message)
+
+githubRepo https://github.com/crowdhailer/eyg-lang
+ stars 138
+ forks 5
+ subscribers 3
+ created 2021
+ updated 2024
+ description Experiments in building "better" languages and tools; for some measure of better.
+ issues 6
+
+hasStrings true

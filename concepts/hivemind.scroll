@@ -1,0 +1,33 @@
+../code/conceptPage.scroll
+
+id hivemind
+name hivemind
+appeared 2015
+creators Alexander Ivanov
+tags pl
+lab https://github.com/alehander92/hivemind/issues
+writtenIn ruby yaml markdown
+
+repoStats
+ firstCommit 2015
+ commits 22
+ committers 3
+ files 31
+ newestCommit 2016
+ mb 1
+ linesOfCode 1790
+country Bulgaria
+
+githubRepo https://github.com/alehander42/hivemind
+ firstCommit 2015
+ stars 135
+ forks 5
+ subscribers 9
+ created 2015
+ updated 2023
+ description a multi-syntax language
+ issues 0
+
+hackerNewsDiscussions
+ id|title|time|timestamp|by|comments|score
+ 11275736|Show HN: A multi-syntax programming language with bidirectional grammars|2016-03-13 01:47:46 UTC|1457833666|alehander42|38|96

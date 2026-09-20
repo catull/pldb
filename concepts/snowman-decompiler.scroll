@@ -1,0 +1,32 @@
+../code/conceptPage.scroll
+
+id snowman-decompiler
+name Snowman
+appeared 2015
+tags decompiler
+lab SmartDec
+writtenIn javascript json yaml html markdown css svg ejs
+
+repoStats
+ firstCommit 2023
+ commits 1
+ committers 1
+ newestCommit 2023
+ mb 1
+country Russia or Israel
+
+leachim6 Snowman
+ filepath s/Snowman.sm
+ fileExtensions sm
+ example
+  ~"Hello World"sPvG
+
+githubRepo https://github.com/yegord/snowman
+ firstCommit 2015
+ stars 2265
+ forks 309
+ subscribers 119
+ created 2015
+ updated 2024
+ description Snowman decompiler
+ issues 94

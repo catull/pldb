@@ -1,0 +1,28 @@
+../code/conceptPage.scroll
+
+id ait
+name Ait
+appeared 2016
+creators Stian Veum Møllersen
+tags pl
+description A Concatenative Language for Creative Programming
+paper https://functional-art.org/2017/ait
+writtenIn javascript markdown json cson
+
+repoStats
+ firstCommit 2016
+ newestCommit 2017
+ commits 57
+ committers 2
+ files 60
+ mb 1
+ linesOfCode 9513
+
+githubRepo https://github.com/mollerse/ait-lang
+ stars 45
+ forks 2
+ subscribers 5
+ created 2016
+ updated 2024
+ description Ait - Concatenative language for making visual demos with Canvas
+ issues 0

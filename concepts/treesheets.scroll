@@ -1,0 +1,30 @@
+../code/conceptPage.scroll
+
+id treesheets
+name TreeSheets
+appeared 2019
+creators Wouter Van Oortmerssen
+tags visual
+website https://strlen.com/treesheets/
+latestVersion v1.0.2
+screenshot treesheets.png
+writtenIn cpp c svg xml html yaml markdown bourne-shell cmake
+
+repoStats
+ firstCommit 2013
+ commits 868
+ committers 42
+ files 403
+ newestCommit 2025
+ mb 8
+ linesOfCode 137084
+
+githubRepo https://github.com/aardappel/treesheets
+ firstCommit 2013
+ stars 2514
+ forks 188
+ subscribers 61
+ created 2013
+ updated 2024
+ description TreeSheets : Free Form Data Organizer (see strlen.com/treesheets)
+ issues 122

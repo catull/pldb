@@ -1,0 +1,54 @@
+../code/conceptPage.scroll
+
+id triton
+name Triton
+appeared 2021
+creators Philippe Tillet
+tags pl
+website https://triton-lang.org/
+latestVersion v2.1.0
+description Triton is a language and compiler for parallel programming. It aims to provide a Python-based programming environment for productively writing custom DNN compute kernels capable of running at maximal throughput on modern GPU hardware.
+lab OpenAI
+writtenIn cpp python cmake markdown yaml restructuredtext bourne-shell c dockerfile svg toml json html llvmir make
+
+related numba
+repoStats
+ firstCommit 2021
+ commits 10180
+ committers 446
+ files 904
+ newestCommit 2025
+ mb 422
+ linesOfCode 252253
+country United States
+reference https://openai.com/blog/triton/
+
+example
+ # This is a GPU kernel in Triton.
+ # Different instances of this
+ # function may run in parallel.
+ @jit
+ def add(X, Y, Z, N):
+    # In Triton, each kernel instance
+    # executes block operations on a
+    # single thread: there is no construct
+    # analogous to threadIdx
+    pid = program_id(0)
+    # block of indices
+    idx = pid * BLOCK + arange(BLOCK)
+    mask = idx < N
+    # Triton uses pointer arithmetics
+    # rather than indexing operators
+    x = load(X + idx, mask=mask)
+    y = load(Y + idx, mask=mask)
+    store(Z + idx, x + y, mask=mask)
+
+githubRepo https://github.com/openai/triton
+ firstCommit 2021
+ stars 12112
+ forks 1446
+ subscribers 186
+ created 2014
+ updated 2024
+ description Development repository for the Triton language and compiler
+ issues 632

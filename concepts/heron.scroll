@@ -1,0 +1,15 @@
+../code/conceptPage.scroll
+
+id heron
+name Heron
+appeared 2008
+tags pl
+lab https://code.google.com/archive/p/heron-language/issues
+
+rosettaCode http://www.rosettacode.org/wiki/Category:Heron
+country Unknown
+reference https://www.findbestopensource.com/product/heron-language
+
+gitRepo https://code.google.com/archive/p/heron-language/
+
+hopl https://hopl.info/showlanguage.prx?exp=8574

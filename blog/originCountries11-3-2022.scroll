@@ -1,0 +1,43 @@
+authors Breck Yunits
+ https://github.com/breck7 Breck Yunits
+date 11/3/2022
+openGraphImage https://pldb.io/blog/images/originCountries11-3-2022.png
+tags All
+title Where are the most programming languages created?
+
+postHeader.scroll
+printTitle
+wideColumns 1
+printAuthors
+printDate
+
+images/originCountries11-3-2022.svg
+ caption The above SVG is also available as a png.
+  link images/originCountries11-3-2022.png png
+
+The code for the visualization above was written in the Explorer language.
+ link explorers/originCountries.explorer code
+ BASE_URL/concepts/explorer.html Explorer language
+
+You can export the data using this Ohayo script:
+
+ohayoCode
+ html.h1 Which countries produce the most programming languages?
+ web.get https://pldb.io/pldb.csv
+  hidden
+  filter.where country >
+   show.rowCount
+   group.by country
+    hidden
+    vega.bar
+
+## Previous posts in this series
+
+September 3, 2022
+ originCountries.html
+October 31, 2018
+ which-countries-produce-the-most-programming-languages.html
+
+endSnippet
+
+../footer.scroll

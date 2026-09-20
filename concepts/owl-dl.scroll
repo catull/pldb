@@ -1,0 +1,12 @@
+../code/conceptPage.scroll
+
+id owl-dl
+name OWL DL
+appeared 2007
+tags xmlFormat
+description A subset of OWL.
+lab Bell Labs Research
+
+related owl
+country United States
+reference https://www.w3.org/2007/OWL/wiki/images/9/9a/Pfps-f2f1.pdf

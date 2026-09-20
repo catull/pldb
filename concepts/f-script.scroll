@@ -1,0 +1,43 @@
+../code/conceptPage.scroll
+
+id f-script
+name F-Script
+appeared 2009
+creators Philippe Mougin
+tags pl
+website https://github.com/pmougin/F-Script
+lab https://github.com/pmougin
+writtenIn objective-c xml
+
+isOpenSource true
+fileType text
+repoStats
+ firstCommit 2009
+ commits 13
+ committers 2
+ files 442
+ newestCommit 2013
+ mb 2
+ linesOfCode 88968
+country United States
+
+githubRepo https://github.com/pmougin/f-script
+ firstCommit 2009
+ stars 118
+ forks 59
+ subscribers 9
+ created 2009
+ updated 2024
+ issues 2
+
+wikipedia https://en.wikipedia.org/wiki/F-Script_(programming_language)
+ related x86-isa smalltalk apl
+ summary F-Script is an object-oriented scripting programming language for Apple's macOS operating system developed by Philippe Mougin.  F-Script is an interactive language based on Smalltalk, using macOS's native Cocoa API.
+ pageId 899874
+ created 2004
+ backlinksCount 43
+ revisionCount 56
+ dailyPageViews 14
+ appeared 2009
+
+hopl https://hopl.info/showlanguage.prx?exp=5441

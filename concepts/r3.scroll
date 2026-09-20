@@ -1,0 +1,31 @@
+../code/conceptPage.scroll
+
+id r3
+name r3
+appeared 2021
+creators Pablo H. Reda
+tags pl
+latestVersion v1.0.0
+lab https://github.com/phreda4/r3/issues
+writtenIn f-sharp glsl xml assembly-language csv markdown
+
+related forth
+repoStats
+ firstCommit 2021
+ commits 1001
+ committers 1
+ files 667
+ newestCommit 2025
+ mb 138
+ linesOfCode 96438
+country Argentina
+
+githubRepo https://github.com/phreda4/r3
+ firstCommit 2021
+ stars 50
+ forks 4
+ subscribers 7
+ created 2021
+ updated 2024
+ description r3 programing language - ColorForth inspired
+ issues 0

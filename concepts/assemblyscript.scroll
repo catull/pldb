@@ -1,0 +1,52 @@
+../code/conceptPage.scroll
+
+id assemblyscript
+name AssemblyScript
+appeared 2017
+tags pl
+website https://assemblyscript.org
+latestVersion v0.27.27
+lab The AssemblyScript Project
+writtenIn typescript wasm json javascript markdown yaml html svg xml
+
+influencedBy typescript
+repoStats
+ firstCommit 2017
+ commits 1816
+ committers 86
+ files 1259
+ newestCommit 2025
+ mb 162
+ linesOfCode 1216885
+country Ukraine and Germany
+
+example
+ /** Calculates the n-th Fibonacci number. */
+ export function fib(n: i32): i32 {
+   var a = 0, b = 1
+   if (n > 0) {
+     while (--n) {
+       let t = a + b
+       a = b
+       b = t
+     }
+     return b
+   }
+   return a
+ }
+twitter https://twitter.com/assemblyscript
+
+githubRepo https://github.com/AssemblyScript/assemblyscript
+ firstCommit 2017
+ stars 16642
+ forks 649
+ subscribers 198
+ created 2017
+ updated 2024
+ description A TypeScript-like language for WebAssembly.
+ issues 188
+
+domainName assemblyscript.org
+ registered 2017
+ awisRank
+  2022 603117

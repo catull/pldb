@@ -1,0 +1,29 @@
+../code/conceptPage.scroll
+
+id mastodon
+name Mastodon
+appeared 2016
+creators Eugen Rochko
+tags protocol microblogging
+website https://joinmastodon.org
+writtenIn svg ruby yaml haml jsx javascript typescript json erb scss markdown sql html csv xml dockerfile bash css json5 bourne-shell diff
+
+repoStats
+ firstCommit 2016
+ newestCommit 2025
+ commits 19910
+ committers 1111
+ files 8829
+ mb 285
+ linesOfCode 669801
+
+githubRepo https://github.com/mastodon/mastodon
+ stars 46477
+ forks 6825
+ subscribers 708
+ created 2016
+ updated 2024
+ description Your self-hosted, globally interconnected microblogging community
+ issues 4095
+
+wikipedia https://en.wikipedia.org/wiki/Mastodon_(social_network)

@@ -1,0 +1,33 @@
+../code/conceptPage.scroll
+
+id xtclang
+name Ecstasy
+appeared 2015
+creators Cameron Purdy
+tags pl
+website http://xtclang.org
+writtenIn java logos gradle markdown bourne-shell kotlin xml c json lisp make yaml toml html dockerfile
+
+repoStats
+ firstCommit 2016
+ commits 9062
+ committers 26
+ files 2086
+ newestCommit 2025
+ mb 106
+ linesOfCode 169328
+
+twitter https://twitter.com/xtclang
+
+githubRepo https://github.com/xtclang/xvm
+ firstCommit 2016
+ stars 196
+ forks 16
+ subscribers 18
+ created 2019
+ updated 2024
+ description Ecstasy and XVM
+ issues 52
+
+domainName xtclang.org
+ registered 2015

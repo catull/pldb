@@ -1,0 +1,35 @@
+../code/conceptPage.scroll
+
+id curv
+name curv
+appeared 2016
+creators Doug Moen
+tags pl
+website http://www.curv3d.org/
+description Curv is a programming language for creating art using mathematics. It’s a 2D and 3D geometric modelling tool that supports full colour, animation and 3D printing.
+lab https://github.com/curv3d
+writtenIn cpp markdown restructuredtext python xml cmake css bourne-shell make glsl m4 yaml html c javascript powershell
+
+repoStats
+ firstCommit 2016
+ commits 3957
+ committers 25
+ files 1557
+ newestCommit 2023
+ mb 21
+ linesOfCode 675092
+country Canada
+reference https://docs.google.com/spreadsheets/d/12sTu7RT-s_QlAupY1v-3DfI1Mm9NEX5YMWWTDAKHLfc/edit#gid=0
+
+githubRepo https://github.com/curv3d/curv
+ firstCommit 2016
+ stars 1134
+ forks 73
+ subscribers 31
+ created 2017
+ updated 2024
+ description a language for making art using mathematics
+ issues 31
+
+domainName curv3d.org
+ registered 2018

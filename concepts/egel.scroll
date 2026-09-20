@@ -1,0 +1,49 @@
+../code/conceptPage.scroll
+
+id egel
+name Egel
+appeared 2016
+creators Marco Devillers
+tags pl functional
+website https://egel-lang.github.io/
+description A simple untyped eager functional language.
+fileExtensions eg
+writtenIn cpp
+
+repoStats
+ firstCommit 2016
+ newestCommit 2024
+ commits 1433
+ committers 6
+ files 225
+ mb 4
+ linesOfCode 39880
+
+example
+ # Rosetta Code example 99 Bottles.
+ #
+ # See: http://rosettacode.org
+ 
+ import "prelude.eg"
+ 
+ using System
+ 
+ def print_rhyme =
+     [ 0 ->
+         print "better go to the store, and buy some more\n"
+     | N ->
+         let _ = print N " bottles of beer on the wall\n" in
+         let _ = print N " bottles of beer\n" in
+         let _ = print "take one down, pass it around\n" in
+             print_rhyme (N - 1) ]
+ 
+ def main = print_rhyme 99
+
+githubRepo https://github.com/egel-lang/egel
+ stars 80
+ forks 4
+ subscribers 2
+ created 2016
+ updated 2024
+ description The Egel Programming Language
+ issues 0

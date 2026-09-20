@@ -1,0 +1,30 @@
+../code/conceptPage.scroll
+
+id pyret-lang
+name Pyret
+appeared 2012
+creators Ben Lerner and Joe Gibbs Politz
+tags pl
+website https://www.pyret.org/
+lab Brown University
+writtenIn javascript json markdown svg make lisp vim-script asp.net html bourne-shell csv xml yaml
+
+repoStats
+ firstCommit 2012
+ commits 11152
+ committers 92
+ files 654
+ newestCommit 2025
+ mb 481
+ linesOfCode 1095548
+country United States
+
+githubRepo https://github.com/brownplt/pyret-lang
+ firstCommit 2012
+ stars 1061
+ forks 106
+ subscribers 42
+ created 2012
+ updated 2024
+ description The Pyret language.
+ issues 437

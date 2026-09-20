@@ -1,0 +1,30 @@
+../code/conceptPage.scroll
+
+id raptorjit
+name raptorjit
+appeared 2009
+creators Mike Pall
+tags pl
+latestVersion v1.0.3
+lab https://github.com/raptorjit
+writtenIn lua c html nix markdown css make r assembly-language cpp pascal yaml
+
+repoStats
+ firstCommit 2009
+ commits 3304
+ committers 21
+ files 444
+ newestCommit 2024
+ mb 9
+ linesOfCode 87889
+country Unknown
+
+githubRepo https://github.com/raptorjit/raptorjit
+ firstCommit 2009
+ stars 834
+ forks 39
+ subscribers 58
+ created 2017
+ updated 2024
+ description RaptorJIT: A dynamic language for system programming (LuaJIT fork)
+ issues 127

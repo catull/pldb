@@ -1,0 +1,33 @@
+../code/conceptPage.scroll
+
+id solid-network
+name Solid
+appeared 2016
+creators Tim Berners-Lee
+tags network protocol
+website https://solidproject.org/
+description Solid is an open standard for structuring data, digital identities, and applications on the Web.
+writtenIn markdown html svg css
+
+repoStats
+ firstCommit 2019
+ newestCommit 2025
+ commits 1368
+ committers 33
+ files 232
+ mb 4
+ linesOfCode 56397
+country United States
+
+twitter https://x.com/project_solid
+
+githubRepo https://github.com/solid/specification
+ stars 476
+ forks 42
+ subscribers 51
+ created 2019
+ updated 2024
+ description Solid Technical Reports
+ issues 189
+
+wikipedia https://en.wikipedia.org/wiki/Solid_(web_decentralization_project)

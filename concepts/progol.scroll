@@ -1,0 +1,13 @@
+../code/conceptPage.scroll
+
+id progol
+name Progol
+appeared 1993
+tags pl
+lab Universität des Saarlandes
+
+supersetOf prolog
+country Germany
+reference https://semanticscholar.org/paper/11d702bdd25dfdf368d9028693ea00dac25c8851
+
+hopl https://hopl.info/showlanguage.prx?exp=5487

@@ -1,0 +1,32 @@
+../code/conceptPage.scroll
+
+id flatbuffers
+name FlatBuffers
+appeared 2014
+tags idl
+website https://google.github.io/flatbuffers/
+latestVersion 24.3.25
+lab Google
+writtenIn typescript rust java python javascript cpp csharp swift kotlin markdown go lua php nim bourne-shell json dart yaml dockerfile starlark cmake xml gradle toml bazel protobuf html diff css ruby make
+
+clocExtensions fbs
+repoStats
+ firstCommit 2014
+ commits 3316
+ committers 737
+ files 1860
+ newestCommit 2025
+ mb 23
+ linesOfCode 304491
+
+githubRepo https://github.com/google/flatbuffers
+ firstCommit 2014
+ stars 22629
+ forks 3198
+ subscribers 647
+ created 2014
+ updated 2024
+ description FlatBuffers: Memory Efficient Serialization Library
+ issues 167
+
+semanticScholar 0

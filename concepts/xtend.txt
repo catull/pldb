@@ -1,0 +1,152 @@
+Xtend
+=====
+
+Xtend is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2011 by Sven Efftinge and Sebastian Zarnekow.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222011%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2011
+ https://pldb.io/concepts/../lists/creators.html#q=Sven%20Efftinge Sven Efftinge
+ https://pldb.io/concepts/../lists/creators.html#q=Sebastian%20Zarnekow Sebastian Zarnekow
+
+#484 on PLDB
+15 Years Old
+1k <span title="Xtend repos on GitHub.">Repos</span>
+
+Xtend is a general-purpose high-level programming language for the Java Virtual Machine. Syntactically and semantically Xtend has its roots in the Java programming language but focuses on a more concise syntax and some additional functionality such as type inference, extension methods, and operator overloading. Being primarily an object-oriented language, it also integrates features known from functional programming, e.g. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Xtend Read more on Wikipedia...
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 1,438 Xtend repos on <a href="https://github.com/search?q=language:Xtend">GitHub</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 623 users using Xtend in 834 repos on <a href="https://api.github.com/search/repositories?q=language:Xtend">GitHub</a>
+- Xtend appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/jvm.py">syntax highlighting</a> for Xtend
+- GitHub supports <a href="https://github.com/staltz/SublimeXtend" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Xtend
+- <a href="http://www.xtend-lang.org">xtend-lang.org</a> was registered in 2011
+- See also: (5 related languages) <a href="java.html">Java</a>, <a href="scala.html">Scala</a>, <a href="groovy.html">Groovy</a>, <a href="smalltalk.html">Smalltalk</a>, <a href="eclipse-editor.html">Eclipse</a>
+- 3 PLDB concepts link to Xtend: <a href="cloc.html">cloc</a>, <a href="pygments.html">Pygments</a>, <a href="xtext.html">Xtext</a>
+
+```Example from <a href='https://github.com/staltz/SublimeXtend'>Linguist</a>:
+/*******************************************************************************
+ * Copyright (c) 2012 itemis AG (http://www.itemis.eu) and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
+ *
+ * Author - Sven Efftinge
+ *******************************************************************************/
+package example6
+
+import org.junit.Test
+import static org.junit.Assert.*
+import java.io.FileReader
+import java.util.Set
+import static extension com.google.common.io.CharStreams.*
+
+class Movies {
+	
+	/**
+	 * @return the total number of action movies
+	 */
+	@Test def void numberOfActionMovies() {
+		assertEquals(828, movies.filter[categories.contains(&#39;Action&#39;)].size)
+	}
+	
+	/**
+	 * @return the year the best rated movie of 80ies (1980-1989) was released.
+	 */
+	@Test def void yearOfBestMovieFrom80ies() {
+		assertEquals(1989, movies.filter[(1980..1989).contains(year)].sortBy[rating].last.year)
+	}
+	
+	/**
+	 * @return the sum of the number of votes of the two top rated movies.
+	 */
+	@Test def void sumOfVotesOfTop2() {
+		val long movies = movies.sortBy[-rating].take(2).map[numberOfVotes].reduce[a, b| a + b]
+		assertEquals(47_229, movies)
+	}
+	
+	val movies = new FileReader(&#39;data.csv&#39;).readLines.map[ line |
+		val segments = line.split(&#39;  &#39;).iterator
+		return new Movie(
+			segments.next,
+			Integer::parseInt(segments.next),
+			Double::parseDouble(segments.next),
+			Long::parseLong(segments.next),
+			segments.toSet
+		)
+	]
+}
+
+@Data class Movie {
+	String title
+	int year
+	double rating
+	long numberOfVotes
+	Set&lt;String&gt; categories
+}
+
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Xtend'>Wikipedia</a>:
+def sayHello(String name) &#39;&#39;&#39;
+    Hello «name» !
+&#39;&#39;&#39;
+```
+
+Language <a href="../lists/features.html">features</a>
+======================================================
+
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  /* A comment
+  */
+ Token 
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  /* A comment
+  */
+ Token /* */
+row
+ Feature Type Inference
+ FeatureLink ../features/hasTypeInference.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Static Typing
+ FeatureLink ../features/hasStaticTyping.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token
+
+Built with Scroll v180.0.1

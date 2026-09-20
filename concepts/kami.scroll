@@ -1,0 +1,35 @@
+../code/conceptPage.scroll
+
+id kami
+name Kami
+appeared 2022
+creators Katie Ampersand
+tags textMarkup
+website https://crates.io/crates/kami-parser
+lab https://ampersandia.net/
+fileExtensions km
+writtenIn rust markdown html toml
+
+repoStats
+ firstCommit 2022
+ commits 81
+ committers 1
+ files 12
+ newestCommit 2022
+ mb 1
+ linesOfCode 1398
+country Unknown
+
+example
+ * Main list element
+ ** Sublist element
+
+githubRepo https://github.com/Lilith-In-Starlight/kami-parser
+ firstCommit 2022
+ stars 6
+ forks 0
+ subscribers 1
+ created 2022
+ updated 2024
+ description Kami tries to be a machine-first human-also-first markup language.
+ issues 3

@@ -1,0 +1,33 @@
+../code/conceptPage.scroll
+
+id recursivetext
+name Recursive teXt
+appeared 2024
+creators Steven Obua
+tags dataNotation
+website http://recursivetext.com/
+description A general-purpose text format.
+writtenIn json typescript markdown
+
+repoStats
+ firstCommit 2024
+ newestCommit 2024
+ commits 30
+ committers 1
+ files 13
+ mb 1
+ linesOfCode 773
+
+example
+ RX    = Block+
+ Block = Line (Line | Block)*
+ Line  = Character*
+
+githubRepo https://github.com/practal/recursivetext
+ stars 0
+ forks 0
+ subscribers 1
+ created 2024
+ updated 2024
+ description Recursive teXt
+ issues 0

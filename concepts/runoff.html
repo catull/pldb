@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <title>RUNOFF - Text markup language</title>
+ <script>/* This HTML was generated from runoff.scroll by 📜 Scroll v180.0.1. https://scroll.surf */</script>
+ <style>@media print {.doNotPrint {display: none !important;}}</style>
+ <link rel="canonical" href="https://pldb.io/concepts/runoff.html">
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+ <meta name="description" content="RUNOFF is a a href=../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%">
+ <meta name="keywords" content="textMarkup">
+ <meta name="generator" content="Scroll v180.0.1">
+ <meta property="og:title" content="RUNOFF - Text markup language">
+ <meta property="og:description" content="RUNOFF is a a href=../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%">
+ <meta property="og:image" content="">
+ 
+ <link rel="source" type="application/git" title="Source Code Repository" href="https://github.com/breck7/pldb">
+ <link rel="alternate" type="application/rss+xml" title="RUNOFF - Text markup language" href="../blog/feed.xml">
+ <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="../allStyles.css">
+<div id="particle21" noSnippet="undefined" class="trueBaseThemeHeader" class="trueBaseThemeHeader"><a id="particle2" href="../index.html" class="trueBaseThemeLogo" class="trueBaseThemeLogo">PLDB</a>
+<form id="particle3"  method="get" action="../search.html"  style="display:inline-block;;undefined;undefined;undefined"><input type="search" id="trueBaseThemeHeaderSearch" name="q" placeholder="Search" autocomplete="off"  /></form>
+<a id="particle4" href="../lists/top1000.html" >Top 1K</a>
+<a id="particle5" href="../lists/features.html" >Features</a>
+<a id="particle6" href="../lists/creators.html" >Creators</a>
+<a id="particle7" href="../lists/events.html" >Events</a>
+<a id="particle8" href="../lists/podcasts.html" >Podcasts</a>
+<a id="particle9" href="../books/index.html" >Books</a>
+<a id="particle10" href="../lists/extensions.html" >Extensions</a>
+<a id="particle11" href="../blog/interviews.html" >Interviews</a>
+<a id="particle12" href="../blog/index.html" >Blog</a>
+<a id="particle13" href="../lists/explorer.html" >Explorer</a>
+<a id="particle14" href="../csv.html" >CSV</a></div>
+<style>.abstractIconButtonParser {position:absolute;top:0.25rem; }.abstractIconButtonParser svg {fill: rgba(204,204,204,.8);width:1.875rem;height:1.875rem; padding: 0 7px;} .abstractIconButtonParser:hover svg{fill: #333;}</style><a href="https://github.com/breck7/pldb/blob/main/concepts/runoff.scroll" class="doNotPrint abstractIconButtonParser" style="right:2rem;"><svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M21.1213 2.70705C19.9497 1.53548 18.0503 1.53547 16.8787 2.70705L15.1989 4.38685L7.29289 12.2928C7.16473 12.421 7.07382 12.5816 7.02986 12.7574L6.02986 16.7574C5.94466 17.0982 6.04451 17.4587 6.29289 17.707C6.54127 17.9554 6.90176 18.0553 7.24254 17.9701L11.2425 16.9701C11.4184 16.9261 11.5789 16.8352 11.7071 16.707L19.5556 8.85857L21.2929 7.12126C22.4645 5.94969 22.4645 4.05019 21.2929 2.87862L21.1213 2.70705ZM18.2929 4.12126C18.6834 3.73074 19.3166 3.73074 19.7071 4.12126L19.8787 4.29283C20.2692 4.68336 20.2692 5.31653 19.8787 5.70705L18.8622 6.72357L17.3068 5.10738L18.2929 4.12126ZM15.8923 6.52185L17.4477 8.13804L10.4888 15.097L8.37437 15.6256L8.90296 13.5112L15.8923 6.52185ZM4 7.99994C4 7.44766 4.44772 6.99994 5 6.99994H10C10.5523 6.99994 11 6.55223 11 5.99994C11 5.44766 10.5523 4.99994 10 4.99994H5C3.34315 4.99994 2 6.34309 2 7.99994V18.9999C2 20.6568 3.34315 21.9999 5 21.9999H16C17.6569 21.9999 19 20.6568 19 18.9999V13.9999C19 13.4477 18.5523 12.9999 18 12.9999C17.4477 12.9999 17 13.4477 17 13.9999V18.9999C17 19.5522 16.5523 19.9999 16 19.9999H5C4.44772 19.9999 4 19.5522 4 18.9999V7.99994Z"/></svg></a>
+<div class="scrollSection"><h1 id="particle28" class="printTitleParser"><a href="runoff.html">RUNOFF</a></h1>
+</div>
+<a class="trueBaseThemePreviousItem" href="opentype-feature-file.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="avail.html">&gt;</a>
+<div id="particle36" class="scrollContainerParser" style="width: 100%; box-sizing: border-box; max-width: 800px; margin: 0 auto;">
+<div class="trueBaseThemeQuickLinks"><a href="/edit.html?folderName=pldb.io&fileName=concepts%2Frunoff.scroll" class="material-symbols-outlined">edit</a></div>
+<p id="particle40" class="scrollParagraph">RUNOFF is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22textMarkup%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">text markup language</a> created in <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221965%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">1965</a> by <a href="../lists/creators.html#q=J.%20E.%20Saltzer">J. E. Saltzer</a>.</p>
+<table class="scrollDashboard"><tr><td>#1446<span>on PLDB</span></td>
+<td>61<span>Years Old</span></td>
+<td>5<span><span title="RUNOFF repos on GitHub.">Repos</span></span></td></tr>
+</table>
+<p id="particle44" class="scrollParagraph"></p>
+<ul ><li id="particle46" >Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"textMarkup"%5D%7D%5D%2C"logic"%3A"AND"%7D'>text markup language</a></li>
+<li id="particle47" >There are at least 5 RUNOFF repos on <a href="https://github.com/search?q=language:RUNOFF">GitHub</a></li>
+<li id="particle48" >Early development of RUNOFF happened in <a href="../lists/labs.html#q=MIT">MIT</a></li>
+<li id="particle49" >The  Google BigQuery Public Dataset GitHub snapshot shows 7 users using RUNOFF in 7 repos on <a href="https://api.github.com/search/repositories?q=language:RUNOFF">GitHub</a></li>
+<li id="particle50" ><a href="https://hopl.info/showlanguage.prx?exp=2460">RUNOFF on HOPL</a></li>
+<li id="particle51" >GitHub supports <a href="https://github.com/Alhadis/language-roff" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for RUNOFF</li></ul>
+<br>
+<div class="codeWithHeader"><div class="codeHeader">Example from <a href='https://github.com/Alhadis/language-roff'>Linguist</a>:</div><code class="scrollCodeBlock">.na
+.ll 72
+.pl 90
+.m1 4
+.m2 4
+.m3 6
+.m4 6
+.sp 8
+.ds
+.ce
+CONTRIBUTING TO LINGUIST
+.sp
+.ce
+by
+.ce
+GITHUB
+.sp
+.ce
+and the
+.sp
+.ce
+OPEN SOURCE COMMUNITY
+.sp
+.bp
+.sp 5
+.ce
+_I_N_T_R_O_D_U_C_T_I_O_N:
+.sp
+     Hi there! We&#39;re thrilled that you&#39;d like to contribute to this
+project. Your help is  essential for keeping it great. This project
+adheres to the Contributor Covenant Code of Conduct. By participating,
+you are expected to uphold this code.
+.br
+The majority of contributions won&#39;t need to touch any Ruby code at all.
+.sp 5
+.ce
+_A_d_d_i_n_g _a_n _e_x_t_e_n_s_i_o_n _t_o _a
+_l_a_n_g_u_a_g_e
+.sp
+     We try only to add new extensions once they have some usage on
+GitHub. In most cases we prefer that extensions be in use in hundreds of
+repositories before supporting them in Linguist.
+.sp
+To add support for a new extension:
+.sp
+.in 5
+.un 5
+1.   Add your extension to the language entry in
+_l_a_n_g_u_a_g_e_s_._y_m_l, keeping the extensions in
+alphabetical order.
+.br
+.un 5
+2.   Add at least one sample for your extension to the samples directory
+in the correct subdirectory.
+.br
+.un 5
+3.   Open a pull request, linking to a GitHub search result showing
+in-the-wild usage.
+.in 0
+.sp
+In addition, if this extension is already listed in
+_l_a_n_g_u_a_g_e_s_._y_m_l then sometimes a few more steps
+will need to be taken:
+.sp
+.in 5
+.un 5
+1.   Make sure that example .yourextension files are present in the
+samples directory for each language that uses .yourextension.
+.br
+.un 5
+2.   Test the performance of the Bayesian classifier with a relatively
+large number (1000s) of sample .yourextension files. (ping @arfon or
+@bkeepers to help with this) to ensure we&#39;re not misclassifying files.
+.br
+.un 5
+3.   If the Bayesian classifier does a bad job with the sample files
+then a heuristic may need to be written to help.
+.in 0
+.sp 5
+.ce
+_A_d_d_i_n_g _a _l_a_n_g_u_a_g_e
+.sp
+     We try only to add languages once they have some usage on GitHub.
+In most cases we prefer that each new extension be in use in hundreds of
+repositories before supporting them in Linguist.
+.sp
+To add support for a new language:
+.in 5
+.un 5
+1.   Add an entry for your language to
+_l_a_n_g_u_a_g_e_s_._y_m_l.
+.br
+.un 5
+2.   Add a grammar for your language. Please only add grammars that have
+a license that permits redistribution.
+.br
+.in +5
+.un 5
+i.   Add your grammar as a submodule:
+.br
+.in +4
+git submodule add
+https://github.com/Alhadis/language-roff
+vendor/grammars/language-roff
+.in -4
+.un 5
+ii.  Add your grammar to grammars.yml:
+.br
+.in +4
+script/convert-grammars --add vendor/grammars/MyGrammar
+.in -4
+.un 5
+iii. Download the license for the grammar by running script/licensed.
+Be careful to only commit the file for the new grammar, as this script
+may update licenses for other grammars as well.
+.br
+.in -5
+.un 5
+3.   Add samples for your language to the samples directory in the
+correct subdirectory.
+.br
+.un 5
+4.   Open a pull request, linking to a GitHub search result showing
+in-the-wild usage.
+.br
+.in 0
+.sp
+In addition, if your new language defines an extension that&#39;s already
+listed in _l_a_n_g_u_a_g_e_s_._y_m_l (such as `.foo`) then
+sometimes a few more steps will need to be taken:
+.sp
+.in +5
+.un 5
+1.   Make sure that example .foo files are present in the samples
+directory for each language that uses .foo.
+.br
+.un 5
+2.   Test the performance of the Bayesian classifier with a relatively
+large number (1000s) of sample `.foo` files. (ping @arfon or @bkeepers
+to help with this) to ensure we&#39;re not misclassifying files.
+.br
+.un 5
+3.   If the Bayesian classifier does a bad job with the sample .foo
+files then a heuristic may need to be written to help.
+.br
+.in 0
+.sp
+Remember, the goal here is to try and avoid false positives!
+.sp 2
+.ce
+_F_i_x_i_n_g _a _m_i_s_c_l_a_s_s_i_f_i_e_d
+_l_a_n_g_u_a_g_e
+.br
+     Most languages are detected by their file extension defined in
+_l_a_n_g_u_a_g_e_s_._y_m_l.  For disambiguating between
+files with common extensions, linguist applies some heuristics and a
+statistical classifier.   This process can help differentiate between,
+for example, .h files which could be either C, C++, or Obj-C.
+.sp
+     Misclassifications can often be solved by either adding a new
+filename or extension for the language or adding more samples to make
+the classifier smarter.
+.sp
+.m4 -2
+.ce
+_F_i_x_i_n_g _s_y_n_t_a_x
+_h_i_g_h_l_i_g_h_t_i_n_g
+.br
+     Syntax highlighting in GitHub is performed using
+TextMate-compatible grammars. These are the same grammars that TextMate,
+Sublime Text and Atom use. Every language in languages.yml is mapped to
+its corresponding TM `scope`. This scope will be used when picking up a
+grammar for highlighting.
+.sp
+     Assuming your code is being detected as the right language, in most
+cases this is due to a bug in the language grammar rather than a bug in
+Linguist. _g_r_a_m_m_a_r_s_._y_m_l lists all the grammars
+we use for syntax highlighting on github.com. Find the one corresponding
+to your code&#39;s programming language and submit a bug report upstream.
+.sp
+If you can, try to reproduce the highlighting problem in the text editor
+that the grammar is designed for (TextMate, Sublime Text, or Atom) and
+include that information in your bug report.
+.sp
+     You can also try to fix the bug yourself and submit a Pull Request.
+TextMate&#39;s documentation offers a good introduction on how to work with
+TextMate-compatible grammars. You can test grammars using Lightshow.
+.sp
+     Once the bug has been fixed upstream, we&#39;ll pick it up for GitHub
+in the next release of Linguist.
+.sp 2
+.ce
+_T_e_s_t_i_n_g
+.br
+     For development you are going to want to checkout out the source.
+To get it, clone the repo and run Bundler to install its dependencies.
+.sp
+.in 4
+git clone https://github.com/github/linguist.git
+.br
+cd linguist/
+.br
+script/bootstrap
+.br
+.in 0
+.sp
+To run the tests:
+.sp
+.in 4
+    bundle exec rake test
+.in 0
+.sp
+    Sometimes getting the tests running can be too much work, especially
+if you don&#39;t have much Ruby experience.  It&#39;s okay:  be lazy and let our
+build bot Travis run the tests for you. Just open a pull request and the
+bot will start cranking away.
+.sp
+.ce
+_M_a_i_n_t_a_i_n_e_r_s
+.br
+Linguist is maintained with love by:
+.sp
+.in -2
+- @arfon (GitHub Staff)
+.br
+- @larsbrinkhoff
+.br
+- @pchaigno
+.in 0
+.br
+.sp
+As Linguist is a production dependency for GitHub we have a couple of
+workflow restrictions:
+.sp
+.in -2
+- Anyone with commit rights can merge Pull Requests provided that there
+is a :+1: from a GitHub member of staff
+.br
+- Releases are performed by GitHub staff so we can ensure GitHub.com
+always stays up to date with the latest release of Linguist and there
+are no regressions in production.
+.in 0
+.sp
+.ce
+_R_e_l_e_a_s_i_n_g
+.sp
+If you are the current maintainer of this gem:
+.sp
+.in 5
+.ul 5
+1.   Create a branch for the release:
+.sp
+.in +2
+git checkout -b cut-release-vxx.xx.xx
+.in -2
+.sp
+.ul 5
+2.   Make sure your local dependencies are up to date:
+.sp
+.in +2
+script/bootstrap
+.in -2
+.sp
+.ul 5
+3.   If grammar submodules have not been updated recently, update them:
+.sp
+.in +2
+git submodule update --remote _&amp;_&amp; git commit -a
+.in -2
+.sp
+.ul 5
+4.   Ensure that samples are updated:
+.sp
+.in +2
+bundle exec rake samples
+.in -2
+.sp
+5.   Ensure that tests are green:
+.sp
+.in +2
+bundle exec rake test
+.in -2
+.sp
+.ul 5
+6.   Bump gem version in lib/linguist/version.rb
+.br
+.ul 5
+7.   Make a PR to github/linguist
+.br
+.ul 5
+8.   Build a local gem: `bundle exec rake build_gem`
+.br
+.ul 5
+9.   Test the gem:
+.sp
+.in +5
+.un 5
+i.   Bump the Gemfile and Gemfile.lock versions for an app which relies
+on this gem
+.un 5
+ii.  Install the new gem locally
+.un 5
+iii. Test behaviour locally, branch deploy, whatever needs to happen.
+.br
+.in -5
+.sp
+.ul 5
+10. Merge github/linguist PR
+.sp
+.ul 5
+11. Tag and push:
+.sp
+.in +2
+git tag vx.xx.xx;
+.br
+git push --tags
+.in -2
+.sp
+12. Push to rubygems.org
+.br
+.in +2
+gem push github-linguist-3.0.0.gem
+.in -2
+.sp 2
+</code></div>
+<div class="scrollKeyboardNav" style="display:none;"><a href="opentype-feature-file.html">opentype-feature-file.html</a> · runoff.html · <a href="avail.html">avail.html</a><script>document.addEventListener('keydown', function(event) {
+  if (document.activeElement !== document.body) return
+  if (event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return // dont interfere with keyboard back button shortcut
+  const getLinks = () => document.getElementsByClassName("scrollKeyboardNav")[0].getElementsByTagName("a")
+  if (event.key === "ArrowLeft")
+    getLinks()[0].click()
+  else if (event.key === "ArrowRight")
+    getLinks()[1].click()
+ });</script></div>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".scrollCodeBlock").forEach(block =>
+ {
+  if (!navigator.clipboard) return
+  const button = document.createElement("span")
+  button.classList.add("scrollCopyButton")
+  block.appendChild(button)
+  button.addEventListener("click", async () => {
+    await navigator.clipboard.writeText(block.innerText)
+    button.classList.add("scrollCopiedButton")
+  })
+ }
+))
+</script>
+
+
+<center><p id="particle67" class="scrollParagraph"></p>
+<div id="particle68" noSnippet="undefined" class="trueBaseThemeFooter" class="trueBaseThemeFooter"><a id="particle2" href="../index.html" class="trueBaseThemeLogo" class="trueBaseThemeLogo">PLDB</a>
+<span id="particle3" >- Build the next great programming language</span>
+<span id="particle4" >·</span>
+<a id="particle5" href="../edit.html?folderName=pldb.io&buffer=..%2Fcode%2FconceptPage.scroll%0A%0Aid%20%0Aname%20%0Aappeared%20%0Acreators%20%0Atags%20pl%0Awebsite%20%0Adescription%20%0A%0AgitRepo%20%0A%0Aexample%0A%20&bufferName=concepts/untitled.scroll" >Add</a>
+<span id="particle6" >·</span>
+<a id="particle7" href="addPrompt.txt" >Add Prompt</a>
+<span id="particle8" >·</span>
+<a id="particle9" href="https://issues.pldb.io/" >Issues</a>
+<span id="particle10" >·</span>
+<a id="particle11" href="../pages/about.html" >About</a>
+<span id="particle12" >·</span>
+<a id="particle13" href="../search.html" >Search</a>
+<span id="particle14" >·</span>
+<a id="particle15" href="../lists/keywords.html" >Keywords</a>
+<span id="particle16" >·</span>
+<a id="particle17" href="../lists/live.html" >Livestreams</a>
+<span id="particle18" >·</span>
+<a id="particle19" href="../lists/labs.html" >Labs</a>
+<span id="particle20" >·</span>
+<a id="particle21" href="../lists/resources.html" >Resources</a>
+<span id="particle22" >·</span>
+<a id="particle23" href="../pages/acknowledgements.html" >Acknowledgements</a></div>
+</center>
+<script  src="../lists/autocompleteCombined.js"></script>
+<script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script>
+<center><p id="particle73" class="scrollParagraph"></p>
+<div class="abstractTextLinkParser"><a href="https://scroll.surf">Built with Scroll v180.0.1</a></div>
+</center></div>
+</body>
+</html>

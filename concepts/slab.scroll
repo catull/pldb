@@ -1,0 +1,59 @@
+../code/conceptPage.scroll
+
+id slab
+name Slab
+appeared 2024
+creators Võ Minh Thu
+tags textMarkup
+website https://slab-lang.org/
+description Slab is a programmable markup language that simplifies the creation of HTML. It combines concise notation with standard programming constructs to create reusable web content more efficiently.
+writtenIn html haskell nix bourne-shell json yaml css markdown dockerfile
+compilesTo html
+
+docs https://slab-lang.org/reference.html https://slab-lang.org/tutorial.html
+repoStats
+ firstCommit 2023
+ newestCommit 2025
+ commits 351
+ committers 3
+ files 225
+ mb 3
+ linesOfCode 26637
+country Belgium
+
+example
+ frag page(titl)
+   doctype html
+   html
+     head
+       title= titl
+     body
+       h1= titl
+       content
+ 
+ let t = "My first Slab page"
+ page(t)
+   .main-content
+     p Welcome to Slab! This is a simple example of how Slab works.
+
+githubRepo https://github.com/hypered/slab
+ stars 38
+ forks 1
+ subscribers 3
+ created 2024
+ updated 2024
+ description A programmable markup language for generating HTML.
+ issues 0
+
+hasExpressions true
+ let a = 1
+ p= a + 2 * 3
+hasConditionals true
+ if true
+   p A.
+ else
+   p B.
+hasForLoops true
+ ul
+  for val, index in [1, 2]
+    li val: #(val), index: #(index)

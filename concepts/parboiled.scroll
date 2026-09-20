@@ -1,0 +1,28 @@
+../code/conceptPage.scroll
+
+id parboiled
+name parboiled
+appeared 2009
+creators Mathias Sirthias
+tags grammarLanguage library
+website http://parboiled.org/
+description parboiled is a mixed Java/Scala library providing for lightweight and easy-to-use, yet powerful and elegant parsing of arbitrary input text based on Parsing expression grammars (PEGs). PEGs are an alternative to context free grammars (CFGs) for formally specifying syntax, they make a good replacement for regular expressions and generally have quite a few advantages over the "traditional" way of building parsers via CFGs.
+writtenIn java scala yaml markdown
+
+repoStats
+ firstCommit 2009
+ newestCommit 2025
+ commits 964
+ committers 32
+ files 319
+ mb 64
+ linesOfCode 7493
+
+githubRepo https://github.com/sirthias/parboiled
+ stars 1270
+ forks 156
+ subscribers 53
+ created 2009
+ updated 2024
+ description Elegant parsing in Java and Scala - lightweight, easy-to-use, powerful.
+ issues 39

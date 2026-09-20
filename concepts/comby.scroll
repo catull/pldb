@@ -1,0 +1,40 @@
+../code/conceptPage.scroll
+
+id comby
+name comby
+appeared 2019
+creators Rijnard van Tonder
+tags grammarLanguage
+website https://comby.dev/
+latestVersion 1.8.1
+lab https://github.com/comby-tools
+writtenIn ocaml markdown bourne-shell json c toml dockerfile diff go make yaml
+
+repoStats
+ firstCommit 2019
+ commits 634
+ committers 14
+ files 345
+ newestCommit 2024
+ mb 3
+ linesOfCode 35929
+country United States
+
+example
+ if (:[_] && :[height] :[_])
+twitter https://twitter.com/rvtond
+
+githubRepo https://github.com/comby-tools/comby
+ firstCommit 2019
+ stars 2344
+ forks 59
+ subscribers 23
+ created 2019
+ updated 2024
+ description A code rewrite tool for structural search and replace that supports ~every language.
+ issues 74
+
+domainName comby.dev
+ registered 2019
+ awisRank
+  2022 2618356

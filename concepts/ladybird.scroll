@@ -1,0 +1,27 @@
+../code/conceptPage.scroll
+
+id ladybird
+name Ladybird
+appeared 2018
+creators Andreas Kling
+tags webBrowser
+website https://ladybird.org/
+writtenIn cpp html javascript idl cmake markdown bourne-shell css yaml json objective-cpp python xml kotlin svg ini gradle nix java dockerfile bash diff
+
+repoStats
+ firstCommit 2018
+ newestCommit 2025
+ commits 67543
+ committers 1480
+ files 13744
+ mb 275
+ linesOfCode 1176846
+
+githubRepo https://github.com/LadybirdBrowser/ladybird
+ stars 13386
+ forks 538
+ subscribers 115
+ created 2024
+ updated 2024
+ description Truly independent web browser
+ issues 199

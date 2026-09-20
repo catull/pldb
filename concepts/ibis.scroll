@@ -1,0 +1,29 @@
+../code/conceptPage.scroll
+
+id ibis
+name Ibis
+appeared 2015
+creators Wes McKinney
+tags library
+website https://ibis-project.org/
+latestVersion 9.0.0
+description the portable Python dataframe library
+writtenIn sql python json yaml javascript markdown bourne-shell toml svg nix visual-basic css lua dockerfile cpp scss xml r cmake ini
+
+repoStats
+ firstCommit 2014
+ newestCommit 2025
+ commits 9495
+ committers 246
+ files 2375
+ mb 146
+ linesOfCode 273744
+
+githubRepo https://github.com/ibis-project/ibis
+ stars 4671
+ forks 568
+ subscribers 83
+ created 2015
+ updated 2024
+ description the portable Python dataframe library
+ issues 274

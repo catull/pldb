@@ -1,0 +1,34 @@
+../code/conceptPage.scroll
+
+id parenscript
+name Parenscript
+appeared 2009
+creators Manuel Odendahl and Edward Marco Baringer
+tags pl lisp
+website https://common-lisp.net/project/parenscript/
+lab https://gitlab.common-lisp.net/parenscript/parenscript/-/issues
+writtenIn lisp html
+compilesTo javascript
+
+isOpenSource true
+fileType text
+repoStats
+ firstCommit 2005
+ commits 885
+ committers 35
+ files 37
+ newestCommit 2018
+ mb 5
+ linesOfCode 14367
+country United States and Italy
+
+gitlabRepo https://gitlab.common-lisp.net/parenscript/parenscript
+githubRepo https://github.com/vsedach/Parenscript
+ stars 244
+ forks 33
+ subscribers 24
+ created 2013
+ updated 2024
+ firstCommit 2005
+ description MOVED TO https://gitlab.common-lisp.net/parenscript/parenscript
+ issues 1

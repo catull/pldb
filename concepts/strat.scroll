@@ -1,0 +1,40 @@
+../code/conceptPage.scroll
+
+id strat
+name strat
+appeared 2018
+tags pl
+website https://strat.world/
+latestVersion 0.3.13
+lab https://github.com/stratworld
+writtenIn javascript html markdown smalltalk css json
+
+repoStats
+ firstCommit 2018
+ commits 193
+ committers 3
+ files 136
+ newestCommit 2019
+ mb 1
+ linesOfCode 6549
+country United States
+
+example
+ service HelloWorld {
+  include "Birth"
+ 
+  Birth -> "Hello World!"
+ }
+
+githubRepo https://github.com/stratworld/strat
+ firstCommit 2018
+ stars 15
+ subscribers 6
+ created 2018
+ updated 2023
+ description A language to represent and deploy portable cloud systems ->
+ forks 0
+ issues 2
+
+domainName strat.world
+ registered 2022

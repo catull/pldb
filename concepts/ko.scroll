@@ -1,0 +1,31 @@
+../code/conceptPage.scroll
+
+id ko
+name ko
+appeared 2018
+creators Petar Maymounkov
+tags pl
+lab https://github.com/kocircuit/kocircuit
+writtenIn go markdown hcl json assembly-language yaml bourne-shell perl protobuf xml svg toml dockerfile make cson c csv
+
+isOpenSource true
+wordRank 9241
+repoStats
+ firstCommit 2018
+ commits 423
+ committers 4
+ files 1843
+ newestCommit 2018
+ mb 10
+ linesOfCode 26067
+country The Netherlands and United States
+
+githubRepo https://github.com/kocircuit/kocircuit
+ firstCommit 2018
+ stars 307
+ forks 22
+ subscribers 17
+ created 2018
+ updated 2024
+ description Ko: A generic type-safe language for concurrent, stateful, deadlock-free systems and protocol manipulations
+ issues 16

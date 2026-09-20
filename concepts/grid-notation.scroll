@@ -1,0 +1,31 @@
+../code/conceptPage.scroll
+
+id grid-notation
+name grid-notation
+appeared 2013
+creators Cameron McEfee
+tags textDataFormat
+latestVersion v0.0.20
+description Quickly and easily create grids and manipulate guides with a consistent UI in Photoshop, Illustrator, Sketch, and Adobe XD.
+lab https://github.com/guideguide/grid-notation
+writtenIn coffeescript markdown json bourne-shell javascript yaml
+
+repoStats
+ firstCommit 2013
+ commits 105
+ committers 4
+ files 14
+ newestCommit 2024
+ mb 1
+ linesOfCode 3809
+country United States and Finland
+
+githubRepo https://github.com/guideguide/grid-notation
+ firstCommit 2013
+ stars 54
+ forks 8
+ subscribers 13
+ created 2013
+ updated 2024
+ description A human friendly(ish), written grid language
+ issues 0

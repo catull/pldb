@@ -1,0 +1,29 @@
+../code/conceptPage.scroll
+
+id mal
+name mal
+appeared 2014
+tags interpreter
+description Mal is a Clojure inspired Lisp interpreter. Mal is implemented in 75 languages.
+lab https://github.com/kanaka/mal/issues
+writtenIn make dockerfile swift ada python bash javascript lisp java c visual-basic sql scheme ruby perl json bourne-shell xslt matlab zig csharp f-sharp pascal elm smalltalk haxe php scala elixir assembly-language markdown forth cpp erlang lua lex standard-ml vala vhdl go visual-basic.net d fennel typescript rexx tcl objective-c crystal purescript vim-script r groovy kotlin nim julia racket coffeescript awk rust dart powershell haskell prolog ocaml css yaml svg html clojure dhall diff gradle toml clojurescript
+
+repoStats
+ firstCommit 2014
+ commits 4047
+ committers 141
+ files 2465
+ newestCommit 2024
+ mb 14
+ linesOfCode 383457
+country United States
+
+githubRepo https://github.com/kanaka/mal
+ firstCommit 2014
+ stars 9938
+ forks 2515
+ subscribers 182
+ created 2014
+ updated 2024
+ description mal - Make a Lisp
+ issues 76

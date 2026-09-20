@@ -1,0 +1,38 @@
+../code/conceptPage.scroll
+
+id astroml
+name astroml
+appeared 2012
+creators Jacob Vanderplas
+tags library
+website http://www.astroml.org/
+latestVersion v1.0.2
+lab Google
+writtenIn python restructuredtext make html yaml ini toml
+
+isOpenSource true
+fileType text
+repoStats
+ firstCommit 2012
+ commits 608
+ committers 31
+ files 199
+ newestCommit 2024
+ mb 10
+ linesOfCode 18610
+country United States
+
+githubRepo https://github.com/astroML/astroML
+ stars 1032
+ forks 310
+ subscribers 96
+ created 2012
+ updated 2024
+ firstCommit 2012
+ description Machine learning, statistics, and data mining for astronomy and astrophysics
+ issues 67
+
+domainName astroml.org
+ registered 2013
+ awisRank
+  2022 1299900

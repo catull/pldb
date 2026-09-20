@@ -1,0 +1,85 @@
+../code/conceptPage.scroll
+
+id rescript
+name Rescript
+appeared 2020
+creators Hongbo Zhang
+tags pl
+website https://rescript-lang.org/
+webRepl https://rescript-lang.org/try
+description ReScript is a robustly typed language that compiles to efficient and human-readable JavaScript. It comes with a lightning fast compiler toolchain that scales to any codebase size.
+writtenIn rescript javascript ocaml json typescript cpp markdown bourne-shell rust python make yaml asciidoc c css toml xslt lisp vim-script html dockerfile svg reason
+compilesTo javascript
+
+clocExtensions res resi
+repoStats
+ firstCommit 2010
+ newestCommit 2025
+ commits 15058
+ committers 431
+ files 6397
+ mb 1874
+ linesOfCode 754954
+country China
+
+example
+ module Button = {
+   @react.component
+   let make = (~count: int) => {
+     let times = switch count {
+     | 1 => "once"
+     | 2 => "twice"
+     | n => Belt.Int.toString(n) ++ " times"
+     }
+     let msg = "Click me " ++ times
+ 
+     <button> {msg->React.string} </button>
+   }
+ }
+twitter https://twitter.com/rescriptlang
+leachim6 ReScript
+ filepath r/ReScript.res
+ fileExtensions res
+ example
+  Js.log("Hello World")
+
+githubRepo https://github.com/rescript-lang/rescript-compiler
+ stars 6738
+ forks 448
+ subscribers 127
+ created 2016
+ updated 2024
+ description The compiler for ReScript.
+ issues 174
+
+lineCommentToken //
+printToken Js.log
+stringToken "
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+
+domainName rescript-lang.org
+ registered 2020
+ awisRank
+  2022 712029
+
+githubBigQuery ReScript
+ repos 54
+ users 52
+
+githubLanguage ReScript
+ type programming
+ fileExtensions res
+ interpreters ocaml
+ aceMode rust
+ codemirrorMode rust
+ codemirrorMimeType text/x-rustsrc
+ tmScope source.rescript
+ repos 1604

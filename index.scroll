@@ -1,0 +1,27 @@
+openGraphImage screenshot.jpg
+title PLDB: a Programming Language DataBase
+
+rootHeader.scroll
+
+<center>
+# ~P~rogramming ~L~anguage ~D~ata~B~ase
+ inlineMarkup ~ span style="color:black;"
+ style color:#828282;
+
+searchForm.scroll
+topLangs.scroll
+
+br 2
+
+New Posts
+ link ./blog/index.html
+ class pldbHomepageLink
+posts blog/frontpage
+ limit 0 5
+  compose link <a class="newPostLink" href="{titleLink}">{title}</a>
+   printColumn link
+    join <br>
+
+</center>
+
+footer.scroll

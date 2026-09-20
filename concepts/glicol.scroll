@@ -1,0 +1,53 @@
+../code/conceptPage.scroll
+
+id glicol
+name Glicol
+appeared 2020
+creators Qichao Lan
+tags musicalNotation
+website https://glicol.org
+latestVersion v0.13.5
+webRepl https://glicol.org/demo
+lab University of Oslo
+writtenIn rust javascript json markdown toml yaml css html bourne-shell
+
+repoStats
+ firstCommit 2020
+ commits 673
+ committers 14
+ files 207
+ newestCommit 2025
+ mb 113
+ linesOfCode 61459
+country Norway
+
+example
+ ~gate: speed 2.0
+ >> seq 60 _60 _~a 48;
+ ~a: choose 48 48 48 72 0 0 0
+ ~amp: ~gate >> envperc 0.001 0.1;
+ ~pit: ~gate
+ >> mul ##Math.pow(2, (60-69)/12) * 440#
+ // mix js to get 261.63
+ ~lead: saw ~pit >> mul ~amp >> lpf ~mod 5.0
+ >> meta `
+     output = input.map(|x|x*0.1);
+     output
+ ` // rhai script, same as "mul 0.1"
+ ~mod: sin 0.2 >> mul 1300 >> add 1500;
+ out: ~lead >> add ~drum >> plate 0.1 // optinal semicolon
+ ~drum: speed 4.0 >> seq 60 >> sp \808bd;
+ // live drag and drop your sample  ^^^
+
+githubRepo https://github.com/chaosprint/glicol
+ firstCommit 2020
+ stars 2145
+ forks 73
+ subscribers 32
+ created 2020
+ updated 2024
+ description Graph-oriented live coding language and music/audio DSP library written in Rust
+ issues 43
+
+domainName glicol.org
+ registered 2021

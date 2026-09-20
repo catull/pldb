@@ -1,0 +1,16 @@
+../code/conceptPage.scroll
+
+id socialite
+name socialite
+appeared 2015
+tags pl
+website http://socialite-lang.github.io
+lab Stanford University
+
+country United States
+
+domainName socialite-lang.github.io
+
+hackerNewsDiscussions
+ id|title|url|time|timestamp|by|comments|score
+ 9316131|Query Language for Large-Scale Graph Analysis|http://socialite-lang.github.io/|2015-04-03 14:44:01 UTC|1428072241|wspeirs|0|2

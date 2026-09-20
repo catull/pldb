@@ -1,0 +1,37 @@
+../code/conceptPage.scroll
+
+id kalyn
+name Kalyn
+appeared 2020
+creators Radon Rosborough
+tags pl
+website https://intuitiveexplanations.com/tech/kalyn
+lab https://github.com/radian-software/
+writtenIn haskell yaml markdown lisp python z-shell make toml
+
+repoStats
+ firstCommit 2020
+ commits 330
+ committers 2
+ files 80
+ newestCommit 2022
+ mb 10
+ linesOfCode 10553
+country United States
+
+rijuRepl https://riju.codes/kalyn
+ example
+  (import "/opt/kalyn/Stdlib.kalyn")
+  
+  (public def main (IO Empty)
+    (print "Hello, world!\n"))
+
+githubRepo https://github.com/radian-software/kalyn
+ firstCommit 2020
+ stars 154
+ forks 3
+ subscribers 5
+ created 2020
+ updated 2024
+ description ⚗️ Self-hosting compiler from a Haskell-like Lisp directly to x86-64, from scratch.
+ issues 20

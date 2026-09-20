@@ -1,0 +1,34 @@
+../code/conceptPage.scroll
+
+id linearml
+name LinearML
+appeared 2010
+creators Julien Verlaguet
+tags pl
+website https://github.com/pikatchu/LinearML
+lab Facebook
+fileExtensions lml
+writtenIn ocaml c make actionscript bash bourne-shell
+
+repoStats
+ firstCommit 2010
+ commits 237
+ committers 15
+ files 116
+ newestCommit 2014
+ mb 1
+ linesOfCode 17291
+country United States
+
+githubRepo https://github.com/pikatchu/LinearML
+ stars 430
+ forks 37
+ subscribers 26
+ created 2010
+ updated 2024
+ description Functional language for parallel programming
+ issues 4
+
+hackerNewsDiscussions
+ id|title|url|time|timestamp|by|comments|score
+ 2310587|LinearML:a programming language designed to write efficient parallel programs.|https://github.com/pikatchu/LinearML/|2011-03-10 20:18:22 UTC|1299784702|primodemus|22|69

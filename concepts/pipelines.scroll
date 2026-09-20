@@ -1,0 +1,33 @@
+../code/conceptPage.scroll
+
+id pipelines
+name pipelines
+appeared 2018
+tags pl
+latestVersion v0.1.0
+lab https://github.com/calebwin/pipelines/issues
+writtenIn python nim markdown csv make
+
+repoStats
+ firstCommit 2018
+ commits 82
+ committers 5
+ files 15
+ newestCommit 2019
+ mb 2
+ linesOfCode 1162
+country United States
+
+githubRepo https://github.com/calebwin/pipelines
+ firstCommit 2018
+ stars 373
+ forks 9
+ subscribers 14
+ created 2018
+ updated 2024
+ description An experimental programming language for data flow
+ issues 2
+
+hackerNewsDiscussions
+ id|title|time|timestamp|by|comments|score
+ 18905100|Show HN: Pipelines: framework and language for crafting data pipelines|2019-01-14 18:27:03 UTC|1547490423|calebwin|0|5

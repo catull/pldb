@@ -1,0 +1,28 @@
+../code/conceptPage.scroll
+
+id usd
+name USD
+appeared 2016
+tags pl 3d
+website https://graphics.pixar.com/usd/release/index.html
+standsFor Universal Scene Description
+lab Pixar
+fileExtensions usd usda usdz
+
+pygmentsHighlighter USD
+ filename usd.py
+ fileExtensions usd usda
+example
+ #usda 1.0
+ 
+ def Xform "hello"
+ {
+     def Sphere "world"
+     {
+     }
+ }
+
+githubRepo https://github.com/PixarAnimationStudios/OpenUSD
+
+hasLineComments true
+hasComments true

@@ -1,0 +1,29 @@
+../code/conceptPage.scroll
+
+id mobl-lang
+name Mobl
+appeared 2010
+creators Zef Hemel
+tags pl
+website https://www.mobl-lang.org/
+lab https://github.com/mobl
+writtenIn xml java markdown html json php pascal objective-c bourne-shell nix javascript svg make
+
+repoStats
+ firstCommit 2010
+ commits 663
+ committers 15
+ files 388
+ newestCommit 2013
+ mb 67
+ linesOfCode 87555
+country The Netherlands
+
+githubRepo https://github.com/mobl/mobl
+ stars 110
+ forks 20
+ subscribers 8
+ created 2011
+ updated 2024
+ description Domain-specific language for mobile (web) applications. This repository contains the compiler sources and Eclipse project.
+ issues 6

@@ -1,0 +1,12 @@
+../code/conceptPage.scroll
+
+id bartok
+name Bartok
+appeared 2001
+tags pl
+lab Microsoft
+
+country United States
+reference https://en.wikipedia.org/wiki/Bartok_(compiler)
+
+hopl https://hopl.info/showlanguage.prx?exp=3712

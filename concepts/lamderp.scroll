@@ -1,0 +1,29 @@
+../code/conceptPage.scroll
+
+id lamderp
+name lamderp
+appeared 2013
+creators James Keane
+tags pl
+website https://github.com/jameskeane/lamderp
+lab https://github.com/jameskeane/lamderp/issues
+writtenIn python
+
+repoStats
+ firstCommit 2013
+ commits 5
+ committers 1
+ files 5
+ newestCommit 2013
+ mb 1
+ linesOfCode 404
+country Canada
+
+githubRepo https://github.com/jameskeane/lamderp
+ stars 13
+ forks 0
+ subscribers 3
+ created 2013
+ updated 2018
+ description Simple easy python lambda DSL
+ issues 0

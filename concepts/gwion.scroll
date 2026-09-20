@@ -1,0 +1,35 @@
+../code/conceptPage.scroll
+
+id gwion
+name Gwion
+appeared 2016
+tags pl
+website https://Gwion.github.io/Gwion
+description <a href='https://github.com/fennecdjay/Gwion'>Gwion</a> is a strongly-timed musical programming language .
+lab https://github.com/Gwion
+writtenIn c yaml bourne-shell markdown bash make ini nix
+
+isOpenSource true
+tryItOnline https://tio.run/#gwion
+fileType text
+repoStats
+ firstCommit 2016
+ commits 8517
+ committers 33
+ files 1042
+ newestCommit 2025
+ mb 30
+ linesOfCode 47368
+country The Netherlands and United States and Turkey and France
+reference https://reddit.com/r/ProgrammingLanguages/comments/wu6qtw/language_showcase_gwion/
+reference https://compilerspotlight.substack.com/p/language-showcase-gwion?sd=pf
+
+githubRepo https://github.com/fennecdjay/Gwion
+ stars 531
+ forks 44
+ subscribers 20
+ created 2016
+ updated 2024
+ firstCommit 2016
+ description :musical_note: strongly-timed musical programming language
+ issues 1

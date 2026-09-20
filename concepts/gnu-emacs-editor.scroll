@@ -1,0 +1,12 @@
+../code/conceptPage.scroll
+
+id gnu-emacs-editor
+name GNU Emacs
+appeared 1985
+creators Richard Stallman
+tags editor
+
+isOpenSource true
+related emacs-editor
+
+wikipedia https://en.wikipedia.org/wiki/GNU_Emacs

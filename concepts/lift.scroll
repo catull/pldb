@@ -1,0 +1,32 @@
+../code/conceptPage.scroll
+
+id lift
+name lift
+appeared 2014
+tags pl
+website https://www.lift-project.org/
+lab Universities of Edinburgh && University of Münster
+writtenIn scala json cpp restructuredtext java bourne-shell python markdown cmake xml dockerfile powershell z-shell make css
+
+repoStats
+ firstCommit 2014
+ commits 5318
+ committers 58
+ files 698
+ newestCommit 2019
+ mb 37
+ linesOfCode 2550415
+country Scotland and Germany
+
+githubRepo https://github.com/lift-project/lift
+ firstCommit 2014
+ stars 206
+ forks 20
+ subscribers 19
+ created 2016
+ updated 2024
+ description The Lift programming language and compiler
+ issues 5
+
+domainName lift-project.org
+ registered 2016

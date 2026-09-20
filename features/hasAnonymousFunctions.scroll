@@ -1,0 +1,53 @@
+header.scroll
+
+title Anonymous Functions - language feature
+tags Feature
+printTitle Anonymous Functions
+
+<a class="trueBaseThemePreviousItem" href="hasAlgebraicTypes.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasArraySlicingSyntax.html">&gt;</a>
+
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
+
+container 600px
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/javascript.html">JavaScript</a>
+ (() =&gt; console.log(&quot;hello world&quot;))()
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/elixir.html">Elixir</a>
+ fn -&gt; IO.puts(&quot;hello world&quot;) end
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/coconut.html">Coconut</a>
+ x -&gt; x ** 2
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/jule.html">Jule</a>
+ let anonymous = fn() {
+     outln(&quot;Anonymous Function&quot;)
+ }
+ anonymous()
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/hope.html">HOPE</a>
+ lambda(x,y) =&gt; x + y
+
+***
+
+* Languages *with* Anonymous Functions include <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/elixir.html">Elixir</a>, <a href="../concepts/coconut.html">Coconut</a>, <a href="../concepts/jule.html">Jule</a>, <a href="../concepts/hope.html">HOPE</a>, <a href="../concepts/aardvark.html">Aardvark</a>, <a href="../concepts/morloc.html">Morloc</a>, <a href="../concepts/nova.html">NOVA</a>, <a href="../concepts/lone.html">Lone</a>
+
+***
+
+* Languages *without* Anonymous Functions include <a href="../concepts/lil.html">Lil</a>
+
+***
+
+View all concepts with or missing a *hasAnonymousFunctions* measurement
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasAnonymousFunctions&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasAnonymousFunctions%22%2C%22origData%22%3A%22hasAnonymousFunctions%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasAnonymousFunctions&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasAnonymousFunctions%22%2C%22origData%22%3A%22hasAnonymousFunctions%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D with
+
+***
+
+* Read more about Anonymous Functions on the web: 1.
+ https://en.wikipedia.org/wiki/Anonymous_function 1.
+
+keyboardNav hasAlgebraicTypes.html hasArraySlicingSyntax.html
+
+../footer.scroll

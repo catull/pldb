@@ -1,0 +1,127 @@
+Literate Agda
+=============
+
+Literate Agda is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2009.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222009%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2009
+
+#2275 on PLDB
+17 Years Old
+2k <span title="Literate Agda repos on GitHub.">Repos</span>
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 1,840 Literate Agda repos on <a href="https://github.com/search?q=language:Literate Agda">GitHub</a>
+- Early development of Literate Agda happened in <a href="../lists/labs.html#q=Chalmers University">Chalmers University</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/haskell.py">syntax highlighting</a> for Literate Agda
+- Read more about Literate Agda on the web: 1.
+ https://link.springer.com/chapter/10.1007/978-3-642-04652-0_5 1.
+
+```Example from the web:
+\documentclass{article}
+
+ % The following packages are needed because unicode
+ % is translated (using the next set of packages) to
+ % latex commands. You may need more packages if you
+ % use more unicode characters:
+
+ \usepackage{amssymb}
+ \usepackage{bbm}
+ \usepackage[greek,english]{babel}
+
+ % This handles the translation of unicode to latex:
+
+ \usepackage{ucs}
+ \usepackage[utf8x]{inputenc}
+ \usepackage{autofe}
+
+ % Some characters that are not automatically defined
+ % (you figure out by the latex compilation errors you get),
+ % and you need to define:
+
+ \DeclareUnicodeCharacter{8988}{\ensuremath{\ulcorner}}
+ \DeclareUnicodeCharacter{8989}{\ensuremath{\urcorner}}
+ \DeclareUnicodeCharacter{8803}{\ensuremath{\overline{\equiv}}}
+
+ % Add more as you need them (shouldn’t happen often).
+
+ % Using “\newenvironment” to redefine verbatim to
+ % be called “code” doesn’t always work properly.
+ % You can more reliably use:
+
+ \usepackage{fancyvrb}
+
+ \DefineVerbatimEnvironment
+   {code}{Verbatim}
+   {} % Add fancy options here if you like.
+
+ \begin{document}
+
+ \begin{code}
+module NatCat where
+
+open import Relation.Binary.PropositionalEquality
+
+-- If you can show that a relation only ever has one inhabitant
+-- you get the category laws for free
+module
+  EasyCategory
+  (obj : Set)
+  (_⟶_ : obj → obj → Set)
+  (_∘_ : ∀ {x y z} → x ⟶ y → y ⟶ z → x ⟶ z)
+  (id : ∀ x → x ⟶ x)
+  (single-inhabitant : (x y : obj) (r s : x ⟶ y) → r ≡ s)
+  where
+
+  idʳ : ∀ x y (r : x ⟶ y) → r ∘ id y ≡ r
+  idʳ x y r = single-inhabitant x y (r ∘ id y) r
+
+  idˡ : ∀ x y (r : x ⟶ y) → id x ∘ r ≡ r
+  idˡ x y r = single-inhabitant x y (id x ∘ r) r
+
+  ∘-assoc : ∀ w x y z (r : w ⟶ x) (s : x ⟶ y) (t : y ⟶ z) → (r ∘ s) ∘ t ≡ r ∘ (s ∘ t)
+  ∘-assoc w x y z r s t = single-inhabitant w z ((r ∘ s) ∘ t) (r ∘ (s ∘ t))
+
+open import Data.Nat
+
+same : (x y : ℕ) (r s : x ≤ y) → r ≡ s
+same .0 y z≤n z≤n = refl
+same .(suc m) .(suc n) (s≤s {m} {n} r) (s≤s s) = cong s≤s (same m n r s)
+
+≤-trans : ∀ x y z → x ≤ y → y ≤ z → x ≤ z
+≤-trans .0 y z z≤n s = z≤n
+≤-trans .(suc m) .(suc n) .(suc n₁) (s≤s {m} {n} r) (s≤s {.n} {n₁} s) = s≤s (≤-trans m n n₁ r s)
+
+≤-refl : ∀ x → x ≤ x
+≤-refl zero = z≤n
+≤-refl (suc x) = s≤s (≤-refl x)
+
+module Nat-EasyCategory = EasyCategory ℕ _≤_ (λ {x}{y}{z} → ≤-trans x y z) ≤-refl same
+ \end{code}
+
+ \end{document}
+```
+
+Language <a href="../lists/features.html">features</a>
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  -- A comment
+ Token 
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  -- A comment
+ Token --
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token
+
+Built with Scroll v180.0.1

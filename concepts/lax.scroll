@@ -1,0 +1,27 @@
+../code/conceptPage.scroll
+
+id lax
+name Lax
+appeared 2023
+tags pl
+description A programming language where the syntax is whatever you want it to be.
+writtenIn cpp c markdown cmake
+
+repoStats
+ firstCommit 2023
+ newestCommit 2024
+ commits 20
+ committers 3
+ files 148
+ mb 1
+ linesOfCode 65977
+reference https://www.reddit.com/r/ProgrammingLanguages/comments/182sfqi/lax_a_programming_language_where_the_syntax_is/
+
+githubRepo https://github.com/swedishvegan/complax
+ stars 49
+ forks 1
+ subscribers 3
+ created 2023
+ updated 2024
+ description Official compiler and VM for the Lax programming language
+ issues 0

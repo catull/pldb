@@ -1,0 +1,56 @@
+../code/conceptPage.scroll
+
+id lispyscript
+name lispyscript
+appeared 2012
+creators Santosh Rajan
+tags pl lisp
+website http://lispyscript.com
+latestVersion 1.0.2
+description A javascript With Lispy Syntax And Macros!
+lab https://github.com/santoshrajan/lispyscript/issues
+writtenIn javascript markdown json css html make yaml coffeescript
+
+repoStats
+ firstCommit 2012
+ commits 271
+ committers 7
+ files 439
+ newestCommit 2020
+ mb 2
+ linesOfCode 85683
+country India
+reference http://web.archive.org/web/20180123072250/http://lispyscript.com/
+
+example
+ ;; test with and without the "./"
+ ;;(var k (require "square.ls"))
+ ;;(var k (require "./square.ls"))
+ ;; or test .ls files requiring .js files:
+ ;;(var k (require "square.js"))
+ ;;(var k (require "./square.js"))
+ ;; or test omitting .ls extensions:
+ (var k (require "square"))
+ ;;(var k (require "./square"))
+ (console.log (k 10))
+
+githubRepo https://github.com/santoshrajan/lispyscript
+ firstCommit 2012
+ stars 572
+ forks 57
+ subscribers 40
+ created 2012
+ updated 2024
+ description A javascript with Lispy syntax and macros
+ issues 18
+
+lineCommentToken ;
+
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasSemanticIndentation false
+
+domainName lispyscript.com
+ registered 2021

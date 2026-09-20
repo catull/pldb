@@ -1,0 +1,17 @@
+../code/conceptPage.scroll
+
+id lighttpd-configuration-file
+name Lighttpd configuration file
+appeared 2003
+tags configFormat
+lab University of Applied Sciences
+
+country Germany
+reference http://lighttpd.net/
+
+pygmentsHighlighter Lighttpd configuration file
+ filename configs.py
+ fileExtensions lighttpd.conf
+
+hasLineComments true
+hasComments true

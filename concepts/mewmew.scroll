@@ -1,0 +1,30 @@
+../code/conceptPage.scroll
+
+id mewmew
+name MewMew
+appeared 2020
+creators Palash Bauri
+tags esolang
+website https://palashbauri.in/mewmew
+lab https://github.com/bauripalash/mewmew/issues
+writtenIn markdown bourne-shell yaml cpp cmake make tex
+
+repoStats
+ firstCommit 2020
+ commits 55
+ committers 4
+ files 23
+ newestCommit 2022
+ mb 1
+ linesOfCode 1429
+country India
+
+githubRepo https://github.com/bauripalash/mewmew
+ firstCommit 2020
+ stars 70
+ forks 4
+ subscribers 4
+ created 2020
+ updated 2024
+ description /ᐠ｡ꞈ｡ᐟ\ MewMew Programming Language - Program in Cats' Language
+ issues 2

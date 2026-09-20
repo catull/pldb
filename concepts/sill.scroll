@@ -1,0 +1,32 @@
+../code/conceptPage.scroll
+
+id sill
+name sill
+appeared 2015
+creators Dennis Griffith
+tags pl
+latestVersion v1.3.1
+description A programming language based on the intuitionistic linear logic view of session types.
+lab University of Illinois Urbana-Champaign
+writtenIn ocaml bourne-shell yaml
+
+isOpenSource true
+repoStats
+ firstCommit 2015
+ commits 86
+ committers 2
+ files 127
+ newestCommit 2015
+ mb 1
+ linesOfCode 30147
+country United States
+reference http://groups.inf.ed.ac.uk/abcd/session-implementations.html
+
+githubRepo https://github.com/ISANobody/sill
+ firstCommit 2015
+ stars 28
+ forks 3
+ subscribers 7
+ created 2015
+ updated 2023
+ issues 1

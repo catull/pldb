@@ -1,0 +1,20 @@
+../code/conceptPage.scroll
+
+id shakti
+name shakti
+appeared 2019
+tags pl
+website https://shakti.com
+description the latest iteration of k, Shakti k. The language is capable of managing streaming, in-memory, historical, relational, and time-series data. The distributed model extends out to multiple machines whether on-premise or in the cloud. Shakti k provides connectivity via Python, HTTP, SSL/TLS, and json. Shakti k supports compression and encryption for data, whether in-memory, in-flight or on disk. Shakti k also has primitives for blockchain operations.
+lab https://github.com/shaktidb
+
+country United States
+
+example
+ b + 1 2 3
+twitter https://twitter.com/shaktidb
+
+domainName shakti.com
+ registered 2002
+ awisRank
+  2022 7145969

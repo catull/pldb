@@ -1,0 +1,37 @@
+../code/conceptPage.scroll
+
+id lila-lang
+name lila-lang
+appeared 2019
+tags pl
+lab https://github.com/codr7/lila/issues
+writtenIn lisp python markdown svg yaml
+
+repoStats
+ firstCommit 2019
+ commits 182
+ committers 2
+ files 48
+ newestCommit 2019
+ mb 1
+ linesOfCode 1821
+country Unknown
+
+example
+ fun fib(n:Int) (Int) {
+   if {n.< 2} n {
+     fib {n.- 1}
+     fib {n.- 2}
+     $.+ $
+   }
+ }
+
+githubRepo https://github.com/codr7/lila
+ firstCommit 2019
+ subscribers 3
+ created 2019
+ updated 2024
+ description a cleaner language based on Common Lisp
+ stars 4
+ forks 0
+ issues 0

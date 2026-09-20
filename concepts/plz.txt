@@ -1,0 +1,80 @@
+PLZ
+===
+
+PLZ is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1978 by Charlie Bass.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221978%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1978
+ https://pldb.io/concepts/../lists/creators.html#q=Charlie%20Bass Charlie Bass
+
+#2148 on PLDB
+48 Years Old
+
+PLZ/SYS is intended to aid the implementation of system programs for microcomputers. PLZ/SYS is a synthesis of concepts from contemporary programming languages and compilers--the language Pascal has had the most notable influence on the overall design and implementation of PLZ/SYS.
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of PLZ happened in <a href="../lists/labs.html#q=Zilog, Inc">Zilog, Inc</a>
+- <a href="pascal.html">Pascal</a> influenced the design of PLZ
+- PLZ on HOPL
+ https://hopl.info/showlanguage.prx?exp=865 PLZ on HOPL
+- Read more about PLZ on Semantic Scholar: 1.
+ https://semanticscholar.org/paper/a6f73d43d666ff8763b9cc97ce408243c9b95038 1.
+- Read more about PLZ on the web: 1. 2.
+ https://www.crockford.com/plz.html 1.
+ https://csdl-downloads.ieeecomputer.org/mags/co/1978/03/01646868.pdf?Expires=1723074453&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jc2RsLWRvd25sb2Fkcy5pZWVlY29tcHV0ZXIub3JnL21hZ3MvY28vMTk3OC8wMy8wMTY0Njg2OC5wZGYiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3MjMwNzQ0NTN9fX1dfQ__&Signature=GnlPrBV5bi6EcgUnzK1Fg7nmRkaYPMpezlQZfAlCdBWK5p10wPVGVYzNnHDlewX4FWWPuQmC8W0u-qmsCV6W-Tl6QWjZsqZ7B-o-sUcq9~D2TkqQjU9BhMVl2-KXTFkcrUxOR3LoHuLZpOX6fu1RWlDqOZtCCG4fR1IkVwQ3~X3Pm39KaeSGFckeJFBvXHsDJYs3j2U8Q8rgHR64OsJ90QbPJaUYpXrjPN7g-XB30o61AhEmPCoOCQYL-yXZ5If-NjithMP7zu6PqG2DWhHNMFWDzwJnMYrrnA1XBqgZ~5qCfiFrJwKpQl4vqaM9QcPgAHoP7CLO7So8G6xfL4hl~w__&Key-Pair-Id=K12PMWTCQBDMDT 2.
+
+```Example from the web:
+bubble sort MODULE
+
+CONSTANT
+ false : .. 0
+ true := 1
+ 
+EXTERNAL
+ printarray PROCEDURE (first tWORD count BYTE)
+ 
+INTERNAL
+ a ARRAY [10 WORD]
+  := [33 10 2000 400 410
+   3 3 33 500 1999]
+ sort PROCEDURE (n BYTE)
+  LOCAL
+   i j limit BYTE
+   temp WORD
+   switched BYTE
+  ENTRY
+  DO
+   switched := false
+    i := 0
+    limit := n-2
+    DO
+     IF i &gt; limit THEN EXIT FI
+     j := i + 1
+     IF a[i] &gt; a[j] THEN
+      switched := true
+      temp :&#39;&quot; a [i)
+      a[i] := a[j]
+      a [j] : .. temp
+     FI
+     i +- 1
+   OD
+   IF switched .. false THEN RETURN FI
+  END sort
+GLOBAL
+ main PROCEDURE
+  ENTRY
+   sort (10)
+   printarray(ta[O] 10)
+  END main
+END bubble sort
+```
+
+Language <a href="../lists/features.html">features</a>
+======================================================
+
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token true false
+
+Built with Scroll v180.0.1

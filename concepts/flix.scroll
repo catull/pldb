@@ -1,0 +1,30 @@
+../code/conceptPage.scroll
+
+id flix
+name Flix
+appeared 2016
+creators Magnus Madsen
+tags pl
+website https://flix.dev/
+latestVersion v0.47.0
+lab https://github.com/flix
+writtenIn scala java markdown yaml toml css bourne-shell gradle javascript svg
+
+repoStats
+ firstCommit 2014
+ commits 10797
+ committers 89
+ files 1172
+ newestCommit 2025
+ mb 125
+ linesOfCode 155226
+country Denmark
+
+githubRepo https://github.com/flix/flix
+ stars 2107
+ forks 149
+ subscribers 24
+ created 2015
+ updated 2024
+ description The Flix Programming Language
+ issues 593

@@ -1,0 +1,39 @@
+../code/conceptPage.scroll
+
+id pinto
+name pinto
+appeared 2016
+creators Peter Graf
+tags pl
+website https://pinto.tech
+latestVersion v0.5.1
+lab https://github.com/punkbrwstr/pinto/issues
+writtenIn java html css javascript markdown xml
+
+repoStats
+ firstCommit 2016
+ commits 238
+ committers 4
+ files 77
+ newestCommit 2019
+ mb 2
+ linesOfCode 2569
+country United States
+
+githubRepo https://github.com/punkbrwstr/pinto
+ firstCommit 2016
+ stars 10
+ forks 1
+ created 2016
+ updated 2023
+ description Pinto is a domain-specific programming language for time series
+ subscribers 1
+ issues 3
+
+domainName pinto.tech
+
+hackerNewsDiscussions
+ id|title|time|timestamp|by|comments|score
+ 12638229|Show HN: Pinto is a stack-based functional language for time series|2016-10-04 18:55:03 UTC|1475607303|punkbrwstr|1|7
+
+semanticScholar 0

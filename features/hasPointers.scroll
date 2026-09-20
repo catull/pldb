@@ -1,0 +1,108 @@
+header.scroll
+
+title Pointers - language feature
+tags Feature
+printTitle Pointers
+
+<a class="trueBaseThemePreviousItem" href="hasPipes.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasPolymorphism.html">&gt;</a>
+
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
+
+container 600px
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/c.html">C</a>
+ int *ptr;
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/go.html">Go</a>
+ package main
+ 
+ import &quot;fmt&quot;
+ 
+ func main() {
+   i, j := 42, 2701
+ 
+   p := &amp;i         // point to i
+   fmt.Println(*p) // read i through the pointer
+   *p = 21         // set i through the pointer
+   fmt.Println(i)  // see the new value of i
+ 
+   p = &amp;j         // point to j
+   *p = *p / 37   // divide j through the pointer
+   fmt.Println(j) // see the new value of j
+ }
+ 
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/csharp.html">C#</a>
+ // Pointers supported only under certain conditions.
+ // Get 16 bytes of memory from the process&#39;s unmanaged memory
+ IntPtr pointer = System.Runtime.InteropServices.Marshal.AllocHGlobal(16);
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/wa.html">Wa-lang</a>
+ func main {
+   i, j := 42, 2701
+ 
+   p := &amp;i         // point to i
+   println(*p) // read i through the pointer
+   *p = 21         // set i through the pointer
+   println(i)  // see the new value of i
+ 
+   p = &amp;j         // point to j
+   *p = *p / 37   // divide j through the pointer
+   println(j) // see the new value of j
+ }
+ 
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/felix.html">Felix</a>
+ var x = 1;
+ &amp;x &lt;- 2;
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/jule.html">Jule</a>
+ let ptr: *int = nil
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/speedie.html">Speedie</a>
+ || i = 0
+ || p = &amp;i
+ *p = 1
+ if (i == 1)
+  &quot;success&quot;
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/fortran-90.html">Fortran 90</a>
+ type real_list_t
+   real :: sample_data(100)
+   type (real_list_t), pointer :: next =&gt; null ()
+ end type
+ 
+ type (real_list_t), target :: my_real_list
+ type (real_list_t), pointer :: real_list_temp
+ 
+ real_list_temp =&gt; my_real_list
+ do
+   read (1,iostat=ioerr) real_list_temp%sample_data
+   if (ioerr /= 0) exit
+   allocate (real_list_temp%next)
+   real_list_temp =&gt; real_list_temp%next
+ end do
+
+***
+
+* Languages *with* Pointers include <a href="../concepts/c.html">C</a>, <a href="../concepts/go.html">Go</a>, <a href="../concepts/csharp.html">C#</a>, <a href="../concepts/objective-c.html">Objective-C</a>, <a href="../concepts/cobol.html">COBOL</a>, <a href="../concepts/ada.html">Ada</a>, <a href="../concepts/d.html">D</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/eiffel.html">Eiffel</a>, <a href="../concepts/wa.html">Wa-lang</a>, <a href="../concepts/pl-i.html">PL/I</a>, <a href="../concepts/modula-2.html">Modula-2</a>, <a href="../concepts/oberon.html">Oberon</a>, <a href="../concepts/felix.html">Felix</a>, <a href="../concepts/dale.html">Dale</a>, <a href="../concepts/blitzmax.html">BlitzMax</a>, <a href="../concepts/jule.html">Jule</a>, <a href="../concepts/freebasic.html">FreeBASIC</a>, <a href="../concepts/aardvark.html">Aardvark</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/fortran-90.html">Fortran 90</a>
+
+***
+
+* Languages *without* Pointers include <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/python.html">Python</a>, <a href="../concepts/java.html">Java</a>, <a href="../concepts/elixir.html">Elixir</a>, <a href="../concepts/progsbase.html">progsbase</a>
+
+***
+
+View all concepts with or missing a *hasPointers* measurement
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasPointers&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasPointers%22%2C%22origData%22%3A%22hasPointers%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasPointers&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasPointers%22%2C%22origData%22%3A%22hasPointers%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D with
+
+***
+
+* Read more about Pointers on the web: 1.
+ https://en.wikipedia.org/wiki/Pointer_(computer_programming) 1.
+
+keyboardNav hasPipes.html hasPolymorphism.html
+
+../footer.scroll

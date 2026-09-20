@@ -1,0 +1,31 @@
+../code/conceptPage.scroll
+
+id heap.coffee
+name heap.coffee
+appeared 2012
+creators Roman I. Kuzmin
+tags pl
+website https://github.com/syg/heap.coffee
+lab Mozilla
+fileExtensions coffee
+writtenIn coffeescript javascript html css erb markdown ruby json
+
+repoStats
+ firstCommit 2009
+ commits 3335
+ committers 93
+ files 199
+ newestCommit 2012
+ mb 12
+ linesOfCode 42120
+country Russia
+
+keywords delete new struct
+githubRepo https://github.com/syg/heap.coffee
+ stars 93
+ forks 5
+ subscribers 6
+ created 2012
+ updated 2024
+ description Unfancy JavaScript with Manual Memory Management
+ issues 0

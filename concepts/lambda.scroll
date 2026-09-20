@@ -1,0 +1,13 @@
+../code/conceptPage.scroll
+
+id lambda
+name lambda
+appeared 2013
+tags plzoo
+website http://plzoo.andrej.com/language/lambda.html
+description untyped λ-calculus, several evaluation strategies
+lab https://github.com/andrejbauer/plzoo/issues
+
+wordRank 6539
+country Slovenia
+reference https://github.com/andrejbauer/plzoo

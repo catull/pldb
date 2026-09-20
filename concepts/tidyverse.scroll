@@ -1,0 +1,38 @@
+../code/conceptPage.scroll
+
+id tidyverse
+name tidyverse
+appeared 2016
+creators Hadley Wickham
+tags dataFlow library
+website https://www.tidyverse.org/
+latestVersion v2.0.0
+description The tidyverse is an opinionated collection of R packages designed for data science. All packages share an underlying design philosophy, grammar, and data structures.
+writtenIn markdown r yaml json tex
+
+isOpenSource true
+related dplyr
+fileType text
+repoStats
+ firstCommit 2016
+ commits 421
+ committers 41
+ files 83
+ newestCommit 2024
+ mb 4
+ linesOfCode 3658
+
+githubRepo https://github.com/tidyverse/tidyverse
+ firstCommit 2016
+ stars 1622
+ forks 281
+ subscribers 93
+ created 2016
+ updated 2024
+ description Easily install and load packages from the tidyverse
+ issues 11
+
+domainName tidyverse.org
+ registered 2016
+ awisRank
+  2022 29257

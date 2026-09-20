@@ -1,0 +1,29 @@
+../code/conceptPage.scroll
+
+id cityhash-hash-function
+name cityhash-hash-function
+appeared 2011
+tags hashFunction
+lab Google
+writtenIn bourne-shell m4 cpp make
+
+repoStats
+ firstCommit 2011
+ commits 18
+ committers 4
+ files 26
+ newestCommit 2022
+ mb 1
+ linesOfCode 46055
+country United States
+reference https://opensource.googleblog.com/2011/04/introducing-cityhash.html
+
+githubRepo https://github.com/google/cityhash
+ firstCommit 2011
+ stars 1081
+ forks 178
+ subscribers 43
+ created 2015
+ updated 2024
+ description Automatically exported from code.google.com/p/cityhash
+ issues 15

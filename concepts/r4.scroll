@@ -1,0 +1,31 @@
+../code/conceptPage.scroll
+
+id r4
+name r4
+appeared 2009
+tags pl
+website https://phreda4.github.io
+lab https://github.com/phreda4/r4/issues
+writtenIn assembly-language svg markdown xml lisp ini
+
+repoStats
+ firstCommit 2009
+ commits 2043
+ committers 5
+ files 1135
+ newestCommit 2025
+ mb 62
+ linesOfCode 251488
+country Argentina
+
+githubRepo https://github.com/phreda4/reda4
+ firstCommit 2009
+ stars 122
+ forks 9
+ subscribers 10
+ created 2015
+ updated 2024
+ description :r4 concatenative programming language with ideas from ColorForth.
+ issues 0
+
+domainName phreda4.github.io

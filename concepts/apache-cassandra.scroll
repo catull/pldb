@@ -1,0 +1,16 @@
+../code/conceptPage.scroll
+
+id apache-cassandra
+name Apache Cassandra
+appeared 2008
+tags database
+website https://cassandra.apache.org
+lab Facebook && Apache Software Foundation
+
+country United States
+
+subreddit https://www.reddit.com/r/cassandra
+ memberCount
+  2022 2453
+
+wikipedia https://en.wikipedia.org/wiki/Apache_Cassandra

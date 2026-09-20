@@ -1,0 +1,78 @@
+header.scroll
+
+title Gotos - language feature
+tags Feature
+printTitle Gotos
+
+<a class="trueBaseThemePreviousItem" href="hasGlobalScope.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasHereDocs.html">&gt;</a>
+
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
+
+container 600px
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/c.html">C</a>
+ // C/C++ program to check if a number is
+ // even or not using goto statement
+ #include &lt;iostream&gt;
+ using namespace std;
+   
+ // function to check even or not
+ void checkEvenOrNot(int num)
+ {
+     if (num % 2 == 0)
+         goto even; // jump to even
+     else
+         goto odd; // jump to odd
+   
+ even:
+     cout &lt;&lt; num &lt;&lt; &quot; is evenn&quot;;
+     return; // return if even
+ odd:
+     cout &lt;&lt; num &lt;&lt; &quot; is oddn&quot;;
+ }
+   
+ // Driver program to test above function
+ int main()
+ {
+     int num = 26;
+     checkEvenOrNot(num);
+     return 0;
+ }
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/basic.html">BASIC</a>
+ 10 REM This BASIC program shows the use of the PRINT and GOTO Statements.
+ 15 REM It fills the screen with the phrase &quot;HELLO&quot;
+ 20 PRINT &quot;HELLO&quot;
+ 30 GOTO 20
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/batch.html">Batchfile</a>
+ :: this would create an endless loop
+ :myLabel
+ goto myLabel
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/jule.html">Jule</a>
+ goto a_label
+
+***
+
+* Languages *with* Gotos include <a href="../concepts/c.html">C</a>, <a href="../concepts/basic.html">BASIC</a>, <a href="../concepts/batch.html">Batchfile</a>, <a href="../concepts/jule.html">Jule</a>, <a href="../concepts/sako.html">SAKO</a>
+
+***
+
+* Languages *without* Gotos include <a href="../concepts/nim.html">Nim</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/progsbase.html">progsbase</a>, <a href="../concepts/slope.html">Slope</a>
+
+***
+
+View all concepts with or missing a *hasGotos* measurement
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasGotos&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasGotos%22%2C%22origData%22%3A%22hasGotos%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasGotos&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasGotos%22%2C%22origData%22%3A%22hasGotos%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D with
+
+***
+
+* Read more about Gotos on the web: 1.
+ https://en.wikipedia.org/wiki/Goto 1.
+
+keyboardNav hasGlobalScope.html hasHereDocs.html
+
+../footer.scroll

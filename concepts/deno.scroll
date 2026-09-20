@@ -1,0 +1,80 @@
+../code/conceptPage.scroll
+
+id deno
+name Deno
+appeared 2018
+creators Ryan Dahl
+tags compiler
+website https://deno.land/
+latestVersion v2.0.0
+lab Deno Land Inc
+writtenIn typescript javascript rust json markdown toml jsx yaml jupyter-notebook lua css c idl csharp xml powershell dockerfile svg
+
+related javascript typescript
+docs https://deno.land/manual@v1.27.1/introduction
+repoStats
+ firstCommit 2018
+ newestCommit 2025
+ commits 17115
+ committers 1108
+ files 9657
+ mb 165
+ linesOfCode 1112646
+country United States
+
+subreddit https://reddit.com/r/Deno
+ memberCount
+  2022 8226
+example
+ // Imports `serve` from the remote Deno standard library, using URL.
+ import { serve } from "https://deno.land/std@v0.21.0/http/server.ts";
+ 
+ // `serve` function returns an asynchronous iterator, yielding a stream of requests
+ for await (const req of serve({ port: 8000 })) {
+     req.respond({ body: "Hello, World!\n" });
+ }
+twitter https://twitter.com/deno_land
+leachim6 Deno
+ filepath d/Deno.ts
+ fileExtensions ts
+ example
+  console.log("Hello World");
+  
+gource https://www.youtube.com/watch?v=cV1CEnfKtdI
+
+githubRepo https://github.com/denoland/deno
+ firstCommit 2018
+ stars 93520
+ forks 5181
+ subscribers 1411
+ created 2018
+ updated 2024
+ description A modern runtime for JavaScript and TypeScript.
+ issues 2049
+
+lineCommentToken //
+printToken console.log
+stringToken "
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+
+wikipedia https://en.wikipedia.org/wiki/Deno_(software)
+
+domainName deno.land
+ registered 2018
+ awisRank
+  2022 71476
+
+isbndb 2
+ year|publisher|title|authors|isbn13
+ 2021|Packt Publishing|Deno Web Development: Write, test, maintain, and deploy JavaScript and TypeScript web applications using Deno|Santos, Alexandre Portela dos|9781800201149
+ 20200916|Springer Nature|Introducing Deno|Fernando Doglio|9781484261972
+
+semanticScholar 0

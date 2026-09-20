@@ -1,0 +1,40 @@
+header.scroll
+
+title Duck Typing - language feature
+tags Feature
+printTitle Duck Typing
+
+<a class="trueBaseThemePreviousItem" href="hasDocComments.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasDynamicProperties.html">&gt;</a>
+
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
+
+container 600px
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/jule.html">Jule</a>
+ fn lock_object[T](obj: T) {
+     obj.lock()
+ }
+
+***
+
+* Languages *with* Duck Typing include <a href="../concepts/python.html">Python</a>, <a href="../concepts/ruby.html">Ruby</a>, <a href="../concepts/jule.html">Jule</a>
+
+***
+
+* Languages *without* Duck Typing include <a href="../concepts/c3.html">C3</a>, <a href="../concepts/speedie.html">Speedie</a>
+
+***
+
+View all concepts with or missing a *hasDuckTyping* measurement
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasDuckTyping&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasDuckTyping%22%2C%22origData%22%3A%22hasDuckTyping%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasDuckTyping&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasDuckTyping%22%2C%22origData%22%3A%22hasDuckTyping%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D with
+
+***
+
+* Read more about Duck Typing on the web: 1.
+ https://en.wikipedia.org/wiki/Duck_typing 1.
+
+keyboardNav hasDocComments.html hasDynamicProperties.html
+
+../footer.scroll

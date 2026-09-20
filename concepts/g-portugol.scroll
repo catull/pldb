@@ -1,0 +1,40 @@
+../code/conceptPage.scroll
+
+id g-portugol
+name G-Portugol
+appeared 2005
+creators Thiago Silva
+tags pl
+lab https://sourceforge.net/projects/gpt.berlios
+writtenIn cpp make bourne-shell m4 markdown
+
+isOpenSource true
+fileType text
+quineRelay G-Portugol
+ubuntuPackage gpt
+repoStats
+ firstCommit 2013
+ commits 3
+ committers 2
+ files 86
+ newestCommit 2020
+ mb 1
+ linesOfCode 61185
+country Portugal
+reference https://pt.wikipedia.org/wiki/G-Portugol
+
+example
+ algoritmo OlaMundo;
+ 
+ início
+    imprima("Olá, Mundo!");
+ fim
+
+githubRepo https://github.com/rafaelgou/gpt
+ stars 4
+ forks 2
+ subscribers 3
+ created 2013
+ updated 2024
+ description G-Portugol - compilador e interpretador - Fork do SourceForge - http://gpt.berlios.de/site/
+ issues 0

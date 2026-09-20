@@ -1,0 +1,44 @@
+../code/conceptPage.scroll
+
+id oil
+name oil
+appeared 2016
+tags pl
+website http://www.oilshell.org/
+aka OSH
+description Oil is a new Unix shell.
+lab https://github.com/oilshell
+writtenIn python bourne-shell c markdown cpp assembly-language css m4 dockerfile yaml make bash r xml html expect javascript diff tex ini nix json z-shell
+
+isOpenSource true
+wordRank 981
+repoStats
+ firstCommit 2016
+ commits 11988
+ committers 101
+ files 5187
+ newestCommit 2025
+ mb 52
+ linesOfCode 1946681
+country Various
+
+subreddit https://reddit.com/r/oilshell
+ memberCount
+  2017 221
+  2022 436
+twitter https://twitter.com/oilshellblog
+
+githubRepo https://github.com/oilshell/oil
+ firstCommit 2016
+ stars 2797
+ forks 150
+ subscribers 38
+ created 2016
+ updated 2024
+ description Oils is our upgrade path from bash to a better language and runtime.  It's also for Python and JavaScript users who avoid shell!
+ issues 500
+
+domainName oilshell.org
+ registered 2016
+ awisRank
+  2022 2209974

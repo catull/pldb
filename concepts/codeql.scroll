@@ -1,0 +1,52 @@
+../code/conceptPage.scroll
+
+id codeql
+name CodeQL
+appeared 2018
+creators Pavel Avgustinov
+tags queryLanguage
+website https://codeql.github.com/
+description CodeQL let's you query code as if it were data.
+lab GitHub
+fileExtensions ql
+writtenIn java yaml javascript python markdown csharp cpp go starlark c typescript ruby kotlin restructuredtext swift rust json xml html bourne-shell gradle toml mustache jsx erb asp.net csv razor ejs css svg ini scss diff make bash java-server-pages protobuf lua thrift powershell scheme perl raml cmake lisp vim-script xhtml handlebars graphql sql objective-c
+
+repoStats
+ firstCommit 2018
+ commits 81423
+ committers 565
+ files 55176
+ newestCommit 2025
+ mb 429
+ linesOfCode 798031
+reference https://www.cyberark.com/resources/threat-research-blog/make-memcpy-safe-again-codeql
+
+example
+ from DataFlow::PathNode source, DataFlow::PathNode sink, UnsafeDeserializationConfig conf
+   
+           where conf.hasFlowPath(source, sink)
+   
+           select sink.getNode().(UnsafeDeserializationSink).getMethodAccess(), source, sink,
+       "Unsafe deserialization of $@.", source.getNode(), "user input"
+
+githubRepo https://github.com/github/codeql
+ firstCommit 2018
+ stars 7389
+ forks 1474
+ subscribers 234
+ created 2018
+ updated 2024
+ description CodeQL: the libraries and queries that power security researchers around the world, as well as code scanning in GitHub Advanced Security
+ issues 1129
+
+githubBigQuery CodeQL
+ repos 25
+ users 23
+
+githubLanguage CodeQL
+ type programming
+ fileExtensions ql qll
+ aceMode text
+ tmScope source.ql
+ aliases ql
+ repos 3559

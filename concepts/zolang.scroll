@@ -1,0 +1,40 @@
+../code/conceptPage.scroll
+
+id zolang
+name zolang
+appeared 2018
+creators Þorvaldur Rúnarsson
+tags pl
+latestVersion 0.1.19
+description A programming language to generate code for multiple platforms
+writtenIn swift markdown bourne-shell
+
+isOpenSource true
+fileType text
+repoStats
+ firstCommit 2018
+ commits 232
+ committers 5
+ files 64
+ newestCommit 2022
+ mb 3
+ linesOfCode 7417
+
+example
+ describe Person {
+  name as text
+  street as text
+  number as number
+  friendNames as list of text
+ }
+ let john as Person be Person("John", "Wall Street", 15, [ "Alice", "Bob" ])
+
+githubRepo https://github.com/Zolang/Zolang
+ firstCommit 2018
+ stars 145
+ forks 9
+ subscribers 8
+ created 2018
+ updated 2024
+ description A programming language for generating code for multiple platforms
+ issues 8

@@ -1,0 +1,33 @@
+../code/conceptPage.scroll
+
+id bucklescript
+name Bucklescript
+appeared 2010
+creators Evan Martin
+tags pl
+website https://bucklescript.github.io
+latestVersion 12.0.0-alpha.1
+lab ReScript Association
+writtenIn rescript javascript ocaml typescript json cpp markdown bourne-shell python yaml asciidoc c css make xslt lisp vim-script html svg
+
+repoStats
+ firstCommit 2010
+ commits 15052
+ committers 432
+ files 6397
+ newestCommit 2025
+ mb 1880
+ linesOfCode 754559
+country Unknown
+
+githubRepo https://github.com/BuckleScript/bucklescript
+ firstCommit 2010
+ stars 6621
+ forks 440
+ subscribers 130
+ created 2016
+ updated 2024
+ description The compiler for ReScript.
+ issues 242
+
+domainName bucklescript.github.io

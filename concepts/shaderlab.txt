@@ -1,0 +1,141 @@
+ShaderLab
+=========
+
+ShaderLab is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2000.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222000%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2000
+
+#1140 on PLDB
+26 Years Old
+59k <span title="ShaderLab repos on GitHub.">Repos</span>
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"3d"%5D%7D%5D%2C"logic"%3A"AND"%7D'>3d</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"shadingLanguage"%5D%7D%5D%2C"logic"%3A"AND"%7D'>shadingLanguage</a>
+- There are at least 59,455 ShaderLab repos on <a href="https://github.com/search?q=language:ShaderLab">GitHub</a>
+- Early development of ShaderLab happened in <a href="../lists/labs.html#q=https://github.com/tgjones/shaders-tmLanguage/issues">https://github.com/tgjones/shaders-tmLanguage/issues</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 1k users using ShaderLab in 1k repos on <a href="https://api.github.com/search/repositories?q=language:ShaderLab">GitHub</a>
+- GitHub supports <a href="https://github.com/tgjones/shaders-tmLanguage" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for ShaderLab
+- Read more about ShaderLab on the web: 1.
+ https://docs.unity3d.com/Manual/SL-Shader.html 1.
+
+```Example from <a href='https://github.com/tgjones/shaders-tmLanguage'>Linguist</a>:
+// From https://github.com/Unity-Technologies/PostProcessing,
+// licensed under MIT licence.
+
+Shader &quot;Hidden/Post FX/Depth Of Field&quot;
+{
+    Properties
+    {
+        _MainTex (&quot;&quot;, 2D) = &quot;black&quot;
+    }
+
+    CGINCLUDE
+        #pragma exclude_renderers d3d11_9x
+        #pragma target 3.0
+    ENDCG
+
+    SubShader
+    {
+        Cull Off ZWrite Off ZTest Always
+
+        // (0) Downsampling, prefiltering &amp; CoC
+        Pass
+        {
+            CGPROGRAM
+                #pragma multi_compile __ UNITY_COLORSPACE_GAMMA
+                #pragma vertex VertDOF
+                #pragma fragment FragPrefilter
+                #include &quot;DepthOfField.cginc&quot;
+            ENDCG
+        }
+
+        // (1) Pass 0 + temporal antialiasing
+        Pass
+        {
+            CGPROGRAM
+                #pragma vertex VertDOF
+                #pragma fragment FragPrefilter
+                #define PREFILTER_TAA
+                #include &quot;DepthOfField.cginc&quot;
+            ENDCG
+        }
+
+        // (2-5) Bokeh filter with disk-shaped kernels
+        Pass
+        {
+            CGPROGRAM
+                #pragma vertex VertDOF
+                #pragma fragment FragBlur
+                #define KERNEL_SMALL
+                #include &quot;DepthOfField.cginc&quot;
+            ENDCG
+        }
+
+        Pass
+        {
+            CGPROGRAM
+                #pragma vertex VertDOF
+                #pragma fragment FragBlur
+                #define KERNEL_MEDIUM
+                #include &quot;DepthOfField.cginc&quot;
+            ENDCG
+        }
+
+        Pass
+        {
+            CGPROGRAM
+                #pragma vertex VertDOF
+                #pragma fragment FragBlur
+                #define KERNEL_LARGE
+                #include &quot;DepthOfField.cginc&quot;
+            ENDCG
+        }
+
+        Pass
+        {
+            CGPROGRAM
+                #pragma vertex VertDOF
+                #pragma fragment FragBlur
+                #define KERNEL_VERYLARGE
+                #include &quot;DepthOfField.cginc&quot;
+            ENDCG
+        }
+
+        // (6) Postfilter blur
+        Pass
+        {
+            CGPROGRAM
+                #pragma vertex VertDOF
+                #pragma fragment FragPostBlur
+                #include &quot;DepthOfField.cginc&quot;
+            ENDCG
+        }
+    }
+
+    FallBack Off
+}
+```
+
+Language <a href="../lists/features.html">features</a>
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  // A comment
+ Token 
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  // A comment
+ Token //
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token
+
+Built with Scroll v180.0.1

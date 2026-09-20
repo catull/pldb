@@ -1,0 +1,27 @@
+../code/conceptPage.scroll
+
+id pragtical
+name Pragtical
+appeared 2019
+tags editor
+website https://pragtical.dev/
+description Pragtical is a lightweight, powerful, and hyperextensible text editor.
+writtenIn lua c
+
+repoStats
+ firstCommit 2019
+ newestCommit 2025
+ commits 2685
+ committers 114
+ files 226
+ mb 15
+ linesOfCode 41706
+
+githubRepo https://github.com/pragtical/pragtical
+ stars 368
+ forks 13
+ subscribers 8
+ created 2023
+ updated 2024
+ description The practical and pragmatic code editor.
+ issues 19

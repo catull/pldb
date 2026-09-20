@@ -1,0 +1,254 @@
+awk
+===
+
+awk, aka Aho, Weinberger, Kernighan, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1977 by Alfred Aho and Peter J. Weinberger and Brian Kernighan.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221977%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1977
+ https://pldb.io/concepts/../lists/creators.html#q=Alfred%20Aho Alfred Aho
+ https://pldb.io/concepts/../lists/creators.html#q=Peter%20J.%20Weinberger Peter J. Weinberger
+ https://pldb.io/concepts/../lists/creators.html#q=Brian%20Kernighan Brian Kernighan
+
+#64 on PLDB
+49 Years Old
+3k <span title="awk repos on GitHub.">Repos</span>
+
+AWK is a programming language designed for text processing and typically used as a data extraction and reporting tool. It is a standard feature of most Unix-like operating systems. The AWK language is a data-driven scripting language consisting of a set of actions to be taken against streams of textual data – either run directly on files or used as part of a pipeline – for purposes of extracting or transforming text, such as producing formatted reports. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/AWK Read more on Wikipedia...
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Interview with the creators of awk: 1.
+ https://pldb.io/blog/brianKernighan.html 1.
+- There are at least 2,552 awk repos on <a href="https://github.com/search?q=language:Awk">GitHub</a>
+- Early development of awk happened in <a href="../lists/labs.html#q=Bell Labs">Bell Labs</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 14k users using awk in 21k repos on <a href="https://api.github.com/search/repositories?q=language:Awk">GitHub</a>
+- There are 1,929 members in the <a href="https://reddit.com/r/awk">awk subreddit</a>
+- There are 14 <a href="https://projecteuler.net/language=AWK">Project Euler</a> users using awk
+- Explore awk snippets on <a href="http://www.rosettacode.org/wiki/Category:AWK">Rosetta Code</a>
+- awk on HOPL
+ https://hopl.info/showlanguage.prx?exp=1844 awk on HOPL
+- awk ranks #37 in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- awk Ubuntu package
+ https://packages.ubuntu.com/jammy/gawk awk Ubuntu package
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/textedit.py">syntax highlighting</a> for awk
+- GitHub supports <a href="https://github.com/github-linguist/awk-sublime" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for awk
+- awk appears in the <a href="https://github.com/mame/quine-relay">Quine Relay</a> project
+- Learn <a href="https://exercism.org/tracks/awk">awk on exercism.</a>
+- Indeed.com has 7 matches for <a href="https://www.indeed.com/jobs?q=awk engineer">"awk engineer"</a>.
+- See also: (14 related languages) <a href="c.html">C</a>, <a href="snobol.html">SNOBOL</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="tcl.html">Tcl</a>, <a href="ampl.html">AMPL</a>, <a href="perl.html">Perl</a>, <a href="lua.html">Lua</a>, <a href="regex.html">Regular Expressions</a>, <a href="unix.html">Unix</a>, <a href="sed.html">sed</a>, <a href="freebsd.html">FreeBSD</a>, <a href="solaris.html">Solaris</a>, <a href="java.html">Java</a>, <a href="isbn.html">ISBN</a>
+- 47 PLDB concepts link to awk: <a href="abcl-lang.html">Armed Bear Common Lisp</a>, <a href="arrow-format.html">Apache Arrow</a>, <a href="bash.html">Bash</a>, <a href="bawk.html">bawk</a>, <a href="beef.html">beef-lang</a>, <a href="berkeleydb.html">Berkeley DB</a>, <a href="cir.html">CIR</a>, <a href="civet.html">Civet</a>, <a href="crmsh.html">crmsh</a>, <a href="ecl.html">ECL</a>, <a href="eiffel.html">Eiffel</a>, <a href="elfe.html">ELFE</a>, <a href="ffmpeg.html">FFmpeg</a>, <a href="flex.html">FLEX</a>, <a href="flow9.html">Flow9</a>, <a href="gforth.html">Gforth</a>, <a href="go.html">Go</a>, <a href="groff.html">groff</a>, <a href="hhvm.html">HHVM</a>, <a href="incipit.html">Incipit</a>, <a href="java.html">Java</a>, <a href="kona.html">kona</a>, <a href="ktyek.html">ktye/k</a>, <a href="latino.html">latino</a>, <a href="lil.html">Lil</a>, <a href="linux.html">Linux</a>, <a href="mal.html">mal</a>, <a href="manim.html">Manim</a>, <a href="michelson.html">michelson</a>, <a href="mongodb.html">MongoDB</a>, <a href="ngs.html">NGS</a>, <a href="nodejs.html">Node.js</a>, <a href="noweb.html">Noweb</a>, <a href="php.html">PHP</a>, <a href="poke.html">GNU Poke</a>, <a href="pov-ray-sdl.html">POV-Ray SDL</a>, <a href="prismjs.html">Prism</a>, <a href="pygments.html">Pygments</a>, <a href="ragel.html">Ragel</a>, <a href="revolution-programming-language.html">Revolution</a>, <a href="ruby.html">Ruby</a>, <a href="slony.html">Slony</a>, <a href="smpl.html">Semantic Patch Language</a>, <a href="swift.html">Swift</a>, <a href="v.html">V</a>, <a href="wonkey.html">Wonkey</a>, <a href="xl-lang.html">XL</a>
+
+```Example from <a href='https://riju.codes/awk'>Riju</a>:
+BEGIN { print &quot;Hello, world!&quot; }
+
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/a/AWK.awk'>hello-world</a>:
+# awk -f awk.awk
+BEGIN { print &quot;Hello World&quot; }
+
+```
+
+```Example from <a href='http://helloworldcollection.de/#Aho%2C'>the Hello World Collection</a>:
+# Hello world in AWK
+
+BEGIN {
+  print &quot;Hello World!&quot;
+}
+```
+
+```Example from <a href='https://github.com/github-linguist/awk-sublime'>Linguist</a>:
+#!/bin/awk -f
+
+BEGIN {
+  # It is not possible to define output file names here because
+  # FILENAME is not define in the BEGIN section
+  n = &quot;&quot;;
+  printf &quot;Generating data files ...&quot;;
+  network_max_bandwidth_in_byte = 10000000;
+  network_max_packet_per_second = 1000000;
+  last3 = 0;
+  last4 = 0;
+  last5 = 0;
+  last6 = 0;
+}
+{
+  if ($1 ~ /Average/)
+    { # Skip the Average values
+      n = &quot;&quot;;
+      next;
+    }
+
+  if ($2 ~ /all/)
+    { # This is the cpu info
+      print $3 &gt; FILENAME&quot;.cpu.user.dat&quot;;
+#	  print $4 &gt; FILENAME&quot;.cpu.nice.dat&quot;;
+      print $5 &gt; FILENAME&quot;.cpu.system.dat&quot;;
+#     print $6 &gt; FILENAME&quot;.cpu.iowait.dat&quot;;
+      print $7 &gt; FILENAME&quot;.cpu.idle.dat&quot;;
+      print 100-$7 &gt; FILENAME&quot;.cpu.busy.dat&quot;;
+    }
+  if ($2 ~ /eth0/)
+    { # This is the eth0 network info
+      if ($3 &gt; network_max_packet_per_second)
+	print last3 &gt; FILENAME&quot;.net.rxpck.dat&quot;; # Total number of packets received per second.
+      else
+	{
+	  last3 = $3;
+	  print $3 &gt; FILENAME&quot;.net.rxpck.dat&quot;; # Total number of packets received per second.
+	}
+      if ($4 &gt; network_max_packet_per_second)
+	print last4 &gt; FILENAME&quot;.net.txpck.dat&quot;; # Total number of packets transmitted per second.
+      else
+	{
+	  last4 = $4;
+	  print $4 &gt; FILENAME&quot;.net.txpck.dat&quot;; # Total number of packets transmitted per second.
+	}
+      if ($5 &gt; network_max_bandwidth_in_byte)
+	print last5 &gt; FILENAME&quot;.net.rxbyt.dat&quot;; # Total number of bytes received per second.
+      else
+	{
+	  last5 = $5;
+	  print $5 &gt; FILENAME&quot;.net.rxbyt.dat&quot;; # Total number of bytes received per second.
+	}
+      if ($6 &gt; network_max_bandwidth_in_byte)
+	print last6 &gt; FILENAME&quot;.net.txbyt.dat&quot;; # Total number of bytes transmitted per second.
+      else
+	{
+	  last6 = $6;
+	  print $6 &gt; FILENAME&quot;.net.txbyt.dat&quot;; # Total number of bytes transmitted per second.
+	}
+#     print $7 &gt; FILENAME&quot;.net.rxcmp.dat&quot;; # Number of compressed packets received per second (for cslip etc.).
+#     print $8 &gt; FILENAME&quot;.net.txcmp.dat&quot;; # Number of compressed packets transmitted per second.
+#     print $9 &gt; FILENAME&quot;.net.rxmcst.dat&quot;; # Number of multicast packets received per second.
+    }
+
+  # Detect which is the next info to be parsed
+  if ($2 ~ /proc|cswch|tps|kbmemfree|totsck/)
+    {
+      n = $2;
+    }
+
+  # Only get lines with numbers (real data !)
+  if ($2 ~ /[0-9]/)
+    {
+      if (n == &quot;proc/s&quot;)
+	{ # This is the proc/s info
+	  print $2 &gt; FILENAME&quot;.proc.dat&quot;;
+#	  n = &quot;&quot;;
+	}
+      if (n == &quot;cswch/s&quot;)
+	{ # This is the context switches per second info
+	  print $2 &gt; FILENAME&quot;.ctxsw.dat&quot;;
+#	  n = &quot;&quot;;
+	}
+      if (n == &quot;tps&quot;)
+	{ # This is the disk info
+	  print $2 &gt; FILENAME&quot;.disk.tps.dat&quot;; # total transfers per second
+	  print $3 &gt; FILENAME&quot;.disk.rtps.dat&quot;; # read requests per second
+	  print $4 &gt; FILENAME&quot;.disk.wtps.dat&quot;; # write requests per second
+	  print $5 &gt; FILENAME&quot;.disk.brdps.dat&quot;; # block reads per second
+	  print $6 &gt; FILENAME&quot;.disk.bwrps.dat&quot;; # block writes per second
+#	  n = &quot;&quot;;
+	}
+      if (n == &quot;kbmemfree&quot;)
+	{ # This is the mem info
+	  print $2 &gt; FILENAME&quot;.mem.kbmemfree.dat&quot;; # Amount of free memory available in kilobytes.
+	  print $3 &gt; FILENAME&quot;.mem.kbmemused.dat&quot;; # Amount of used memory in kilobytes. This does not take into account memory used by the kernel itself.
+	  print $4 &gt; FILENAME&quot;.mem.memused.dat&quot;; # Percentage of used memory.
+#         It appears the kbmemshrd has been removed from the sysstat output - ntolia
+#	  print $X &gt; FILENAME&quot;.mem.kbmemshrd.dat&quot;; # Amount of memory shared by the system in kilobytes.  Always zero with 2.4 kernels.
+#	  print $5 &gt; FILENAME&quot;.mem.kbbuffers.dat&quot;; # Amount of memory used as buffers by the kernel in kilobytes.
+	  print $6 &gt; FILENAME&quot;.mem.kbcached.dat&quot;; # Amount of memory used to cache data by the kernel in kilobytes.
+#	  print $7 &gt; FILENAME&quot;.mem.kbswpfree.dat&quot;; # Amount of free swap space in kilobytes.
+#	  print $8 &gt; FILENAME&quot;.mem.kbswpused.dat&quot;; # Amount of used swap space in kilobytes.
+	  print $9 &gt; FILENAME&quot;.mem.swpused.dat&quot;; # Percentage of used swap space.
+#	  n = &quot;&quot;;
+ 	}
+      if (n == &quot;totsck&quot;)
+	{ # This is the socket info
+	  print $2 &gt; FILENAME&quot;.sock.totsck.dat&quot;; # Total number of used sockets.
+	  print $3 &gt; FILENAME&quot;.sock.tcpsck.dat&quot;; # Number of TCP sockets currently in use.
+#	  print $4 &gt; FILENAME&quot;.sock.udpsck.dat&quot;; # Number of UDP sockets currently in use.
+#	  print $5 &gt; FILENAME&quot;.sock.rawsck.dat&quot;; # Number of RAW sockets currently in use.
+#	  print $6 &gt; FILENAME&quot;.sock.ip-frag.dat&quot;; # Number of IP fragments currently in use.
+#	  n = &quot;&quot;;
+ 	}
+    }
+}
+END {
+  print &quot; &#39;&quot; FILENAME &quot;&#39; done.&quot;;
+}
+
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/AWK'>Wikipedia</a>:
+BEGIN {
+    pattern = ARGV[1]
+    for (i = 1; i &lt; ARGC; i++) # remove first argument
+        ARGV[i] = ARGV[i + 1]
+    ARGC--
+    if (ARGC == 1) { # the pattern was the only thing, so force read from standard input (used by book)
+        ARGC = 2
+        ARGV[1] = &quot;-&quot;
+    }
+}
+$0 ~ pattern { print FILENAME &quot;:&quot; $0 }
+```
+
+Language <a href="../lists/features.html">features</a>
+======================================================
+
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  # [0-9]+
+ Token 
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  # [0-9][0-9]*\.[0-9]+([eE][0-9]+)?[fd]?
+ Token 
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  # 0x[0-9a-fA-F]+
+ Token 
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  "Hello world"
+ Token "
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token print
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  # A comment
+ Token #
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token
+
+Built with Scroll v180.0.1

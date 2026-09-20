@@ -1,0 +1,12 @@
+../code/conceptPage.scroll
+
+id butterfly-common-lisp
+name Butterfly Common LISP
+appeared 1993
+tags pl
+lab MIT
+
+country United States
+reference https://www.cs.cmu.edu/Groups/AI/lang/lisp/impl/bbn/0.html
+
+hopl https://hopl.info/showlanguage.prx?exp=1875

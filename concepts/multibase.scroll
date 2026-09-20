@@ -1,0 +1,30 @@
+../code/conceptPage.scroll
+
+id multibase
+name multibase
+appeared 2016
+creators Juan Benet
+tags standard
+lab https://github.com/multiformats
+writtenIn markdown csv yaml
+
+related base64
+repoStats
+ firstCommit 2016
+ commits 110
+ committers 45
+ files 16
+ newestCommit 2025
+ mb 1
+ linesOfCode 953
+country Various
+
+githubRepo https://github.com/multiformats/multibase
+ firstCommit 2016
+ stars 273
+ forks 74
+ subscribers 40
+ created 2016
+ updated 2024
+ description Self identifying base encodings
+ issues 27

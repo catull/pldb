@@ -1,0 +1,63 @@
+header.scroll
+
+title Templates - language feature
+tags Feature
+printTitle Templates
+
+<a class="trueBaseThemePreviousItem" href="hasSymbols.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasTernaryOperators.html">&gt;</a>
+
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
+
+container 600px
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/cpp.html">C++</a>
+ template &lt;int length&gt;
+ Vector&lt;length&gt;&amp; Vector&lt;length&gt;::operator+=(const Vector&lt;length&gt;&amp; rhs)
+ {
+     for (int i = 0; i &lt; length; ++i)
+         value[i] += rhs.value[i];
+     return *this;
+ }
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/nim.html">Nim</a>
+ # https://hookrace.net/blog/introduction-to-metaprogramming-in-nim/#templates
+ template debug*(args: varargs[string, `$`]) =
+ if logLevel &lt;= Level.debug:
+   const module = instantiationInfo().filename[0 .. ^5]
+   echo &quot;[$# $#][$#]: $#&quot; % [getDateStr(), getClockStr(),
+     module, join args]
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/d.html">D</a>
+ template TCopy(T)
+ {
+     void copy(out T to, T from)
+     {
+         to = from;
+     }
+ }
+ int i;
+ TCopy!(int).copy(i, 3);
+
+***
+
+* Languages *with* Templates include <a href="../concepts/cpp.html">C++</a>, <a href="../concepts/nim.html">Nim</a>, <a href="../concepts/d.html">D</a>, <a href="../concepts/xl-lang.html">XL</a>
+
+***
+
+* Languages *without* Templates include <a href="../concepts/c.html">C</a>, <a href="../concepts/speedie.html">Speedie</a>
+
+***
+
+View all concepts with or missing a *hasTemplates* measurement
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasTemplates&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasTemplates%22%2C%22origData%22%3A%22hasTemplates%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasTemplates&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasTemplates%22%2C%22origData%22%3A%22hasTemplates%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D with
+
+***
+
+* Read more about Templates on the web: 1.
+ https://en.wikipedia.org/wiki/Template_metaprogramming 1.
+
+keyboardNav hasSymbols.html hasTernaryOperators.html
+
+../footer.scroll

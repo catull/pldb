@@ -1,0 +1,29 @@
+../code/conceptPage.scroll
+
+id tl
+name Typed Lua
+appeared 2019
+tags pl
+latestVersion v0.15.3
+writtenIn lua markdown yaml bourne-shell make
+
+related lua
+repoStats
+ firstCommit 2019
+ commits 1532
+ committers 59
+ files 201
+ newestCommit 2025
+ mb 5
+ linesOfCode 20551
+reference https://fosdem.org/2020/schedule/event/minimalistictypedlua/
+
+githubRepo https://github.com/hishamhm/tl
+ firstCommit 2019
+ stars 2052
+ forks 104
+ subscribers 49
+ created 2019
+ updated 2024
+ issues 85
+ description The compiler for Teal, a typed dialect of Lua

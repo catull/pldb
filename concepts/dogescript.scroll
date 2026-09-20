@@ -1,0 +1,89 @@
+../code/conceptPage.scroll
+
+id dogescript
+name Dogescript
+appeared 2013
+creators Zach Bruggeman
+tags pl
+website http://dogescript.io
+latestVersion 2.4.3
+lab https://github.com/dogescript
+writtenIn javascript markdown json dockerfile html yaml bourne-shell
+
+isOpenSource true
+fileType text
+repoStats
+ firstCommit 2013
+ commits 501
+ committers 36
+ files 633
+ newestCommit 2022
+ mb 3
+ linesOfCode 16213
+country Various
+
+rijuRepl https://riju.codes/dogescript
+ example
+  plz console.loge with "Hello, world!"
+  
+example
+ quiet
+  wow
+     such language
+   very syntax
+         github recognized wow
+ loud
+ 
+ such language much friendly
+     rly friendly is true
+         plz console.loge with 'such friend, very inclusive'
+     but
+         plz console.loge with 'no love for doge'
+     wow
+ wow
+ 
+ module.exports is language
+twitter https://twitter.com/dogescript
+leachim6 DogeScript
+ filepath d/DogeScript.djs
+ fileExtensions djs
+ example
+  shh such hello dogescript very next-gen wow difficulty
+  
+  plz console.loge with "Hello World"
+  
+
+githubRepo https://github.com/dogescript/dogescript
+ firstCommit 2013
+ stars 1341
+ forks 93
+ subscribers 29
+ created 2013
+ updated 2024
+ description wow so syntax very doge much future
+ issues 8
+
+printToken console.loge
+stringToken "
+
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+
+domainName dogescript.io
+ awisRank
+  2022 7328617
+
+githubBigQuery Dogescript
+ repos 26
+ users 22
+
+githubLanguage Dogescript
+ fileExtensions djs
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope none
+ repos 35
+
+semanticScholar 0

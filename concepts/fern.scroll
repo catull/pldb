@@ -1,0 +1,29 @@
+../code/conceptPage.scroll
+
+id fern
+name Fern
+appeared 2022
+creators Spencer Comin
+tags pl
+lab https://github.com/Spencer-Comin/Fern/issues
+writtenIn prolog cpp markdown cmake python
+
+repoStats
+ firstCommit 2022
+ commits 29
+ committers 2
+ files 24
+ newestCommit 2023
+ mb 1
+ linesOfCode 2727
+country Canada
+
+githubRepo https://github.com/Spencer-Comin/Fern
+ firstCommit 2022
+ stars 4
+ forks 1
+ subscribers 1
+ created 2022
+ updated 2023
+ description A toy programming language built with LLVM and Prolog
+ issues 0

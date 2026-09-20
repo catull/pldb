@@ -1,0 +1,30 @@
+../code/conceptPage.scroll
+
+id calypso
+name Calypso
+appeared 2020
+creators ThePuzzlemaker
+tags pl
+website https://calypso-lang.github.io/
+lab teamisotope
+writtenIn rust toml markdown python yaml bourne-shell
+
+repoStats
+ firstCommit 2020
+ commits 552
+ committers 8
+ files 143
+ newestCommit 2023
+ mb 2
+ linesOfCode 11412
+country Unknown
+
+githubRepo https://github.com/calypso-lang/calypso
+ firstCommit 2020
+ stars 65
+ forks 3
+ subscribers 3
+ created 2020
+ updated 2024
+ description Calypso is a mostly imperative language with some functional influences that is focused on flexibility and simplicity.
+ issues 11

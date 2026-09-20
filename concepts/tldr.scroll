@@ -1,0 +1,36 @@
+../code/conceptPage.scroll
+
+id tldr
+name tldr
+appeared 2013
+creators Romain Prieto
+tags application
+website https://tldr.sh/
+aka tldr pages
+writtenIn markdown yaml python bourne-shell json css svg javascript
+
+repoStats
+ firstCommit 2013
+ newestCommit 2025
+ commits 16865
+ committers 3033
+ files 21327
+ mb 36
+ linesOfCode 432029
+
+twitter https://twitter.com/tldr_pages
+
+githubRepo https://github.com/tldr-pages/tldr
+ firstCommit 2013
+ stars 49571
+ forks 4063
+ subscribers 369
+ created 2013
+ updated 2024
+ description 📚 Collaborative cheatsheets for console commands
+ issues 190
+
+domainName tldr.sh
+ registered 2016
+ awisRank
+  2022 519009

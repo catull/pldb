@@ -1,0 +1,70 @@
+header.scroll
+
+title Async Await - language feature
+tags Feature
+printTitle Async Await
+
+<a class="trueBaseThemePreviousItem" href="hasAssignment.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasBinaryNumbers.html">&gt;</a>
+
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
+
+container 600px
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/javascript.html">JavaScript</a>
+ async doSomething =&gt; await somethingElse()
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/csharp.html">C#</a>
+ public async Task&lt;int&gt; FindPageSize(Uri uri)
+ {
+     byte[] data = await new WebClient().DownloadDataTaskAsync(uri);
+     return data.Length;
+ }
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/chapel.html">Chapel</a>
+ begin sync
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/bog.html">bog</a>
+ let {print} = import &quot;std.io&quot;
+ let foo = fn()
+     print(&quot;foo started&quot;)
+     let bar_frame = async bar()
+     print(&quot;in foo&quot;)
+     let bar_res = await bar_frame
+     print(&quot;foo finished&quot;)
+     return bar_res
+ let bar = fn()
+     print(&quot;bar started&quot;)
+     suspend
+     print(&quot;bar resumed&quot;)
+     suspend
+     print(&quot;bar finished&quot;)
+     return 1
+ print(&quot;main started&quot;)
+ let foo_frame = async foo()
+ print(&quot;in main&quot;)
+ let res = await foo_frame
+ print(&quot;main finished:&quot;, res)
+
+***
+
+* Languages *with* Async Await include <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/csharp.html">C#</a>, <a href="../concepts/dart.html">Dart</a>, <a href="../concepts/chapel.html">Chapel</a>, <a href="../concepts/x10.html">X10</a>, <a href="../concepts/bog.html">bog</a>
+
+***
+
+* Languages *without* Async Await include <a href="../concepts/ruby.html">Ruby</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/jule.html">Jule</a>
+
+***
+
+View all concepts with or missing a *hasAsyncAwait* measurement
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasAsyncAwait&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasAsyncAwait%22%2C%22origData%22%3A%22hasAsyncAwait%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasAsyncAwait&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasAsyncAwait%22%2C%22origData%22%3A%22hasAsyncAwait%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D with
+
+***
+
+* Read more about Async Await on the web: 1.
+ https://en.wikipedia.org/wiki/Async/await 1.
+
+keyboardNav hasAssignment.html hasBinaryNumbers.html
+
+../footer.scroll

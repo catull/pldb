@@ -1,0 +1,29 @@
+../code/conceptPage.scroll
+
+id myia
+name myia
+appeared 2017
+tags pl
+lab Quebec Artificial Intelligence Institute
+writtenIn python bourne-shell yaml toml markdown restructuredtext css html make ini jupyter-notebook
+
+isOpenSource true
+repoStats
+ firstCommit 2017
+ commits 969
+ committers 10
+ files 388
+ newestCommit 2021
+ mb 5
+ linesOfCode 62318
+country Canada
+
+githubRepo https://github.com/mila-udem/myia
+ firstCommit 2017
+ stars 454
+ forks 46
+ subscribers 30
+ created 2017
+ updated 2024
+ description Myia prototyping
+ issues 32

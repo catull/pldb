@@ -1,0 +1,40 @@
+../code/conceptPage.scroll
+
+id packagist-pm
+name packagist-pm
+appeared 2011
+creators Jordi Boggiano
+tags packageManager
+website https://packagist.org/
+packageCount 211636
+packageInstallCount 12906177931
+forLanguages php
+lab https://github.com/composer
+writtenIn php twig yaml json javascript svg html css xml scss markdown jsx
+
+repoStats
+ firstCommit 2011
+ commits 2720
+ committers 173
+ files 390
+ newestCommit 2025
+ mb 13
+ linesOfCode 56487
+country The Netherlands and Canada and Germany and Switzerland and Moscow
+
+twitter https://twitter.com/packagist
+
+githubRepo https://github.com/composer/packagist
+ firstCommit 2011
+ stars 1726
+ forks 477
+ subscribers 79
+ created 2011
+ updated 2024
+ description Package Repository Website - try https://packagist.com if you need your own -
+ issues 67
+
+domainName packagist.org
+ registered 2011
+ awisRank
+  2022 13969

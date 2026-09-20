@@ -1,0 +1,29 @@
+../code/conceptPage.scroll
+
+id cotton
+name Cotton
+appeared 2021
+creators Mado Nanika
+tags pl
+lab https://github.com/nanikamado/cotton
+writtenIn rust toml markdown yaml
+
+repoStats
+ firstCommit 2021
+ commits 546
+ committers 3
+ files 116
+ newestCommit 2023
+ mb 2
+ linesOfCode 22716
+country Unknown
+
+githubRepo https://github.com/nanikamado/cotton
+ firstCommit 2021
+ stars 69
+ forks 2
+ subscribers 1
+ created 2021
+ updated 2024
+ description A programming language
+ issues 3

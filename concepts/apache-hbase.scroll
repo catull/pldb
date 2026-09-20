@@ -1,0 +1,45 @@
+../code/conceptPage.scroll
+
+id apache-hbase
+name Apache Hbase
+appeared 2008
+tags application
+website https://hbase.apache.org/
+lab https://github.com/apache/hbase
+writtenIn java ruby protobuf asciidoc bourne-shell xml java-server-pages python html javascript markdown css cpp dockerfile perl yaml php svg xslt vtl-lang thrift bash csv xsd c puppet make cmake
+
+docs https://hbase.apache.org/book.html
+repoStats
+ firstCommit 2007
+ newestCommit 2025
+ commits 59095
+ committers 861
+ files 5937
+ mb 511
+ linesOfCode 198326
+
+githubRepo https://github.com/apache/hbase
+ stars 5173
+ forks 3307
+ updated 2024
+ description Apache HBase
+ issues 239
+ subscribers 404
+ created 2014
+
+wikipedia https://en.wikipedia.org/wiki/Apache_HBase
+ related java linux json sql mongodb couchdb postgresql
+ summary HBase is an open-source non-relational distributed database modeled after Google's Bigtable and written in Java. It is developed as part of Apache Software Foundation's Apache Hadoop project and runs on top of HDFS (Hadoop Distributed File System) or Alluxio, providing Bigtable-like capabilities for Hadoop.
+ pageId 16266878
+ dailyPageViews 106
+ appeared 2008
+
+domainName hbase.apache.org
+
+indeedJobs hbase developer
+ 2022 65
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Learning HBase|2010|Shashwat Shriparv|24529152|4.57|7|3
+ HBase: The Definitive Guide|2011|Lars George|10316770|3.74|121|7

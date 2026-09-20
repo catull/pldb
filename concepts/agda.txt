@@ -1,0 +1,155 @@
+Agda
+====
+
+Agda is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2007 by Ulf Norell and Catarina Coquand.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222007%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2007
+ https://pldb.io/concepts/../lists/creators.html#q=Ulf%20Norell Ulf Norell
+ https://pldb.io/concepts/../lists/creators.html#q=Catarina%20Coquand Catarina Coquand
+
+#245 on PLDB
+19 Years Old
+2k <span title="Agda repos on GitHub.">Repos</span>
+
+Agda is a dependently typed functional programming language originally developed by Ulf Norell at Chalmers University of Technology with implementation described in his PhD thesis. The current version of Agda was originally known as Agda 2. The original Agda system was developed at Chalmers by Catarina Coquand in 1999. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Agda_(programming_language) Read more on Wikipedia...
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 2,120 Agda repos on <a href="https://github.com/search?q=language:Agda">GitHub</a>
+- Early development of Agda happened in <a href="../lists/labs.html#q=Chalmers University of Technology">Chalmers University of Technology</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 143 users using Agda in 207 repos on <a href="https://api.github.com/search/repositories?q=language:Agda">GitHub</a>
+- Explore Agda snippets on <a href="http://www.rosettacode.org/wiki/Category:Agda">Rosetta Code</a>
+- Agda on HOPL
+ https://hopl.info/showlanguage.prx?exp=7860 Agda on HOPL
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/haskell.py">syntax highlighting</a> for Agda
+- GitHub supports <a href="https://github.com/mokus0/Agda.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Agda
+- See also: (7 related languages) <a href="coq.html">Coq</a>, <a href="epigram.html">Epigram</a>, <a href="haskell.html">Haskell</a>, <a href="idris.html">Idris</a>, <a href="emacs-editor.html">Emacs</a>, <a href="unicode.html">Unicode</a>, <a href="javascript.html">JavaScript</a>
+- 5 PLDB concepts link to Agda: <a href="axio.html">Axio</a>, <a href="cloc.html">cloc</a>, <a href="datafun.html">datafun</a>, <a href="obsidian-lang.html">Obsidian</a>, <a href="pygments.html">Pygments</a>
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/a/Agda.agda'>hello-world</a>:
+module agda where
+open import IO
+
+main = run (putStrLn &quot;Hello World&quot;)
+
+```
+
+```Example from <a href='https://github.com/mokus0/Agda.tmbundle'>Linguist</a>:
+module NatCat where
+
+open import Relation.Binary.PropositionalEquality
+
+-- If you can show that a relation only ever has one inhabitant
+-- you get the category laws for free
+module
+  EasyCategory
+  (obj : Set)
+  (_⟶_ : obj → obj → Set)
+  (_∘_ : ∀ {x y z} → x ⟶ y → y ⟶ z → x ⟶ z)
+  (id : ∀ x → x ⟶ x)
+  (single-inhabitant : (x y : obj) (r s : x ⟶ y) → r ≡ s)
+  where
+
+  idʳ : ∀ x y (r : x ⟶ y) → r ∘ id y ≡ r
+  idʳ x y r = single-inhabitant x y (r ∘ id y) r
+
+  idˡ : ∀ x y (r : x ⟶ y) → id x ∘ r ≡ r
+  idˡ x y r = single-inhabitant x y (id x ∘ r) r
+
+  ∘-assoc : ∀ w x y z (r : w ⟶ x) (s : x ⟶ y) (t : y ⟶ z) → (r ∘ s) ∘ t ≡ r ∘ (s ∘ t)
+  ∘-assoc w x y z r s t = single-inhabitant w z ((r ∘ s) ∘ t) (r ∘ (s ∘ t))
+
+open import Data.Nat
+
+same : (x y : ℕ) (r s : x ≤ y) → r ≡ s
+same .0 y z≤n z≤n = refl
+same .(suc m) .(suc n) (s≤s {m} {n} r) (s≤s s) = cong s≤s (same m n r s)
+
+≤-trans : ∀ x y z → x ≤ y → y ≤ z → x ≤ z
+≤-trans .0 y z z≤n s = z≤n
+≤-trans .(suc m) .(suc n) .(suc n₁) (s≤s {m} {n} r) (s≤s {.n} {n₁} s) = s≤s (≤-trans m n n₁ r s)
+
+≤-refl : ∀ x → x ≤ x
+≤-refl zero = z≤n
+≤-refl (suc x) = s≤s (≤-refl x)
+
+module Nat-EasyCategory = EasyCategory ℕ _≤_ (λ {x}{y}{z} → ≤-trans x y z) ≤-refl same
+
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Agda_(programming_language)'>Wikipedia</a>:
+data _≤_ : ℕ → ℕ → Set where
+   z≤n : {n : ℕ} → zero ≤ n
+   s≤s : {n m : ℕ} → n ≤ m → suc n ≤ suc m
+```
+
+Language <a href="../lists/features.html">features</a>
+======================================================
+
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  -- \d+
+ Token 
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  -- \d+[eE][+-]?\d+
+ Token 
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  -- 0[xX][\da-fA-F]+
+ Token 
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  "Hello world"
+ Token "
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token putStrLn
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  -- A comment
+ Token 
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  -- A comment
+ Token --
+row
+ Feature Typed Holes
+ FeatureLink ../features/hasTypedHoles.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token
+
+Built with Scroll v180.0.1

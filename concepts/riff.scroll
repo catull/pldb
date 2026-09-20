@@ -1,0 +1,32 @@
+../code/conceptPage.scroll
+
+id riff
+name Riff
+appeared 2020
+creators Darryl Abbate
+tags pl
+website https://riff.cx
+latestVersion 0.3.6
+webRepl https://riff.run
+lab https://github.com/riff-lang
+writtenIn markdown c yaml xml make bash
+
+repoStats
+ firstCommit 2020
+ commits 720
+ committers 1
+ files 148
+ newestCommit 2023
+ mb 2
+ linesOfCode 10062
+country United States
+
+githubRepo https://github.com/riff-lang/riff
+ firstCommit 2020
+ stars 23
+ forks 1
+ subscribers 2
+ created 2020
+ updated 2024
+ description The Riff programming language
+ issues 56

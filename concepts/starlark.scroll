@@ -1,0 +1,103 @@
+../code/conceptPage.scroll
+
+id starlark
+name starlark
+appeared 2018
+creators Laurent Le Brun
+tags pl
+description The language used in Bazel. Starlark is designed to be small, simple, and thread-safe. Although it is inspired from Python, it is not a general-purpose language and most Python features are not included. Starlark is syntactically a subset of Python 3
+lab https://github.com/bazelbuild
+writtenIn markdown python bazel yaml bourne-shell
+
+clocExtensions bazel bzl
+repoStats
+ firstCommit 2018
+ commits 121
+ committers 31
+ files 62
+ newestCommit 2025
+ mb 1
+ linesOfCode 6190
+country United States
+reference https://bazel.build/contribute/policy
+
+example
+ # Define a number
+ number = 18
+ 
+ # Define a dictionary
+ people = {
+     "Alice": 22,
+     "Bob": 40,
+     "Charlie": 55,
+     "Dave": 14,
+ }
+ 
+ names = ", ".join(people.keys())  # Alice, Bob, Charlie, Dave
+ 
+ # Define a function
+ def greet(name):
+   """Return a greeting."""
+   return "Hello {}!".format(name)
+ 
+ greeting = greet(names)
+ 
+ above30 = [name for name, age in people.items() if age >= 30]
+ 
+ print("{} people are above 30.".format(len(above30)))
+ 
+ def fizz_buzz(n):
+     """Print Fizz Buzz numbers from 1 to n."""
+     for i in range(1, n + 1):
+         s = ""
+         if i % 3 == 0:
+             s += "Fizz"
+         if i % 5 == 0:
+             s += "Buzz"
+         print(s if s else i)
+ 
+ fizz_buzz(20)
+leachim6 Starlark
+ filepath s/Starlark.star
+ fileExtensions star
+ example
+  print("Hello World")
+  
+
+githubRepo https://github.com/bazelbuild/starlark
+ firstCommit 2018
+ stars 2392
+ forks 158
+ subscribers 58
+ created 2018
+ updated 2024
+ description Starlark Language
+ issues 87
+
+lineCommentToken #
+printToken print
+stringToken "
+
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+
+githubBigQuery Starlark
+ repos 1141
+ users 562
+
+githubLanguage Starlark
+ type programming
+ fileExtensions bzl star
+ filenames BUCK BUILD BUILD.bazel Tiltfile WORKSPACE
+ aceMode python
+ codemirrorMode python
+ codemirrorMimeType text/x-python
+ tmScope source.python
+ aliases bazel or bzl
+ repos 3423

@@ -1,0 +1,36 @@
+../code/conceptPage.scroll
+
+id jasmine
+name jasmine
+appeared 2008
+tags library
+website https://jasmine.github.io/
+latestVersion 5.1.2
+lab https://github.com/jasmine/jasmine
+writtenIn javascript markdown yaml json scss bash erb css svg bourne-shell
+
+isOpenSource true
+fileType text
+repoStats
+ firstCommit 2008
+ commits 2913
+ committers 370
+ files 363
+ newestCommit 2025
+ mb 11
+ linesOfCode 61725
+country United States
+
+githubRepo https://github.com/jasmine/jasmine
+ firstCommit 2008
+ stars 15727
+ forks 2240
+ subscribers 444
+ created 2008
+ updated 2024
+ description Simple JavaScript testing framework for browsers and node.js
+ issues 14
+
+domainName jasmine.github.io
+ awisRank
+  2022 317709

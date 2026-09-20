@@ -1,0 +1,52 @@
+PSVG
+====
+
+PSVG is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2020 by Lingdong Huang.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222020%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2020
+ https://pldb.io/concepts/../lists/creators.html#q=Lingdong%20Huang Lingdong Huang
+
+#1095 on PLDB
+6 Years Old
+
+```Download source code:
+git clone https://github.com/LingDong-/psvg
+```
+
+Programmable SVG format
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- PSVG is developed on <a href="https://github.com/LingDong-/psvg">GitHub</a> and has 297 stars
+- PSVG compiles to <a href="svg.html">SVG</a>
+- PSVG is written in <a href="svg.html">SVG</a>, <a href="typescript.html">TypeScript</a>, <a href="json.html">JSON</a>, <a href="markdown.html">Markdown</a>, <a href="javascript.html">JavaScript</a>
+
+```Example from the web:
+&lt;!-- koch.psvg               --&gt;
+&lt;!-- draws a koch snowflake  --&gt;
+&lt;psvg width=&quot;400&quot; height=&quot;400&quot;&gt;
+  &lt;def-snowflake x1=&quot;&quot; y1=&quot;&quot; x2=&quot;&quot; y2=&quot;&quot; d=&quot;&quot;&gt;
+    &lt;if true=&quot;{d==0}&quot;&gt;
+      &lt;line x1=&quot;{x1}&quot; y1=&quot;{y1}&quot; x2=&quot;{x2}&quot; y2=&quot;{y2}&quot; /&gt;
+      &lt;return/&gt;
+    &lt;/if&gt;
+    &lt;var x3=&quot;{(x1*2+x2)/3}&quot;/&gt;
+    &lt;var x4=&quot;{(x2*2+x1)/3}&quot;/&gt;
+    &lt;var y3=&quot;{(y1*2+y2)/3}&quot;/&gt;
+    &lt;var y4=&quot;{(y2*2+y1)/3}&quot;/&gt;
+    &lt;var dx=&quot;{(x2-x1)/3}&quot;/&gt;
+    &lt;var dy=&quot;{(y2-y1)/3}&quot;/&gt;
+    &lt;var x5=&quot;{(dx-dy*SQRT(3))/2+x3}&quot;/&gt;
+    &lt;var y5=&quot;{(dy+dx*SQRT(3))/2+y3}&quot;/&gt;
+    &lt;snowflake x1=&quot;{x1}&quot; y1=&quot;{y1}&quot; x2=&quot;{x3}&quot; y2=&quot;{y3}&quot; d=&quot;{d-1}&quot;/&gt;
+    &lt;snowflake x1=&quot;{x3}&quot; y1=&quot;{y3}&quot; x2=&quot;{x5}&quot; y2=&quot;{y5}&quot; d=&quot;{d-1}&quot;/&gt;
+    &lt;snowflake x1=&quot;{x5}&quot; y1=&quot;{y5}&quot; x2=&quot;{x4}&quot; y2=&quot;{y4}&quot; d=&quot;{d-1}&quot;/&gt;
+    &lt;snowflake x1=&quot;{x4}&quot; y1=&quot;{y4}&quot; x2=&quot;{x2}&quot; y2=&quot;{y2}&quot; d=&quot;{d-1}&quot;/&gt;
+  &lt;/def-snowflake&gt;
+
+  &lt;stroke color=&quot;black&quot; cap=&quot;round&quot;/&gt;
+  &lt;snowflake x1=&quot;200&quot; y1=&quot;10&quot;  x2=&quot;50&quot;  y2=&quot;310&quot; d=&quot;5&quot;/&gt;
+  &lt;snowflake x1=&quot;350&quot; y1=&quot;310&quot; x2=&quot;200&quot; y2=&quot;10&quot;  d=&quot;5&quot;/&gt;
+  &lt;snowflake x1=&quot;50&quot;  y1=&quot;310&quot; x2=&quot;350&quot; y2=&quot;310&quot; d=&quot;5&quot;/&gt;
+&lt;/psvg&gt;
+```
+
+Built with Scroll v180.0.1

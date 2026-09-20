@@ -1,0 +1,11 @@
+importOnly
+
+Top Languages
+ link ./lists/top1000.html
+ class pldbHomepageLink
+
+pldb.csv
+ limit 0 10
+  compose topLink <a href="concepts/{id}.html">{name}</a>
+   printColumn topLink
+    join &nbsp;·&nbsp;

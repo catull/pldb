@@ -1,0 +1,34 @@
+../code/conceptPage.scroll
+
+id bio
+name Bio
+appeared 2021
+tags pl
+description A Lisp dialect written in Zig
+writtenIn c markdown lisp zig cpp make cmake assembly-language m4 yaml bourne-shell
+
+dialectOf lisp
+influencedBy scheme
+repoStats
+ firstCommit 2021
+ newestCommit 2024
+ commits 96
+ committers 4
+ files 195
+ mb 2
+ linesOfCode 86393
+
+githubRepo https://github.com/cryptocode/bio
+ stars 166
+ forks 1
+ subscribers 6
+ created 2021
+ updated 2024
+ description A Lisp dialect written in Zig
+ issues 1
+
+hasStandardLibrary true
+hasMacros true
+hasGarbageCollection true
+hasModules true
+hasDestructuring true
